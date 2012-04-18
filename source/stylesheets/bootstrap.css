@@ -2782,15 +2782,15 @@ input[type="submit"].btn.btn-mini {
 .navbar-inner {
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #2d2f32;
-  background-image: -moz-linear-gradient(top, #333333, #252a31);
-  background-image: -ms-linear-gradient(top, #333333, #252a31);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#252a31));
-  background-image: -webkit-linear-gradient(top, #333333, #252a31);
-  background-image: -o-linear-gradient(top, #333333, #252a31);
-  background-image: linear-gradient(top, #333333, #252a31);
+  background-color: #36383b;
+  background-image: -moz-linear-gradient(top, #414141, #252a31);
+  background-image: -ms-linear-gradient(top, #414141, #252a31);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#414141), to(#252a31));
+  background-image: -webkit-linear-gradient(top, #414141, #252a31);
+  background-image: -o-linear-gradient(top, #414141, #252a31);
+  background-image: linear-gradient(top, #414141, #252a31);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#252a31', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#414141', endColorstr='#252a31', GradientType=0);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -2807,15 +2807,15 @@ input[type="submit"].btn.btn-mini {
   padding: 7px 10px;
   margin-left: 5px;
   margin-right: 5px;
-  background-color: #2d2f32;
-  background-image: -moz-linear-gradient(top, #333333, #252a31);
-  background-image: -ms-linear-gradient(top, #333333, #252a31);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#252a31));
-  background-image: -webkit-linear-gradient(top, #333333, #252a31);
-  background-image: -o-linear-gradient(top, #333333, #252a31);
-  background-image: linear-gradient(top, #333333, #252a31);
+  background-color: #36383b;
+  background-image: -moz-linear-gradient(top, #414141, #252a31);
+  background-image: -ms-linear-gradient(top, #414141, #252a31);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#414141), to(#252a31));
+  background-image: -webkit-linear-gradient(top, #414141, #252a31);
+  background-image: -o-linear-gradient(top, #414141, #252a31);
+  background-image: linear-gradient(top, #414141, #252a31);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#252a31', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#414141', endColorstr='#252a31', GradientType=0);
   border-color: #252a31 #252a31 #040505;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
@@ -2861,7 +2861,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 18px 20px 27px;
+  padding: 30px 20px 30px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -2870,14 +2870,14 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .navbar-text {
   margin-bottom: 0;
-  line-height: 65px;
+  line-height: 64px;
 }
 .navbar .btn,
 .navbar .btn-group {
-  margin-top: 17.5px;
+  margin-top: 17px;
 }
 .navbar .btn-group .btn {
-  margin-top: 17.5px;
+  margin-top: 17px;
 }
 .navbar-form {
   margin-bottom: 0;
@@ -2895,7 +2895,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-form select,
 .navbar-form .radio,
 .navbar-form .checkbox {
-  margin-top: 17.5px;
+  margin-top: 17px;
 }
 .navbar-form input,
 .navbar-form select {
@@ -2919,7 +2919,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search {
   position: relative;
   float: left;
-  margin-top: 18.5px;
+  margin-top: 18px;
   margin-bottom: 0;
 }
 .navbar-search .search-query {
@@ -2985,7 +2985,7 @@ input[type="submit"].btn.btn-mini {
   bottom: 0;
 }
 .navbar .nav {
-  height: 65px;
+  height: 92px;
   position: relative;
   left: 0;
   display: block;
@@ -3001,9 +3001,10 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .nav > li > a {
   float: none;
-  padding: 22.5px 10px 23.5px;
+  padding: 7px 14px;
+  border: 1px solid #1A1A1A;
   line-height: 19px;
-  color: #707070;
+  color: #ffffff;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -3019,12 +3020,12 @@ input[type="submit"].btn.btn-mini {
   background-color: #606060;
 }
 .navbar .divider-vertical {
-  height: 65px;
+  height: 64px;
   width: 1px;
   margin: 0 9px;
   overflow: hidden;
   background-color: #252a31;
-  border-right: 1px solid #333333;
+  border-right: 1px solid #414141;
 }
 .navbar .nav.pull-right {
   margin-left: 10px;
