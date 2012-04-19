@@ -23,39 +23,17 @@
     / %link{:href => "images/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}/
     / %link{:href => "images/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
   %body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          %a.brand{:href => "/"} 
-            %img{"src" => "images/euclid_logo.png"}
-          .row.pull-right.span4{:id => "customer_row"}
-            .pull-right
-              %a{:href => "/customer_login.html", :id => "customer_login"} Customer Login
-              %a.btn.btn-mini{:href => "/get_started.html", :id => "get_started"} Get Started
-          .row.pull-right.span8{:id => "page_row"}   
-            %ul.nav.pull-right{:id => "menu_items"}     
-              %li{:class => @page_name == 'product_tour' ? 'active' : ''}
-                %a{:href => "/product_tour.html"} Product Tour
-              %li{:class => @page_name == 'out_customers' ? 'active' : ''}
-                %a{:href => "/our_customers.html"} Our Customers
-              %li{:class => @page_name == 'privacy' ? 'active' : ''}
-                %a{:href => "/privacy.html"} Privacy
-              %li{:class => @page_name == 'about' ? 'active' : ''}
-                %a{:href => "/about.html"} About
-    .container
+    = partial "shared/header"
     = yield
+    = partial "shared/footer"
     / JavaScript
     / Placed at the end of the document so the pages load faster
-    %script{:src => "/javascript/jquery.js"}
-    %script{:src => "/javascript/bootstrap-transition.js"}
-    %script{:src => "/javascript/bootstrap-alert.js"}
-    %script{:src => "/javascript/bootstrap-modal.js"}
-    %script{:src => "/javascript/bootstrap-dropdown.js"}
-    %script{:src => "/javascript/bootstrap-scrollspy.js"}
-    %script{:src => "/javascript/bootstrap-tab.js"}
-    %script{:src => "/javascript/bootstrap-tooltip.js"}
-    %script{:src => "/javascript/bootstrap-popover.js"}
-    %script{:src => "/javascript/bootstrap-button.js"}
-    %script{:src => "/javascript/bootstrap-collapse.js"}
-    %script{:src => "/javascript/bootstrap-carousel.js"}
-    %script{:src => "/javascript/bootstrap-typeahead.js"}
+    %script{:src => "/javascripts/jquery-1.7.2.min.js"}
+    %script{:src => "/javascripts/bootstrap.js"}
+    %script{:src => "/javascripts/bootstrap-carousel.js"}
+
+:javascript
+  $(document).ready(function() {
+    console.log("car ready.");
+    $('.carousel').carousel({interval: false})
+  });
