@@ -1,0 +1,32 @@
+- content_for :head do
+  %title "About us « Euclid"
+  - @page_name = "about"
+
+.container
+  .row.top_row
+    %ul.nav.nav-tabs
+      %li.active
+        %a.active{:href => "#our_company", "data-toggle" => "tab"} Our Company
+      %li
+        %a{:href => "#leadership", "data-toggle" => "tab"} Leadership
+      %li
+        %a{:href => "#careers", "data-toggle" => "tab"} Careers
+
+    .tab-content
+      .tab-pane.active#our_company
+        %p
+          Euclid is a venture-backed startup based in Palo Alto. Our product is conceptually analogous to Google Analytics for the physical world. Our customer base includes retailers, mall owners, and venue operators of many kinds.
+      .tab-pane#leadership
+        %p
+          We are a technology company composed of veterans of IBM, Ariba, TIBCO/Reuters, Google, Playdom, Qualcomm, 23AndMe, Mint/Intuit, and others, including VPs of engineering and the co-founder of Google Analytics (Urchin). We are growing quickly and are on the lookout for various roles – please see our 
+          %a{:href => "jobs.html"} Jobs page
+          for more info.
+      .tab-pane#careers
+        %p
+          We are proud of what Euclid has accomplished so far – please see our
+          %a{:href => "/press.html" } Press page
+          for more info.
+      .tab-pane#contact
+        %p
+          We can be reached at 
+          %a{:href => "mailto:info@euclidelements.com" } info@euclidelements.com

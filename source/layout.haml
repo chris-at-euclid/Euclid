@@ -31,9 +31,10 @@
     %script{:src => "/javascripts/jquery-1.7.2.min.js"}
     %script{:src => "/javascripts/bootstrap.js"}
     %script{:src => "/javascripts/bootstrap-carousel.js"}
+    %script{:src => "/javascripts/bootstrap-tab.js"}
 
 :javascript
   $(document).ready(function() {
-    console.log("car ready.");
     $('.carousel').carousel({interval: false})
+    $('.tabs a:last').tab('show')
   });
