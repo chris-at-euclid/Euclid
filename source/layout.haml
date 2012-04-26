@@ -43,4 +43,24 @@
         // From http://s831.us/K1KLA9
         $('html, body').animate({ scrollTop: $($(this).attr("href")).offset().top - 95 }, 'slow');
     });
+    $("#opt-out #submit").click(function() {
+        console.log("opt-out-submit. got here");
+       
+        var mac = $("#opt-out #mac").val();
+
+        $.ajax({
+           type: "POST",
+           url: "https://m.euclidelements.com/pages/opt_out_submit?mac=" + $.trim(mac),
+           cache: false,
+           success: function(data, status) {
+               $("#opt-out #notification").text(data);
+               $("#opt-out #notification").css("display", "block")
+           },
+           error: function(data, status) {
+               $("#opt-out #notification").text("Failed to save MAC address");
+           }
+        });
+
+        return false;
+    });
   });
