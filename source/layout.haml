@@ -32,9 +32,15 @@
     %script{:src => "/javascripts/bootstrap.js"}
     %script{:src => "/javascripts/bootstrap-carousel.js"}
     %script{:src => "/javascripts/bootstrap-tab.js"}
+    %script{:src => "/javascripts/bootstrap-scrollspy.js"}
 
 :javascript
   $(document).ready(function() {
     $('.carousel').carousel({interval: false})
     $('.tabs a:last').tab('show')
+    $('.subsection_link').bind("click", function(event) {
+        event.preventDefault();
+        // From http://s831.us/K1KLA9
+        $('html, body').animate({ scrollTop: $($(this).attr("href")).offset().top - 95 }, 'slow');
+    });
   });
