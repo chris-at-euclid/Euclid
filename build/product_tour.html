@@ -62,24 +62,26 @@
     <div class='container'>
       <div class='row' id='subsection_menu'>
         <h3>Product Tour ›</h3>
-        <ul class='nav nav-pills'>
+        <ul class='nav nav-pills' id='product_tour'>
           <li>
-            <a href='#overview'>Overview</a>
+            <a class='subsection_link' href='#overview'>Overview</a>
           </li>
           <li>
-            <a href='#metrics'>Metrics</a>
+            <a class='subsection_link' href='#metrics'>Metrics</a>
           </li>
           <li>
-            <a href='#analysis'>Analysis</a>
+            <a class='subsection_link' href='#analysis'>Analysis</a>
           </li>
           <li>
-            <a href='#features'>Features</a>
+            <a class='subsection_link' href='#features'>Features</a>
           </li>
           <li>
-            <a href='#how_it_works'>How it Works</a>
+            <a class='subsection_link' href='#how_it_works'>How it Works</a>
           </li>
         </ul>
       </div>
+    </div>
+    <div class='container' id='sections'>
       <div class='row' id='overview'>
         <h3>Overview</h3>
         <p></p>
@@ -92,6 +94,29 @@
         <p></p>
         Maecenas leo sem, tempor in ultrices nec, commodo in elit. Curabitur consectetur urna non purus ullamcorper eu pulvinar lacus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan quam eget lorem gravida eget feugiat lacus placerat. In in sagittis dolor. Proin hendrerit nibh nec ligula fermentum porttitor. Etiam euismod posuere luctus. Ut eget nisl non libero sollicitudin ullamcorper sed vitae magna. Morbi sit amet est sapien. Praesent placerat mauris sit amet purus
         pharetra molestie. In at libero id mauris accumsan vulputate ac at metus. Quisque tristique porta ligula, ac feugiat odio lacinia vel. Aliquam adipiscing odio leo, id faucibus massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+      </div>
+      <div class='row' id='analysis'>
+        <h3>Analysis</h3>
+        <p></p>
+        Fusce lobortis accumsan sapien, in blandit mauris tincidunt ut. Aliquam pellentesque dolor sed erat sagittis at dictum diam varius. Nulla at erat non urna pharetra aliquam. Proin ultrices egestas ante vel aliquam. Nam semper auctor aliquet. Integer sapien neque, lobortis sit amet ullamcorper eu, dictum quis leo.
+        <p></p>
+        Phasellus congue neque et augue egestas sed mattis arcu convallis. Mauris tempor erat a metus tempus at fringilla sapien porta. Sed nec justo eget eros pulvinar interdum sed id nisl. Sed tristique sollicitudin sapien vitae pellentesque.
+        <p></p>
+        Pellentesque fermentum, turpis quis gravida hendrerit, lorem est adipiscing urna, sed commodo lacus erat sed arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ante sem, imperdiet sit amet tincidunt et, condimentum vitae metus. Nulla vehicula volutpat mauris, a varius orci vestibulum a. Maecenas vel neque vel quam dictum congue. Aliquam nisl ipsum, blandit a semper quis, lobortis in quam.
+      </div>
+      <div class='row' id='features'>
+        <h3>Features</h3>
+        <p></p>
+        Proin eu aliquam lectus. Phasellus aliquet ligula at purus pulvinar sed pharetra nisl dignissim. Aliquam semper laoreet felis id interdum. Quisque eget eros sit amet quam scelerisque suscipit vel at ligula. Aliquam vitae ipsum ipsum, et vehicula ligula. Quisque orci nisi, malesuada ut sagittis non, facilisis ut velit. Cras bibendum ipsum at leo placerat a tempor enim tincidunt. Proin sagittis convallis tristique.
+        <p></p>
+        Suspendisse accumsan tempus odio, sed porttitor enim auctor ut. In id lorem eu velit dictum dictum. Quisque pellentesque augue et nisl varius feugiat. Duis gravida suscipit odio, quis adipiscing tortor ornare sed.
+        <p></p>
+        Phasellus vestibulum magna a sapien euismod ullamcorper. Etiam accumsan sapien ut lacus dignissim et facilisis mauris pharetra. In nisi massa, iaculis vel tristique nec, porttitor commodo est. Sed tempor, mauris eu egestas consectetur, diam arcu sodales tortor, in eleifend massa urna a diam. Donec metus magna, ultrices nec vulputate sed, egestas id justo. Pellentesque at purus vitae leo cursus aliquam. Quisque ornare nibh vel urna tempus imperdiet. In eleifend ornare diam tincidunt mollis. Aliquam et elit quam. Nulla quis pharetra diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ac elit libero, vitae aliquet nibh. Praesent vel arcu sem. Cras pharetra ligula id nibh elementum sit amet molestie sapien accumsan. Ut sed dolor ac tellus gravida euismod non a turpis
+      </div>
+      <div class='row' id='how_it_works'>
+        <h3>How it Works</h3>
+        <p></p>
+        Cras et volutpat orci. Donec erat lectus, porttitor sed lacinia quis, gravida vitae purus. Aliquam ac ipsum mauris. Maecenas rhoncus lacinia imperdiet. Donec egestas, purus sed volutpat vestibulum, ipsum purus imperdiet est, vitae mollis lorem quam sit amet augue. Fusce pharetra lorem nec mauris tempus rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin nec tortor et mi sodales lobortis ut et justo. Maecenas at lacus non diam porta lobortis eget vel enim. Mauris massa turpis, fringilla sit amet dignissim id, fringilla a justo.
       </div>
     </div>
     <footer class='footer'>
@@ -166,6 +191,7 @@
     <script src='/javascripts/bootstrap.js'></script>
     <script src='/javascripts/bootstrap-carousel.js'></script>
     <script src='/javascripts/bootstrap-tab.js'></script>
+    <script src='/javascripts/bootstrap-scrollspy.js'></script>
   </body>
 </html>
 <script type='text/javascript'>
@@ -173,6 +199,33 @@
     $(document).ready(function() {
       $('.carousel').carousel({interval: false})
       $('.tabs a:last').tab('show')
+      $('.subsection_link').bind("click", function(event) {
+          event.preventDefault();
+          // From http://s831.us/K1KLA9
+          $('html, body').animate({ scrollTop: $($(this).attr("href")).offset().top - 95 }, 'slow');
+      });
+      $("#opt-out #submit").click(function() {
+          console.log("opt-out-submit. got here");
+         
+          var mac = $("#opt-out #mac").val();
+    
+          $.ajax({
+             type: "POST",
+             url: "https://m.euclidelements.com/pages/opt_out_submit?mac=" + $.trim(mac),
+             cache: false,
+             success: function(data, status) {
+                 $("#opt-out #notification").text(data);
+                 $("#opt-out #notification").css("display", "block")
+                 $("#opt-out #mac-gorup").removeClass("error")
+             },
+             error: function(data, status) {
+                 $("#opt-out #notification").text("Failed to save MAC address");
+                 $("#opt-out #mac-group").addClass("error")
+             }
+          });
+    
+          return false;
+      });
     });
   //]]>
 </script>
