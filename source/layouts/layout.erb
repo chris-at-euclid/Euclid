@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <%= stylesheet_link_tag 'normalize' %>
+        <%= stylesheet_link_tag 'main' %>
+        <%= stylesheet_link_tag 'euclid-main' %>
+
+
+        <%= javascript_include_tag 'vendor/modernizr-2.6.1.min' %>
+        <%= javascript_include_tag 'vendor/jquery-1.8.0.min' %>
+        <%= javascript_include_tag 'euclid-main' %>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <header>
+            <div class="container">
+                <div class="col2">
+                    <% link_to '/index.html' do %>
+                        <%= image_tag 'logo.png', :id => 'logo' %>
+                    <% end %>
+                </div>
+                <nav class="col10" id="primary-nav">
+                    <ul id="site-actions">
+                        <li><a href="">Contact</a></li>
+                        <li><a href="http://dashboard.euclidelements.com">Login</a></li>
+                    </ul>
+                    <ul id="site-pages">
+                        <li class="<%= nav_active('product') %>"><%= link_to 'Product', '/product.html' %></li>
+                        <li class="<%= nav_active('about') %>"><%= link_to 'About', '/about/index.html' %></li>
+                        <li class="<%= nav_active('privacy') %>"><%= link_to 'Privacy', '/privacy.html' %></li>
+                        <li class="<%= nav_active('get-started') %>"><%= link_to 'Get Started', '/get-started.html' %></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="top-divider"></div>
+
+        <div id="content">
+            <div class="container">
+                <%= yield %>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <nav id="site-map" class="col12">
+                    <ul>
+                        <li>
+                            <div class="site-section-title">Product</div>
+                            <ul>
+                                <li>Euclid Analytics</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="col12">
+                    <img>
+                    <span id="copyright">Copyright &copy; 2012 Euclid Inc. All Rights Reserved</span>
+                </div>
+            </div>
+        </footer>
+
+
+
+        
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
