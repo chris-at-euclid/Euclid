@@ -10,16 +10,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
         <%= stylesheet_link_tag 'normalize' %>
         <%= stylesheet_link_tag 'main' %>
+        <%= stylesheet_link_tag 'dropdown' %>
         <%= stylesheet_link_tag 'euclid-main' %>
-
 
         <%= javascript_include_tag 'vendor/modernizr-2.6.1.min' %>
         <%= javascript_include_tag 'vendor/jquery-1.8.0.min' %>
         <%= javascript_include_tag 'euclid-main' %>
+        <%= javascript_include_tag 'jquery.dropdown' %>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -32,12 +31,12 @@
             <div class="container">
                 <div class="col2">
                     <% link_to '/index.html' do %>
-                        <%= image_tag 'logo.png', :id => 'logo' %>
+                        <%= image_tag 'logo.png', :class => 'logo' %>
                     <% end %>
                 </div>
                 <nav class="col10" id="primary-nav">
                     <ul id="site-actions">
-                        <li><a href="">Contact</a></li>
+                        <li><%= link_to 'Contact', '/contact.html' %></li>
                         <li><a href="http://dashboard.euclidelements.com">Login</a></li>
                     </ul>
                     <ul id="site-pages">
@@ -50,28 +49,29 @@
             </div>
         </header>
 
-        <div id="top-divider"></div>
+        <div id="top-divider" class="divider"></div>
+
+        <% if content_for?(:featurebox) %>
+            <div id="feature-box"><div class="container">
+                <%= yield_content :featurebox %>
+            </div></div>
+        <% end %>
+
 
         <div id="content">
             <div class="container">
                 <%= yield %>
             </div>
         </div>
-
+    
+        <div class="divider"></div>
+        
         <footer>
             <div class="container">
-                <nav id="site-map" class="col12">
-                    <ul>
-                        <li>
-                            <div class="site-section-title">Product</div>
-                            <ul>
-                                <li>Euclid Analytics</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
                 <div class="col12">
-                    <img>
+                    <% link_to '/index.html' do %>
+                        <%= image_tag 'logo.png', :class => 'logo' %>
+                    <% end %>
                     <span id="copyright">Copyright &copy; 2012 Euclid Inc. All Rights Reserved</span>
                 </div>
             </div>

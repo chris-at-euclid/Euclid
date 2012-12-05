@@ -22,8 +22,17 @@ a:hover {
 	border-bottom: 1px dotted #0099E0;
 }
 
+.shadowed { 
+	-webkit-box-shadow: 1px 1px 2px 0px #DDD, -1px -1px 2px 0px #DDD; 
+	-moz-box-shadow: 1px 1px 2px 0px #DDD, -1px -1px 2px 0px #DDD; 
+	box-shadow: 1px 1px 2px 0px #DDD, -1px -1px 2px 0px #DDD; 
+}
 
+.light-text { color: #FFF; }
 
+.dark-btn, .dark-btn:hover { float: right; color: #FFF; background-color: #0099E0; margin-top: 20px; min-width: 40px; height: 40px; -webkit-appearance: none; -webkit-box-shadow: none; border-width: 0 5px 0 0; border-right: 5px solid #65c1eb; }
+
+.hide { display: none; }
 
 /* 	
 ==============================================================================
@@ -33,9 +42,10 @@ a:hover {
 ==============================================================================
 */
 
-#logo { float: left; width: 105px; margin-top: 45px; }
+.logo { float: left; width: 105px; }
+header .logo { margin-top: 45px; }
 
-nav > ul > li 	{ float: left; }
+#primary-nav > ul > li 	{ float: left; }
 nav li 	{ list-style: none; }
 #primary-nav	{  }
 #primary-nav ul { clear: both; float: right; }
@@ -49,19 +59,25 @@ nav li 	{ list-style: none; }
 #site-pages { margin-bottom: 25px; margin-top: 10px; }
 #site-pages li { 
 	margin-left: 45px;
-	color: #232323;
-	font-size: 14px;
-	font-weight: 100;
+	color: #3e3e3e;
+	font-size: 12px;
+	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
-
-#top-divider {
+#top-divider { z-index: 100; }
+.divider {
 	width: 100%;
 	height: 5px;
-	z-index: 100;
 	background-color: #0099E0;
 }
+
+/* subnav */
+#subnav ul { padding: 0; margin: 0; }
+.slideout-btn { background-color: purple; width: 50px; height: 40px; overflow: hidden; cursor: pointer; }
+.slideout-btn .handle { float: left; width: 40px; height: 40px; background-color: green; }
+.slideout-btn .caption { float: left; padding-left: 10px; }
+
 
 /* 	
 ==============================================================================
@@ -72,7 +88,7 @@ nav li 	{ list-style: none; }
 */
 
 #content {
-	background-color: #EDEDED;
+	background-image: url(../img/content-bg.png);
 	padding-top: 50px;
 	padding-bottom: 100px;
 }
@@ -80,20 +96,29 @@ nav li 	{ list-style: none; }
 
 section { margin-bottom: 100px; }
 
-h1, h2 {
-	font-weight: 100;
+.sectionlabel, h1, h2 {
 	margin-top: 0;
 	margin-bottom: 15px;
 }
+h1, h2 {
+	font-weight: 100;
+}
 h1 	{ 
 	color: #0099E0;
-	font-size: 42px;
-	line-height: 44px;
+	font-size: 44px;
+	line-height: 48px;
 }
 h2 	{ 
-	color: #575757;
+	color: #3e3e3e;
 	font-size: 22px;
 	line-height: 28px;
+}
+.sectionlabel 	{ 
+	color: #3e3e3e;
+	font-size: 11px;
+	line-height: 11px;
+	font-weight: 900;
+	text-transform: uppercase;
 }
 p 	{ 
 	color: #575757;
@@ -122,11 +147,22 @@ p 	{
 ==============================================================================
 */
 
-footer {
-	background-color: #0099E0;
-	color: #FFF;
-}
+footer { padding: 40px 0; }
+#copyright { float: right; font-size: 11px; line-height: 35px; vertical-align: baseline; }
 
+
+
+
+
+/* 	
+==============================================================================
+	
+	FEATURE BOX STYLES
+	
+==============================================================================
+*/
+
+#feature-box { background-color: purple }
 
 
 
@@ -141,7 +177,7 @@ footer {
 .container	{ width: 960px; margin: 0 auto; padding: 0; }
 .colgroup:after, .container:after, section:after, #primary-nav:after, .row:after	{ content: ''; display: block; clear: both; } /* Clearfix */
 .col1, .col2, .col3, .col4, .col5, .col6, 
-.col7, .col8, .col9, .col10, .col11, .col12	{ margin-left: 15px; margin-right: 15px; float: left; min-height: 1px; }
+.col7, .col8, .col9, .col10, .col11, .col12, .col-third-of-10	{ margin-left: 15px; margin-right: 15px; float: left; min-height: 1px; }
 .subcontainer1, .subcontainer2, .subcontainer3, .subcontainer4, .subcontainer5, .subcontainer6, 
 .subcontainer7, .subcontainer8, .subcontainer9, .subcontainer10, .subcontainer11, .subcontainer12	{ margin: 0; float: left; }
 .col12	{ width: 930px; }	/* Subcontainer 12 would just be a regular container... */
@@ -156,6 +192,51 @@ footer {
 .col3	{ width: 210px; } 	.subcontainer3 { width: 240px; }
 .col2	{ width: 130px; } 	.subcontainer2 { width: 160px; }
 .col1 	{ width: 50px; }	.subcontainer1 { width: 80px; }
+.col-third-of-10 { width: 236px; }
+
+
+
+
+/* 	
+==============================================================================
+	
+	FORM STYLES
+	
+==============================================================================
+*/
+
+/* STYLED WITH THE ASUMPTION THAT INPUTS WILL BE OF THE FORM...
+	<LABEL><SPAN>BLHHH</SPAN><INPUT></LABEL> */
+form {  font-size: 11px; font-weight: bold; text-transform: uppercase; }
+label, label .input-title, label input { height: 40px; vertical-align: middle; line-height: 40px; }
+label { display: block; background-color: #FFF;overflow: hidden; border-bottom: 1px solid #EDEDED; }
+label input { border-width: 0 0 0 1px; padding-left: 15px; border-left: 1px solid #EDEDED; }
+label input:focus { outline: none; }
+label > .input-title { border-left: 5px solid #CCC; padding-left: 10px; padding-right: 10px; display: inline-block; }
+label.required > .input-title { border-color: orange; }
+#required-legend { color: orange;  margin-bottom: 10px; }
+/* Because of the size attribute, making an input expand to fill container isn't possible without decent hackery. Instead just set the widths manually :( */
+#name .input-title, #email .input-title, #phone .input-title, #title .input-title { width: 50px; }
+#name input, #email input, #phone input, #title input { width: 355px; }
+#company_name > .input-title { width: 100px; }
+#company_name input { width: 305px; }
+#num_locations > .input-title { width: 140px; }
+#num_locations input { width: 265px; }
+#comments, #comments.empty:focus, #comments.empty:focus { width: 430px; padding: 10px; height: 267px; border: none; resize: none; z-index: 10; background-color: #FFF; outline: none; }
+#comments.empty { background-color: transparent; }
+#comments_col { background-color: #FFF; }
+#comments_col:before { content: 'Additional Info';display: block; color: #CCC; padding: 10px 0 0 10px; height: 20px; margin-bottom: -30px; z-index: 1; }
+.invalid { background-color: red; }
+.invalid-msg { position: absolute; padding: 0 10px; color: #FFF; background-color: red; opacity: .65; }
+.invalid-msg:before { position: absolute; display: block; content: ''; width: 0;  height: 0; margin-left: -20px; margin-top: 10px; border-top: 10px solid transparent; border-bottom: 10px solid transparent;  border-right:10px solid red; }
+
+
+
+
+
+
+
+
 
 
 

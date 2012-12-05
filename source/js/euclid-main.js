@@ -1,67 +1,16 @@
 
 
-/* Plugin that makes object sticky, but stops before it overlaps a defined 'stopAt' element 
-(function( $ ){
-
-	//$.fn.extend({ 
-		$.fn.stickyWithinReason = function(options) {
-
-			var defaults = {
-				'stopAt': "footer",
-				'bottomPad': 20
-			};
-			var settings = $.extend({}, defaults, options);
-
-			return this.each(function () {
-				
-				if($(this).length){
-					var sticky = $(this);
-			     	var stickyTop = sticky.offset().top; 
-			     	var stickyHeight = sticky.height();
-			     	var limit = $(settings['stopAt']).offset().top - stickyHeight - settings['bottomPad'];
-
-					$(window).scroll(function(){
-						var windowTop = $(window).scrollTop(); 
-
-						if(limit < windowTop) {
-							var diff = limit - windowTop;
-							sticky.css({ position: 'fixed', top: diff });
-						}
-						else if(stickyTop < windowTop) {
-							el.css({ position: 'fixed', top: 0 });
-						}
-						else {
-							el.css('position','static');
-						}
-
-					});	     
-				}
-
-			});
-
-		}
-	//});
-})( jQuery );
-*/
-
-
-
+/* Plugin that makes object sticky, but stops before it overlaps a defined 'stopAt' element */
 (function($){
  
-	//Attach this new method to jQuery
 	$.fn.extend({ 
-
-		//This is where you write your plugin's name
 		stickyWithinReason: function(options) {
-
 			var defaults = {
 				'stopAt': "footer",
 				'topPad': 20,
 				'bottomPad': 20
 			};
 			var settings = $.extend({}, defaults, options);
-
-			//Iterate over the current set of matched elements
 			return this.each(function() {
 
 				if($(this).length){
@@ -85,9 +34,6 @@
 						}
 					});	     
 				}
-
-
-
 			});
 		}
 	});
@@ -96,46 +42,97 @@
 
 
 $(document).ready(function(){
+
 	$('#subnav').stickyWithinReason({});
-/*
-	$("#subnav").stickyWithinReason();
-
-	var stickyWithinReason = function(selector, options) {
-		
-		if($(selector).length){
-
-			var defaults = {
-				'stopAt': "footer",
-				'topPad': 20,
-				'bottomPad': 20
-			};
-			var settings = $.extend({}, defaults, options);
-
-			var sticky = $(selector);
-	     	var stickyTop = sticky.offset().top - settings['topPad']; 
-	     	var stickyHeight = sticky.height();
-	     	var limit = $(settings['stopAt']).offset().top - stickyHeight - settings['topPad'] - settings['bottomPad'];
-
-			$(window).scroll(function(){
-				var windowTop = $(window).scrollTop(); 
-
-				if(limit < windowTop) {
-					var diff = limit - windowTop + settings['topPad'];
-					sticky.css({ position: 'fixed', top: diff });
-				}
-				else if(stickyTop < windowTop) {
-					sticky.css({ position: 'fixed', top: settings['topPad'] });
-				}
-				else {
-					sticky.css('position','static');
-				}
-
-			});	     
-		}
-	}
-*/
-	//	stickyWithinReason('#subnav', {});
 	$('#top-divider').stickyWithinReason({topPad: 0, bottomPad: 0});
 
+	$('.slideout-btn').hover(
+		function(e){
+			$(this).animate({width: '100%'}, 100);
+		}, function(e){
+			$(this).animate({width: 50}, 100);
+		}
+	);
+	$('#comments').blur(function(){                   
+	    if(!$(this).val())
+	        $(this).addClass('empty');
+	    else
+	        $(this).removeClass('empty');
+	});
+
+	$('#name input, #email input, #company_name input, #num_locations input, #phone input').blur(function(){ contactFormValidator(true); })
 
 });
+
+
+//Form validation for the contact form 
+contactFormValidator = function(skipEmptyCheck) {
+
+	var isValid = true;
+
+	var showValidationMsg = function(element, msg){ element.children('.invalid-msg').text(msg).removeClass('hide'); }
+
+	//Clear the alerts before we validate
+	$('#name .invalid-msg, #email .invalid-msg, #company_name .invalid-msg, #num_locations .invalid-msg, #phone .invalid-msg').addClass('hide');
+
+	//Are all of the optional fields filled?
+	if(!skipEmptyCheck) {
+		$.each(['#name', '#email', '#company_name', '#num_locations'], function(k,v){
+			if(!$(v + " input").val()) {
+				showValidationMsg($(v), "This is a required field");
+				isValid = false;
+			}
+		});
+	}
+
+
+	//Field specific Validation
+
+	if($("#email input").val() && !/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test($("#email input").val())) {
+		//http://www.designchemical.com/blog/index.php/jquery/email-validation-using-jquery/
+		showValidationMsg($("#email"), "This is not a valid email address");
+		isValid = false;
+	}	
+
+	if($("#phone input").val() && $("#phone input").val().replace(/[^\d.]/g, "").length < 10) {
+		//because there can be so many different formats of phone numbers, rather than trying to validate each different possible 
+		// format, just strip it down to the numbers only. if there are more than 10 digits, we're good. 
+		showValidationMsg($("#phone"), "This is not a valid phone number");
+		isValid = false;
+	}
+
+	if($("#num_locations input").val() && !/^\s*(\+|-)?\d+\s*$/.test($("#num_locations input").val())) {
+		//http://www.designchemical.com/blog/index.php/jquery/email-validation-using-jquery/
+		showValidationMsg($("#num_locations"), "This is not a valid number");
+		isValid = false;
+	}	
+
+	return isValid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
