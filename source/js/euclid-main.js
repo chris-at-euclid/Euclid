@@ -19,9 +19,9 @@
 	     			var stickyHeight = sticky.height();
 	     			var limit = $(settings['stopAt']).offset().top - stickyHeight - settings['topPad'] - settings['bottomPad'];
 
-					$(window).scroll(function(){
+	     			var isBound = false;
+	     			var scrollFunction = function(){
 						var windowTop = $(window).scrollTop(); 
-
 						if(limit < windowTop) {
 							var diff = limit - windowTop + settings['topPad'];
 							sticky.css({ position: 'fixed', top: diff });
@@ -32,7 +32,24 @@
 						else {
 							sticky.css('position','static');
 						}
-					});	     
+					}
+					var resizeFunction = function() {
+	     				var isTinyScreen = $(document).width() < 700;
+						if(!isTinyScreen && !isBound) {
+	     					$(window).bind('scroll', scrollFunction);
+	     					isBound = true;
+	     				}
+	     				else if(isTinyScreen && isBound) {
+	     					$(window).unbind('scroll', scrollFunction);
+	     					sticky.css('position','static');
+	     					isBound = false;
+	     				}
+					}
+
+					//kick it off with the resize function which handles binding / unbinding based on the doc width
+					resizeFunction();
+	     			$(window).resize(resizeFunction);
+
 				}
 			});
 		}
