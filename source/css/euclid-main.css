@@ -208,20 +208,22 @@ footer { padding: 40px 0; }
 /* STYLED WITH THE ASUMPTION THAT INPUTS WILL BE OF THE FORM...
 	<LABEL><SPAN>BLHHH</SPAN><INPUT></LABEL> */
 form {  font-size: 11px; font-weight: bold; text-transform: uppercase; }
-label, label .input-title, label input { height: 40px; vertical-align: middle; line-height: 40px; }
-label { display: block; background-color: #FFF; border-bottom: 1px solid #EDEDED; }
-label input { border-width: 0; padding: 0 0 0 15px; margin: 0; height: 39px; border-left: 1px solid #EDEDED; }
+label, label .input-title, .input-separator, label input { height: 40px; vertical-align: middle; line-height: 40px; }
+label .input-title, .input-separator, label input { display: table-cell; }
+label { display: table; background-color: #FFF; border-bottom: 1px solid #EDEDED; width: 100%; }
+label input { border-width: 0; padding: 0; margin: 0; height: 39px; width: 100%; }
 label input:focus { outline: none; }
-label > .input-title { border-left: 5px solid #CCC; padding-left: 10px; padding-right: 10px; display: inline-block; }
+label > .input-title { border-left: 5px solid #CCC; padding-left: 10px; }
+label > .input-separator { border-left: 1px solid #CCC; width: 10px; }
 label.required > .input-title { border-color: orange; }
 #required-legend { color: orange;  margin-bottom: 10px; }
 /* Because of the size attribute, making an input expand to fill container isn't possible without decent hackery. Instead just set the widths manually :( */
-#name .input-title, #email .input-title, #phone .input-title, #title .input-title { width: 50px; }
-#name input, #email input, #phone input, #title input { width: 355px; }
-#company_name > .input-title { width: 100px; }
-#company_name input { width: 305px; }
-#num_locations > .input-title { width: 140px; }
-#num_locations input { width: 265px; }
+#name .input-title, #email .input-title, #phone .input-title, #title .input-title { width: 55px; }
+/*#name input, #email input, #phone input, #title input { width: 85%; margin-right: -30px; }*/
+#company_name > .input-title { width: 110px; }
+/*#company_name input { width: 305px; }*/
+#num_locations > .input-title { width: 150px; }
+/*#num_locations input { width: 265px; }*/
 #comments, #comments.empty:focus, #comments.empty:focus { width: 430px; padding: 10px; height: 267px; border: none; resize: none; z-index: 10; background-color: #FFF; outline: none; }
 #comments.empty { background-color: transparent; }
 #comments_col { background-color: #FFF; }
