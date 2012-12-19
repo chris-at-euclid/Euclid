@@ -1,45 +1,23 @@
+
+
+
 <% wrap_layout :layout do %>
-  <aside class="col2"><nav id="subnav">
-  	<ul>
-  		<li class="slideout-btn">
-  			<% link_to 'blurg.html' do %>
-	  			<div class="handle"><%= image_tag "icon_team03_W_x2.png", :width => 40 %></div>
-	  			<div class="caption">testing</div>
-	  		<% end %>
-  		</li>
-  		<li class="slideout-btn">
-  			<% link_to 'blurg.html' do %>
-	  			<div class="handle"><%= image_tag "icon_team03_W_x2.png", :width => 40 %></div>
-	  			<div class="caption">testing</div>
-	  		<% end %>
-  		</li>
-  		<li class="slideout-btn">
-  			<% link_to 'blurg.html' do %>
-	  			<div class="handle"><%= image_tag "icon_team03_W_x2.png", :width => 40 %></div>
-	  			<div class="caption">testing</div>
-	  		<% end %>
-  		</li>
-  		<li class="slideout-btn">
-  			<% link_to 'blurg.html' do %>
-	  			<div class="handle"><%= image_tag "icon_team03_W_x2.png", :width => 40 %></div>
-	  			<div class="caption">testing</div>
-	  		<% end %>
-  		</li>
-  		<li class="slideout-btn">
-  			<% link_to 'blurg.html' do %>
-	  			<div class="handle"><%= image_tag "icon_team03_W_x2.png", :width => 40 %></div>
-	  			<div class="caption">testing</div>
-	  		<% end %>
-  		</li>
-  		<li class="slideout-btn">
-  			<% link_to 'blurg.html' do %>
-	  			<div class="handle"><%= image_tag "icon_team03_W_x2.png", :width => 40 %></div>
-	  			<div class="caption">testing</div>
-	  		<% end %>
-  		</li>
-  	</ul>
-  </nav></aside>
-  <div class="subcontainer10">
-  	<%= yield %>
+  
+<div class="content featured-content-grad no-pad">
+  <div class="container">
+    <aside class="col2" id="subnav"><nav>
+      <ul>
+        <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Euclid', '/about/index.html' %></li>
+        <li class="<%= nav_active('about/investors/') %>"><%= link_to 'Investors', '/about/investors.html' %></li>
+        <li class="<%= nav_active('about/partners/') %>"><%= link_to 'Partners', '/about/partners.html' %></li>
+        <li class="<%= nav_active('about/careers/') %>"><%= link_to 'Careers', '/about/careers.html' %></li>
+        <li class="<%= nav_active('about/contact/') %>"><%= link_to 'Contact', '/about/contact.html' %></li>
+      </ul>
+    </nav></aside>
   </div>
+</div>
+    <% if content_for?(:pagehead) %>
+          <%= yield_content :pagehead %>
+    <% end %>
+    <%= yield %>
 <% end %>

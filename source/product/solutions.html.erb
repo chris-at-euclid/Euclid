@@ -1,0 +1,64 @@
+<% content_for :pagehead do %>
+<div class="content featured-content-grad">
+  <div class="container">
+    <div class="colgroup"><div class="col7">&nbsp;f
+        <%= image_tag 'x.png' %>
+    </div>
+    <div class="col5">
+      <h1>From the sales floor to the boardroom</h1>
+      <p>Euclid Analytics can help you evaluate the effectiveness of your activities, identify best practices, and eliminate unnecessary costs. Here are some of the questions that Euclid Analytics helps you answer:</p>
+    </div></div>
+    <div class="subcontainer9 seperated pull-right merge-down">
+      <a id="marketing-tab-link" data-target="marketing-tab" class="subcontainer3 tab-link btn selected">Marketing</a>
+      <a id="merchandising-tab-link" data-target="merchandising-tab" class="subcontainer3 tab-link btn">Merchandising</a>
+      <a id="operations-tab-link" data-target="operations-tab" class="subcontainer3 tab-link btn">Operations</a>
+    </div>
+
+  </div>
+</div>
+<% end %>
+
+
+<div class="content">
+  <div class="container">
+    <ul id="tabs" class="subcontainer9 pull-right">
+      <li id="marketing-tab">
+        <ul>
+          <li class="colgroup separated ">
+            <%= image_tag 'product/KPI.png', :class=> 'col-half-of-9' %>
+            <div class="col-half-of-9">Did my marketing promotion really increase store traffic? Or was it the result of macro factors outside the store? WIth Outside Traffic and Capture Rate metrics, you can judge whether your actions made a difference.</div>
+          </li>
+          <li class="colgroup separated ">
+            <%= image_tag 'product/KPI.png', :class=> 'col-half-of-9' %>
+            <div class="col-half-of-9">Are my direct mail campaigns encouraging repeat traffic? Check the Repeat Visit Ratio of your stores to see if you’re increasing the share of repeat customer visits.</div>
+          </li>
+          <li class="colgroup separated ">
+            <%= image_tag 'product/KPI.png', :class=> 'col-half-of-9' %>
+            <div class="col-half-of-9">How loyal are my existing customers? Use the distribution of Visit Frequency and Visit Recency to segment your customers.</div>
+          </li>
+        </ul>
+      </li>
+      <li id="merchandising-tab" class="hide">
+        <ul>
+          <li>hiii</li>
+        </ul>
+      </li>
+      <li id="operations-tab" class="hide">
+        <ul>
+          <li>hiiiiiiiiiiiii</li>
+        </ul>
+      </li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $('.tab-link').click(function(){
+    $('.tab-link').removeClass('selected');
+    $(this).addClass('selected');
+    $("#tabs > li").addClass('hide');
+    $("#" + $(this).attr('data-target')).removeClass('hide');
+  })
+</script>
+

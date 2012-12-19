@@ -28,8 +28,18 @@
 #   page "/admin/*"
 # end
 
+# With alternative layout
+page "/product.html", :layout => :contentpage
+page "/privacy.html", :layout => :contentpage
+
  with_layout :about do
    page "/about/*"
+ end
+ with_layout :product do
+   page "/product/*"
+ end
+ with_layout :privacy do
+   page "/privacy/*"
  end
 
 # Proxy (fake) files
@@ -49,6 +59,13 @@ helpers do
   def nav_active(page)
     request.path.start_with?(page) ? "selected" : "u"
   end
+
+  def link_to_signupsite(page, text, aclass)
+    url = "https://euclid-signup-development.herokuapp.com/" + page
+    "<a href='" + url + "' class='" + aclass + "'>" + text + "</a>"
+  end
+
+
 end
 
 set :css_dir, 'css'

@@ -1,25 +1,45 @@
-<form id="contact-form" onsubmit="return contactFormValidator();">
-	<div class="col12" id="required-legend">* Required</div>
-	<div class="col6 shadowed">
-		
-    <!-- not pretty, but inputs' width is hard to deal with. can't simply expand to fill container like normal elements, so must force it with some display:table magic -->
-		<label for="name" id="name" class="required"><span class="input-title">Name</span><span class="input-separator"></span><input type="text" name="name" /><span class="hide invalid-msg">This value is invlaid</span></label>
-		<label for="email" id="email" class="required"><span class="input-title">Email</span><span class="input-separator"></span><input type="text" name="email" /><span class="hide invalid-msg">This value is invlaid</span></label>
-		<label for="phone" id="phone" class="optional"><span class="input-title">Phone</span><span class="input-separator"></span><input type="text" name="phone" /><span class="hide invalid-msg">This value is invlaid</span></label>
+<div class="content">
+  	<div class="container">
 
-		<label for="contact-method-drop" class="required"><span class="input-title">Preferred method of contact</span><span class="input-separator"></span>
-		
-		</label>
-		
-		<label for="company_name" id="company_name" class="required"><span class="input-title">Company name</span><span class="input-separator"></span><input type="text" name="company_name" /><span class="hide invalid-msg">This value is invlaid</span></label>
-		<label for="title" id="title" class="optional"><span class="input-title">Title</span><span class="input-separator"></span><input type="text" name="title" /><span class="hide invalid-msg">This value is invlaid</span></label>
-		<label for="num_locations" id="num_locations" class="required"><span class="input-title">Number of locations</span><span class="input-separator"></span><input type="text" name="num_locations" /><span class="hide invalid-msg">This value is invlaid</span></label>
-	</div>
-	<div id="comments_col" class="col6 shadowed">
-		<textarea id="comments" class="empty"></textarea>
-	</div>
-	<div class="col12">
-		<button class="dark-btn" type="submit"></button>
-	</div>
+		<form id="contact-form" onsubmit="return contactFormValidator();">
+			<div class="col12 underlined" id="required-legend">* Required</div>
+			<div class="col6">
+				<!-- not pretty, but inputs' width is hard to deal with. can't simply expand to fill container like normal elements, so must force it with some display:table magic -->
+				<label for="name" id="name" class="required"><span class="input-title">Name*</span><input type="text" name="name" /><span class="hide invalid-msg">This value is invlaid</span></label>
+				<label for="email" id="email" class="required"><span class="input-title">Email*</span><input type="email" name="email" /><span class="hide invalid-msg">This value is invlaid</span></label>
+				<label for="phone" id="phone" class="optional"><span class="input-title">Phone</span><input type="tel" name="phone" /><span class="hide invalid-msg">This value is invlaid</span></label>
 
-</form>
+				<label for="contact-method" id="contact_method" class="required">
+					<span class="input-title">Preferred method of contact</span>
+
+					<span class="contact-method-clickable selected" data-forvalue="email">Email</span><input type="radio" name="contact_method" value="email" checked> /
+					<span class="contact-method-clickable" data-forvalue="phone">Phone</span><input type="radio" name="contact_method" value="phone">
+
+				</label>
+
+				<label for="company_name" id="company_name" class="required"><span class="input-title">Company*</span><input type="text" name="company_name" /><span class="hide invalid-msg">This value is invlaid</span></label>
+				<label for="title" id="title" class="optional"><span class="input-title">Title</span><input type="text" name="title" /><span class="hide invalid-msg">This value is invlaid</span></label>
+				<label for="num_locations" id="num_locations" class="required"><span class="input-title">Number of locations*</span><input type="text" name="num_locations" /><span class="hide invalid-msg">This value is invlaid</span></label>
+				<label for="hear_about" id="hear_about" class="optional"><span class="input-title">How did you hear about us?*</span>
+					<div class="Euclid-Styled-Dropdown" id="hear_about_dropdown"><select name="hear_about"><option>hi</option></select></div>
+					<span class="hide invalid-msg">This value is invlaid</span>
+				</label>
+				
+			</div>
+			<div id="comments_col" class="col6">
+				<textarea id="comments" name="comments" class="empty"></textarea>
+				<button class="dark-btn btn pull-right" type="submit">SEND</button>
+			</div>
+			<div class="col12">
+			</div>
+
+		</form>
+	</div>
+</section>
+
+<script>
+	$(".contact-method-clickable").click(function(){
+		$(".contact-method-clickable").removeClass('selected');
+		$(this).addClass('selected').next().click();	
+	})
+</script>

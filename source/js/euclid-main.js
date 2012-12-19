@@ -8,7 +8,8 @@
 			var defaults = {
 				'stopAt': "footer",
 				'topPad': 20,
-				'bottomPad': 20
+				'bottomPad': 20,
+				'remainFixed': false
 			};
 			var settings = $.extend({}, defaults, options);
 			return this.each(function() {
@@ -18,6 +19,7 @@
 			     	var stickyTop = sticky.offset().top - settings['topPad']; 
 	     			var stickyHeight = sticky.height();
 	     			var limit = $(settings['stopAt']).offset().top - stickyHeight - settings['topPad'] - settings['bottomPad'];
+	     			var originalTop = sticky.css('top');
 
 	     			var isBound = false;
 	     			var scrollFunction = function(){
@@ -26,12 +28,10 @@
 							var diff = limit - windowTop + settings['topPad'];
 							sticky.css({ position: 'fixed', top: diff });
 						}
-						else if(stickyTop < windowTop) {
+						else if(stickyTop < windowTop)
 							sticky.css({ position: 'fixed', top: settings['topPad'] });
-						}
-						else {
-							sticky.css('position','static');
-						}
+						else
+							reset();
 					}
 					var resizeFunction = function() {
 	     				var isTinyScreen = $(document).width() < 700;
@@ -41,9 +41,17 @@
 	     				}
 	     				else if(isTinyScreen && isBound) {
 	     					$(window).unbind('scroll', scrollFunction);
-	     					sticky.css('position','static');
+	     					reset();
 	     					isBound = false;
 	     				}
+					}
+					var reset = function(){
+						if(!settings['remainFixed'])
+							sticky.css('position','static');
+						else {
+							sticky.css('top', originalTop);
+							sticky.css('position', 'absolute')
+						}
 					}
 
 					//kick it off with the resize function which handles binding / unbinding based on the doc width
@@ -60,16 +68,10 @@
 
 $(document).ready(function(){
 
-	$('#subnav').stickyWithinReason({});
+	//$('#subnav').stickyWithinReason({});
 	$('#top-divider').stickyWithinReason({topPad: 0, bottomPad: 0});
+	$('#subnav').stickyWithinReason({topPad: 0, bottomPad: 0, remainFixed: true});
 
-	$('.slideout-btn').hover(
-		function(e){
-			$(this).animate({width: '100%'}, 100);
-		}, function(e){
-			$(this).animate({width: 50}, 100);
-		}
-	);
 	$('#comments').blur(function(){                   
 	    if(!$(this).val())
 	        $(this).addClass('empty');

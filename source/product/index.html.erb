@@ -1,0 +1,51 @@
+<% content_for :pagehead do %>
+<div class="content featured-content-grad">
+  <div class="container">
+    <div class="col9 pull-right">
+      <h1>Euclid Analytics answers your toughest marketing and operations challenges</h1>
+      <p class="large-text">with unprecedented insights into real-world shopper behavior. Our breakthrough analytics transform smartphone signals into recommendations for optimizing traffic, loyalty, and engagement. Get the complete picture of how shoppers interact with your stores - over time and across all of your locations.</p>
+    </div>
+  </div>
+</div>
+<% end %>
+
+
+<div class="content">
+  <div class="container">
+    <div class="subcontainer9 pull-right">
+        <h3 class="col9">Learn about our:</h3>
+        <div class="colgroup">
+          <div class="col2">
+            <span class="sectionlabel">Solutions</span>
+            <%= image_tag 'headshots/will-smith.jpg', :class=>'fill-container' %>
+          </div>
+          <div class="col2">
+            <span class="sectionlabel">Dashboard</span>
+            <%= image_tag 'headshots/will-smith.jpg', :class=>'fill-container' %>
+          </div>
+          <div class="col2">
+            <span class="sectionlabel">Technology</span>
+            <%= image_tag 'headshots/will-smith.jpg', :class=>'fill-container' %>
+          </div>
+          <div class="col2">
+            <span class="sectionlabel">Security</span>
+            <%= image_tag 'headshots/will-smith.jpg', :class=>'fill-container' %>
+          </div>
+          <div class="col2">
+            <span class="sectionlabel">Get Started</span>
+            <%= image_tag 'headshots/will-smith.jpg', :class=>'fill-container' %>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $('.tab-link').click(function(){
+    $('.tab-link').removeClass('selected');
+    $(this).addClass('selected');
+    $("#tabs > li").addClass('hide');
+    $("#" + $(this).attr('data-target')).removeClass('hide');
+  })
+</script>
+
