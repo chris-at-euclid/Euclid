@@ -130,6 +130,8 @@ nav li 	{ list-style: none; }
 ==============================================================================
 */
 
+#homepage-product-img { margin-top: 100px; position: absolute; }
+
 #easy-wires {
 	position: absolute;
 	left: 0;
@@ -139,6 +141,7 @@ nav li 	{ list-style: none; }
 #easy-wires img { float: right; }
 #easy-wires-cord { background: transparent url(../img/IT_cord.png); margin-right: 200px;}
 
+#nrftext {line-height: 200px; vertical-align: middle;} 
 
 
 /* 	
@@ -157,7 +160,7 @@ nav li 	{ list-style: none; }
 .primary-content {
 	background-image: url(../img/content-bg.png);
 }
-.featured-content-grad, .featured-content-light { border-bottom: 1px solid #b2e0f6; }
+.content.featured-content-grad, .content.featured-content-light { border-bottom: 1px solid #b2e0f6; padding: 0; }
 .featured-content-grad { 
 	background-color: #F2F2F2; 
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#F2F2F2));
@@ -166,9 +169,13 @@ nav li 	{ list-style: none; }
 	background-image:     -ms-linear-gradient(top, #FFFFFF, #F2F2F2);
 	background-image:      -o-linear-gradient(top, #FFFFFF, #F2F2F2);
 }
+.featured-content-textarea { padding: 25px; min-height: 300px !important; }
+.banner .featured-content-textarea { background-color: rgba(255, 255, 255, .85); }
 .featured-content-dark { background-color: #F2F2F2; }
 .subsection { padding-top: 50px; border-bottom: 1px solid #b2e0f6; overflow: hidden; }
 .subsection:last-of-type { border-bottom: none; } 
+
+.featured-content-nav { margin-top: 185px; margin-bottom: -50px; }
 
 #about-content { float: right; } /* Special case - new a sub container to float next to subnavbar. Maybe find a better way to do this? subcontainer class? */
 
@@ -208,7 +215,7 @@ h4 {
 	font-weight: bold; 
 	margin-bottom: 0;
 }
-.sectionlabel 	{ 
+.sectionlabel, .icon-button-list li a	{ 
 	color: #3e3e3e;
 	font-size: 11px;
 	line-height: 11px;
@@ -249,6 +256,7 @@ h1.separated { margin-bottom: 50px; }
 .indent { padding-left: 20px;}
 
 .magnify { margin: 10px; }
+
 
 
 /* 	
@@ -351,10 +359,24 @@ form.defForm.contactForm {  }
 */
 
 .content-list { margin-bottom: 100px; } 
-.content-list, .content-list-item, ul.no-bullet, ul.no-bullet li, ul.cluster-list, ul.cluster-list li { list-style: none; padding-left: 0; }
-ul.no-bullet li, ul.cluster-list li { margin-bottom: 15px; }
+.content-list, .content-list-item, ul.no-bullet, ul.no-bullet li, ul.cluster-list, ul.how-section-list, ul.how-section-list li, ul.icon-button-list, ul.icon-button-list li { list-style: none; padding-left: 0; }
+ul.no-bullet li, ul.cluster-list li, ul.how-section-list li { margin-bottom: 15px; }
 .content-list-item { margin: 40px 0; padding-bottom: 40px; }
 .content-list .content-list-item:last-of-type { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+ ul.cluster-list.how-section-list li, ul.how-section-list li { margin-bottom: 50px; }
+.icon-button-list li a { height: 100px; width: 138px; float: left; text-align: center; background-repeat: no-repeat; background-position: center bottom; }
+#home-button-list.icon-button-list li a { width: 150px; }
+.icon-button-list li a:hover { border: none;}
+
+
+#solutionsbtn { background-image: url(../img/imgbtns/solutions.png); }
+#dashboardbtn { background-image: url(../img/imgbtns/dashboard.png); }
+#securitybtn { background-image: url(../img/imgbtns/security.png); }
+#howbtn { background-image: url(../img/imgbtns/how.png); }
+#setupbtn { background-image: url(../img/imgbtns/setup.png); }
+#home-setupbtn { background-image: url(../img/imgbtns/home-setup.png); }
+#home-solutionsbtn { background-image: url(../img/imgbtns/home-solutions.png); }
+#home-privacybtn { background-image: url(../img/imgbtns/home-privacy.png); }
 
 
 
@@ -396,7 +418,7 @@ a.resumator-hide-details { display: inline !important; margin-left: 20px !import
 */
 
 .container	{ width: 960px; margin: 0 auto; padding: 0; }
-.colgroup:after, .cluster-list:after, .resumator-job:after, .separated:after, .container:after, section:after, #primary-nav:after, .row:after, .content-list-item:after	{ content: ''; display: block; clear: both; } /* Clearfix */
+.colgroup:after, .cluster-list:after, .resumator-job:after, .separated:after, .container:after, section:after, #primary-nav:after, .row:after, .content-list-item:after, .clearfix:after	{ content: ''; display: block; clear: both; } /* Clearfix */
 .col1, .col2, .col3, .col4, .col5, .col6, 
 .col7, .col8, .col9, .col10, .col11, .col12, .col-third-of-10, .col-half-of-9, .cluster-list li	{ margin-left: 15px; margin-right: 15px; float: left; min-height: 1px; z-index: 10; }
 .col1.merge-right, .col2.merge-right, .col3.merge-right, .col4.merge-right, .col5.merge-right, .col6.merge-right, .col-half-of-9.merge-right,
@@ -417,7 +439,7 @@ a.resumator-hide-details { display: inline !important; margin-left: 20px !import
 .col1 	{ width: 50px; }	.col1.merge-right, .subcontainer1 { width: 80px; }
 .col-third-of-10 { width: 236px; }
 .col-half-of-9 { width: 330px; }
-.merge-down { margin-bottom: -170px; margin-top: -20px; }
+.merge-down { margin-bottom: -170px; margin-top: 20px; /*margin-top: -20px; */}
 .merge-down-follower { padding-top: 25px; }
 .bump-up { margin-top: -35px; }
 .bump-left { margin-left: -75px; padding-right: 75px; }
@@ -429,7 +451,7 @@ a.resumator-hide-details { display: inline !important; margin-left: 20px !import
 .no-top-marg { margin-top: 0 !important; }
 .pull-right { float: right !important; }
 .fill-container { width: 100%; }
-
+.under-right { margin-right: -100%; } /* for floated elements, make them basically take up no space and allow content on their right to be placed ontop of them. */
 
 
 

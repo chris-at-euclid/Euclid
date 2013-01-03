@@ -1,24 +1,29 @@
 
 <div class="content featured-content-light">
   	<div class="container">
-	  	<div class="col7 merge-down">
-			<%= image_tag 'product.png' %>
+	  	<div id="homepage-product-img" class="col6 merge-down under-right">
+			<%= image_tag 'product.png', :width=>"355" %>
 	  	</div>
-	  	<div class="col5">
+	  	<div class="col6 featured-content-textarea pull-right">
 	  		<h1 class="">Google Analytics for the physical world</h1>
 	  		<p>Euclid Analytics delivers actionable insights into real-world shopper behavior. Measure and optimize customer traffic, loyalty, and engagement.</p>
-	  		<a href="" class="btn arrow-btn dark-btn">Learn More</a>
+	  		
+			<ul class="icon-button-list" id="home-button-list">
+				<li><%= link_to 'Actionable Insights', '/product/solutions.html', :id=>'home-solutionsbtn' %></li>
+				<li><%= link_to 'Easy Setup', '/product/how.html', :id=>'home-setupbtn' %></li>
+				<li><%= link_to 'Privacy Friendly', '/privacy/index.html', :id=>'home-privacybtn' %></li>
+			</ul>
 	  	</div>
 	</div>
 </div>
 <div class="content featured-content-light">
   	<div class="container">
-	  	<div class="col5 merge-down-follower">
+	  	<div class="col5 featured-content-textarea merge-down-follower under-right">
 	  		<h1 class="">Answer the toughest retail challenges</h1>
 	  		<p class="">Euclid Analytics delivers actionable insights into real-world shopper behavior. Measure and optimize customer traffic, loyalty, and engagement.</p>
 	  		<%= link_to 'See our Solutions', '/product/solutions.html', :class=>"btn arrow-btn dark-btn" %>
 	  	</div>
-	  	<div class="col7 bump-up">
+	  	<div class="col7 bump-up pull-right">
 			<%= image_tag 'solutions.png' %>
 	  	</div>
 	</div>
@@ -30,7 +35,7 @@
 		<div id="easy-wires-cord"></div>
 	</div>
   	<div class="container">
-	  	<div class="col5 pull-right">
+	  	<div class="col5 pull-right featured-content-textarea">
 	  		<h1 class="">Easy as 1, 2, go!</h1>
 	  		<p class="">Euclid Analytics delivers actionable insights into real-world shopper behavior. Measure and optimize. </p>
 	  		<%= link_to 'Learn More', '/product/how.html', :class=>"btn arrow-btn dark-btn" %>
@@ -44,13 +49,13 @@
 	  		<p>Euclid Analytics delivers actionable insights into real-world shopper behavior.</p>
 	  		<%= link_to 'Learn More', '/privacy/index.html', :class=>"btn arrow-btn dark-btn" %>
 	  	</div>
-	  	<div class="col7 bump-left"><%= image_tag 'privacy.png' %></div>
+	  	<div class="col7 bump-left"><%= image_tag 'privacy.png', :height=>'350' %></div>
 	</div>
 </div>
 
 <div class="content featured-content-grad">
   	<div class="container">
-	  	<div class="col12 large-text centered-text">
+	  	<div id="nrftext" class="col12 large-text centered-text">
 	  		Let's Talk! Meet us at NRF 2012.
 	  	</div>
 	</div>

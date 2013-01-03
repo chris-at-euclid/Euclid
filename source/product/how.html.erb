@@ -4,28 +4,37 @@
   		<h1 class="col9 separated">
   			How it works
   		</h1>
-  		
-  		<ul class="content-list">
-	  		<li class="content-list-item">
-	  			<%= image_tag 'headshots/jt.gif', :class=> 'col3 headshot' %>
-	  			<p class="col6">
-					Euclid Analytics uses small sensors to measure Wi-Fi “pings” that are broadcast by Wi-Fi enabled phones as they search for available networks. The phone does not actually need to be connected to a Wi-Fi network; it merely needs to be open to the idea. Our advanced heuristics use several different factors – including signal strength, ping frequency, and proximity to our sensors – to determine the approximate location of each phone. 
-	  			</p>
-	  		</li>
-	  		<li class="content-list-item">
-	  			<%= image_tag 'headshots/jt.gif', :class=> 'col3 headshot' %>
-	  			<p class="col6">
-	  				Each Euclid sensor is about the size of a deck of cards, installs in two minutes, and can cover up to 100,000 sq. ft. If you have existing Wi-Fi infrastructure from Aruba, Aerohive or Xirrus, you already have everything you need - your Wi-Fi access points can act as Euclid sensors. Because shoppers do not need to use your in-store Wi-Fi or install a mobile app, you can measure a large sample of your customers without interrupting their shopping experience.
-	  			</p>
-	  		</li>
-	  		<li class="content-list-item">
-	  			<%= image_tag 'headshots/jt.gif', :class=> 'col3 headshot' %>
-	  			<p class="col6">
-	  				The exact percentage of shoppers that will be measured depends a lot on the location of your store and the kinds of customers it attracts. Typically, we find that 40%-70% of all visitors are carrying a phone we can measure (Wi-Fi equipped and enabled). These figures are consistent with recent third-party research – in June 2012, Nielsen reported that 54.9% of US mobile subscribers already own a smartphone. Since smartphones now represent 2 out of 3 mobile phone purchases, the percentage of shoppers you can measure will only continue to grow.
-	  			</p>
-	  		</li>
-	  		
-	  	</ul>
+  		<div class="col3">
+  			<%= image_tag 'howitworks_flow.png' %>
+  		</div>
+  		<ul class="col6 pull-right how-section-list">
+
+  			<li>
+	  			<div class="sectionlabel">Shopper with smartphone walks by store</div>
+				<p>The exact percentage of shoppers that will be measured depends a lot on the location of your store and the kinds of customers it attracts. Typically, we find that 40%-70% of all visitors are carrying a phone we can measure (Wi-Fi equipped and enabled). These figures are consistent with recent third-party research – in June 2012, Nielsen reported that 54.9% of US mobile subscribers already own a smartphone. Since smartphones now represent 2 out of 3 mobile phone purchases, the percentage of shoppers you can measure will only continue to grow.</p>
+			</li>
+
+			<li>
+				<div class="sectionlabel">Smartphone broadcasts addresses over Wi-Fi</div>
+				<p>Euclid Analytics uses small sensors to measure Wi-Fi “pings” that are broadcast by Wi-Fi enabled phones as they search for available networks. The phone does not actually need to be connected to a Wi-Fi network; it merely needs to be open to the idea. Our advanced heuristics use several different factors – including signal strength, ping frequency, and proximity to our sensors – to determine the approximate location of each phone. </p>
+			</li>
+
+			<li>
+				<div class="sectionlabel">Euclid Senseor Records MAC address and sends it securely to the cload</div>
+				<p>Each Euclid sensor is about the size of a deck of cards, installs in two minutes, and can cover up to 100,000 sq. ft. If you have existing Wi-Fi infrastructure from Aruba, Aerohive or Xirrus, you already have everything you need - your Wi-Fi access points can act as Euclid sensors. Because shoppers do not need to use your in-store Wi-Fi or install a mobile app, you can measure a large sample of your customers without interrupting their shopping experience.</p>
+			</li>
+			<li class="sectionlabel how-section">Euclid scrambles MAC address for privacy and securely stores the new identifier</li>
+
+			<li class="sectionlabel how-section">Retailer views aggregate, anonymous reports in Euclid Analytics dashboard</li>
+
+  		</div>
+
+
+
+
+
+
+
   	</div>
   </div>
 </section> 
