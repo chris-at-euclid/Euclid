@@ -1,10 +1,10 @@
 <% content_for :pagehead do %>
 <div class="content featured-content-grad">
 	<div class="container">
-		<div class="col7 merge-down">
-				<%= image_tag 'product.png' %>
+		<div class="col8 merge-down">
+				<%= image_tag 'product.png', :class=> 'pull-right' %>
 		</div>
-		<div class="col5">
+		<div class="col4">
 			<h1>Measure better, manage better</h1>
 			<p>The Dashboard is the heart of Euclid Analytics. This is where you can track key metrics, compare performance across stores, regions, and time, and evaluate the impact of your activities. </p>
 		</div>
@@ -16,39 +16,35 @@
 <div class="content featured-content-light no-pad">
   <div class="container">
   	<div class="subcontainer9 pull-right subsection">
-  		<div class="col3 separated">
-  			<h3>Track KPIs</h3>
-  			<p>When you log into your Dashboard, you get a high-level overview of your KPI performance. You can customize this view to show you the stores and metrics that are most important to you.</p>
-  		</div>
-  		<div class="col6">
-  			<a href="../../img/product/KPI.png" title="Image caption" class="lightbox"><%= image_tag 'product/KPI.png', :class=> 'shadowed' %></a>
-  		</div>
+  			<a href="../../img/product/KPI.png" title="Track KPIs" class="lightbox col3 no-hover"><%= image_tag 'product/KPI.png', :class=> 'shadowed fill-container' %>
+          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>
+      <div class="col6 separated">
+        <div class="sectionlabel">Track KPIs</div>
+        <p>When you log into your Dashboard, you get a high-level overview of your KPI performance. You can customize this view to show you the stores and metrics that are most important to you.</p>
+      </div>
   	</div>
   	<div class="subcontainer9 subsection pull-right">
-  		<div class="col3 separated">
-  			<h3>Measure and compare</h3>
-  			<p>View detailed reports for every metric. For example, the Shopper Funnel report shows you how well you convert Outside Traffic into Engaged Visitors. Follow the funnel left to right and identify weak points in your shopping experience.</p>
-  		</div>
-  		<div class="col6">
-  			<%= image_tag 'product/funnel.png', :class=> 'shadowed' %>
-  		</div>
+  			<a href="../../img/product/funnel.png" title="Measure and compare" class="lightbox col3 no-hover"><%= image_tag 'product/funnel.png', :class=> 'shadowed fill-container' %>
+          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>
+      <div class="col6 separated">
+        <div class="sectionlabel">Measure and compare</div>
+        <p>View detailed reports for every metric. For example, the Shopper Funnel report shows you how well you convert Outside Traffic into Engaged Visitors. Follow the funnel left to right and identify weak points in your shopping experience.</p>
+      </div>
   	</div>
   	<div class="subcontainer9 subsection pull-right">
-  		<div class="col3 separated">
-  			<h3>Make smarter decisions</h3>
-  			<p>Built-in analysis tools highlight important insights without heavy lifting. The Test a Campaign tool, which harnesses powerful predictive analytics, can tell you if a boost in key metrics came from your activities or resulted from everyday fluctuations.</p>
-  		</div>
-  		<div class="col6">
-  			<%= image_tag 'product/campaign.png', :class=> 'shadowed' %>
-  		</div>
+        <a href="../../img/product/campaign.png" title="Make smarter decisions" class="lightbox col3 no-hover"><%= image_tag 'product/campaign.png', :class=> 'shadowed fill-container' %>
+          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>
+  		<div class="col6 separated">
+        <div class="sectionlabel">Make smarter decisions</div>
+        <p>Built-in analysis tools highlight important insights without heavy lifting. The Test a Campaign tool, which harnesses powerful predictive analytics, can tell you if a boost in key metrics came from your activities or resulted from everyday fluctuations.</p>
+      </div>
   	</div>
     <div class="subcontainer9 subsection pull-right">
-      <div class="col3">
-        <h3>Export and share</h3>
-        <p>Export Euclid metrics to your data warehouse for further analysis. Get reports sent to you automatically and share PDFs with your colleagues.</p>
-      </div>
+        <a href="../../img/product/campaign.png" title="Export and share" class="lightbox col3 no-hover"><%= image_tag 'product/campaign.png', :class=> 'shadowed fill-container' %>
+          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>
       <div class="col6">
-        <%= image_tag 'product/campaign.png', :class=> 'shadowed' %>
+        <div class="sectionlabel">Export and share</div>
+        <p>Export Euclid metrics to your data warehouse for further analysis. Get reports sent to you automatically and share PDFs with your colleagues.</p>
       </div>
     </div>
   </div>
@@ -59,10 +55,10 @@
   	
 
   	<div class="subcontainer9 pull-right">
-  		<div class="col9 sectionlabel">
+  		<h1 class="col9 no-bottom-marg">
   			Metrics
-  		</div>
-  		<h3 class="col9 separated">Euclid Analytics goes beyond traffic counting to provide a more complete picture of what’s happening inside your stores. Here are just a few of the real-world shopper metrics we provide:</h3>
+  		</h1>
+  		<div class="col9 large-text separated">Euclid Analytics goes beyond traffic counting to provide a more complete picture of what’s happening inside your stores. Here are just a few of the real-world shopper metrics we provide:</div>
   		<div class="colgroup separated">
   			<div class="col3">
   				<div class="sectionlabel">Capture Rate</div>
