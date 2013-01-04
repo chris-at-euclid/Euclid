@@ -31,22 +31,23 @@
 						else if(stickyTop < windowTop)
 							sticky.css({ position: 'fixed', top: settings['topPad'] });
 						else
-							reset();
+							reset(false);
 					}
 					var resizeFunction = function() {
 	     				var isTinyScreen = $(document).width() < 700;
 						if(!isTinyScreen && !isBound) {
 	     					$(window).bind('scroll', scrollFunction);
 	     					isBound = true;
+	     					scrollFunction(); //Execute once to get everything back to the correct positioning
 	     				}
 	     				else if(isTinyScreen && isBound) {
 	     					$(window).unbind('scroll', scrollFunction);
-	     					reset();
+	     					reset(true);
 	     					isBound = false;
 	     				}
 					}
-					var reset = function(){
-						if(!settings['remainFixed'])
+					var reset = function(isMobile){
+						if(!settings['remainFixed'] || isMobile)
 							sticky.css('position','static');
 						else {
 							sticky.css('top', originalTop);

@@ -1,8 +1,8 @@
 
-<div class="content featured-content-light">
+<div class="content featured-content-light banner" id="banner-home">
   	<div class="container">
 	  	<div id="homepage-product-img" class="col6 merge-down under-right">
-			<%= image_tag 'product.png', :width=>"355" %>
+			<%= image_tag 'product.png' %>
 	  	</div>
 	  	<div class="col6 featured-content-textarea pull-right">
 	  		<h1 class="">Google Analytics for the physical world</h1>
@@ -23,14 +23,14 @@
 	  		<p class="">Euclid Analytics delivers actionable insights into real-world shopper behavior. Measure and optimize customer traffic, loyalty, and engagement.</p>
 	  		<%= link_to 'See our Solutions', '/product/solutions.html', :class=>"btn arrow-btn dark-btn" %>
 	  	</div>
-	  	<div class="col7 bump-up pull-right">
+	  	<div class="col7 bump-up pull-right hide-on-mobile">
 			<%= image_tag 'solutions.png' %>
 	  	</div>
 	</div>
 </div>
 
 <div class="content featured-content-light">
-	<div id="easy-wires">
+	<div id="easy-wires" class="hide-on-mobile">
 		<%= image_tag 'IT_head.png' %>
 		<div id="easy-wires-cord"></div>
 	</div>
@@ -49,7 +49,7 @@
 	  		<p>Euclid Analytics delivers actionable insights into real-world shopper behavior.</p>
 	  		<%= link_to 'Learn More', '/privacy/index.html', :class=>"btn arrow-btn dark-btn" %>
 	  	</div>
-	  	<div class="col7 bump-left"><%= image_tag 'privacy.png', :height=>'350' %></div>
+	  	<div class="col7 bump-left hide-on-mobile"><%= image_tag 'privacy.png', :height=>'350' %></div>
 	</div>
 </div>
 
