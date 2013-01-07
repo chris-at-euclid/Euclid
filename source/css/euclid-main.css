@@ -180,7 +180,9 @@ nav li 	{ list-style: none; }
 }
 .featured-content-textarea { min-height: 350px !important; }
 .featured-content-textarea-inner { padding-top: 50px; padding-bottom: 50px; }
-.banner .featured-content-textarea { background-color: rgba(255, 255, 255, .85); padding-left: 30px; padding-right: 30px }
+.banner .featured-content-textarea { background-color: rgba(255, 255, 255, .85); }
+.banner .featured-content-textarea-inner { padding-left: 30px; padding-right: 30px }
+
 .featured-content-dark { background-color: #F2F2F2; }
 .subsection { padding-top: 50px; border-bottom: 1px solid #b2e0f6; overflow: hidden; }
 .subsection:last-of-type { border-bottom: none; } 
@@ -381,7 +383,7 @@ ul.no-bullet li, ul.cluster-list li, ul.how-section-list li { margin-bottom: 15p
 .icon-button-list li { display: inline-block; vertical-align: top; }
 .icon-button-list li a { height: 100px; width: 120px; display: inline-block; text-align: center; background-repeat: no-repeat; background-position: center bottom; }
 #home-button-list.icon-button-list { margin-top: 50px; }
-#home-button-list.icon-button-list li a { width: 145px; }
+#home-button-list.icon-button-list li a { width: 125px; }
 .icon-button-list li a:hover { border: none;}
 .newrow { clear: both; }
 
@@ -506,20 +508,6 @@ a.resumator-hide-details { display: inline !important; margin-left: 20px !import
 	.newrow { clear: none; }
 
 }
-
-/* Two different break points for fixing the more rigid header/nav elements */
-@media all and (max-width: 699px) and (min-width: 480px) {
-
-
-}
-
-
-
-
-
-
-
-
 
 
 
