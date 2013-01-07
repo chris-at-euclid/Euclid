@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Euclid Analytics</title>
+        <title>Euclid Analytics<% if content_for?(:pagetitle) %> - <%= yield_content :pagetitle %><% end %></title>
         <meta property='description' content='Euclid Analytics gives you unprecedented insight into how your customers shop. Increase store traffic, improve customer loyalty, and grow your sales.'/>
         <meta name="viewport" content="width=device-width">
 
