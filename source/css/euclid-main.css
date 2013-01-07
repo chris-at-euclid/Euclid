@@ -180,7 +180,7 @@ nav li 	{ list-style: none; }
 }
 .featured-content-textarea { min-height: 350px !important; }
 .featured-content-textarea-inner { padding-top: 50px; padding-bottom: 50px; }
-.banner .featured-content-textarea { background-color: rgba(255, 255, 255, .85); }
+.banner .featured-content-textarea { background-color: #FFFFFF; background-color: rgba(255, 255, 255, .85); }
 .banner .featured-content-textarea-inner { padding-left: 30px; padding-right: 30px }
 
 .featured-content-dark { background-color: #F2F2F2; }
@@ -381,7 +381,7 @@ ul.no-bullet li, ul.cluster-list li, ul.how-section-list li { margin-bottom: 15p
  ul.cluster-list.how-section-list li, ul.how-section-list li { margin-bottom: 30px; }
 .icon-button-list { text-align: center; }
 .icon-button-list li { display: inline-block; vertical-align: top; }
-.icon-button-list li a { height: 100px; width: 120px; display: inline-block; text-align: center; background-repeat: no-repeat; background-position: center bottom; }
+.icon-button-list li a { height: 100px; width: 134px; display: inline-block; text-align: center; background-repeat: no-repeat; background-position: center bottom; }
 #home-button-list.icon-button-list { margin-top: 50px; }
 #home-button-list.icon-button-list li a { width: 125px; }
 .icon-button-list li a:hover { border: none;}
@@ -420,6 +420,8 @@ a.resumator-job-link { color: #0099E0 !important; }
 .resumator-job-description-text p { padding-left: 20px !important; padding-right: 20px !important; }
 a.resumator-hide-details { display: inline !important; margin-left: 20px !important; }
 .resumator-buttons input { margin-left: 20px !important;}
+a.resumator-hide-details { float: right; margin-right: 20px !important; margin-bottom: 1px !important; }
+a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 
 
 
