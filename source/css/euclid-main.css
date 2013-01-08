@@ -107,7 +107,8 @@ nav li 	{ list-style: none; }
 
 /* subnav */
 #subnav { position: absolute; float: left; padding-top: 50px; width: 160px; }
-#subnav ul { padding: 5px 15px 15px 15px; margin: 0; background-color: rgba(255, 255, 255, .85); }
+#subnav ul { padding: 5px 15px 15px 15px; margin: 0; background-color: rgba(255, 255, 255, .5); -webkit-transition: background-color 0.5s; -moz-transition: background-color 0.5s; -o-transition: background-color 0.5s; transition: background-color 0.5s;}
+#subnav ul:hover { background-color: rgba(255, 255, 255, .85); }
 #subnav li { border-bottom: 1px dotted #AAA; font-weight: bold; font-size: 13px; padding: 5px 0; color: #AAA; }
 #subnav li a { color: #AAA; font }
 #subnav li.selected a, #subnav li a:hover { color: #0099E0; }
@@ -180,15 +181,15 @@ nav li 	{ list-style: none; }
 }
 .featured-content-textarea { min-height: 350px !important; }
 .featured-content-textarea-inner { padding-top: 50px; padding-bottom: 50px; }
-.banner .featured-content-textarea { background-color: #FFFFFF; background-color: rgba(255, 255, 255, .85); }
+.banner .featured-content-textarea { background-color: #FFFFFF; background-color: rgba(255, 255, 255, .5); }
 .banner .featured-content-textarea-inner { padding-left: 30px; padding-right: 30px }
 
 .featured-content-dark { background-color: #F2F2F2; }
 .subsection { padding-top: 50px; border-bottom: 1px solid #b2e0f6; overflow: hidden; }
 .subsection:last-of-type { border-bottom: none; } 
 
-.featured-content-nav { margin-bottom: -20px; }
-.featured-content-nav a { width: 230px; padding-right: 0 !important; padding-left: 0 !important; }
+.featured-content-nav { position: absolute; margin-top: -40px; }
+.featured-content-nav a { /*width: 230px; */ padding-right: 0 !important; padding-left: 0 !important; }
 
 #about-content { float: right; } /* Special case - new a sub container to float next to subnavbar. Maybe find a better way to do this? subcontainer class? */
 
@@ -384,7 +385,7 @@ ul.no-bullet li, ul.cluster-list li, ul.how-section-list li { margin-bottom: 15p
 .icon-button-list li { display: inline-block; vertical-align: top; }
 .icon-button-list li a { height: 100px; width: 110px; margin-left: 12px; margin-right: 12px; padding-top: 0; display: inline-block; text-align: center; background-repeat: no-repeat; background-position: center top; }
 .icon-button-list li a:hover { color: #0099E0; }
-#home-button-list.icon-button-list { margin-top: 38px; }
+#home-button-list.icon-button-list { margin-top: 38px; margin-bottom: 0;}
 #home-button-list.icon-button-list li a { margin-left: 7px; margin-right: 7px; }
 .icon-button-list li a:hover { border: none;}
 .newrow { clear: both; }
@@ -523,8 +524,8 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 #banner-about { min-height: 200px; background-size: cover; background-image: url(../img/banners/about.jpg); }
 #banner-careers { min-height: 200px; background-size: cover; background-position: right center; background-image: url(../img/banners/careers.png); }
 #banner-home { min-height: 200px;background-position: center center; background-image: url(../img/banners/home.png); }
-#banner-solutions { min-height: 200px; background-size: cover; background-position: right top; background-image: url(../img/banners/solutions.png); }
+#banner-solutions { min-height: 200px; background-position: center center; background-image: url(../img/banners/solutions.png); }
 
 @media all and (min-width: 1400px) {
-	#banner-home { background-size: cover; }
+	#banner-home, #banner-solutions { background-size: cover; }
 }
