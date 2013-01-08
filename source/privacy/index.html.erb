@@ -3,7 +3,7 @@
 
 <section class="content featured-content-grad no-pad">
   	<div class="container colgroup">
-	  	<div class="col6 bump-left under-right"><%= image_tag 'privacy.png', :height=>'350' %></div>
+	  	<div class="col6 bump-left under-right hide-on-mobile"><%= image_tag 'privacy.png', :height=>'350' %></div>
 	  	<div class="col6  featured-content-textarea light-text pull-right">
 	  		<div class="featured-content-textarea-inner">
 	  			<h1>Euclid’s commitment to privacy</h1>
@@ -42,7 +42,7 @@
 	  			<div class="col6">
 	  				<div class="content-list-item-title sectionlabel">Easy opt-out and delete</div>
 	  				<p>Shoppers who have any concerns can easily opt out and delete any existing data from our service by clicking the button below. We also provide opt-out instructions at every store that uses our service.</p>
-	  				<button class="btn dark-btn">OPT-OUT</button>
+	  				<%= link_to_signupsite('optout', 'Opt-out', 'btn dark-btn') %>
 	  			</div>
 	  		</li>
 	  	</ul>
