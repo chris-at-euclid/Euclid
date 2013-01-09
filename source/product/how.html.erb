@@ -2,10 +2,12 @@
 <section class="content">
   <div class="container">
   	<div class="subcontainer9  pull-right">
-  		<h1 class="col9 separated">
-  			Easy to implement and scale
-  		</h1>
-  		<p class=" large-text">Euclid Analytics is the easiest way to measure real-world shopper behavior at all of your stores. Here's how it works:</p>
+  		<div  class="col9 separated">
+	  		<h1>
+	  			Easy to implement and scale
+	  		</h1>
+	  		<p class=" large-text">Euclid Analytics is the easiest way to measure real-world shopper behavior at all of your stores. Here's how it works:</p>
+	  	</div>
   		<div class="col3 hide-on-mobile">
   			<%= image_tag 'howitworks_flow.png' %>
   		</div>
@@ -15,20 +17,22 @@
 	  			<div class="sectionlabel">Shopper with smartphone approaches your store</div>
 				<p>Euclid Analytics measures the behavior of all your shoppers that are carrying a Wi-Fi enabled smartphone. Typically, this is 40-70% of your shoppers, depending on the business and location.</p>
 			</li>
-
 			<li>
 				<div class="sectionlabel">Smartphone broadcasts Wi-Fi pings</div>
 				<p>Smartphones constantly send out short "pings" as they search for Wi-Fi networks nearby. These pings include the phone's MAC address (a unique identifier associated with a specific device) and other non-personal information like signal strength that we use to determine rough location.</p>
 			</li>
-
 			<li>
 				<div class="sectionlabel">Euclid records Wi-Fi pings and sends them to the cloud</div>
 				<p>Using your existing Wi-Fi infrastructure or our compact plug-and-play sensor, we record pings and send them to the cloud. For privacy, we scramble each MAC address using a one-way hashing algorithm. Because shoppers don't need to actually connect to your Wi-Fi network or install a mobile app, you can measure their activity without interrupting their shopping experience. </p>
 			</li>
-			<li class="sectionlabel how-section">Euclid processes and stores data</li>
-<p>Our advanced heuristics extract actionable insights from the data and store them in Amazon's highly secure datacenters.</p>
-			<li class="sectionlabel how-section">Retailer receives analytics via web and email</li>
-			<p>Use our web-based Dashboard and scheduled email reports to measure and optimize your business. Learn more about the Dashboard</p>
+			<li>
+				<div class="sectionlabel how-section">Euclid processes and stores data</div>
+				<p>Our advanced heuristics extract actionable insights from the data and store them in Amazon's highly secure datacenters.</p>
+			</li>
+			<li> 
+				<div class="sectionlabel how-section">Retailer receives analytics via web and email</div>
+				<p>Use our web-based Dashboard and scheduled email reports to measure and optimize your business. <br><%= link_to 'Learn more about the Dashboard', '/product/dashboard.html' %></p>
+			</li>
   		</div>
 
 
