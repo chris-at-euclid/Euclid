@@ -272,7 +272,7 @@ p:last-of-type { margin-bottom: 0; }
 h1.separated { margin-bottom: 50px; }
 .indent { padding-left: 20px;}
 
-.magnify { margin: 10px; }
+.magnify { margin: -50px 10px 10px 10px; }
 
 
 
@@ -380,10 +380,11 @@ form.defForm.contactForm {  }
 .content-list { margin-bottom: 100px; } 
 .content-list, .content-list-item, ul.no-bullet, ul.no-bullet li, ul.cluster-list, ul.how-section-list, ul.how-section-list li, ul.icon-button-list, ul.icon-button-list li { list-style: none; padding-left: 0; padding-top: 0;}
 ul.how-section-list { margin-top: 0; }
-ul.no-bullet li, ul.cluster-list li, ul.how-section-list li { margin-bottom: 15px; }
+ul.no-bullet li, ul.cluster-list li { margin-bottom: 15px; }
+ul.how-section-list li { margin-bottom: 25px; }
 .content-list-item { margin: 40px 0; padding-bottom: 40px; }
 .content-list .content-list-item:last-of-type { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
- ul.cluster-list.how-section-list li, ul.how-section-list li { margin-bottom: 30px; }
+ ul.cluster-list.how-section-list li, ul.how-section-list li { margin-bottom: 50px; }
 .icon-button-list { text-align: center; }
 .icon-button-list li { display: inline-block; vertical-align: top; }
 .icon-button-list li a { height: 100px; width: 114px; padding-top: 0; margin-left: 10px; margin-right: 10px;  display: inline-block; text-align: center; background-repeat: no-repeat; background-position: left top; }
