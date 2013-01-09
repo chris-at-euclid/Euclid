@@ -389,7 +389,7 @@ ul.how-section-list li { margin-bottom: 25px; }
 .icon-button-list li { display: inline-block; vertical-align: top; }
 .icon-button-list li a { height: 100px; width: 114px; padding-top: 0; margin-left: 10px; margin-right: 10px;  display: inline-block; text-align: center; background-repeat: no-repeat; background-position: left top; }
 .icon-button-list li a:hover { color: #0099E0; background-position: right top; }
-#home-button-list.icon-button-list { margin-top: 38px; margin-bottom: 0; }
+#home-button-list.icon-button-list { margin-top: 30px; margin-bottom: -20px; }
 #home-button-list.icon-button-list li a {  width: 110px; margin-left: 7px; margin-right: 7px; }
 .icon-button-list li a:hover { border: none;}
 .newrow { clear: both; }
