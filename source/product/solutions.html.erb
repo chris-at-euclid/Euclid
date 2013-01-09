@@ -1,6 +1,6 @@
 <% content_for :pagetitle do %>Solutions<% end %>
 <% content_for :pagehead do %>
-<div class="content featured-content-grad banner" id="banner-solutions">
+<div class="content featured-content-grad banner marketing-tab" id="banner-solutions">
   <div class="container">
     <div class="subcontainer6 featured-content-textarea pull-right">
       <div class="featured-content-textarea-inner">
@@ -27,27 +27,53 @@
       <li id="marketing-tab">
         <ul>
           <li class="colgroup separated ">
-            <%= image_tag 'product/KPI.png', :class=> 'col3' %>
+            <%= image_tag 'solutions/marketing-1.png', :class=> 'col3 shadowed' %>
             <div class="col6">Did my marketing promotion really increase store traffic? Or was it the result of macro factors outside the store? WIth Outside Traffic and Capture Rate metrics, you can judge whether your actions made a difference.</div>
           </li>
           <li class="colgroup separated ">
-            <%= image_tag 'product/KPI.png', :class=> 'col-half-of-9' %>
-            <div class="col-half-of-9">Are my direct mail campaigns encouraging repeat traffic? Check the Repeat Visit Ratio of your stores to see if you’re increasing the share of repeat customer visits.</div>
+            <%= image_tag 'solutions/marketing-2.png', :class=> 'col3 shadowed' %>
+            <div class="col6">Are my direct mail campaigns encouraging repeat traffic? Check the Repeat Visit Ratio of your stores to see if you’re increasing the share of repeat customer visits.</div>
           </li>
           <li class="colgroup separated ">
-            <%= image_tag 'product/KPI.png', :class=> 'col-half-of-9' %>
-            <div class="col-half-of-9">How loyal are my existing customers? Use the distribution of Visit Frequency and Visit Recency to segment your customers.</div>
+            <%= image_tag 'solutions/marketing-3.png', :class=> 'col3 shadowed' %>
+            <div class="col6">How loyal are my existing customers? Use the distribution of Visit Frequency and Visit Recency to segment your customers.</div>
           </li>
         </ul>
       </li>
       <li id="merchandising-tab" class="hide">
         <ul>
-          <li>hiii</li>
+          <li class="colgroup separated ">
+            <%= image_tag 'solutions/merch-1.png', :class=> 'col3 shadowed' %>
+            <div class="col6">Are my window displays effectively drawing shoppers into the store? Compare the Capture Rate before and after installing the display</div>
+          </li>
+          <li class="colgroup separated ">
+            <%= image_tag 'solutions/merch-2.png', :class=> 'col3 shadowed' %>
+            <div class="col6">Do my floor sets engage customers as soon as they walk in the store? Check your Engagement Rate and Bounce Rate, which tell you whether customers are sticking around or walking away.</div>
+          </li>
+          <li class="colgroup separated ">
+            <%= image_tag 'solutions/merch-3.png', :class=> 'col3 shadowed' %>
+            <div class="col6">How often should I refresh my in-store displays? A significant decline in Visit Duration could mean it’s time for a new look.</div>
+          </li>
         </ul>
       </li>
       <li id="operations-tab" class="hide">
         <ul>
-          <li>hiiiiiiiiiiiii</li>
+          <li class="colgroup separated ">
+            <%= image_tag 'solutions/ops-1.png', :class=> 'col3 shadowed' %>
+            <div class="col6">Are my outlets cannibalizing from my mainline stores? Euclid’s exclusive cross-shopping analysis tells you how many customers shop at both kinds of stores in the same month.</div>
+          </li>
+          <li class="colgroup separated ">
+            <%= image_tag 'solutions/ops-2.png', :class=> 'col3 shadowed' %>
+            <div class="col6">Should I extend my business hours? The Walkby metric tells you how many people pass by the store after hours, so you can see if you’re missing out on potential business.</div>
+          </li>
+          <li class="colgroup separated ">
+            <%= image_tag 'solutions/ops-3.png', :class=> 'col3 shadowed' %>
+            <div class="col6">How much labor should I put on the floor? Look at shopper minutes per hour to identify the most congested times of the day.</div>
+          </li>
+          <li class="colgroup separated ">
+            <%= image_tag 'solutions/ops-4.png', :class=> 'col3 shadowed' %>
+            <div class="col6">How much does seasonality affect my business? Don’t just measure traffic trends - look at the seasonal effect on Visit Duration, Visit Frequency, and Outside Traffic. </div>
+          </li>
         </ul>
       </li>
     </ul>
@@ -61,6 +87,8 @@
     $(this).addClass('selected');
     $("#tabs > li").addClass('hide');
     $("#" + $(this).attr('data-target')).removeClass('hide');
+    $("#banner-solutions").removeClass("marketing-tab").removeClass("merchandising-tab").removeClass("operations-tab").addClass($(this).attr('data-target'));
+
   })
 </script>
 

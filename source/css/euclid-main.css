@@ -107,8 +107,8 @@ nav li 	{ list-style: none; }
 
 /* subnav */
 #subnav { position: absolute; float: left; padding-top: 50px; width: 160px; }
-#subnav ul { padding: 5px 15px 15px 15px; margin: 0; background-color: rgba(255, 255, 255, .5); -webkit-transition: background-color 0.5s; -moz-transition: background-color 0.5s; -o-transition: background-color 0.5s; transition: background-color 0.5s;}
-#subnav ul:hover { background-color: rgba(255, 255, 255, .85); }
+#subnav ul { padding: 5px 15px 15px 15px; margin: 0; background-color: rgba(255, 255, 255, .3); -webkit-transition: background-color 0.5s; -moz-transition: background-color 0.5s; -o-transition: background-color 0.5s; transition: background-color 0.5s;}
+#subnav ul:hover { background-color: rgba(255, 255, 255, .85); -webkit-transition: background-color 0.3s; -moz-transition: background-color 0.3s; -o-transition: background-color 0.3s; transition: background-color 0.3s;}
 #subnav li { border-bottom: 1px dotted #AAA; font-weight: bold; font-size: 13px; padding: 5px 0; color: #AAA; }
 #subnav li a { color: #AAA; font }
 #subnav li.selected a, #subnav li a:hover { color: #0099E0; }
@@ -181,7 +181,7 @@ nav li 	{ list-style: none; }
 }
 .featured-content-textarea { min-height: 350px !important; }
 .featured-content-textarea-inner { padding-top: 50px; padding-bottom: 50px; }
-.banner .featured-content-textarea { background-color: #FFFFFF; background-color: rgba(255, 255, 255, .5); }
+.banner .featured-content-textarea { background-color: #FFFFFF; background-color: rgba(255, 255, 255, .85); }
 .banner .featured-content-textarea-inner { padding-left: 30px; padding-right: 30px }
 
 .featured-content-dark { background-color: #F2F2F2; }
@@ -189,7 +189,8 @@ nav li 	{ list-style: none; }
 .subsection:last-of-type { border-bottom: none; } 
 
 .featured-content-nav { position: absolute; margin-top: -40px; }
-.featured-content-nav a { /*width: 230px; */ padding-right: 0 !important; padding-left: 0 !important; }
+.featured-content-nav a { padding-right: 0 !important; padding-left: 0 !important; color: #575757; }
+.featured-content-nav a:hover { color: #0099E0; }
 
 #about-content { float: right; } /* Special case - new a sub container to float next to subnavbar. Maybe find a better way to do this? subcontainer class? */
 
@@ -485,7 +486,7 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 	.col1, .col2, .col3, .col4, .col5, .col6, 
 	.col7, .col8, .col9, .col10, .col11, .col12, .col-third-of-10	{ margin-left: 2%; margin-right: 2%; }
 	.col12, .col11, .col10, .col9, .col8, .col7, .col6, .col5, .col4, .col-half-of-9	{ width: 96%; overflow: hidden; margin-top: 2%; margin-bottom: 2%; }	/* Subcontainer 12 would just be a regular container... */
-	.subcontainer11, .subcontainer10, .subcontainer9, .subcontainer8, .subcontainer7  { width: 100%; }
+	.subcontainer11, .subcontainer10, .subcontainer9, .subcontainer8, .subcontainer7, .subcontainer6  { width: 100%; }
 	.col-third-of-10 { width: 46%; } /* turn it into two cols with third being a full col */
 	.col-third-of-10:nth-child(3n+3) { width: 96%; }
 	.featured-content-textarea { /*padding-right: 0; padding-left: 0;*/ box-sizing: border-box; min-height: 150px !important; }
@@ -501,7 +502,7 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 	#subnav ul:after { display:block; content: ''; clear: both; }
 	#subnav li { display: inline; margin-right: 20px; border: none;}
 
-	.featured-content-nav { margin-top: 0; margin-bottom: 0; }
+	.featured-content-nav { margin-top: 0; margin-bottom: 0; position: static;}
 	.featured-content-nav a { width: 100%; } 
 
 	#homepage-product-img { position: static; margin-top: 20px; margin-bottom: 0; text-align: center; } #homepage-product-img  img { width: 50%; }
@@ -509,6 +510,8 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 	.hide-on-mobile { display: none; }
 
 	.newrow { clear: none; }
+
+	#banner-home, #banner-solutions { background-size: cover; }
 
 }
 
@@ -524,7 +527,10 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 #banner-about { min-height: 200px; background-size: cover; background-image: url(../img/banners/about.jpg); }
 #banner-careers { min-height: 200px; background-size: cover; background-position: right center; background-image: url(../img/banners/careers.png); }
 #banner-home { min-height: 200px;background-position: center center; background-image: url(../img/banners/home.png); }
-#banner-solutions { min-height: 200px; background-position: center center; background-image: url(../img/banners/solutions.png); }
+#banner-solutions { min-height: 200px; background-position: center center; }
+#banner-solutions.marketing-tab { background-image: url(../img/banners/solutions-marketing.png); }
+#banner-solutions.merchandising-tab { background-image: url(../img/banners/solutions-merch.png); }
+#banner-solutions.operations-tab { background-image: url(../img/banners/solutions-operations.png); }
 
 @media all and (min-width: 1400px) {
 	#banner-home, #banner-solutions { background-size: cover; }
