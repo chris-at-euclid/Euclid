@@ -108,7 +108,7 @@ nav li 	{ list-style: none; }
 /* subnav */
 #subnav { position: absolute; float: left; padding-top: 50px; width: 160px; }
 #subnav ul { padding: 5px 15px 15px 15px; margin: 0; background-color: rgba(255, 255, 255, .3); -webkit-transition: background-color 0.5s; -moz-transition: background-color 0.5s; -o-transition: background-color 0.5s; transition: background-color 0.5s;}
-#subnav ul:hover { background-color: rgba(255, 255, 255, .85); -webkit-transition: background-color 0.3s; -moz-transition: background-color 0.3s; -o-transition: background-color 0.3s; transition: background-color 0.3s;}
+#subnav ul:hover { background-color: rgba(255, 255, 255, .9); -webkit-transition: background-color 0.2s; -moz-transition: background-color 0.2s; -o-transition: background-color 0.2s; transition: background-color 0.2s;}
 #subnav li { border-bottom: 1px dotted #AAA; font-weight: bold; font-size: 13px; padding: 5px 0; color: #AAA; }
 #subnav li a { color: #AAA; font }
 #subnav li.selected a, #subnav li a:hover { color: #0099E0; }
@@ -146,6 +146,7 @@ nav li 	{ list-style: none; }
 	position: absolute;
 	left: 0;
 	width: 50%;
+	margin-top: 50px;
 }
 #easy-wires img, #easy-wires-cord { height: 202px; }
 #easy-wires img { float: right; }
@@ -170,21 +171,22 @@ nav li 	{ list-style: none; }
 .primary-content {
 	background-image: url(../img/content-bg.png);
 }
-.content.featured-content-grad, .content.featured-content-light { border-bottom: 1px solid #b2e0f6; padding: 0; }
+.content.featured-content-grad, .featured-content-dark, .content.featured-content-light { border-bottom: 1px solid #b2e0f6; padding: 0; }
 .featured-content-grad { 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#ECECEC));
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #ECECEC); 
+	background-image:    -moz-linear-gradient(top, #FFFFFF, #ECECEC);
+	background-image:     -ms-linear-gradient(top, #FFFFFF, #ECECEC);
+	background-image:      -o-linear-gradient(top, #FFFFFF, #ECECEC);
+}
+.featured-content-dark { 
 	background-color: #F3F3F3; 
-	/*background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#F2F2F2));
-	background-image: -webkit-linear-gradient(top, #FFFFFF, #F2F2F2); 
-	background-image:    -moz-linear-gradient(top, #FFFFFF, #F2F2F2);
-	background-image:     -ms-linear-gradient(top, #FFFFFF, #F2F2F2);
-	background-image:      -o-linear-gradient(top, #FFFFFF, #F2F2F2);*/
 }
 .featured-content-textarea { min-height: 350px !important; }
 .featured-content-textarea-inner { padding-top: 50px; padding-bottom: 50px; }
 .banner .featured-content-textarea { background-color: #FFFFFF; background-color: rgba(255, 255, 255, .85); }
 .banner .featured-content-textarea-inner { padding-left: 30px; padding-right: 30px }
 
-.featured-content-dark { background-color: #F2F2F2; }
 .subsection { padding-top: 50px; border-bottom: 1px solid #b2e0f6; overflow: hidden; }
 .subsection:last-of-type { border-bottom: none; } 
 
@@ -376,7 +378,7 @@ form.defForm.contactForm {  }
 */
 
 .content-list { margin-bottom: 100px; } 
-.content-list, .content-list-item, ul.no-bullet, ul.no-bullet li, ul.cluster-list, ul.how-section-list, ul.how-section-list li, ul.icon-button-list, ul.icon-button-list li { list-style: none; padding-left: 0; padding-top: 10px;}
+.content-list, .content-list-item, ul.no-bullet, ul.no-bullet li, ul.cluster-list, ul.how-section-list, ul.how-section-list li, ul.icon-button-list, ul.icon-button-list li { list-style: none; padding-left: 0; padding-top: 0;}
 ul.how-section-list { margin-top: 0; }
 ul.no-bullet li, ul.cluster-list li, ul.how-section-list li { margin-bottom: 15px; }
 .content-list-item { margin: 40px 0; padding-bottom: 40px; }
@@ -384,21 +386,31 @@ ul.no-bullet li, ul.cluster-list li, ul.how-section-list li { margin-bottom: 15p
  ul.cluster-list.how-section-list li, ul.how-section-list li { margin-bottom: 30px; }
 .icon-button-list { text-align: center; }
 .icon-button-list li { display: inline-block; vertical-align: top; }
-.icon-button-list li a { height: 100px; width: 110px; margin-left: 12px; margin-right: 12px; padding-top: 0; display: inline-block; text-align: center; background-repeat: no-repeat; background-position: center top; }
-.icon-button-list li a:hover { color: #0099E0; }
-#home-button-list.icon-button-list { margin-top: 38px; margin-bottom: 0;}
-#home-button-list.icon-button-list li a { margin-left: 7px; margin-right: 7px; }
+.icon-button-list li a { height: 100px; width: 114px; padding-top: 0; margin-left: 10px; margin-right: 10px;  display: inline-block; text-align: center; background-repeat: no-repeat; background-position: left top; }
+.icon-button-list li a:hover { color: #0099E0; background-position: right top; }
+#home-button-list.icon-button-list { margin-top: 38px; margin-bottom: 0; }
+#home-button-list.icon-button-list li a {  width: 110px; margin-left: 7px; margin-right: 7px; }
 .icon-button-list li a:hover { border: none;}
 .newrow { clear: both; }
 
 
+#dashboardbtn { background-image: url(../img/imgbtns/dashboard.png); } 
+#securitybtn { background-image: url(../img/imgbtns/security.png); }
+#howbtn { background-image: url(../img/imgbtns/how.png); }
+#home-setupbtn { background-image: url(../img/imgbtns/setup.png); } 
+#setupbtn { background-image: url(../img/imgbtns/product_setup.png); } 
+#solutionsbtn { background-image: url(../img/imgbtns/product_insight.png); } 
+#home-solutionsbtn { background-image: url(../img/imgbtns/insight.png); }
+#home-privacybtn { background-image: url(../img/imgbtns/privacy.png); }
+
+/*
 #dashboardbtn { background-image: url(../img/imgbtns/dashboard_default.png); } #dashboardbtn:hover { background-image: url(../img/imgbtns/dashboard_hover.png); }
 #securitybtn { background-image: url(../img/imgbtns/security_default.png); } #securitybtn:hover { background-image: url(../img/imgbtns/security_hover.png); }
 #howbtn { background-image: url(../img/imgbtns/how_default.png); } #howbtn:hover { background-image: url(../img/imgbtns/how_hover.png); }
 #setupbtn, #home-setupbtn { background-image: url(../img/imgbtns/setup_default.png); } #setupbtn:hover, #home-setupbtn:hover { background-image: url(../img/imgbtns/setup_hover.png); }
 #solutionsbtn, #home-solutionsbtn { background-image: url(../img/imgbtns/insight_default.png); } #solutionsbtn:hover, #home-solutionsbtn:hover { background-image: url(../img/imgbtns/insight_hover.png); }
 #home-privacybtn { background-image: url(../img/imgbtns/privacy_default.png); } #home-privacybtn:hover { background-image: url(../img/imgbtns/privacy_hover.png); }
-
+*/
 
 
 
