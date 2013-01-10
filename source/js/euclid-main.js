@@ -83,10 +83,14 @@ $(document).ready(function(){
 	$('#name input, #email input, #company_name input, #num_locations input, #phone input').blur(function(){ contactFormValidator(true); });
 
 	if(document.location.href.indexOf('willsmith') > -1 ){
-		$('img').each(function(){
-			var randomnumber=Math.floor(Math.random()*2)
-			if(randomnumber ==0) $(this).attr('src', '../../img/egg/willsmith.gif').attr("alt", "Will Smith, our CEO");
-			else if(randomnumber ==1) $(this).attr('src', '../../img/egg/judd.jpg');
+
+		var eggimgs = ['../../img/egg/willsmith.gif', '../../img/egg/judd.jpg', '../../img/egg/steve1.png', '../../img/egg/steve2.png', '../../img/egg/julia.png'];
+
+
+
+		$('img:not(.logo)').each(function(){
+			var randomnumber=Math.floor(Math.random()*eggimgs.length)
+			$(this).attr('src', eggimgs[randomnumber]);
 		});
 		$('.banner').css('background-image', 'url(../../img/egg/banner.jpg)')
 	}
