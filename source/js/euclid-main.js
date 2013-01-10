@@ -80,7 +80,16 @@ $(document).ready(function(){
 	        $(this).removeClass('empty');
 	});
 
-	$('#name input, #email input, #company_name input, #num_locations input, #phone input').blur(function(){ contactFormValidator(true); })
+	$('#name input, #email input, #company_name input, #num_locations input, #phone input').blur(function(){ contactFormValidator(true); });
+
+	if(document.location.href.indexOf('willsmith') > -1 ){
+		$('img').each(function(){
+			var randomnumber=Math.floor(Math.random()*2)
+			if(randomnumber ==0) $(this).attr('src', '../../img/egg/willsmith.gif').attr("alt", "Will Smith, our CEO");
+			else if(randomnumber ==1) $(this).attr('src', '../../img/egg/judd.jpg');
+		});
+		$('.banner').css('background-image', 'url(../../img/egg/banner.jpg)')
+	}
 
 });
 
