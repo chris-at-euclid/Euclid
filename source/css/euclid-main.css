@@ -549,10 +549,10 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 #banner-solutions.operations-tab { background-image: url(../img/banners/solutions-operations.png); }
 
 @media all and (min-width: 1200px) {
-	#banner-home, #banner-solutions { background-size: cover; }
+	#banner-home, #banner-solutions, #banner-about { background-size: cover; }
 }
 @media all and (min-width: 1400px) {
-	#banner-careers, #banner-about { background-size: cover; }
+	#banner-careers { background-size: cover; }
 }
 
 
