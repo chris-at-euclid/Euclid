@@ -56,7 +56,11 @@ a:hover {
 	-o-transition: margin-left 2s; */
 }
 .arrow-btn:hover:before { margin-left: 12px; margin-right: 0; }
-.linkedin-btn { width: 20px; height: 20px; } 
+.linkedin-btn img { 
+	width: 15px;
+	height: 15px;
+	vertical-align: baseline;
+} 
 
 
 .dark-box { 
