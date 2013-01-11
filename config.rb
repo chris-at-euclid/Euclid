@@ -60,6 +60,15 @@ helpers do
     request.path.start_with?(page) ? "selected" : "u"
   end
 
+  def page_class
+    class_str = request.path.split('/').first
+    if class_str == "" || class_str == "index.html"
+      class_str = "home"
+    end
+    class_str
+  end
+
+
   def link_to_signupsite(page, text, aclass)
     url = "https://euclid-signup-development.herokuapp.com/" + page
     "<a href='" + url + "' class='" + aclass + "'>" + text + "</a>"
