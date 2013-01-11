@@ -502,7 +502,7 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 
 	/* Make the grid flexible for anything under our full size */
 
-	body { min-width: 300px; }
+	body, body.home { min-width: 300px; }
 
 	.container	{ width: 100%; }
 	.col1, .col2, .col3, .col4, .col5, .col6, 
@@ -527,7 +527,7 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 	.featured-content-nav { margin-top: 0; margin-bottom: 0; position: static;}
 	.featured-content-nav a { width: 100%; } 
 
-	#homepage-product-img { position: static; margin-top: 20px; margin-bottom: 0; text-align: center; } #homepage-product-img  img { width: 50%; }
+	#homepage-product-img { position: static; margin-top: 20px; margin-bottom: 0; text-align: center; } /*#homepage-product-img  img { width: 50%; }*/
 
 	.hide-on-mobile { display: none; }
 
