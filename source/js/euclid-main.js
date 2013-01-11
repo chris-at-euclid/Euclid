@@ -95,6 +95,12 @@ $(document).ready(function(){
 		$('.banner').css('background-image', 'url(../../img/egg/banner.jpg)')
 	}
 
+	//preload imgs. just add <img src="" class="preload" data-pathtoimg="PATH HERE" /> to the page
+	$('.preload').each(function(){
+	    var me = $(this);
+	    me.attr('src', me.attr('data-pathtoimg'));
+	});
+
 });
 
 

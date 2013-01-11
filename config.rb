@@ -70,7 +70,7 @@ helpers do
 
 
   def link_to_signupsite(page, text, aclass)
-    url = "https://euclid-signup-production.herokuapp.com/" + page
+    url = "https://signup.euclidanalytics.com/" + page
     "<a href='" + url + "' class='" + aclass + "'>" + text + "</a>"
   end
 

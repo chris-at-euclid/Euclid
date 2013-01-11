@@ -16,6 +16,8 @@ body {
 
 body.home { min-width: 1090px; }
 
+.preload { display: none; }
+
 .content p { margin-bottom: 1em; }
 a {
 	text-decoration: none;
@@ -110,10 +112,10 @@ nav li 	{ list-style: none; }
 
 /* subnav */
 #subnav { position: absolute; float: left; padding-top: 50px; width: 160px; }
-#subnav ul { padding: 5px 15px 15px 15px; margin: 0; background-image: url(../img/ie/transparent_BG)\9; background-color: rgba(255, 255, 255, .3); -webkit-transition: background-color 0.5s; -moz-transition: background-color 0.5s; -o-transition: background-color 0.5s; transition: background-color 0.5s;}
-#subnav ul:hover {  background-image: url(../img/ie/transparent_BG)\9; background-color: rgba(255, 255, 255, .9); -webkit-transition: background-color 0.2s; -moz-transition: background-color 0.2s; -o-transition: background-color 0.2s; transition: background-color 0.2s;}
-#subnav li { border-bottom: 1px dotted #AAA; font-weight: bold; font-size: 13px; padding: 5px 0; color: #AAA; }
-#subnav li a { color: #AAA; font }
+#subnav ul { padding: 5px 15px 15px 15px; margin: 0; background-image: url(../img/ie/transparent_BG)\9; background-color: rgba(255, 255, 255, .5); -webkit-transition: background-color 0.5s; -moz-transition: background-color 0.5s; -o-transition: background-color 0.5s; transition: background-color 0.5s;}
+#subnav ul:hover {  background-image: url(../img/ie/transparent_BG)\9; background-color: rgba(255, 255, 255, .95); -webkit-transition: background-color 0.2s; -moz-transition: background-color 0.2s; -o-transition: background-color 0.2s; transition: background-color 0.2s;}
+#subnav li { border-bottom: 1px dotted #616161; font-weight: bold; font-size: 13px; padding: 5px 0; color: #AAA; }
+#subnav li a { color: #616161; font }
 #subnav li.selected a, #subnav li a:hover { color: #0099E0; }
 #subnav li a:hover { border-bottom: none; }
 #subnav li:last-of-type { border-bottom: none; padding-bottom: 0; }
