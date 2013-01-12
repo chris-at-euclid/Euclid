@@ -551,8 +551,8 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 ==============================================================================
 */
 .banner { background-repeat: no-repeat; }
-#banner-about { min-height: 200px; background-position: center top; background-image: url(../img/banners/about.png); }
-#banner-careers { min-height: 200px; background-position: center top; background-image: url(../img/banners/careers.png); }
+#banner-about { min-height: 200px; background-position: center top; background-image: url(../img/banners/about.jpeg); }
+#banner-careers { min-height: 200px; background-position: center top; background-image: url(../img/banners/careers.jpeg); }
 #banner-home { min-height: 200px;background-position: center center; background-image: url(../img/banners/home.jpeg); }
 #banner-solutions { min-height: 200px; background-position: center center; }
 #banner-solutions.marketing-tab { background-image: url(../img/banners/solutions-marketing.jpg); }
@@ -560,10 +560,10 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 #banner-solutions.operations-tab { background-image: url(../img/banners/solutions-operations.jpg); }
 
 @media all and (min-width: 1200px) {
-	#banner-home, #banner-solutions, #banner-about { background-size: cover; }
+	#banner-home, #banner-solutions, #banner-about, #banner-careers{ background-size: cover; }
 }
 @media all and (min-width: 1400px) {
-	#banner-careers { background-size: cover; }
+	 { background-size: cover; }
 }
 
 
