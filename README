@@ -1,0 +1,11 @@
+
+TO DEPLOY:
+1) Modify items in SOURCE file
+2) Compile using "bundle exec middleman build"
+3) Check in project to github
+4) Copy contents of BUILD folder and check those into built github project
+5) Copy BUILD folder contents to server
+
+URLS TO MAINTAIN (Currenlty set on Amazon)
+1) Stickers with QR codes ---> m.euclidelements.com/privacy 
+2) Nordstroms ---> euclidelements.com/consumer 

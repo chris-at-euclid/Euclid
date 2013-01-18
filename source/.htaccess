@@ -538,3 +538,16 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 <IfModule php5_module>
   php_value session.cookie_httponly true
 </IfModule>
+
+
+
+
+
+
+
+
+# REDIRECTS FOR LINKS IN THE WILD
+RewriteRule ^consumer/(.*)$ http://www.euclidanalytics.com/privacy/$1 [R=301,L]
+#Redirect 301 /consumer/ /privacy/
+ 
+
