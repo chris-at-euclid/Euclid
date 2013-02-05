@@ -19,7 +19,7 @@ body.home { min-width: 1190px; }
 .preload { display: none; }
 
 .content p { margin-bottom: 1em; }
-a {
+a, .content a {
 	text-decoration: none;
 	color: #0099E0;
 }
