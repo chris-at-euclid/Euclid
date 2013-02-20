@@ -31,6 +31,7 @@
 # With alternative layout
 page "/product.html", :layout => :contentpage
 page "/privacy.html", :layout => :contentpage
+page "/sitemap.xml", :layout => false
 
  with_layout :about do
    page "/about/*"
