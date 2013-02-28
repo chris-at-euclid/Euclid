@@ -90,15 +90,20 @@ header .logo { margin-top: 50px; }
 
 #primary-nav > ul > li 	{ float: left; }
 nav li 	{ list-style: none; }
-#primary-nav	{  }
-#primary-nav ul { clear: both; float: right; }
+#primary-nav	{ /* The following is for the CHROME BUG workaround */padding-bottom: 45px; }
+#primary-nav ul { /* The following is removed for the CHROME BUG workaround clear: both;*/ float: right; }
 #primary-nav a	{ color: #232323; }
 #primary-nav .selected a, #primary-nav a:hover { color: #0099E0; }
 
 #site-actions	{ font-size: 11px; margin-bottom: 20px; margin-top: 0; margin-right: 10px; }
 #site-actions li .btn { margin-top: 0; }
 
-#site-pages { margin-bottom: 20px; margin-top: 10px; }
+#site-pages { margin-bottom: 20px; margin-top: 10px; 
+	/* The following is for the CHROME BUG workaround */
+	position: relative;
+	left: 95px;
+	top: 55px;
+}
 #site-pages li { 
 	margin-left: 45px;
 	color: #3e3e3e;
