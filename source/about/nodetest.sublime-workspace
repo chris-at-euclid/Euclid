@@ -4,6 +4,78 @@
 		"selected_items":
 		[
 			[
+				"since",
+				"sinceUTC"
+			],
+			[
+				"time",
+				"timeOfDeath"
+			],
+			[
+				"point",
+				"pointCount"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"even",
+				"eventsQue"
+			],
+			[
+				"add",
+				"addThisUpdate"
+			],
+			[
+				"my",
+				"myOpac"
+			],
+			[
+				"event",
+				"eventsQue"
+			],
+			[
+				"events",
+				"eventsOnMap"
+			],
+			[
+				"Event",
+				"EuclidEventNode"
+			],
+			[
+				"ev",
+				"eventsQue"
+			],
+			[
+				"eve",
+				"eventsOnMap"
+			],
+			[
+				"Siz",
+				"SIZE_MAX_CHANGE"
+			],
+			[
+				"OP",
+				"opI"
+			],
+			[
+				"OPA",
+				"OPACITY_BASE"
+			],
+			[
+				"lat",
+				"latitude"
+			],
+			[
 				"pt",
 				"ptQueue"
 			],
@@ -60,10 +132,6 @@
 				"background-image"
 			],
 			[
-				"backg",
-				"background-repeat"
-			],
-			[
 				"fre",
 				"featured-content-dark"
 			],
@@ -102,10 +170,6 @@
 			[
 				"text",
 				"text-transform"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"font",
@@ -450,70 +514,6 @@
 			[
 				"dis",
 				"distribution_chart"
-			],
-			[
-				"upd",
-				"updateChart"
-			],
-			[
-				"isF",
-				"isFlatHierarchy"
-			],
-			[
-				"store",
-				"stores_only"
-			],
-			[
-				"stores",
-				"stores_only"
-			],
-			[
-				"toggl",
-				"toggleInactiveStores"
-			],
-			[
-				"isDif",
-				"isDifferentActiveOnly"
-			],
-			[
-				"ac",
-				"activeOnly"
-			],
-			[
-				"acti",
-				"active_only"
-			],
-			[
-				"fl",
-				"flattenContent"
-			],
-			[
-				"acv",
-				"activeOnly"
-			],
-			[
-				"update",
-				"updateTag"
-			],
-			[
-				"curre",
-				"current_user"
-			],
-			[
-				"child",
-				"child-row"
-			],
-			[
-				"bac",
-				"background-color"
-			],
-			[
-				"CONS",
-				"console"
-			],
-			[
-				"clien",
-				"client_supplied_id"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "/Users/zacharyolson/Sites/nodetest/app.js",
 			"settings":
 			{
-				"buffer_size": 1475,
+				"buffer_size": 1476,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "/Users/zacharyolson/Sites/nodetest/lib/euclidevents.js",
 			"settings":
 			{
-				"buffer_size": 1808,
+				"buffer_size": 3145,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,7 +547,7 @@
 			"file": "/Users/zacharyolson/Sites/nodetest/lib/db.js",
 			"settings":
 			{
-				"buffer_size": 1492,
+				"buffer_size": 3514,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,7 +555,7 @@
 			"file": "/Users/zacharyolson/Sites/nodetest/views/index.ejs",
 			"settings":
 			{
-				"buffer_size": 1669,
+				"buffer_size": 2436,
 				"line_ending": "Unix"
 			}
 		},
@@ -563,7 +563,7 @@
 			"file": "/Users/zacharyolson/Sites/nodetest/public/javascripts/processing.pde",
 			"settings":
 			{
-				"buffer_size": 2255,
+				"buffer_size": 6073,
 				"line_ending": "Unix"
 			}
 		},
@@ -571,7 +571,7 @@
 			"file": "/Users/zacharyolson/Sites/nodetest/public/stylesheets/style.css",
 			"settings":
 			{
-				"buffer_size": 185,
+				"buffer_size": 615,
 				"line_ending": "Unix"
 			}
 		}
@@ -923,15 +923,15 @@
 					"file": "/Users/zacharyolson/Sites/nodetest/app.js",
 					"settings":
 					{
-						"buffer_size": 1475,
+						"buffer_size": 1476,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1174,
-								1174
+								708,
+								708
 							]
 						],
 						"settings":
@@ -941,7 +941,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 156.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -951,15 +951,15 @@
 					"file": "/Users/zacharyolson/Sites/nodetest/lib/euclidevents.js",
 					"settings":
 					{
-						"buffer_size": 1808,
+						"buffer_size": 3145,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1731,
-								1731
+								1719,
+								1719
 							]
 						],
 						"settings":
@@ -967,7 +967,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 5.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1003,15 +1003,15 @@
 					"file": "/Users/zacharyolson/Sites/nodetest/lib/db.js",
 					"settings":
 					{
-						"buffer_size": 1492,
+						"buffer_size": 3514,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								783,
-								783
+								511,
+								517
 							]
 						],
 						"settings":
@@ -1031,15 +1031,15 @@
 					"file": "/Users/zacharyolson/Sites/nodetest/views/index.ejs",
 					"settings":
 					{
-						"buffer_size": 1669,
+						"buffer_size": 2436,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1096,
-								1096
+								0,
+								2436
 							]
 						],
 						"settings":
@@ -1049,7 +1049,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 41.0,
+						"translation.y": 651.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1059,15 +1059,15 @@
 					"file": "/Users/zacharyolson/Sites/nodetest/public/javascripts/processing.pde",
 					"settings":
 					{
-						"buffer_size": 2255,
+						"buffer_size": 6073,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1343,
-								1343
+								654,
+								528
 							]
 						],
 						"settings":
@@ -1077,7 +1077,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1031.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1087,15 +1087,15 @@
 					"file": "/Users/zacharyolson/Sites/nodetest/public/stylesheets/style.css",
 					"settings":
 					{
-						"buffer_size": 185,
+						"buffer_size": 615,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								185,
-								185
+								256,
+								256
 							]
 						],
 						"settings":
