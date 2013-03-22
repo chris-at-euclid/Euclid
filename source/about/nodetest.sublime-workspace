@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"corn",
+				"corner1y"
+			],
+			[
+				"cor",
+				"corner1x"
+			],
+			[
+				"dra",
+				"drawToIntermediatePoint"
+			],
+			[
+				"draw",
+				"drawTo"
+			],
+			[
+				"start",
+				"startptIndex"
+			],
+			[
+				"startp",
+				"startptIndex"
+			],
+			[
+				"line",
+				"lineProgress"
+			],
+			[
+				"lin",
+				"lineProgress"
+			],
+			[
 				"L",
 				"log"
 			],
@@ -16,10 +48,6 @@
 				"newZoom"
 			],
 			[
-				"corn",
-				"corner2x"
-			],
-			[
 				"con",
 				"cornerx"
 			],
@@ -30,10 +58,6 @@
 			[
 				"inner",
 				"innerWidth"
-			],
-			[
-				"cor",
-				"cornery"
 			],
 			[
 				"proc",
@@ -416,10 +440,6 @@
 				"EuclidUtils"
 			],
 			[
-				"lin",
-				"link-subtitle"
-			],
-			[
 				"raw",
 				"rawtags"
 			],
@@ -492,28 +512,8 @@
 				"intialTags"
 			],
 			[
-				"start",
-				"start_date"
-			],
-			[
 				"for",
 				"formatted"
-			],
-			[
-				"load",
-				"loadDates"
-			],
-			[
-				"conten",
-				"content"
-			],
-			[
-				"tag",
-				"tag2"
-			],
-			[
-				"selection",
-				"selectionLimit"
 			]
 		]
 	},
@@ -571,7 +571,7 @@
 			"file": "/Users/zacharyolson/Sites/nodetest/public/javascripts/processing.pde",
 			"settings":
 			{
-				"buffer_size": 8718,
+				"buffer_size": 10470,
 				"line_ending": "Unix"
 			}
 		},
@@ -1094,15 +1094,15 @@
 					"file": "/Users/zacharyolson/Sites/nodetest/public/javascripts/processing.pde",
 					"settings":
 					{
-						"buffer_size": 8718,
+						"buffer_size": 10470,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3495,
-								3495
+								9250,
+								9250
 							]
 						],
 						"settings":
@@ -1112,7 +1112,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1342.0,
+						"translation.y": 4527.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

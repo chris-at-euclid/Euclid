@@ -1,0 +1,10 @@
+#social-btns > span, #social-btns > a, #social-btns > iframe { float: left; margin: 10px 10px 10px 0; }
+.linkedin-btn img { 
+	width: 15px;
+	height: 15px;
+} 
+#social-btns > span { margin-top: 9px; }
+.linkedin-btn {
+	padding-top: 3px;
+	line-height: 0;
+}

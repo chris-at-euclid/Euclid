@@ -11,14 +11,18 @@
 					1027B Alma Street <br />
 					Palo Alto, CA 94301
 				</div>
-				<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-				<script type="IN/CompanyProfile" data-id="1610033" data-format="hover"></script>
-				<a href="https://www.facebook.com/EuclidAnalytics" class="separated no-hover linkedin-btn">
-	  				<%= image_tag 'fbbtn.png' %>
-	  			</a>
-				<!--<a href="http://www.linkedin.com/company/euclid-inc." class="separated">
-	  				<%= image_tag 'linkedinbtn.jpg', :class=> 'linkedin-btn' %>
-	  			</a>-->
+				<div id="social-btns">
+					<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+					<script type="IN/CompanyProfile" data-id="1610033" data-format="hover"></script>
+					<a href="https://www.facebook.com/EuclidAnalytics" class="separated no-hover linkedin-btn">
+		  				<%= image_tag 'fbbtn.png' %>
+		  			</a>
+		  			<a href="https://twitter.com/euclidanalytics" class="twitter-follow-button" data-show-count="false">Follow @euclidanalytics</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					<!--<a href="http://www.linkedin.com/company/euclid-inc." class="separated">
+		  				<%= image_tag 'linkedinbtn.jpg', :class=> 'linkedin-btn' %>
+		  			</a>-->
+		  	</div>
 	  		</div>
 	  		<div class="col9"><%= link_to_signupsite('contact_us', 'Contact us', 'large-text') %></div>
 	  		<!--
