@@ -571,7 +571,7 @@
 			"file": "/Users/zacharyolson/Sites/nodetest/public/javascripts/processing.pde",
 			"settings":
 			{
-				"buffer_size": 10470,
+				"buffer_size": 11406,
 				"line_ending": "Unix"
 			}
 		},
@@ -761,6 +761,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"timeOfDeath",
+			"beginPlotting",
+			"addCount",
+			"poffset",
+			"lastPathPushPop",
 			"controls",
 			"emphasized",
 			"h3",
@@ -883,12 +888,7 @@
 			"EuclidDashboard::Application.config.dataset_overview",
 			"load_overview",
 			"JSON.parse(File.open(\"#{Rails.root}/app/data_sets",
-			"EuclidDashboard::Application.config.dataset_configs",
-			"load_configs",
-			"get_dataset_config_json",
-			"JSON.parse(File.open(\"app/data_sets/config",
-			"Custom Engagement Rate",
-			"send_notifications"
+			"EuclidDashboard::Application.config.dataset_configs"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -938,8 +938,8 @@
 						"selection":
 						[
 							[
-								362,
-								362
+								318,
+								269
 							]
 						],
 						"settings":
@@ -949,7 +949,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 225.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -966,8 +966,8 @@
 						"selection":
 						[
 							[
-								690,
-								690
+								1322,
+								1345
 							]
 						],
 						"settings":
@@ -975,7 +975,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 142.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -992,8 +992,8 @@
 						"selection":
 						[
 							[
-								1094,
-								1094
+								739,
+								756
 							]
 						],
 						"settings":
@@ -1002,7 +1002,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 280.0,
+						"translation.y": 40.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1045,8 +1045,8 @@
 						"selection":
 						[
 							[
-								511,
-								517
+								973,
+								201
 							]
 						],
 						"settings":
@@ -1073,8 +1073,8 @@
 						"selection":
 						[
 							[
-								1424,
-								1424
+								1570,
+								1625
 							]
 						],
 						"settings":
@@ -1084,7 +1084,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 382.0,
+						"translation.y": 409.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1094,15 +1094,15 @@
 					"file": "/Users/zacharyolson/Sites/nodetest/public/javascripts/processing.pde",
 					"settings":
 					{
-						"buffer_size": 10470,
+						"buffer_size": 11406,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9250,
-								9250
+								1242,
+								1242
 							]
 						],
 						"settings":
@@ -1112,7 +1112,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4527.0,
+						"translation.y": 206.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1129,8 +1129,8 @@
 						"selection":
 						[
 							[
-								685,
-								685
+								159,
+								6
 							]
 						],
 						"settings":
