@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Euclid Analytics<% if content_for?(:pagetitle) %> - <%= yield_content :pagetitle %><% end %></title>
+        <title><% if content_for?(:pagetitlestartoverride) %><%= yield_content :pagetitlestartoverride %><% else %>Euclid Analytics<% end %><% if content_for?(:pagetitle) %> - <%= yield_content :pagetitle %><% end %></title>
         <meta property='description' content='Measure and optimize your traffic, loyalty, and engagement. Get the complete picture of how shoppers interact with your stores.'/>
         <meta name="viewport" content="width=device-width">
 
@@ -41,8 +41,8 @@
                         <li><a href="http://dashboard.euclidelements.com" id="loginbtn" class="btn">Login</a></li>
                     </ul>
                     <ul id="site-pages">
-                        <li class="<%= nav_active('product') %>"><%= link_to 'Product', '/product/index.html' %></li>
-                        <li class="<%= nav_active('about') %>"><%= link_to 'About', '/about/index.html' %></li>
+                        <li class="<%= nav_active('product') %>"><%= link_to 'Analytics', '/product/index.html' %></li>
+                        <li class="<%= nav_active('about') %>"><%= link_to 'About Us', '/about/index.html' %></li>
                         <li class="<%= nav_active('privacy') %>"><%= link_to 'Privacy', '/privacy/index.html' %></li>
                         <li class="<%= nav_active('contact') %>"><%= link_to_signupsite('contact_us', 'Get Started', '') %></li>
                     </ul>
