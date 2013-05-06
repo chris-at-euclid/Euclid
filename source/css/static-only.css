@@ -9,3 +9,18 @@
 	line-height: 0;
 }
 .center-in-grid { text-align: center; }
+
+#easyCenter { -webkit-backface-visibility: hidden; }
+#comparison-chart { overflow: auto; }
+#comparison-chart table { width: 100%; }
+#comparison-chart .table-section-head td { background-color: #0099e0; color: #FFF; padding-top: 0.5em; padding-bottom: 0.5em; }
+#comparison-chart tr { border-bottom: 1px solid #CCC; }
+#comparison-chart tbody tr:last-of-type { border: none; }
+#comparison-chart .table-section-head { border: none; }
+#comparison-chart tr td:first-of-type { text-align: left; }
+#comparison-chart td { text-align: center; padding-left: 0.5em; padding-right: 0.5em; }
+#comparison-chart .table-section-head + tr td { padding-top: 0.5em; }
+#comparison-chart tbody tr:last-of-type td { padding-bottom: 1em; }
+#comparison-chart th { padding-bottom: 1em; }
+
+
