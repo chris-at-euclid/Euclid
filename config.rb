@@ -124,5 +124,5 @@ activate :sync do |sync|
   #sync.fog_region = ''
   sync.aws_access_key_id = EuclidCrypt.decrypt(EuclidCrypt::EUCLID_SALT, ENV['s3_access_key_id'])
   sync.aws_secret_access_key = EuclidCrypt.decrypt(EuclidCrypt::EUCLID_SALT, ENV['s3_secret_access_key'])
-  sync.existing_remote_files = 'delete'
+  sync.existing_remote_files = 'keep'
 end
