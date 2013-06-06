@@ -1,4 +1,4 @@
-<% content_for :pagetitle do %>Answers and insights for physical retail<% end %>
+<% content_for :pagetitle do %>Answers and insights for QSR, specialty retail, and department stores<% end %>
 <div class="content featured-content-light banner" id="banner-home">
   	<div class="container">
 	  	<div id="homepage-product-img" class="col6 merge-down under-right">
@@ -7,11 +7,13 @@
 	  	<div class="subcontainer6 featured-content-textarea pull-right">
 	  		<div class="featured-content-textarea-inner">
 			  		<h1 class="">Euclid Analytics</h1>
-			  		<p class="large-text">Answers and insights for physical retail</h1>
-						<ul>
-							<li type=circle>Traffic, capture, bounce rates</li>
-							<li type=circle>Store visit frequency, duration</li>
-							<li type=circle>Advanced analytics for QSR, specialty retail, department stores</li>
+			  		<p class="large-text">Answers and insights for QSR, specialty retail, department stores</h1>
+						<ul class="circle">
+							<li>Traffic counts, capture and bounce rates</li>
+							<li>Store visit frequency, duration, loyalty</li>
+							<li>Advanced analytics tailored for QSR, specialty retail, department stores</li>
+							<br>
+							<%= link_to 'Explore Solutions', '/product/solutions.html', :class=>"btn arrow-btn dark-btn" %>
 				<ul class="icon-button-list" id="home-button-list">
 					<li><%= link_to 'Actionable Insights', '/product/solutions.html', :id=>'home-solutionsbtn' %></li>
 					<li><%= link_to 'Easy Setup', '/product/how.html', :id=>'home-setupbtn' %></li>
@@ -21,21 +23,6 @@
 	  	</div>
 	</div>
 </div>
-<div class="content featured-content-light underlined light-underlined no-bottom-marg">
-  	<div class="container">
-	  	<div class="col5 featured-content-textarea under-right">
-	  		<div class="featured-content-textarea-inner">
-		  		<h1 class="">For QSR, specialty and department stores</h1>
-		  		<p class="">Traffic, engagement, loyalty, bounce and conversion.<br>For one store or hundreds.</p>
-		  		<%= link_to 'Explore Solutions', '/product/solutions.html', :class=>"btn arrow-btn dark-btn" %>
-		  	</div>
-	  	</div>
-	  	<div class="col7 pull-right hide-on-mobile featured-content-textarea-inner">
-			<%= image_tag 'solutions.png' %>
-	  	</div>
-	</div>
-</div>
-
 <div class="content  featured-content-light light-underlined no-bottom-marg">
 	<div id="easy-wires" class="hide-on-mobile">
 		<%= image_tag 'IT_head.png' %>
@@ -53,18 +40,12 @@
   	<div class="container">
 	  	<div class="col5 light-text content">
 	  		<h1>Privacy matters</h1>
-	  		<p>Privacy is designed into our service.<br>Foot-traffic data are 100% anonymous and no personal information is ever gathered. Any consumer can opt out.  </p>
+	  		<p>Privacy is designed into our service.<br>Foot-traffic data are 100% anonymous: <br> no personal information is ever gathered. <br>Any consumer can opt out.  </p>
 	  		<%= link_to 'Learn More', '/privacy/index.html', :class=>"btn arrow-btn dark-btn" %>
 	  	</div>
 	  	<div class="col7 mini-bump-left hide-on-mobile"><%= image_tag 'privacy_home.jpg', :height=>'350' %></div>
 	</div>
 </div>
-
-<div class="content featured-content-dark">
-  	<div class="container">
-	  	<div id="nrftext" class="col12 large-text centered-text">
-	  		<%= link_to 'Euclid affirms commitment to consumer privacy', '/protecting-consumer-privacy.html' %>
-	  	</div>
 	</div>
 </div>
 
