@@ -1,3 +1,5 @@
+require 'euclid_crypt'
+
 ###
 # Compass
 ###
@@ -88,10 +90,11 @@ set :images_dir, 'img'
 #blah/blahhh rather than blah/blahh.html
 activate :directory_indexes
 
-
-
 # Build-specific configuration
 configure :build do
+
+    # so there would be no need in invalidationg css-js files on cdn
+  activate :asset_hash
 
   # For example, change the Compass output style for deployment
   # activate :minify_css
@@ -112,4 +115,14 @@ configure :build do
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
+end
+
+#Sync to S3
+activate :sync do |sync|
+  sync.fog_provider = 'AWS'
+  sync.fog_directory = ENV['env']
+  #sync.fog_region = ''
+  sync.aws_access_key_id = EuclidCrypt.decrypt(EuclidCrypt::EUCLID_SALT, ENV['s3_access_key_id'])
+  sync.aws_secret_access_key = EuclidCrypt.decrypt(EuclidCrypt::EUCLID_SALT, ENV['s3_secret_access_key'])
+  sync.existing_remote_files = 'keep'
 end
