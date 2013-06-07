@@ -24,3 +24,9 @@
 #comparison-chart th { padding-bottom: 1em; }
 
 
+.no-border { border: none !important; } 
+
+ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
+
+
+#banner-home .featured-content-textarea-inner { padding-top: 25px; }
