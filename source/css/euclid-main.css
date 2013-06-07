@@ -491,6 +491,7 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 .bump-left { margin-left: -200px; padding-right: 130px; }
 .no-pad { padding: 0; }
 .pad-top { padding-top: 25px; }
+.pad-bottom { padding-bottom: 25px !important; }
 .no-bottom-pad { padding-bottom: 0 !important; }
 .no-bottom-marg { margin-bottom: 0 !important; }
 .no-top-pad { padding-top: 0 !important; }
@@ -552,7 +553,7 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 .banner { background-repeat: no-repeat; }
 #banner-about { min-height: 200px; background-position: center top; background-image: url(../img/banners/about.jpeg); }
 #banner-careers { min-height: 200px; background-position: center top; background-image: url(../img/banners/careers.jpeg); }
-#banner-home { min-height: 200px;background-position: center center; background-image: url(../img/banners/home.jpeg); }
+#banner-home { min-height: 200px;background-position: center center; background-image: url(../img/banners/home.jpeg); background-size: cover; }
 #banner-solutions { min-height: 200px; background-position: center center; }
 #banner-solutions.marketing-tab { background-image: url(../img/banners/solutions-marketing.jpg); }
 #banner-solutions.merchandising-tab { background-image: url(../img/banners/solutions-merch.jpg); }
