@@ -36,14 +36,24 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 
 
 
-#pricing-table { border-collapse: collapse; border-color: #DDD; }
+#pricing-table { 
+	border-collapse: collapse; 
+	border-color: #DDD;
+	box-shadow: 10px 10px 5px #888888;
+}
 #pricing-table td {
 	font-size: 0.9em;
 	padding: 0.6em 1em;
 	text-align: left;
 	vertical-align: top;
 }
-#pricing-table #plan-name td { font-weight: bold; text-transform: uppercase; padding-left: 0.2em; padding-right: 0.2em;}
+#pricing-table #plan-name td { 
+	font-weight: bold; 
+	text-transform: uppercase; 
+	padding-left: 0.2em; padding-right: 0.2em;
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;
+}
 #pricing-table #plan-name td, #pricing-table #plan-price td { text-align: center; }
 #plan-price td {
   font-size: 2.8em;
@@ -63,4 +73,6 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 #pricing-table td:nth-of-type(even) { background-color: #E0E0E0; }
 #pricing-table tr:first-of-type td { padding-top: 2em; }
 #pricing-table tr:last-of-type td { padding-bottom: 2em; }
-#plan-descr { border-bottom: 1px solid #C2C2C2; }
+#priing-table #plan-descr {
+	border-bottom: 1px solid #C2C2C2;
+}
