@@ -56,10 +56,10 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 }
 #pricing-table #plan-name td, #pricing-table #plan-price td { text-align: center; }
 #plan-price td {
-  font-size: 2.8em;
+  font-size: 2.15em;
   font-weight: 100;
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
 }
 .plan-permonth {
   font-size: 12px;
