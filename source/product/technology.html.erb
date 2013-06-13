@@ -2,40 +2,74 @@
 <section class="content">
   <div class="container">
   	<div class="subcontainer9  pull-right">
+
+
   		<div  class="col9 separated">
 	  		<h1>
-	  			Runs on your existing Wi-Fi hardware
+	  			Easy to implement and scale
 	  		</h1>
-	  		<p class="large-text">Euclid Zero is the world’s first zero-hardware solution for real-world shopper analytics.</p>
+	  		<p class=" large-text">Euclid Analytics is the easiest way to measure real-world shopper behavior at all of your stores.</p>
+	  		<p>Our plug-and-play sensor installs in 2 minutes - just connect power and internet. Each sensor is the size of a deck of cards and covers up to 24,000 square feet.</p>
+				<p>If you have existing in-store Wi-Fi from Aruba, Aerohive, or other leading providers, you can <%= link_to 'turn your existing access points into Euclid sensors', '/product/zero/' %> with the push of a button.</p>
+				<p>Once your sensors are up and running, you can view reports for all your locations in our <%= link_to 'easy-to-use web Dashboard', '/product/dashboard/' %>.</p>
+				<p class="large-text">Take a closer look at how our technology works:</p>
 	  	</div>
+  		<div class="col3 hide-on-mobile">
+  			<%= image_tag 'howitworks_flow.png' %>
+  		</div>
+  		<ul class="col6 pull-right how-section-list">
 
-	  	<div class="col9 separated">
-		  	<div class="underlined sectionlabel">Benefits</div> 
-				<ul class="no-bullet">
-					<li>Get Euclid Analytics without dedicated sensors</li>
-					<li>Works with top enterprise Wi-Fi providers</li>
-					<li>Eliminates installation hassle and cost</li>
-				</ul>
-			</div>
-  		<div  class="col9 separated">
-  			<div class="underlined sectionlabel">Overview</div> 
-				<p>Looking to measure shopper activity across your entire chain, but daunted by the prospect of installing and configuring hardware at hundreds of locations? Euclid Zero is the answer. With a single click, Euclid Zero gives retailers, malls and other venues the ability to measure in-store behavior using their existing Wi-Fi access points.</p>
-				
-				<p class="center-in-grid"><%= image_tag 'product/zero.png', :height=>"200" %></p>
+  			<li>
+	  			<div class="sectionlabel">Shopper with smartphone approaches your store</div>
+					<p>Euclid Analytics measures the behavior of all your shoppers that are carrying a Wi-Fi enabled smartphone. Typically, this is 40-70% of your shoppers, depending on the business and location.</p>
+				</li>
+				<li>
+					<div class="sectionlabel">Smartphone broadcasts Wi-Fi pings</div>
+					<p>Smartphones constantly send out short "pings" as they search for Wi-Fi networks nearby. These pings include the phone's MAC address (a unique identifier associated with a specific device) and other non-personal information like signal strength that we use to determine rough location.</p>
+				</li>
+				<li>
+					<div class="sectionlabel">Euclid records Wi-Fi pings and sends them to the cloud</div>
+					<p>Using your existing Wi-Fi infrastructure or our compact plug-and-play sensor, we record pings and send them to the cloud. For privacy, we scramble each MAC address using a one-way hashing algorithm. Because shoppers don't need to actually connect to your Wi-Fi network or install a mobile app, you can measure their activity without interrupting their shopping experience.</p>
+				</li>
+				<li>
+					<div class="sectionlabel how-section">Euclid processes and stores data</div>
+					<p>Our advanced heuristics extract actionable insights from the data and store them in Amazon's highly secure datacenters.<br><%= link_to 'Learn about our security practices', '/product/security/' %></p>
+				</li>
+				<li> 
+					<div class="sectionlabel how-section">Retailer receives analytics via web and email</div>
+					<p>Use our web-based Dashboard and scheduled email reports to measure and optimize your business.</p>
+				</li>
+  		</ul>
+  		<div class="col9 separated"> 
+        <h1 class="">Works securely within your<br>existing network infrastructure</h1>
+  		  <p class="large-text">Euclid Analytics is built secure from the ground up, protecting both your business and your shoppers.</p>
+      </div>
+	  	<ul class="cluster-list light-underlined underlined separated how-section-list">
+	  		<li>
+	  			<div class="sectionlabel">MAC address hashing</div>
+  				<p>Each phone’s MAC address is scrambled with a one-way hash to create a separate unique ID.</p>
+  			</li>
+	  		<li>
+	  			<div class="sectionlabel">Encrypted data transmission</div>
+  				<p> Data is sent to Amazon Web Services (AWS) using  Secure Sockets Layer (SSL) encryption.</p>
+  			</li>
+	  		<li>
+	  			<div class="sectionlabel">Secure data storage</div>
+  				<p> Information is stored in Amazon’s highly secure datacenters</p>
+  			</li>
+	  		<li class="newrow">
+	  			<div class="sectionlabel">Limited employee access</div>
+  				<p> We use technical and policy controls to prohibit unauthorized access.</p>
+  			</li>
+	  		<li>
+	  			<div class="sectionlabel">Maintains PCI compliance</div>
+  				<p>Our sensors do not collect cardholder data or impact the topology of your secure network.</p>
+  			</li>
+	  	</ul>
+		<div class="large-text col9">
+			Euclid is committed to protecting the individual privacy of shoppers. For more information, visit our <%= link_to 'Privacy Overview', '/privacy/' %>.
+		</div>
 
-				<p>Euclid Zero eliminates the need for dedicated sensors, costly in-store installation, or complicated setup. Simply enable the Euclid functionality in your Wi-Fi management console to start sending data to Euclid for analysis. Once enabled, retailers can access actionable insights for improving shopper engagement, loyalty, and revenue, all through an easy-to-use web-based dashboard.</p>
-
-
-			</div>
-			<div class="col9 underlined sectionlabel">WI-FI PARTNERS</div>
-	  		<ul class="cluster-list large-text no-bottom-marg">
-		  		<li><a href="http://www.aerohive.com/" target="_blank"><%= image_tag 'partners/aerohive.png', :class=>'fill-container' %></a></li>
-		  		<li><a href="http://www.arubanetworks.com/" target="_blank"><%= image_tag 'partners/aruba.png', :class=>'fill-container', :style=>"padding-top: 25px;" %></a></li>
-		  		<li><a href="http://www.fortinet.com/" target="_blank"><%= image_tag 'partners/fortinet.png', :class=>'fill-container', :style=>"padding-bottom: 35px; padding-top: 30px;" %></a></li>
-		  		<li><a href="http://www.xirrus.com/" target="_blank"><%= image_tag 'partners/xirrus.png', :class=>'fill-container' %></a></li>
-		  	</ul>
-	  	</div>
-
-  	
+		</div>  	
   </div>
 </section> 
