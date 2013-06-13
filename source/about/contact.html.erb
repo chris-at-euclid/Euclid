@@ -2,16 +2,10 @@
 <section class="content">
   	<div class="container">
 	  	<div class="subcontainer9  pull-right">
-	  		<iframe class="col9 shadowed separated" width="770" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=1027B+alma+street,+palo+alto,+ca&amp;ie=UTF8&amp;hq=&amp;hnear=1027+Alma+St,+Palo+Alto,+Santa+Clara,+California+94301&amp;gl=us&amp;t=m&amp;ll=37.448424,-122.162046&amp;spn=0.023849,0.06609&amp;z=14&amp;output=embed&iwloc=near"></iframe>
-	  		
+	  		<div class="col9 "><%= link_to_signupsite('contact_us', 'Contact us', 'large-text') %></div>
 	  		<div class="large-text col9 underlined underlined-light separated">
 	  			
-	  			<div class="">
-	  				Euclid Inc. <br />
-					1027B Alma Street <br />
-					Palo Alto, CA 94301
-				</div>
-				<div id="social-btns">
+				<div id="social-btns" class="clearfix">
 					<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
 					<script type="IN/CompanyProfile" data-id="1610033" data-format="hover"></script>
 					<a href="https://www.facebook.com/EuclidAnalytics" class="separated no-hover linkedin-btn">
@@ -23,8 +17,15 @@
 		  				<%= image_tag 'linkedinbtn.jpg', :class=> 'linkedin-btn' %>
 		  			</a>-->
 		  	</div>
+	  			<div class="">
+	  				Euclid Inc. <br />
+					1027B Alma Street <br />
+					Palo Alto, CA 94301
+				</div>
 	  		</div>
-	  		<div class="col9"><%= link_to_signupsite('contact_us', 'Contact us', 'large-text') %></div>
+	  		<iframe class="col9 shadowed separated" width="770" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=1027B+alma+street,+palo+alto,+ca&amp;ie=UTF8&amp;hq=&amp;hnear=1027+Alma+St,+Palo+Alto,+Santa+Clara,+California+94301&amp;gl=us&amp;t=m&amp;ll=37.448424,-122.162046&amp;spn=0.023849,0.06609&amp;z=14&amp;output=embed&iwloc=near"></iframe>
+	  		
+	  		
 	  		<!--
 	  		<div class="large-text col9">
 	  			Sales: <%= link_to_signupsite('contact_us', 'Contact Form', '') %><br />

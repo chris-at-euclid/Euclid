@@ -7,19 +7,163 @@
         <h1>Euclid Analytics delivers <br/> answers for retail</h1>
         <p class="large-text">Measure and optimize foot-traffic, visit duration, and repeat shopping. Get answers by daypart (for QSR), window and walkbys (specialty retail) and multi-zones (department stores).</p>
 
-
-        <ul class="icon-button-list">
-          <li><%= link_to 'Solutions', '/product/solutions.html', :id=>'solutionsbtn' %></li>
-          <li><%= link_to 'Dashboard', '/product/dashboard.html', :id=>'dashboardbtn' %></li>
-          <li><%= link_to 'How It Works', '/product/how.html', :id=>'howbtn' %></li>
-          <!--<li><%= link_to 'Setup', '/product/setup.html', :id=>'setupbtn' %></li>-->
-          <li><%= link_to 'Security', '/product/security.html', :id=>'securitybtn' %></li>
-        </ul>
       </div>
 
     </div>
   </div>
 </div>
+
+<div class="content featured-content-light no-pad">
+  <div class="container">
+    <div class="subcontainer9 pull-right subsection">
+        <a href="../../img/product/KPI.png" title="Track KPIs" class="lightbox col3 no-hover separated"><%= image_tag 'product/KPI.png', :class=> 'shadowed fill-container' %>
+          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>
+      <div class="col6 separated">
+        <div class="sectionlabel">Track performance</div>
+        <p>When you log into your Dashboard, you get a high-level overview of your KPI performance. You can customize this view to show you the stores and metrics that are most important to you.</p>
+      </div>
+    </div>
+    <div class="subcontainer9 subsection pull-right">
+        <a href="../../img/product/funnel.png" title="Measure and compare" class="lightbox col3 no-hover separated"><%= image_tag 'product/funnel.png', :class=> 'shadowed fill-container' %>
+          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>
+      <div class="col6 separated">
+        <div class="sectionlabel">Measure and compare</div>
+        <p>View detailed reports for every metric. For example, the Shopper Funnel report shows you how well you convert Outside Traffic into Engaged Visitors. Use it to identify weak points in your shopping experience.</p>
+      </div>
+    </div>
+    <div class="subcontainer9 subsection pull-right">
+        <a href="../../img/product/campaign.png" title="Make smarter decisions" class="lightbox col3 no-hover separated"><%= image_tag 'product/campaign.png', :class=> 'shadowed fill-container' %>
+          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>
+      <div class="col6 separated">
+        <div class="sectionlabel">Make smarter decisions</div>
+        <p>Built-in analysis tools reveal important insights without heavy lifting. Use the Test a Campaign tool to find out whether a lift in key metrics came from your activities or from everyday fluctuations.</p>
+      </div>
+    </div>
+    <div class="subcontainer9 subsection pull-right">
+        <%= image_tag 'product/export.png', :class=> 'separated mini-bump-up col3' %>
+      <div class="col6">
+        <div class="sectionlabel">Export and share</div>
+        <p>Export Euclid metrics to your data warehouse for further analysis. Get reports sent to you automatically and share PDFs with your colleagues.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content ">
+  <div class="container">
+    <div class="subcontainer9 pull-right">
+      <h1 class="col9 no-bottom-marg">
+        Euclid metrics
+      </h1>
+      <div class="col9 large-text separated">
+        We go beyond traffic counting to provide a more complete picture of what’s happening inside your stores. 
+        Here are just a few of the real-world metrics we provide:
+      </div>
+
+
+      <ul class="cluster-list how-section-list">
+
+
+        <li>
+          <div class="sectionlabel">Capture Rate</div>
+          <p>How well do your window displays pull shoppers into the store? Find out your Capture Rate and actively improve it. </p>
+        </li>
+        <li>
+          <div class="sectionlabel">Repeat Visitor Ratio</div>
+          <p>Are most of your shoppers regular customers or first-timers? Optimize for the segment that drives the most sales.</p>
+        </li>
+        <li>
+          <div class="sectionlabel">Walkbys</div>
+          <p>How much business is walking right by the door? Launch your sales on the days with the highest Walkby traffic.</p>
+        </li>
+        <li class="newrow">
+          <div class="sectionlabel">Visit Duration</div>
+          <p>How long do your shoppers spend in the store? Are they engaging with staff or waiting in line?</p>
+        </li>
+        <li>
+          <div class="sectionlabel">Visit Frequency & Recency</div>
+          <p>How often do shoppers come in the door each month? Are your daily deals generating loyal customers?</p>
+        </li>
+        <li>
+          <div class="sectionlabel">Engagement & Bounce Rates</div>
+          <p>Are shoppers staying long enough to make a purchase? Or do they "bounce" in just a few minutes? Measure the percentage that stay for a period of time you specify.</p>
+        </li>
+      </ul>
+       
+    <div class="col9 bump-up">
+      <a href="#comparison-chart" class="lightbox">Compare Euclid vs. traffic counters</a>
+      <div id="comparison-chart" style="display:none;width:470px;height:500px">
+        <table>
+          <thead><tr><th></th><th>Euclid <br>Analytics</th><th>Traffic <br>Counters</th></thead>
+          <tbody>
+            <tr class="table-section-head"><td colspan="100">Metrics</td></tr>
+            <tr><td>Visit Count</td><td><%= image_tag 'product/comparison-check.png' %></td><td><%= image_tag 'product/comparison-check.png' %></td></tr>
+            <tr><td>Visit Duration</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+            <tr><td>Visit Frequency</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+            <tr><td>Visit Recency</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+            <tr><td>Repeat Visitor Ratio</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+            <tr><td>Capture Rate</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+            <tr><td>Bounce Rate</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+            <tr><td>Engagement Rate</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+            <tr><td>Outside Traffic</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+            <tr><td>Walkbys</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+            <tr><td>Cross-Shopping Analysis</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+          </tbody>
+          <tbody>
+            <tr class="table-section-head"><td colspan="100">Reporting</td></tr>
+            <tr><td>Web-based dashboard</td><td><%= image_tag 'product/comparison-check.png' %></td> <td>Varies</td></tr>
+            <tr><td>Email reports</td><td><%= image_tag 'product/comparison-check.png' %></td> <td>Varies</td></tr>
+            <tr><td>Data export</td><td><%= image_tag 'product/comparison-check.png' %></td> <td>Varies</td></tr>
+            <tr><td>Test a Campaign feature</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+          </tbody>
+          <tbody>
+            <tr class="table-section-head"><td colspan="100">Deployment</td></tr>
+            <tr><td>Install anywhere in store</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+            <tr><td>Single sensor covers 24,000 sq. ft.</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+            <tr><td>Use in-store Wi-Fi as sensor</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+
+  </div>
+</div>
+
+
+<div class="content">
+  <div class="container">
+    <div class="subcontainer9 pull-right">
+      <h1 class="col9 ">
+        Plans
+      </h1>
+      <div class="col9 large-text separated">
+        Select the right Euclid plan for your business:
+      </div>
+      <div class="col9 separated">
+        <div class="sectionlabel"><%= link_to 'Euclid Zero', 'zero.html' %></div>
+        <p>Insights and metrics from your existing in-store Wi-Fi</p>
+      </div>
+      <div class="col9 separated">
+        <div class="sectionlabel"><%= link_to 'Quick Service', 'qsr.html' %></div>
+        <p>Maximize your customer throughput at peak or all day</p>
+      </div>
+      <div class="col9 separated">
+        <div class="sectionlabel"><%= link_to 'Specialty Retail', 'specialty.html' %></div>
+        <p>Drive higher sales productivity and profitability</p>
+      </div>
+      <div class="col9 separated">
+        <div class="sectionlabel"><%= link_to 'Department Stores', 'department.html' %></div>
+        <p>Zone-level analytics deliver a comprehensive view of the store</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 <% end %>
 
 
