@@ -94,7 +94,7 @@ activate :directory_indexes
 configure :build do
 
     # so there would be no need in invalidationg css-js files on cdn
-  activate :asset_hash
+  #activate :asset_hash
 
   # For example, change the Compass output style for deployment
   # activate :minify_css
