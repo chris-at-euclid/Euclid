@@ -101,6 +101,27 @@ $(document).ready(function(){
 	    me.attr('src', me.attr('data-pathtoimg'));
 	});
 
+	// Rotator for home page
+	var curBanner = $("#banner-home-cur");
+	if(curBanner.length > 0){
+		var i = 2;
+		var imax = 6;
+		setInterval(function(){
+			curBanner.animate({left:"100%"}, 400, function(){
+				var $t = $(this);
+				$t.css({"background-image":"url(../img/banners/home-rotation/"+i+".jpg)"});
+				setTimeout(function(){
+					$t.css({left: 0});
+				}, 500);
+				setTimeout(function(){
+					i++; 
+					if(i > imax) i = 1;
+					$("#banner-home-next").css({"background-image":"url(../img/banners/home-rotation/"+i+".jpg)"});
+				}, 1000);
+			});
+		}, 5000);
+	}
+
 });
 
 

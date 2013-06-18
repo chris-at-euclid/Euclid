@@ -32,6 +32,18 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 #banner-home .featured-content-textarea-inner { padding-top: 25px; }
 
 
+/* Styles for homepage bg img rotation */
+#banner-home { background: none !important; position: relative; }
+#banner-home-cur, #banner-home-next {
+	width: 100%;
+	height: 433px;
+	position: absolute;
+}
+#banner-home-next { background-image: url(../img/banners/home-rotation/2.jpg) }
+#banner-home-cur { background-color: #FFF; background-image: url(../img/banners/home-rotation/1.jpg); }
+
+
+
 
 
 
