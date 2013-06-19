@@ -84,7 +84,7 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 #pricing-table td:nth-of-type(odd) { background-color: #EDEDED; }
 #pricing-table td:nth-of-type(even) { background-color: #E0E0E0; }
 #pricing-table tr:first-of-type td { padding-top: 2em; }
-#pricing-table tr:last-of-type td { padding-bottom: 2em; }
+#pricing-table tr:last-of-type td { padding-bottom: 4em; }
 #priing-table #plan-descr {
 	border-bottom: 1px solid #C2C2C2;
 }
