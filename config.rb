@@ -115,14 +115,27 @@ configure :build do
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
+
+
 end
 
 #Sync to S3
-activate :sync do |sync|
-  sync.fog_provider = 'AWS'
-  sync.fog_directory = ENV['env']
-  #sync.fog_region = ''
-  sync.aws_access_key_id = EuclidCrypt.decrypt(EuclidCrypt::EUCLID_SALT, ENV['s3_access_key_id'])
-  sync.aws_secret_access_key = EuclidCrypt.decrypt(EuclidCrypt::EUCLID_SALT, ENV['s3_secret_access_key'])
-  sync.existing_remote_files = 'keep'
+activate :s3_sync do |s3_sync|
+
+  # old way
+  # sync.fog_provider = 'AWS'
+  # sync.fog_directory = ENV['env']
+  # sync.fog_region = ''
+  # sync.existing_remote_files = 'keep'
+
+  s3_sync.bucket = ENV['env']
+  s3_sync.aws_access_key_id = EuclidCrypt.decrypt(EuclidCrypt::EUCLID_SALT, ENV['s3_access_key_id'])
+  s3_sync.aws_secret_access_key = EuclidCrypt.decrypt(EuclidCrypt::EUCLID_SALT, ENV['s3_secret_access_key'])
+
+  s3_sync.delete = false
+  s3_sync.after_build = false
+
 end
+
+caching_policy 'text/html', max_age:(60 * 60), must_revalidate: true
+default_caching_policy max_age:(60 * 60 * 24), must_revalidate: true
