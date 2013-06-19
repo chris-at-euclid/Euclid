@@ -105,7 +105,7 @@ $(document).ready(function(){
 	var curBanner = $("#banner-home-cur");
 	if(curBanner.length > 0){
 		var i = 2;
-		var imax = 6;
+		var imax = 10;
 		setInterval(function(){
 			curBanner.animate({left:"100%"}, 400, function(){
 				var $t = $(this);
