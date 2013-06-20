@@ -38,8 +38,11 @@
   			<p>Data is transferred securely (using SSL) and is anonymized (hashed) before it is stored on Amazon Web Services. Hashed data can not be “reverse engineered” to reveal a device’s MAC address.</p>
         <p><i>This means that anyone who gains access to the database directly from Amazon – authorized or unauthorized – will only see long strings of numbers and letters and would not be able to get any information that could be linked to a back to a mobile device owner.</i></p>
 
-  			<span class="sectionlabel">Is there any way to link data about your device’s physical location back to you?</span>
-  			<p>In limited circumstances, yes. If someone already knows both your name and your MAC address, they could potentially legally require that we provide them with information in our database about your mobile device including the locations of the sensors where we recorded your signal. Euclid will only do this if we have received sufficient and appropriate legal process, or to respond to cases of fraud or abuse.</p>
+  			<span class="sectionlabel">Can Euclid link a particular device to the device owner's real-world identity and to the data stored by Euclid?</span>
+  			<p>No. The only ways that could happen are (a) if the user tells Euclid their real-world identity (and btw, we never ask).</p>
+			
+			<span class="sectionlabel">How does Euclid work with law enforcement?</span>
+			<p>We work with law enforcement to the extent required by law. We may disclose information pursuant to subpoenas, court orders or other requests (including criminal and civil matters) if we have a good faith belief that the response is required by law.</p>
 
   			<span class="sectionlabel">Can I opt out and delete the data you have about my MAC address?</span>
   			<p>Yes. You can easily opt out by <%= link_to_signupsite('optout', 'submitting your MAC address here', '') %>. We will stop saving any information about it in our databases and delete the data we already have associated with it. This will occur within seven days. If you have any comments or questions, please contact us at <a href="mailto:privacy@euclidanalytics.com">privacy@euclidanalytics.com</a>. Our <%= link_to 'website privacy statement', '/site-privacy.html' %> has information specific to euclidanalytics.com (which is entirely distinct from our analytics service offering).</p>
