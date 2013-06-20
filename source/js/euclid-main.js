@@ -119,7 +119,7 @@ $(document).ready(function(){
 					$("#banner-home-next").css({"background-image":"url(../img/banners/home-rotation/"+i+".jpg)"});
 				}, 1000);
 			});
-		}, 5000);
+		}, 10000);
 	}
 
 });
