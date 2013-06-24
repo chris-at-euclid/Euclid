@@ -1,14 +1,75 @@
 <% content_for :pagetitle do %>Euclid Analytics for Aerohive<% end %>
 <section class="content">
+
+<div class="content no-pad">
+  <div class="container">
+    <div class="col9 pull-right">
+      <div>
+        <h1>Euclid Analytics for Aerohive Wi-Fi</h1>
+        <p class="large-text">Get answers and insights for your retail business free with your Aerohive wireless infrastructure. No dedicated sensors, costly in-store installation, or complicated configuration required.</p>
+
+      </div>
+
+    </div>
+  </div>
+</div>
   <div class="container">
   	<div class="subcontainer9 pull-right">
-  		<h1 class="col9 ">Euclid Analytics for Aerohive customers</h1>
-	  	<h2 class="col9 separated">
-	  		Get answers and insights for your retail business for free with your Aerohive wireless infrastructure – <br>no dedicated sensors, costly in-store installation, or complicated configuration required.
-	  	</h2>
-	  	<p class="col9 separated">
-	  		<a href="mailto:info@euclidanalytics.com?subject=Euclid+Analytics+for+Aerohive">Contact us for details</a>
-	  	</p>
+	  	
+	  	<div class="content no-pad no-top-marg">
+
+    <div class="subcontainer9 pull-right subsection">
+        <%= image_tag 'partners/aerohive.png', :class=>'fill-container col3', :style=>'width: 210px;' %>
+      <div class="col6 separated">
+        <div class="sectionlabel">Aerohive Wi-Fi for Retail</div>
+        <p>The distributed, scalable Aerohive architecture is optimized for fully centralized, efficient operations and management in retail organizations, while features like Private Pre-Shared Key (PSK) enable simple, secure guest access.</p><p>Aerohive’s routers are literally plug and play, with configuration that is pushed down from a central HiveManager location when the device is turned on. And Aerohive’s award-winning WLANs function the same way, getting their configurations, changes and updates from the same HiveManager. With Aerohive, managing thousands of networks and access points can be nearly as easy as managing a single instance.</p>
+        <p><a href="http://www.aerohive.com/solutions/solutions-industry/retail">Learn more about Aerohive Wi-Fi for Retail</a></p>
+      </div>
+    </div>
+    <div class="subcontainer9 subsection pull-right">
+        <a href="../../img/partners/aerohive_dash.png" title="HiveManager with Euclid" class="lightbox col3 no-hover separated"><%= image_tag 'partners/aerohive_dash.png', :class=> 'shadowed fill-container' %>
+          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>
+      <div class="col6 separated">
+        <div class="sectionlabel">Integrated Euclid Analytics</div>
+        <p>Every Aerohive customer, cloud-hosted or on-premise, can access to Euclid’s embedded, free retail analytics solution via HiveManager. Customers can define unlimited retail stores, browse visitor traffic, engagement, and loyalty metrics, compare stores, share insights, and measure their operational efficiency, even across thousands of locations. Customers can choose to upgrade to one of Euclid's <%= link_to 'premium plans', '/pricing' %> to gain access to advanced analysis tools and enhanced data export at a low per-store monthly subscription price. </p>
+        <p><%= link_to 'Learn more about Euclid Analytics', '/product' %></p>
+      </div>
+    </div>
+</div>
+<h1 class="col9 ">
+        Setup
+      </h1>
+      <div class="col9 large-text">
+        Enable Euclid Analytics in three easy steps:
+      </div>
+
+			  	<div class="content no-pad no-top-marg">
+    <div class="subcontainer9 pull-right subsection">
+        <a href="../../img/partners/aerohive_radio_policy.png" title="Update radio policy" class="lightbox col3 no-hover separated"><%= image_tag 'partners/aerohive_radio_policy.png', :class=> 'shadowed fill-container' %>
+          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>
+      <div class="col6 separated">
+        <div class="sectionlabel">Step 1: Enable Presence functionality</div>
+        <p>HiveManager on-premise customers: Upgrade to the latest version of HiveManager, o to Home > HiveManager Services and check the "Enable Presence Analytics" box. HiveManager Online customers: Contact your Aerohive representative to enable analytics at no charge. Finally, under Configuration > Radio Profiles, check the "Enable Presence Server" box for your existing radios and push the poicy to your devices.
+</p>
+      </div>
+    </div>
+    <div class="subcontainer9 subsection pull-right">
+        <a href="../../img/partners/aerohive_define_stores.png" title="Define your stores" class="lightbox col3 no-hover separated"><%= image_tag 'partners/aerohive_define_stores.png', :class=> 'shadowed fill-container' %>
+          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>
+      <div class="col6 separated">
+        <div class="sectionlabel">Step 2: Configure retail stores</div>
+        <p>Go to Reports > Presence Analytics and click the Configure button. Accept the Euclid EULA and start defining stores. Enter the name of each store and its physical address, then select the Wi-Fi devices associated with that store. Data collection will begin immediately, but it will take 24 hours before measurements start appearing in your dashboard.</p>
+      </div>
+    </div>
+    <div class="subcontainer9 subsection pull-right">
+        <a href="../../img/partners/aerohive_dash_2.png" title="View Euclid Analytics dashboard" class="lightbox col3 no-hover separated"><%= image_tag 'partners/aerohive_dash_2.png', :class=> 'shadowed fill-container' %>
+          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>
+      <div class="col6 separated">
+        <div class="sectionlabel">Step 3: View analytics dashboard</div>
+        <p>After 24 hours, visit Reports > Presence Analytics again to start viewing opportunity, engagement, and loyalty metrics for each of your stores, including Visit Duration, Visit Frequency, Window Conversion, Bounce Rate, and Engagement Rate. You can view recent trends, compare stores, and drill down to view more detailed reports.</p>
+      </div>
+    </div>
+</div>
 	  </div>
 	 </div>
 </section>

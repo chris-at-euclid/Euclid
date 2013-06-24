@@ -41,6 +41,7 @@ page "/sitemap.xml", :layout => false
  with_layout :product do
    page "/product/*"
    page "/xirrus/*"
+   page "/aerohive/*"
  end
  with_layout :privacy do
    page "/privacy/*"
