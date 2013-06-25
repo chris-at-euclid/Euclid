@@ -121,6 +121,25 @@ $(document).ready(function(){
 			});
 		}, 10000);
 	}
+	var curBanner = $("#banner-qsr-cur");
+	if(curBanner.length > 0){
+		var i = 2;
+		var imax = 3;
+		setInterval(function(){
+			curBanner.animate({left:"100%"}, 400, function(){
+				var $t = $(this);
+				$t.css({"background-image":"url(../../img/banners/qsr-rotation/"+i+".jpg)"});
+				setTimeout(function(){
+					$t.css({left: 0});
+				}, 500);
+				setTimeout(function(){
+					i++; 
+					if(i > imax) i = 1;
+					$("#banner-qsr-next").css({"background-image":"url(../../img/banners/qsr-rotation/"+i+".jpg)"});
+				}, 1000);
+			});
+		}, 10000);
+	}
 
 });
 

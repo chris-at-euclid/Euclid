@@ -115,7 +115,7 @@ nav li 	{ list-style: none; }
 }
 
 /* subnav */
-#subnav { position: absolute; float: left; padding-top: 50px; width: 160px; }
+#subnav { position: absolute; float: left; padding-top: 50px; width: 160px; z-index: 2; }
 #subnav ul { padding: 5px 15px 15px 15px; margin: 0; background-image: url(../img/ie/transparent_BG)\9; background-color: rgba(255, 255, 255, .5); -webkit-transition: background-color 0.5s; -moz-transition: background-color 0.5s; -o-transition: background-color 0.5s; transition: background-color 0.5s;}
 #subnav ul:hover {  background-image: url(../img/ie/transparent_BG)\9; background-color: rgba(255, 255, 255, .95); -webkit-transition: background-color 0.2s; -moz-transition: background-color 0.2s; -o-transition: background-color 0.2s; transition: background-color 0.2s;}
 #subnav li { border-bottom: 1px dotted #616161; font-weight: bold; font-size: 13px; padding: 5px 0; color: #AAA; }

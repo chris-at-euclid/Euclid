@@ -44,6 +44,16 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 #banner-home-holder { overflow: hidden; }
 
 
+/* Styles for qsr bg img rotation */
+#banner-qsr { background: none !important; position: relative; }
+#banner-qsr-cur, #banner-qsr-next, #banner-qsr-holder {
+	width: 100%;
+	height: 350px;
+	position: absolute;
+}
+#banner-qsr-next { background-image: url(../img/banners/qsr-rotation/2.jpg) }
+#banner-qsr-cur { background-color: #FFF; background-image: url(../img/banners/qsr-rotation/1.jpg); }
+#banner-qsr-holder { overflow: hidden; }
 
 
 
