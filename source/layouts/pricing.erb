@@ -1,0 +1,14 @@
+<% content_for :viewportwide do %>content="width=950, initial-scale=0.8"<% end %>
+
+<% wrap_layout :layout do %>
+  
+<div class="content no-pad">
+  <div class="container">
+  </div>
+</div>
+    <% if content_for?(:pagehead) %>
+          <%= yield_content :pagehead %>
+    <% end %>
+    
+  	<%= yield %>
+<% end %>
