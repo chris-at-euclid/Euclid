@@ -512,6 +512,7 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 	/* Make the grid flexible for anything under our full size */
 
 	body, body.home { min-width: 300px; }
+	.logo { position: absolute; }
 
 	.container	{ width: 100%; }
 	.col1, .col2, .col3, .col4, .col5, .col6, 
@@ -543,6 +544,17 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 	.newrow { clear: none; }
 
 	#banner-home, #banner-solutions { background-size: cover; }
+
+	.banner-slider-holder { display: none; }
+
+	footer ul {
+		width: 21%;
+		padding-left: 0;
+		margin-left: 5%;
+	}
+	footer ul:last-of-type {
+		margin-left: 0;
+	}
 
 }
 
