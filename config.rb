@@ -46,7 +46,10 @@ page "/sitemap.xml", :layout => false
  with_layout :privacy do
    page "/privacy/*"
  end
-
+ with_layout :pricing do
+   page "/pricing/*"
+ end
+ 
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
 #   @which_fake_page = "Rendering a fake page with a variable"
