@@ -66,6 +66,42 @@
 })(jQuery);
 
 
+/* Banner Rotator Plugin */
+(function($){
+	$.fn.extend({ 
+		euclidRotator: function(options) {
+			return this.each(function() {
+				if($(this).length){
+
+					var $curBanner = $(this);
+					var $nextBanner = $(options.next_banner);
+					var i = 1;
+					var imax = options.imgs.length -1;
+					setInterval(function(){
+						$curBanner.animate({left:"100%"}, 400, function(){
+							//var $t = $(this);
+							$curBanner.css({"background-image":"url(../../img/"+options.imgs[i]+")"});
+							setTimeout(function(){
+								$curBanner.css({left: 0});
+							}, 500);
+							setTimeout(function(){
+								i++; 
+								if(i > imax) i = 0;
+								$nextBanner.css({"background-image":"url(../../img/"+options.imgs[i]+")"});//$("#banner-qsr-next").css({"background-image":"url(../../img/banners/qsr-rotation/"+i+".jpg)"});
+							}, 1000);
+						});
+					}, 10000);
+
+
+				}
+			});
+		}
+	});
+})(jQuery);
+
+
+
+
 
 $(document).ready(function(){
 
@@ -102,7 +138,7 @@ $(document).ready(function(){
 	});
 
 	// Rotator for home page
-	var curBanner = $("#banner-home-cur");
+	/*	var curBanner = $("#banner-home-cur");
 	if(curBanner.length > 0){
 		var i = 2;
 		var imax = 10;
@@ -121,6 +157,7 @@ $(document).ready(function(){
 			});
 		}, 10000);
 	}
+
 	var curBanner = $("#banner-qsr-cur");
 	if(curBanner.length > 0){
 		var i = 2;
@@ -139,9 +176,54 @@ $(document).ready(function(){
 				}, 1000);
 			});
 		}, 10000);
-	}
+	}*/
+	$("#banner-home-cur").euclidRotator({imgs: [
+			"banners/specialty-rotation/1.jpg", 
+			"banners/dept-rotation/4.jpg",
+			"banners/qsr-rotation/1.jpg", 
+			"banners/specialty-rotation/2.jpg", 
+			"banners/dept-rotation/1.jpg", 
+			"banners/qsr-rotation/2.jpg", 
+			"banners/specialty-rotation/3.jpg", 
+			"banners/dept-rotation/2.jpg", 
+			"banners/qsr-rotation/3.jpg", 
+			"banners/specialty-rotation/4.jpg", 
+			"banners/dept-rotation/3.jpg", 
+			"banners/specialty-rotation/5.jpg", 
+			"banners/qsr-rotation/4.jpg", 
+			"banners/dept-rotation/4.jpg", 
+			"banners/dept-rotation/5.jpg", 
+			"banners/qsr-rotation/5.jpg",
+			"banners/dept-rotation/6.jpg"
+
+		], next_banner: "#banner-home-next" });
+	
+
+	$("#banner-specialty-cur").euclidRotator({imgs: [
+			"banners/specialty-rotation/1.jpg", 
+			"banners/specialty-rotation/2.jpg", 
+			"banners/specialty-rotation/3.jpg", 
+			"banners/specialty-rotation/4.jpg", 
+			"banners/specialty-rotation/5.jpg", 
+			"banners/dept-rotation/4.jpg"
+		], next_banner: "#banner-specialty-next" }
+	);
+	$("#banner-dept-cur").euclidRotator({imgs: [
+			"banners/dept-rotation/1.jpg", 
+			"banners/dept-rotation/2.jpg", 
+			"banners/dept-rotation/3.jpg", 
+			"banners/dept-rotation/4.jpg", 
+			"banners/dept-rotation/5.jpg", 
+			"banners/dept-rotation/6.jpg"
+		], next_banner: "#banner-dept-next" }
+	);
+	
+	$("#banner-qsr-cur").euclidRotator({imgs: ["banners/qsr-rotation/1.jpg", "banners/qsr-rotation/2.jpg", "banners/qsr-rotation/3.jpg", "banners/qsr-rotation/4.jpg", "banners/qsr-rotation/5.jpg"], next_banner: "#banner-qsr-next" });
+
 
 });
+
+
 
 
 //Form validation for the contact form 

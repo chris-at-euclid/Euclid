@@ -1,16 +1,28 @@
 <% content_for :pagetitle do %>Euclid for Department Stores<% end %>
+<% content_for :pagehead do %>
+
+<div id="banner-dept-holder" class="banner-holder">
+	<div class="content featured-content-light banner banner-next" id="banner-dept-next"></div>
+	<div class="content featured-content-light banner banner-cur" id="banner-dept-cur"></div>
+</div>
+<div class="content featured-content-light banner banner-content" id="banner-dept">
+	<div class="container">
+		<div class="subcontainer6 featured-content-textarea pull-right">
+			<div class="featured-content-textarea-inner">
+				<h1 class="light-text">For Department Stores</h1>
+				<p class="large-text">Zone-level analytics deliver a comprehensive view of the store. From $199 per store per month</p>
+	    	  	<p class="clearfix"><%= link_to_signupsite('contact_us', 'Contact Us', 'btn dark-btn clearfix') %></p>
+	    	  </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% end %>
+
 <section class="content">
   <div class="container">
   	<div class="subcontainer9  pull-right">
-  		<div  class="col9 separated">
-	  		<h1>
-	  			For Department Stores
-	  		</h1>
-	  		<p class="large-text">Zone-level analytics deliver a comprehensive view of the store. From $199 per store per month</p>
-	    	<div  class="col9 separated">
-	  	  	<p class="clearfix"><%= link_to_signupsite('contact_us', 'Contact Us', 'btn dark-btn clearfix') %></p>
-	  	  </div>
-	  	</div>
 	  	<div class="col9 separated">
 		  	<div class="underlined sectionlabel">Benefits</div> 
 				<ul class="no-bullet">
