@@ -129,16 +129,16 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 .teamphoto {
 	position: relative;
 	display: inline-block;
-	width: 220px; /* CHANGE WIDTH AND HEIGHT HERE TO MAKE IMGS BIGGER OR SMALLER */
+	width: 100px; /* CHANGE WIDTH AND HEIGHT HERE TO MAKE IMGS BIGGER OR SMALLER */
 	/* height: 196px; UN COMMENT THIS TO SET A HEIGHT, WILL NOT SQUISH, JUST CUT IMG OFF */
 	overflow: hidden;
 	margin: 0; 
 	margin-right: 10px; /* 10px IS THE SPACING BETWEEN PHOTOS, CHANGE THIS TO ADD MORE SPACING, MAY NEED TO ADJUST WIDTH TOO */
-	margin-bottom: 10px; /* 10px IS THE SPACING BETWEEN ROWS OF PHOTOS, CHANGE THIS TO ADD MORE SPACING */
+	margin-bottom: 12px; /* 10px IS THE SPACING BETWEEN ROWS OF PHOTOS, CHANGE THIS TO ADD MORE SPACING */
 }
-.teamphoto:nth-of-type(3) {
+/* .teamphoto:nth-of-type(3) {
 	margin-right: 0;
-}
+} */
 .teamphoto-img {
 	width: 100%;
 }
