@@ -113,3 +113,59 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 
 
 
+
+
+
+
+
+
+
+/*
+	
+	TEAM PHOTO STYLES
+
+*/
+
+.teamphoto {
+	position: relative;
+	display: inline-block;
+	width: 220px; /* CHANGE WIDTH AND HEIGHT HERE TO MAKE IMGS BIGGER OR SMALLER */
+	/* height: 196px; UN COMMENT THIS TO SET A HEIGHT, WILL NOT SQUISH, JUST CUT IMG OFF */
+	overflow: hidden;
+	margin: 0; 
+	margin-right: 10px; /* 10px IS THE SPACING BETWEEN PHOTOS, CHANGE THIS TO ADD MORE SPACING, MAY NEED TO ADJUST WIDTH TOO */
+	margin-bottom: 10px; /* 10px IS THE SPACING BETWEEN ROWS OF PHOTOS, CHANGE THIS TO ADD MORE SPACING */
+}
+.teamphoto:nth-of-type(3) {
+	margin-right: 0;
+}
+.teamphoto-img {
+	width: 100%;
+}
+.teamphoto-caption {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #0099e0; /*#CCC; TO MAKE BG GRAY RATHER THAN BLUE, USE CCC*/
+	color: #000; /* TEXT COLOR, CHANGE TO WHATEVER. 000 = BLACK */
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.teamphoto:hover .teamphoto-caption {
+	top: 0;
+	opacity: 0.95; /* TO MAKE CAPTION MORE OR LESS OPAQUE, CHANGE THIS NUMBER. SOMETHING BETWEEN 0 AND 1 */
+}
+.teamphoto-caption-inner { padding: 10px; transition: all 0.5s; }
+
+
+
+
+
+
+
+
+
+
+
