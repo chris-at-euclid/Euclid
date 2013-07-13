@@ -112,7 +112,7 @@
 	  		<figure class="teamphoto">
 					<%= image_tag 'team-photos/allen.jpg', :class=>"teamphoto-img" %>
 					<figcaption class="teamphoto-caption">
-						<div class="teamphoto-caption-inner">Allen Liu, Platform Engineer</div>
+						<div class="teamphoto-caption-inner">Allen Liu, Senior Systems Engineer</div>
 					</figcaption>
 				</figure>
 
@@ -147,7 +147,7 @@
 	  		<figure class="teamphoto">
 					<%= image_tag 'team-photos/dexin.jpg', :class=>"teamphoto-img" %>
 					<figcaption class="teamphoto-caption">
-						<div class="teamphoto-caption-inner">Dexin Wang, Platform Engineer</div>
+						<div class="teamphoto-caption-inner">Dexin Wang, Director, Platform Engineering</div>
 					</figcaption>
 				</figure>
 
@@ -224,28 +224,20 @@
 	  	</div>
 
 	  	
-	  	<!-- WHERE WE WORK 
-	  	<div class="col3">
+	  	<!-- WHERE WE WORK -->
+	  	<div class="col9" id="euclidcount">
 	  		<div class="sectionlabel">Euclidians</div>
 	  		<div class="bignum">26</div>
 	  	</div>
-	  	<div class="col3">
-	  		<div class="sectionlabel">San Francisco</div>
-	  		<div class="bignum">24</div>
-	  	</div>
-	  	<div class="col3">
-	  		<div class="sectionlabel">NYC</div>
-	  		<div class="bignum">2</div>
-	  	</div>
 	  	<%= image_tag 'team-photos/infographics/euclidians.jpg', :class=>"col9 separated" %>
--->
-	  	<!-- WHERE WE'VE BEEN 
+
+	  	<!-- WHERE WE'VE BEEN -->
 	  	<div class="sectionlabel col9">We've been to</div>
 	  	<%= image_tag 'team-photos/infographics/worldmap.jpg', :class=>"col9 separated" %>
--->
-	  	<!-- WE LIKE 
+
+	  	<!-- WE LIKE -->
 	  	<div class="sectionlabel col9">We like</div>
-	  	<ul class="col9 separated tilelist">	  		
+	  	<ul class="col9 separated tilelist" id="tilelist-colors">	  		
 	  		<li class="tilelist-item tilelist-color-purple"></li>
 	  		<li class="tilelist-item tilelist-color-green"></li>
 	  		<li class="tilelist-item tilelist-color-blue"></li>
@@ -271,28 +263,24 @@
 	  		<li class="tilelist-item tilelist-color-purple"></li>
 	  		<li class="tilelist-item tilelist-color-blue"></li>
 	  	</ul>
--->
-	  	<!-- WE DRINK 
+
+	  	<!-- WE DRINK -->
 	  	<div class="sectionlabel col9">And we drink</div>
-	  	<ul class="col9 separated tilelist">
-	  		<li class="tilelist-item" style="background-color: black"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  		<li class="tilelist-item"></li>
-	  	</ul>-->
+	  	<ul class="col9 separated tilelist" id="tilelist-drinks">
+	  		<li class="tilelist-item"><%= image_tag 'team-photos/infographics/drinks/aviation.jpg' %></li>
+	  		<li class="tilelist-item"><%= image_tag 'team-photos/infographics/drinks/beer.jpg' %></li>
+	  		<li class="tilelist-item"><%= image_tag 'team-photos/infographics/drinks/bloodymary.jpg' %></li>
+	  		<li class="tilelist-item"><%= image_tag 'team-photos/infographics/drinks/champ.jpg' %></li>
+	  		<li class="tilelist-item"><%= image_tag 'team-photos/infographics/drinks/coffee.jpg' %></li>
+	  		<li class="tilelist-item"><%= image_tag 'team-photos/infographics/drinks/fernet.jpg' %></li>
+	  		<li class="tilelist-item"><%= image_tag 'team-photos/infographics/drinks/margarita.jpg' %></li>
+	  		<li class="tilelist-item"><%= image_tag 'team-photos/infographics/drinks/martini.jpg' %></li>
+	  		<li class="tilelist-item"><%= image_tag 'team-photos/infographics/drinks/mintjulep.jpg' %></li>
+	  		<li class="tilelist-item"><%= image_tag 'team-photos/infographics/drinks/redwine.jpg' %></li>
+	  		<li class="tilelist-item"><%= image_tag 'team-photos/infographics/drinks/sidecar.jpg' %></li>
+	  		<li class="tilelist-item"><%= image_tag 'team-photos/infographics/drinks/jarritos.jpg' %></li>
+	  		<li class="tilelist-item"><%= image_tag 'team-photos/infographics/drinks/whiskey.jpg' %></li>
+	  	</ul>
 
 
 	  	<div class="colgroup">

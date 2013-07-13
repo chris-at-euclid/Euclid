@@ -158,18 +158,35 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 	cursor: default;
 	opacity: 0.95; /* TO MAKE CAPTION MORE OR LESS OPAQUE, CHANGE THIS NUMBER. SOMETHING BETWEEN 0 AND 1 */
 }
-.teamphoto-caption-inner { padding: 10px; transition: all 0.5s; }
+.teamphoto:hover .teamphoto-caption-inner { padding-top: 10px; opacity: 1; }
+.teamphoto-caption-inner { padding: 10px; padding-top: 50px; opacity: 0; transition: all 0.5s; }
 
-.bignum { font-size: 45px; }
+#euclidcount { text-align: center; }
+.bignum { 
+	font-size: 100px;
+	line-height: 85px;
+	font-weight: 100; 
+}
 
 .tilelist { margin-top: 0; padding: 0; }
-.tilelist-item { 
+.tilelist-item {
 	display: inline-block;
-	width: 8%;
-	margin-right: 1%;
-	margin-bottom: 1%; 
+	float: left;
 }
-.tilelist-item:after {
+#tilelist-colors .tilelist-item { 
+	width: 8%;
+	margin-right: 0.5%;
+	margin-bottom: 0.5%; 
+}
+#tilelist-drinks .tilelist-item {
+	line-height: 146px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+#tilelist-drinks .tilelist-item img {
+	vertical-align: bottom;
+}
+#tilelist-colors .tilelist-item:after {
 	display: block;
 	content: '';
 	padding-top: 100%;
