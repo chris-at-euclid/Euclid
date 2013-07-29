@@ -210,9 +210,39 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 
 }
 
+#pcvmac {
+	margin-bottom: 60px;
+}
+#pcvmac-pcbar, #pcvmac-macbar {
+	line-height: 50px;
+	text-align: center;
+	color: #FFF;
+}
+#pcvmac-pcbar { 
+	float: left;
+	background-color: #80CCEE;
+	width: 30%;
+}
+#pcvmac-macbar {
+	background-color: #0099E0;
+}
 
 
 
+
+
+.lightbox-video:after {
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 7px solid rgba(0, 0, 0, 0);
+	position: absolute;
+	z-index: 10;
+	margin-top: -20px;
+	margin-left: 5px;
+	border-left: 16px solid #E74303;
+}
 
 
 
