@@ -64,20 +64,37 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 #pricing-table { 
 	border-collapse: collapse; 
 	border-color: #DDD;
-	box-shadow: 10px 10px 5px #888888;
+	box-shadow: 0 0 10px #888888;
 }
 #pricing-table td {
 	font-size: 0.9em;
-	padding: 0.6em 1em;
+	padding: 0.6em 20px;
 	text-align: left;
 	vertical-align: top;
 }
-#pricing-table #plan-name td { 
-	font-weight: bold; 
-	text-transform: uppercase; 
+#plan-name td { 
 	padding-left: 0.2em; padding-right: 0.2em;
-	border-top-left-radius:1em;
-	border-top-right-radius:1em;
+	/*border-top-left-radius:1em;
+	border-top-right-radius:1em;*/
+}
+#plan-name h3 {
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 20px;
+}
+.pricing-table-learnmore {
+	font-size: 10px;
+}
+#pricing-table-featurelist td {
+	padding-top: 20px;
+}
+#pricing-table ul {
+	padding: 0 0 0 20px;
+}
+#pricing-table li {
+	margin-bottom: 8px;
+	line-height: 18px;
 }
 #pricing-table #plan-name td, #pricing-table #plan-price td { text-align: center; }
 #plan-price td {
@@ -97,7 +114,6 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 #pricing-table td:nth-of-type(odd) { background-color: #EDEDED; }
 #pricing-table td:nth-of-type(even) { background-color: #E0E0E0; }
 #pricing-table tr:first-of-type td { padding-top: 2em; }
-#pricing-table tr:last-of-type td { padding-bottom: 4em; }
 #priing-table #plan-descr {
 	border-bottom: 1px solid #C2C2C2;
 }
