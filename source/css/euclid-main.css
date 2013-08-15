@@ -300,7 +300,10 @@ footer ul { float: right; margin-left: 1em; padding-left: 40px; }
 footer ul li { margin-bottom: 5px; margin-left: 0; }
 footer li:first-of-type { font-weight: bold }
 footer a { color: #616161; font-size: 12px; }
-footer .social-btn { float: left; margin-right: 20px; }
+footer .social-btn { display: block; float: left; margin-right: 20px; height: 30px; width: 30px; }
+#social-btn-linkedin { background: url("../img/libtn.png"); }
+#social-btn-fb { background: url("../img/fbbtn.png"); }
+#social-btn-twitter { background: url("../img/twitterbtn.png"); }
 footer .social-btn img { width: 30px; height: 30px; }
 
 
