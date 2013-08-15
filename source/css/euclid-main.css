@@ -80,7 +80,7 @@ a:hover {
 ==============================================================================
 */
 
-.logo { float: left; width: 105px; }
+.logo { float: left; width: 105px; height: 23px; background: url("../img/logo.png"); }
 header .logo { margin-top: 50px; }
 
 #primary-nav > ul > li 	{ float: left; }

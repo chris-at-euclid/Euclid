@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="col2">
+        <% link_to '/index.html' do %>
+            <div class="logo"></div>
+        <% end %>
+    </div>
+    <nav class="col10" id="primary-nav">
+        <ul id="site-actions">
+            <li><a href="http://dashboard.euclidelements.com" id="loginbtn" class="btn">Login</a></li>
+        </ul>
+        <ul id="site-pages">
+            <li class="<%= nav_active('product') %>"><%= link_to 'Products', '/product/index.html' %></li>
+            <li class="<%= nav_active('pricing') %>"><%= link_to 'Plans', '/pricing/index.html' %></li>
+            <li class="<%= nav_active('privacy') %>"><%= link_to 'Privacy', '/privacy/index.html' %></li>
+            <li class="<%= nav_active('about') %>"><%= link_to 'About', '/about/index.html' %></li>
+        </ul>
+    </nav>
+</div>
+<div id="top-divider" class="divider"></div>
