@@ -35,9 +35,7 @@ require 'euclid_crypt'
 page "/product.html", :layout => :contentpage
 page "/privacy.html", :layout => :contentpage
 page "/sitemap.xml", :layout => false
-
-page "/terms/legal-text.html", :layout => false
-page "/terms/privacy-text.html", :layout => false
+page "/terms/standard/*", :layout => false
 
  with_layout :about do
    page "/about/*"
@@ -54,6 +52,22 @@ page "/terms/privacy-text.html", :layout => false
    page "/pricing/*"
  end
  
+["standard"].each do |level|
+  ["privacy", "legal"].each do |page|
+    proxy "/terms/#{level}/#{page}.html", "/terms/template.html", :locals => { :path => "#{level}/#{page}", :withlayout => true }, :ignore => true
+  end 
+end 
+["standard"].each do |level|
+  ["privacy", "legal"].each do |page|
+    proxy "/terms/#{level}/#{page}-text.html", "/terms/template.html", :locals => { :path => "#{level}/#{page}", :withlayout => false }, :ignore => true
+  end 
+end
+
+
+# page "/terms/standard/privacy.html", :proxy => "/terms/standard/privacy-text.html" do
+#   @with_layout = true
+# end
+
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
 #   @which_fake_page = "Rendering a fake page with a variable"
