@@ -276,7 +276,7 @@ p:last-of-type { margin-bottom: 0; }
 }
 .underlined, .content-list-item { border-bottom: #0099E0 1px solid; padding-bottom: 5px; margin-bottom: 15px; }
 .underlined.light-underlined, .content-list-item { border-color: #b2e0f6; }
-.separated { margin-bottom: 30px; }
+.separated, p.separated { margin-bottom: 30px; }
 h1.separated { margin-bottom: 50px; }
 .indent { padding-left: 20px;}
 
@@ -360,10 +360,10 @@ form.defForm.contactForm {  }
 	box-shadow: 0px 2px 5px 0px #BABABA;
 	/*border:1px solid #DBDBDB;
 	background: #fff url(../assets/ui-selectmenu-arrow-with-line.png) no-repeat right 0;*/
-	background: #fff url(../images/dropdown-arrow.png) no-repeat 300px; center;
+	background: #fff url(../img/dropdown-arrow.png) no-repeat 300px; center;
 }
 .Euclid-Styled-Dropdown select{
-	width: 358px; /* Width of div + 28px */
+	width: 100%; /* Width of div + 28px */
 	line-height: normal;
 	vertical-align: bottom;
 	padding: 5px 0 0 5px; /* make sure padding right is set so the text doesn't overlap the button */
@@ -381,6 +381,13 @@ form.defForm.contactForm {  }
 
 
 
+.contactForm.defForm select { border: none; }
+.contactForm.defForm select[multiple] {
+	height: 4em;
+	border: 1px #CCC solid;
+	width: 100%;
+}
+.contact-dropdown { width: 445px; background-position: 400px; }
 
 
 

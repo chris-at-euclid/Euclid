@@ -1,0 +1,92 @@
+<% content_for :pagetitle do %>Euclid Analytics Knowledge Base<% end %>
+<section class="content">
+
+<div class="content no-pad">
+  <div class="container">
+    <div class="col12 separated">
+        <h1>Euclid Knowledge Base</h1>
+        <p class="large-text">Welcome to the Euclid Knowledge Base! If you are a registered partner, please <a href="https://euclidanalytics.com/zendesk.com/access">log in</a>. Otherwise, please fill out the following form (with your designated partner ID) to request access. </p>
+    </div>
+
+
+<form class=" defForm contactForm" onsubmit="return canSubmit()" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+  <div class="subcontainer6">
+
+<input type=hidden name="oid" value="00D30000001GtxS">
+<input type=hidden name="retURL" value="https://euclidanalytics.zendesk.com/access">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="jing-jing@euclidanalytics.com">                                  -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="first_name" class="required col6">
+  <span class="input-title">First Name</span><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+</label>
+
+<label for="last_name" class="required col6">
+  <span class="input-title">Last Name</span><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+</label>
+
+<label for="email" class="required col6"><span class="input-title">Email</span><input  id="email" maxlength="80" name="email" size="20" type="text" />
+</label>
+
+<label for="00Na0000002gpkt" class="required col6"><span class="input-title">Password</span><input  id="00Na0000002gpkt" maxlength="25" name="00Na0000002gpkt" size="20" type="text" />
+</label>
+
+<label for="00Na0000002gpke" class="required col6"><span class="input-title">Partner ID</span><input  id="00Na0000002gpke" maxlength="20" name="00Na0000002gpke" size="20" type="text" />
+</label>
+
+</div><div class="subcontainer6">
+
+<label for="company" class="required col6"><span class="input-title">Company</span><input  id="company" maxlength="40" name="company" size="20" type="text" />
+</label>
+
+<label for="00Na0000002gpkj" class="required col6"><span class="input-title">Partner Type</span><div class="Euclid-Styled-Dropdown contact-dropdown"><select  id="00Na0000002gpkj" name="00Na0000002gpkj" title="Partner Type"><option value="">--None--</option><option value="Wi-Fi Partner Vendor">Wi-Fi Partner Vendor</option>
+<option value="Wi-Fi Reseller">Wi-Fi Reseller</option>
+</select></div></label>
+
+<label for="00Na0000002gmVs" class="required col6"><span class="input-title">Manufacturers Supported</span><select  id="00Na0000002gmVs" multiple="multiple" name="00Na0000002gmVs" title="Wi-Fi Provider"><option value="Aerohive">Aerohive</option>
+<option value="Aruba">Aruba</option>
+<option value="Cisco">Cisco</option>
+<option value="Fortinet">Fortinet</option>
+<option value="Juniper">Juniper</option>
+<option value="Meraki">Meraki</option>
+<option value="Motorola">Motorola</option>
+<option value="Ruckus">Ruckus</option>
+<option value="Xirrus">Xirrus</option>
+<option value="Other">Other</option>
+</select></label>
+
+<label for="company" class="required col6"><span class="input-title">If Reseller, please provide your WLAN vendor(s) email adress(es)</span><input  id="00Na0000002gpko" maxlength="200" name="00Na0000002gpko" size="20" type="text" /></label>
+
+	</div>
+	<div class="col2 pull-right newrow separated">
+		<button class="dark-btn btn " type="submit" name="submit">Submit</button>
+	</div>
+	<p class="col12 large-text separated centered-text">Not a registered partner but interested in learning more? Please <a href="http://signup.euclidelements.com/contact_us">contact us</a> today.</p>
+</div>
+
+</form>
+
+
+
+
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+	var canSubmit = function() {
+		if($("#00Na0000002gpkj").val() != "") return true;
+		$("#00Na0000002gpkj").parent().css("box-shadow", "0 0 10px #F00");
+		return false;
+	}
+
+
+</script>
