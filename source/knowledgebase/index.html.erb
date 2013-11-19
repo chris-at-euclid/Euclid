@@ -5,7 +5,7 @@
   <div class="container">
     <div class="col12 separated">
         <h1>Euclid Knowledge Base</h1>
-        <p class="large-text">Welcome to the Euclid Knowledge Base! If you are a registered partner, please <a href="https://euclidanalytics.zendesk.com/access">log in</a>. Otherwise, please fill out the following form (with your designated partner ID) to request access. </p>
+        <p class="large-text">Welcome to the Euclid Knowledge Base! If you are a registered partner, please <a href="https://euclidanalytics.zendesk.com/access">log in</a>. Otherwise, please fill out the following form (with your registered partner code) to request access. </p>
     </div>
 
 
@@ -13,7 +13,7 @@
   <div class="subcontainer6">
 
 <input type=hidden name="oid" value="00D30000001GtxS">
-<input type=hidden name="retURL" value="https://euclidanalytics.zendesk.com/access">
+<input type=hidden name="retURL" value="http://euclidanalytics.com/knowledgebase/confirmation">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -34,11 +34,12 @@
 <label for="email" class="required col6"><span class="input-title">Email</span><input  id="email" maxlength="80" name="email" size="20" type="text" />
 </label>
 
-<label for="00Na0000002gpkt" class="required col6"><span class="input-title">Password</span><input  id="00Na0000002gpkt" maxlength="25" name="00Na0000002gpkt" size="20" type="text" />
+<label for="email" class="required col6"><span class="input-title">Title</span><input  id="title" maxlength="40" name="title" size="20" type="text" />
 </label>
 
-<label for="00Na0000002gpke" class="required col6"><span class="input-title">Partner ID</span><input  id="00Na0000002gpke" maxlength="20" name="00Na0000002gpke" size="20" type="text" />
+<label for="email" class="required col6"><span class="input-title">Location</span><input  id="country" maxlength="40" name="country" size="20" type="text" />
 </label>
+
 
 </div><div class="subcontainer6">
 
@@ -58,10 +59,12 @@
 <option value="Motorola">Motorola</option>
 <option value="Ruckus">Ruckus</option>
 <option value="Xirrus">Xirrus</option>
-<option value="Other">Other</option>
 </select></label>
 
-<label for="company" class="required col6"><span class="input-title">If Reseller, please provide your WLAN vendor(s) email adress(es)</span><input  id="00Na0000002gpko" maxlength="200" name="00Na0000002gpko" size="20" type="text" /></label>
+
+<label for="00Na0000002gpke" class="required col6"><span class="input-title">Partner Code</span>
+	<input  id="00Na0000002gpke" maxlength="20" name="00Na0000002gpke" size="20" type="text" />
+</label>
 
 	</div>
 	<div class="col2 pull-right newrow separated">
