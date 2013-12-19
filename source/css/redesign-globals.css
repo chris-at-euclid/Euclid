@@ -51,7 +51,7 @@ a , #main-content a{
   font-size: 18px;
 }
 
-#main-content a:hover, #main-content a:active {
+a:hover, #main-content a:hover, #main-content a:active {
   color: #16a2e2;
   text-decoration: none;
 }
