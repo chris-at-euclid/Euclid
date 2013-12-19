@@ -4,21 +4,23 @@
 
 
 <% wrap_layout :layout do %>
-  
-<div class="content no-pad">
-  <div class="container">
-    <aside id="subnav"><nav>
-      <ul>
-        <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Team', '/about/index.html' %></li>
-        <li class="<%= nav_active('about/blog/') %>"><a href="http://blog.euclidelements.com">Blog</a></li>
-        <li class="<%= nav_active('about/investors/') %>"><%= link_to 'Investors', '/about/investors.html' %></li>
-        <li class="<%= nav_active('about/news/') %>"><%= link_to 'News', '/about/news.html' %></li>
-        <li class="<%= nav_active('about/careers/') %>"><%= link_to 'Careers', '/about/careers.html' %></li>
-        <li class="<%= nav_active('about/contact/') %>"><%= link_to 'Contact', '/about/contact.html' %></li>
-      </ul>
-    </nav></aside>
+<div class="header-wrap subnav-wrap">
+  <div class="mobile-subnav" id="subnav">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul>
+          <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Team', '/about/index.html' %></li>
+          <li class="<%= nav_active('about/blog/') %>"><a href="http://blog.euclidelements.com">Blog</a></li>
+          <li class="<%= nav_active('about/investors/') %>"><%= link_to 'Investors', '/about/investors.html' %></li>
+          <li class="<%= nav_active('about/news/') %>"><%= link_to 'News', '/about/news.html' %></li>
+          <li class="<%= nav_active('about/careers/') %>"><%= link_to 'Careers', '/about/careers.html' %></li>
+          <li class="<%= nav_active('about/contact/') %>"><%= link_to 'Contact', '/about/contact.html' %></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
+
     <% if content_for?(:pagehead) %>
           <%= yield_content :pagehead %>
     <% end %>

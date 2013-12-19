@@ -1,3 +1,88 @@
+<div id="footer">
+  <div class="main-wrap">
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="social" class="row">
+          <div class="col-sm-12">
+            <a href="http://www.linkedin.com/company/euclid" id="social-btn-linkedin" class="separated no-hover social-btn"></a>
+            <a href="https://www.facebook.com/EuclidAnalytics" id="social-btn-fb" class="separated no-hover social-btn"></a>
+            <a href="https://twitter.com/EuclidAnalytics" id="social-btn-twitter" class="separated no-hover social-btn"></a>
+          </div>
+        </div>
+        <div id="updates" class="row">
+          <div class="col-sm-12">
+            <div id="update-button"><a href="http://eepurl.com/Cgo5P" class="no-top-marg dark-btn btn" target="_blank">Subscribe to Updates</a><br/></div>
+            <div id="copyright"><p>&copy; 2013 Euclid - <a href="privacy/statement/index.html">Website Privacy</a></p></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-8">
+        <div class="row">
+
+          <div class="col-md-5">
+            <div class="row">
+              <div class="col-xs-6">
+                <ul class="footer-links">
+                  <li class="<%= nav_active('solutions/index') %>"><%= link_to 'Solutions', '/solutions/index.html' %></li>
+                  <li class="<%= nav_active('solutions/qsr/') %>"><%= link_to 'QSR & Coffee', '/solutions/qsr.html' %></li>
+                  <li class="<%= nav_active('solutions/specialty/') %>"><%= link_to 'Specialty Retail', '/solutions/specialty.html' %></li>
+                  <li class="<%= nav_active('solutions/department/') %>"><%= link_to 'Large Format Stores', '/solutions/department.html' %></li>
+                  <li class="<%= nav_active('solutions/partners/') %>"><%= link_to 'Partners', '/solutions/partners.html' %></li>
+                  <li class="<%= nav_active('product/technology/') %>"><%= link_to 'Our Technology', '/product/technology.html' %></li>
+                </ul>
+              </div>
+              <div class="col-xs-6">
+                <ul class="footer-links">
+                  <li class="<%= nav_active('products/index.html') %>"><%= link_to 'Products', '/products/index.html' %></li>
+                  <li class="<%= nav_active('products/express') %>"><%= link_to 'Euclid Express', '/products/express.html' %></li>
+                  <li class="<%= nav_active('products/advanced') %>"><%= link_to 'Euclid Advanced', '/products/advanced.html' %></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="row">
+              <div class="col-xs-6">
+                <ul class="footer-links">
+                  <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Privacy', '/privacy/index.html' %></li>
+                  <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Trust', '/privacy/trust.html' %></li>
+                  <li class="<%= nav_active('privacy/advisors/') %>"><%= link_to_signupsite('optout', 'Opt Out', '') %></li>
+                  <li class="<%= nav_active('privacy/statement') %>"><%= link_to 'Privacy Statement', '/privacy/statement.html' %></li>
+                </ul>
+              </div>
+              <div class="col-xs-6">
+                <ul class="footer-links">
+                  <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Team', '/about/index.html' %></li>
+                  <li class="<%= nav_active('about/blog/') %>"><a href="http://blog.euclidelements.com">Blog</a></li>
+                  <li class="<%= nav_active('about/investors/') %>"><%= link_to 'Investors', '/about/investors.html' %></li>
+                  <li class="<%= nav_active('about/news/') %>"><%= link_to 'News', '/about/news.html' %></li>
+                  <li class="<%= nav_active('about/careers/') %>"><%= link_to 'Careers', '/about/careers.html' %></li>
+                  <li class="<%= nav_active('about/contact/') %>"><%= link_to 'Contact', '/about/contact.html' %></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="row">
+              <div class="col-xs-12">
+                <ul class="footer-links">
+                  <li><a href="contact/index.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Old footer
 <div class="divider"></div>
 <div class="container">
     <div class="col4">
@@ -6,7 +91,7 @@
         <a href="https://www.facebook.com/EuclidAnalytics" id="social-btn-fb" class="separated no-hover social-btn"></a>
         <a href="https://twitter.com/EuclidAnalytics" id="social-btn-twitter" class="separated no-hover social-btn"></a>
     </div>
-    <!-- Begin MailChimp Signup Form
+
 
     <div id="mc_embed_signup">
     <form action="http://euclidelements.us5.list-manage.com/subscribe/post?u=312001f8bed6873a3c2d20723&amp;id=a83ce932de" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="true">
@@ -15,7 +100,7 @@
     </form>
     </div>
 
-    End mc_embed_signup-->
+
     <div class="clearfix"><a href="http://eepurl.com/Cgo5P" class="no-top-marg dark-btn btn" target="_blank">Subscribe to Euclid Updates</a></div>
         <br/><p>&copy; 2013 Euclid - <%= link_to 'Website Privacy', '/privacy/statement.html' %></p>
     </div>
@@ -38,7 +123,7 @@
             <li><%= link_to 'Enterprise', '/pricing/index.html' %></li>
         </ul>
         <ul class="">
-            <li><%= link_to 'Products', '/product/index.html' %></li> 
+            <li><%= link_to 'Products', '/product/index.html' %></li>
             <li><%= link_to 'Euclid Zero', '/product/zero.html' %></li>
             <li><%= link_to 'QSR and Coffee', '/product/qsr.html' %></li>
             <li><%= link_to 'Specialty Retail', '/product/specialty.html' %></li>
@@ -47,3 +132,4 @@
         </ul>
     </div>
 </div>
+-->

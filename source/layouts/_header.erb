@@ -1,3 +1,90 @@
+<!-- LFL Redesign -->
+    <div class="navbar" role="navigation">
+      <div class="header-wrap">
+        <div class="row">
+          <div class="col-xs-5">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"> </a>
+            </div>
+          </div>
+          <div class="col-sm-7">
+              <ul id="site-actions">
+                  <li><a href="http://dashboard.euclidelements.com" class="btn">Log In</a></li>
+                  <li><a href="http://dashboard.euclidelements.com" class="btn dark-btn">Sign Up</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button-rule navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          </div>
+        </div>
+        <div class="row">
+          <div id="nav-button-col">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div id="mobile-nav-col">
+            <div class="row">
+              <div class="col-xs-12 mobile-nav-header">Euclid Express</div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown <%= nav_active('solutions') %>">
+                      <a href="/solutions" class="dropdown-toggle" data-toggle="dropdown">Solutions <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li class="<%= nav_active('solutions/index') %>"><%= link_to 'Overview', '/solutions/index.html' %></li>
+                        <li class="<%= nav_active('solutions/qsr/') %>"><%= link_to 'QSR & Coffee', '/solutions/qsr.html' %></li>
+                        <li class="<%= nav_active('solutions/specialty/') %>"><%= link_to 'Specialty Retail', '/solutions/specialty.html' %></li>
+                        <li class="<%= nav_active('solutions/department/') %>"><%= link_to 'Large Format Stores', '/solutions/department.html' %></li>
+                        <li class="<%= nav_active('solutions/partners/') %>"><%= link_to 'Partners', '/solutions/partners.html' %></li>
+                        <li class="<%= nav_active('product/technology/') %>"><%= link_to 'Our Technology', '/product/technology.html' %></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown <%= nav_active('products') %>">
+                      <a href="/products" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li class="<%= nav_active('products/index.html') %>"><%= link_to 'Plans', '/products/index.html' %></li>
+                        <li class="<%= nav_active('products/express') %>"><%= link_to 'Euclid Express', '/products/express.html' %></li>
+                        <li class="<%= nav_active('products/advanced') %>"><%= link_to 'Euclid Advanced', '/products/advanced.html' %></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown <%= nav_active('privacy') %>">
+                      <a href="/privacy" class="dropdown-toggle" data-toggle="dropdown">Privacy <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Overview', '/privacy/index.html' %></li>
+                        <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Trust', '/privacy/trust.html' %></li>
+                        <li class="<%= nav_active('privacy/advisors/') %>"><%= link_to_signupsite('optout', 'Opt Out', '') %></li>
+                        <li class="<%= nav_active('privacy/statement') %>"><%= link_to 'Privacy Statement', '/privacy/statement.html' %></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown <%= nav_active('about') %>">
+                      <a href="/about" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Team', '/about/index.html' %></li>
+                        <li class="<%= nav_active('about/blog/') %>"><a href="http://blog.euclidelements.com">Blog</a></li>
+                        <li class="<%= nav_active('about/investors/') %>"><%= link_to 'Investors', '/about/investors.html' %></li>
+                        <li class="<%= nav_active('about/news/') %>"><%= link_to 'News', '/about/news.html' %></li>
+                        <li class="<%= nav_active('about/careers/') %>"><%= link_to 'Careers', '/about/careers.html' %></li>
+                        <li class="<%= nav_active('about/contact/') %>"><%= link_to 'Contact', '/about/contact.html' %></li>
+                      </ul>
+                    </li>
+                    <li><a href="#contact">Contact Us</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Old header
 <div class="container">
     <div class="col2">
         <% link_to '/index.html' do %>
@@ -17,3 +104,4 @@
     </nav>
 </div>
 <div id="top-divider" class="divider"></div>
+-->

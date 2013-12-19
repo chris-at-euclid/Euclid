@@ -1,18 +1,20 @@
 
 <% content_for :pagetitlestartoverride do %>Euclid<% end %>
 <% wrap_layout :layout do %>
-  
-  <div class="content no-pad">
-    <div class="container">
-      <aside id="subnav"><nav>
+<div class="header-wrap subnav-wrap">
+  <div class="mobile-subnav" id="subnav">
+    <div class="row">
+      <div class="col-xs-12">
         <ul>
-          <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Overview', '/privacy/index.html' %></li>
-          <li class="<%= nav_active('privacy/advisors/') %>"><%= link_to_signupsite('optout', 'Opt Out', '') %></li>
-          <li class="<%= nav_active('privacy/statement') %>"><%= link_to 'Privacy Statement', '/privacy/statement.html' %></li>
+            <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Overview', '/privacy/index.html' %></li>
+            <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Trust', '/privacy/trust.html' %></li>
+            <li class="<%= nav_active('privacy/advisors/') %>"><%= link_to_signupsite('optout', 'Opt Out', '') %></li>
+            <li class="<%= nav_active('privacy/statement') %>"><%= link_to 'Privacy Statement', '/privacy/statement.html' %></li>
         </ul>
-      </nav></aside>
+      </div>
     </div>
   </div>
+</div>
   <% if content_for?(:pagehead) %>
         <%= yield_content :pagehead %>
   <% end %>

@@ -1,0 +1,23 @@
+<% wrap_layout :layout do %>
+<div class="header-wrap subnav-wrap">
+  <div class="mobile-subnav" id="subnav">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul>
+          <li class="<%= nav_active('solutions/index') %>"><%= link_to 'Overview', '/solutions/index.html' %></li>
+          <li class="<%= nav_active('solutions/qsr/') %>"><%= link_to 'QSR & Coffee', '/solutions/qsr.html' %></li>
+          <li class="<%= nav_active('solutions/specialty/') %>"><%= link_to 'Specialty Retail', '/solutions/specialty.html' %></li>
+          <li class="<%= nav_active('solutions/department/') %>"><%= link_to 'Large Format Stores', '/solutions/department.html' %></li>
+          <li class="<%= nav_active('solutions/partners/') %>"><%= link_to 'Partners', '/solutions/partners.html' %></li>
+          <li class="<%= nav_active('product/technology/') %>"><%= link_to 'Our Technology', '/product/technology.html' %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    <% if content_for?(:pagehead) %>
+          <%= yield_content :pagehead %>
+    <% end %>
+
+  	<%= yield %>
+<% end %>

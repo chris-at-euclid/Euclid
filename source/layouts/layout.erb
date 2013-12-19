@@ -10,17 +10,29 @@
         <meta property='description' content='Measure and optimize your traffic, loyalty, and engagement. Get the complete picture of how shoppers interact with your stores.'/>
         <meta name="viewport" <% if content_for?(:viewportwide) %><%= yield_content :viewportwide %><% else %>content="width=device-width"<% end %>>
 
+        <!--
         <%= stylesheet_link_tag 'normalize' %>
         <%= stylesheet_link_tag 'main' %>
         <%= stylesheet_link_tag 'dropdown' %>
         <%= stylesheet_link_tag 'euclid-main' %>
         <%= stylesheet_link_tag 'easybox' %>
         <%= stylesheet_link_tag 'static-only' %>
+        -->
+
+        <!-- LFL Redesign CSS -->
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Asap:400,700' rel='stylesheet' type='text/css'>
+        <%= stylesheet_link_tag 'bootstrap/bootstrap.css' %>
+        <%= stylesheet_link_tag 'redesign-globals' %>
+        <!-- end LFL Redesign CSS -->
 
         <%= javascript_include_tag 'vendor/modernizr-2.6.1.min' %>
         <%= javascript_include_tag 'vendor/jquery-1.8.0.min' %>
         <%= javascript_include_tag 'euclid-main' %>
         <%= javascript_include_tag 'easybox' %>
+
+        <!-- LFL Redesign JS -->
+        <%= javascript_include_tag 'vendor/bootstrap.min.js' %>
+
     </head>
     <body class="<%= page_class() %>">
         <!--[if lt IE 7]>
@@ -35,8 +47,8 @@
 
 
             <%= yield %>
-    
-        
+
+
         <footer>
             <%= partial "layouts/footer" %>
         </footer>
@@ -47,6 +59,20 @@
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+        <script>
+
+        // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
+        $('.dropdown').hover( function(e){
+          $(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);},
+          function(e){
+          $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
+        });
+
+        $('.dropdown').click( function(e){
+          document.location = $(this)[0].firstElementChild.href;
+        });
         </script>
     </body>
 </html>
