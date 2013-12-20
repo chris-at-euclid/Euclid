@@ -1,7 +1,125 @@
 <% content_for :pagetitle do %>Products<% end %>
-<% content_for :pagehead do %>
+<% content_for :pagetitle do %>Pricing<% end %>
+<div class="content">
+    <div class="container">
+        <div class="col12 separated"> 
+          <h1>Enterprise plans</h1>
+          <p class="large-text">(10 stores and up)<br/></p>
+          <table id="pricing-table">
+            <tr id="plan-name">
+              <td width="25%"><h3>Euclid Zero</h3><%= link_to 'Learn More', "../product/zero.html", :class=>"pricing-table-learnmore" %></td>
+              <td width="25%"><h3>QSR & Coffee</h3><%= link_to 'Learn More', "../product/qsr.html", :class=>"pricing-table-learnmore" %></td>
+              <td width="25%"><h3>Specialty Retail</h3><%= link_to 'Learn More', "../product/specialty.html", :class=>"pricing-table-learnmore" %></td>
+              <td width="25%"><h3>Large Format Stores</h3><%= link_to 'Learn More', "../product/department.html", :class=>"pricing-table-learnmore" %></td>
+            </tr>
+              <td>Deploy in one click on practically any Wi-Fi network (Aerohive, Aruba, Cisco, Meraki, more).</td>
+              <td>Get answers by restaurant and chainwide, all by daypart. QSR analytics help you maximize throughput at peak or all day.</td>
+              <td>Comp store sales drives chain performance. Get answers tailor-made for specialty retail including window conversion, loyalty, and cohort analysis.</td>
+              <td>Large-format stores are ecosystems. Foot-stream data and zone-level analytics give a comprehensive view of the store.</td>
+            </tr>
+            <tr id="pricing-table-featurelist">
+              <td>
+                <b>Standard Euclid metrics:</b>
+                <ul>
+                <li>Traffic - counts and duration</li>
+                <li>Engagement - capture and bounce</li>
+                <li>Repeat - recency and frequency</li>
+                <li>Up and running in minutes</li>
+              </ul></td>
+
+              <td>
+                <b>Standard Euclid metrics, plus:</b>
+                <ul>
+                <li>Walk-by traffic and conversion</li>
+                <li>Chain loyalty, cross shopping</li>
+                <li>All by daypart</li>
+                <li>Runs on in-store Wi-Fi or dedicated sensors</li>
+                <li>Full data history & export</li>
+                <li>Premium support</li>
+              </ul></td>
+
+              <td>
+                <b>Standard Euclid metrics, plus:</b>
+                <ul>
+                <li>Window conversion</li>
+                <li>Bounce, engagement by cohort</li>
+                <li>Tied to your marketing calendar</li>
+                <li>Runs on in-store Wi-Fi or dedicated sensors</li>
+                <li>Full data history & export</li>
+                <li>Premium support</li>
+                <li>Custom Analysis</li>
+              </ul></td>
+
+              <td>
+                <b>Standard Euclid metrics, plus:</b>
+                <ul>
+                <li>Detailed path analysis</li>
+                <li>Unlimited zones per store</li>
+                <li>KPIs by zone</li>
+                <li>Runs on in-store Wi-Fi or dedicated sensors</li>
+                <li>Full data history & export</li>
+                <li>Premium support</li>
+                <li>Custom Analysis</li>
+              </ul></td>
+            </tr>
 
 
-
-<% end %>
-
+            <!--<tr>
+              <td>&bull; Traffic - counts and duration</td>
+              <td><b>All standard Euclid metrics, plus:</b></td>
+              <td><b>All standard Euclid metrics, plus:</b></td>
+              <td><b>All standard Euclid metrics, plus:</b></td>
+            </tr>
+            <tr>
+              <td>&bull; Engagement - capture and bounce</td>
+              <td>&bull; Walk-by traffic and conversion</td>
+              <td>&bull; Window conversion</td>
+              <td>&bull; Detailed path analysis</td>
+            </tr>
+            <tr>
+              <td>&bull; Repeat - recency and frequency</td>
+              <td>&bull; Chain loyalty, cross shopping</td>
+              <td>&bull; Bounce, engagement by cohort</td>
+              <td>&bull; Unlimited zones per store</td>
+            </tr>
+            <tr>
+              <td>&bull; Up and running in minutes</td>
+              <td>&bull; All by daypart</td>
+              <td>&bull; Tied to your marketing calendar</td>
+              <td>&bull; KPIs by zone</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Runs on in-store Wi-Fi or dedicated sensors</td>
+              <td>Runs on in-store Wi-Fi or dedicated sensors</td>
+              <td>Runs on in-store Wi-Fi or dedicated sensors</td>
+            </tr>
+            <tr>
+			  <td></td>
+              <td>Full data history &amp; export</td>
+              <td>Full data history &amp; export</td>
+              <td>Full data history &amp; export</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Premium support</td>
+              <td>Premium support</td>
+              <td>Premium support</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Custom analysis</td>
+              <td>Custom analysis</td>
+            </tr>-->
+          </table>
+          
+          <!--<span class="sectionlabel">Ready to Order? </span> -->
+          <h2 class="pad-top">Get a custom proposal built around your needs.</h2>
+          <p class="clearfix"><%= link_to_signupsite('contact_us', 'Contact Us', 'btn dark-btn clearfix') %></p>
+		  <br/>
+		  <br/>
+          <!--<p class="large-text"><%= link_to 'Or, view SMB plans (for chains with fewer than 10 stores)', 'smb.html' %></p>-->
+   		</div>
+	</div>
+</div>

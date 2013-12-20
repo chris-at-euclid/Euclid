@@ -40,13 +40,16 @@ page "/terms/standard/*", :layout => false
  with_layout :about do
    page "/about/*"
  end
- with_layout :product do
-   page "/product/*"
+ with_layout :products do
+   page "/products/*"
    page "/xirrus/*"
    page "/aerohive/*"
  end
  with_layout :privacy do
    page "/privacy/*"
+ end
+ with_layout :solutions do
+   page "/solutions/*"
  end
  with_layout :pricing do
    page "/pricing/*"
