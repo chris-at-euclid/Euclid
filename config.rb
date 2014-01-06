@@ -34,6 +34,7 @@ require 'euclid_crypt'
 # With alternative layout
 page "/product.html", :layout => :contentpage
 page "/privacy.html", :layout => :contentpage
+page "/usrb/*", :layout => :contentpage
 page "/sitemap.xml", :layout => false
 page "/terms/standard/*", :layout => false
 
