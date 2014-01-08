@@ -22,36 +22,42 @@ body {
 
 
 
-h1, #main-content h1{
+h1, .main-content h1{
   font-family: 'Asap', sans-serif;
   font-size: 38px;
   color: #002e43;
   font-weight: normal;
 }
-h2, #main-content h2{
+h2, .main-content h2{
   font-family: 'Asap', sans-serif;
   font-size: 20px;
   color: #002e43;
   font-weight: bold;
 }
 
-p, #main-content p{
+p, .main-content p{
   font-family: 'Asap', sans-serif;
   color: #575757;
 }
-a , #main-content a{
+a , .main-content a{
   font-family: 'Asap', sans-serif;
   color: #117dae;
   font-weight: bold;
 }
 
-#main-content a:after {
+.main-content a:after {
   content: '\203A';
   margin-left: 10px;
   font-size: 18px;
 }
 
-a:hover, #main-content a:hover, #main-content a:active {
+.main-content a.btn:after { /* so that button links do not get styles with arrow like inline ones */
+  content: '';
+  margin-left: 0;
+  font-size: 14px;
+}
+
+a:hover, .main-content a:hover, .main-content a:active {
   color: #16a2e2;
   text-decoration: none;
 }
@@ -88,10 +94,13 @@ a:hover, #main-content a:hover, #main-content a:active {
   -webkit-box-shadow: inset 0 4px 10px 0 rgba(0,0,0,.1);
 }
 
-
-
-.btn.dark-btn, .btn.dark-btn:hover {
+.main-content a.btn.dark-btn, a.btn.dark-btn, a.btn.dark-btn:hover {
   color: #fcfcf0;
+}
+
+.main-content a.btn:after, a.btn:after{
+  content: "";
+  margin: 0;
 }
 
 .btn.dark-btn {
@@ -147,19 +156,34 @@ a:hover, #main-content a:hover, #main-content a:active {
 }
 .hero-container {
   position:relative;
-  height: 320px;
   width: 100%;
-  margin-bottom: 40px;
 }
 .hero-unit {
   padding: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
-  left: 0px;
   background-position: center 0;
   background-size: cover;
-  position: absolute;
+  /*position: absolute;
+  left: 0px;*/
   height: inherit;
   width: inherit;
+}
+
+.hero-unit .main-content h1 {
+  color: #fff;
+  line-height:42px;
+}
+
+.hero-unit p {
+  padding-top: 20px;
+  max-width: 470px;
+  margin: 0 auto;
+  color: #fff;
+}
+.hero-unit a.btn {
+  margin-top: 30px;
 }
 
 .navbar {
@@ -169,6 +193,7 @@ a:hover, #main-content a:hover, #main-content a:active {
   z-index: 200;
   background: #fff;
   border-radius: 0;
+  border-bottom: 1px solid #DDD;
 }
 
 .subnav-wrap {
@@ -231,9 +256,16 @@ button.navbar-toggle { outline: none; }
 }
 .mobile-nav-header {
   display: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 .mobile-subnav {
   display: none;
+  border-bottom: 1px solid #d2d2d2;
 }
 
 .dropdown-menu > li.selected > a, .mobile-subnav ul li.selected a {
@@ -265,7 +297,9 @@ button.navbar-toggle { outline: none; }
   .navbar-collapse.in li {
     border-top: 1px solid #d2d2d2;
   }
-
+  #mobile-nav-row{
+    overflow: hidden;
+  }
   #nav-button-col, #mobile-nav-col {
     padding-right: 15px;
     padding-left: 15px;
@@ -277,16 +311,10 @@ button.navbar-toggle { outline: none; }
   }
   #mobile-nav-col {
     width: 100%;
-    margin-left: 60px;
+    padding-left: 80px;
   }
   .mobile-nav-header {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #333;
-    font-size: 14px;
-    font-weight: 900;
-    text-transform: uppercase;
   }
   .dropdown-menu {
     display: none !important;
@@ -313,8 +341,6 @@ button.navbar-toggle { outline: none; }
 */
   .mobile-subnav {
     display: block;
-    border-top: 1px solid #d2d2d2;
-    border-bottom: 1px solid #d2d2d2;
   }
   .mobile-subnav ul {
     list-style: none;
@@ -471,7 +497,8 @@ button.navbar-toggle { outline: none; }
 
 ==============================================================================
 */
-#updates{ padding-top: 30px;}
+#updates {padding-top: 30px;}
+#update-button {height: 40px;}
 #social{ padding-top: 20px;}
 #copyright{ padding-top: 20px;}
 #footer { padding: 44px 0px 75px 0px !important; background-color: #313030; }

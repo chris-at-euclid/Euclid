@@ -55,16 +55,16 @@ page "/terms/standard/*", :layout => false
  with_layout :pricing do
    page "/pricing/*"
  end
- 
+
 ["standard"].each do |level|
   ["privacy", "legal"].each do |page|
     proxy "/terms/#{level}/#{page}.html", "/terms/template.html", :locals => { :path => "#{level}/#{page}", :withlayout => true }, :ignore => true
-  end 
-end 
+  end
+end
 ["standard"].each do |level|
   ["privacy", "legal"].each do |page|
     proxy "/terms/#{level}/#{page}-text.html", "/terms/template.html", :locals => { :path => "#{level}/#{page}", :withlayout => false }, :ignore => true
-  end 
+  end
 end
 
 

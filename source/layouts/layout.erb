@@ -10,15 +10,15 @@
         <meta property='description' content='Measure and optimize your traffic, loyalty, and engagement. Get the complete picture of how shoppers interact with your stores.'/>
         <meta name="viewport" <% if content_for?(:viewportwide) %><%= yield_content :viewportwide %><% else %>content="width=device-width"<% end %>>
 
-        <% if content_for?(:headextra) %><%= yield_content :headextra %><% end %>
 
-        <%= stylesheet_link_tag 'normalize' %>
-        <%= stylesheet_link_tag 'main' %>
-        <%= stylesheet_link_tag 'dropdown' %>
-        <%= stylesheet_link_tag 'euclid-main' %>
-        <%= stylesheet_link_tag 'easybox' %>
-        <%= stylesheet_link_tag 'static-only' %>
-
+        <% unless current_page.path == "products/express.html" || current_page.path == "index.html" %>
+            <%= stylesheet_link_tag 'normalize' %>
+            <%= stylesheet_link_tag 'main' %>
+            <%= stylesheet_link_tag 'dropdown' %>
+            <%= stylesheet_link_tag 'euclid-main' %>
+            <%= stylesheet_link_tag 'easybox' %>
+            <%= stylesheet_link_tag 'static-only' %>
+        <% end %>
 
         <!-- LFL Redesign CSS -->
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Asap:400,700' rel='stylesheet' type='text/css'>
@@ -33,6 +33,8 @@
 
         <!-- LFL Redesign JS -->
         <%= javascript_include_tag 'vendor/bootstrap.min.js' %>
+
+        <% if content_for?(:headextra) %><%= yield_content :headextra %><% end %>
 
     </head>
     <body class="<%= page_class() %>">
