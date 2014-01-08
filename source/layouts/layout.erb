@@ -10,14 +10,14 @@
         <meta property='description' content='Measure and optimize your traffic, loyalty, and engagement. Get the complete picture of how shoppers interact with your stores.'/>
         <meta name="viewport" <% if content_for?(:viewportwide) %><%= yield_content :viewportwide %><% else %>content="width=device-width"<% end %>>
 
-
+        <!-- Uncomment these for legacy pages ; do not include on Express page or Home page
         <%= stylesheet_link_tag 'normalize' %>
         <%= stylesheet_link_tag 'main' %>
         <%= stylesheet_link_tag 'dropdown' %>
         <%= stylesheet_link_tag 'euclid-main' %>
         <%= stylesheet_link_tag 'easybox' %>
         <%= stylesheet_link_tag 'static-only' %>
-
+        -->
 
         <!-- LFL Redesign CSS -->
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Asap:400,700' rel='stylesheet' type='text/css'>
@@ -32,6 +32,10 @@
 
         <!-- LFL Redesign JS -->
         <%= javascript_include_tag 'vendor/bootstrap.min.js' %>
+
+        <!-- Express page styles + JS -->
+        <%= stylesheet_link_tag 'express-styles' %>
+        <%= javascript_include_tag 'express_scripts' %>
 
     </head>
     <body class="<%= page_class() %>">

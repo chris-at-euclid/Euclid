@@ -34,33 +34,37 @@ require 'euclid_crypt'
 # With alternative layout
 page "/product.html", :layout => :contentpage
 page "/privacy.html", :layout => :contentpage
+page "/usrb/*", :layout => :contentpage
 page "/sitemap.xml", :layout => false
 page "/terms/standard/*", :layout => false
 
  with_layout :about do
    page "/about/*"
  end
- with_layout :product do
-   page "/product/*"
+ with_layout :products do
+   page "/products/*"
    page "/xirrus/*"
    page "/aerohive/*"
  end
  with_layout :privacy do
    page "/privacy/*"
  end
+ with_layout :solutions do
+   page "/solutions/*"
+ end
  with_layout :pricing do
    page "/pricing/*"
  end
- 
+
 ["standard"].each do |level|
   ["privacy", "legal"].each do |page|
     proxy "/terms/#{level}/#{page}.html", "/terms/template.html", :locals => { :path => "#{level}/#{page}", :withlayout => true }, :ignore => true
-  end 
-end 
+  end
+end
 ["standard"].each do |level|
   ["privacy", "legal"].each do |page|
     proxy "/terms/#{level}/#{page}-text.html", "/terms/template.html", :locals => { :path => "#{level}/#{page}", :withlayout => false }, :ignore => true
-  end 
+  end
 end
 
 

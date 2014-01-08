@@ -498,7 +498,7 @@ button.navbar-toggle { outline: none; }
 
 ==============================================================================
 */
-#update-button {height: 40px;}
+#updates {padding-top: 30px;}
 #social{ padding-top: 20px;}
 #copyright{ padding-top: 20px;}
 #footer { padding: 44px 0px 75px 0px !important; background-color: #313030; }

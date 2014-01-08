@@ -1,0 +1,19 @@
+button.navbar-toggle {
+	display: inline-block !important;
+}
+
+button-rule.navbar-toggle {
+	display: block !important;
+}
+
+.collapse.navbar-collapse {
+	display: none !important;
+}
+
+.mobile-nav-header {
+	display: block !important;
+}
+
+.mobile-subnav {
+	display: block !important;
+}
