@@ -1,9 +1,27 @@
+
+
 <% wrap_layout :layout do %>
-	<section class="content">
+<div class="header-wrap subnav-wrap">
+
+  <div class="mobile-subnav" id="subnav">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    <% if content_for?(:pagehead) %>
+          <%= yield_content :pagehead %>
+    <% end %>
+    <section class="content">
 	  <div class="container">
+			<div class="subcontainer12 pull-center">
 			<div class="col12">
 				<%= yield %>
 			</div>
+		</div>
 	  </div>
 	</section>
 <% end %>

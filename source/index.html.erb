@@ -1,4 +1,242 @@
 <% content_for :pagetitle do %>Answers and insights for QSR, coffee, specialty retail, and large format stores<% end %>
+<% content_for :headextra do %><%= stylesheet_link_tag 'static-home' %><% end %>
+
+
+
+
+
+
+    <div class="home-wrapper">
+    
+      <!-- begin slide show code -->
+      <div class="home-slides">
+        <!-- slide3 -->
+        <div class="home-slide-single slide-3">
+          <div class="headline2">Actionable customer insights. Now free.</div>
+          <div class="sub-text1">
+            Euclid Express brings the answers of online analytics to the offline world, capturing essential<br />
+            customer behavior like visit duration and repeats. Activation is easy, quickly providing your business with<br />
+            industry-leading customer intelligence.
+          </div>
+          <div class="slide-btns">
+            <%= link_to 'View Product', '/products/express.html' %>
+            <a href="http://info.euclidanalytics.com/ExpressSignUp.html" target="_blank" class="btn-blue">Sign up</a>
+          </div>      
+        </div> 
+        <!--//end slide3 -->
+        <!-- slide2 -->
+        <div class="home-slide-single slide-2">
+          <div class="headline1">Customers are more than transactions.</div>
+          <div class="sub-text1">
+            "I've always dreamed of analytics for brick and mortar that go beyond transaction<br />
+            data. The information available through Euclid is helping us improve the customer<br />
+            experience and our bottom line."<br />
+			- Jacob Jaber, CEO, Philz Coffee
+          </div>
+          <div class="slide-btns">
+            <%= link_to 'View Solution', '/solutions/qsr.html' %>
+          </div>         
+        </div>
+        <!--//end slide2 -->
+        <!-- slide1 -->
+        <div class="home-slide-single slide-1">
+          <div class="headline1">Privacy matters</div>
+          <div class="sub-text1">
+            Euclid worked with US senators and the Future of Privacy Forum to establish the MLA Code of Conduct, <br /> 
+            standardizing mobile device data privacy. Simply put, consumer privacy comes first. That's why<br />
+            Euclid always uses anonymous data and always will.
+          </div>
+          <div class="slide-btns">
+            <%= link_to 'View Privacy', '/privacy/index.html' %>
+          </div>        
+        </div>
+        <!--//end slide1 -->     
+      </div>
+      
+      <div class="home-slides-pager-wrapper">
+        <div id="home-slides-pager"></div>
+        <div id="home-slides-left" class="next-prev prev"><img src="img/home/slide-left_white.png" alt="img" /><img src="img/home/slide-left.png" class="hover-img" alt="img" /></div>
+        <div id="home-slides-right" class="next-prev next"><img src="img/home/slide-right_white.png" alt="img" /><img src="img/home/slide-right.png" class="hover-img" alt="img" /></div>
+      </div>
+      <!-- //end slide show code -->
+      
+      <!-- 2nd row -- Answers and insights -->
+      <div class="home-row2">
+        <div class="building">
+          <img src="img/home/building.jpg" alt="img" />
+        </div>
+        <h1>Answers and insights for physical locations</h1>
+        
+        <p>
+          Euclid empowers brick and mortar operations by delivering answers and insights just like<br /> 
+          the online clickstream. From measuring shopper engagement and loyalty <br /> 
+		  to optimizing operations, Euclid supercharges your business potential.
+        </p>
+        <div class="video-button">
+          <a href="http://www.youtube.com/watch?v=fNJTeHLJ6o4" class="hide_on_mobile btn dark-btn lightbox">Watch the Video</a>
+          <a href="http://m.youtube.com/watch?v=fNJTeHLJ6o4" class="show_on_mobile btn dark-btn">Watch the Video</a>
+        </div>
+      </div>
+      <!--//end 2nd row -->
+      
+      <!-- 3nd row -- Targeted solutions -->
+      <div class="home-row3">
+        <h1>Targeted solutions for specific results.</h1>
+        
+        <p>
+          Every Euclid product is designed to deliver business-specific results.<br />  
+		  Whether you have one location or a hundred, Euclid helps you better<br /> 
+          understand customer behavior, improve experiences, and measure success. 
+        </p>
+        
+        <div class="items">
+        <div class="row"> 
+         
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image">
+              <img src="img/home/circle1.jpg" alt="img" />
+            </div>            
+            <h2>QSR and Coffee</h2>            
+            <p>
+              Maximize your customer throughput 
+              at peak and by daypart. Measure loyalty 
+              by customer segment.
+            </p>           
+            <%= link_to 'View Product', '/solutions/qsr.html' %>
+          </div>
+          
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image">
+              <img src="img/home/circle2.jpg" alt="img" />
+            </div>            
+            <h2>Specialty Retail</h2>            
+            <p>
+               Drive higher same store sales by measuring offline marketing impact and improving shopper experiences.
+            </p>           
+            <%= link_to 'View Product', '/solutions/specialty.html' %>
+          </div>
+          
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image">
+              <img src="img/home/circle3.jpg" alt="img" />
+            </div>            
+            <h2>Large Format Retail</h2>            
+            <p>
+              Zone-level analytics deliver a comprehensive view across your department store, big box, or event venue.
+            </p>           
+            <%= link_to 'View Product', '/solutions/department.html' %>
+          </div>
+          
+        </div>
+        </div>
+
+      </div>
+      <!--//end 3nd row -->
+            
+      <!-- 4th row -- Powerful features.  -->
+      <div class="home-row4">
+        <h1>Powerful features. Essential answers.</h1>
+        
+        <div class="features row">
+          <div class="feature col-sm-3 col-xs-6 col-md-3 col-lg-3">
+            <img src="img/home/icon/features-1.png" alt="img" />
+            <span>Understand store visit patterns, duration & frequency</span>
+          </div>
+          
+          <div class="feature col-sm-3 col-xs-6 col-md-3 col-lg-3">
+            <img src="img/home/icon/features-2.png" alt="img" />
+            <span>Measure marketing ROI with storefront conversion</span>
+          </div>
+          
+          <div class="feature col-sm-3 col-xs-6 col-md-3 col-lg-3">
+            <img src="img/home/icon/features-3.png" alt="img" />
+            <span>Assess customer experience with engagement & bounce</span>
+          </div>
+          
+          <div class="feature col-sm-3 col-xs-6 col-md-3 col-lg-3">
+            <img src="img/home/icon/features-4.png" alt="img" />
+            <span>Optimize & benchmark store performance across time</span>
+          </div>
+          
+          <div class="feature col-sm-3 col-xs-6 col-md-3 col-lg-3">
+            <img src="img/home/icon/features-5.png" alt="img" />
+            <span>Build smarter customer profiles</span>
+          </div>
+          
+          <div class="feature col-sm-3 col-xs-6 col-md-3 col-lg-3">
+            <img src="img/home/icon/features-6.png" alt="img" />
+            <span>Grow chain loyalty & cross-shopping</span>
+          </div>
+          
+          <div class="feature col-sm-3 col-xs-6 col-md-3 col-lg-3">
+            <img src="img/home/icon/features-7.png" alt="img" />
+            <span>View full data history & export</span>
+          </div>
+          
+          <div class="feature col-sm-3 col-xs-6 col-md-3 col-lg-3">
+            <img src="img/home/icon/features-8.png" alt="img" />
+            <span>Utilize advanced analytics to deepen customer insights</span>
+          </div>        
+        </div>
+        
+      </div>
+      <!--/end 4th row -->
+     
+      <!-- 5th row -- add wifi.  -->
+      <div class="home-row5">
+        <h1>Just add Wi-Fi.</h1>
+        <p>
+        Euclid works securely within your network infrastructure. If you have in-store Wi-Fi<br /> 
+        from one of our many vendor partners, you can turn your existing access points into<br />
+        Euclid sensors with the push of a button.
+        </p>
+        
+        <img src="img/home/router.png" alt="img" class="router" />
+        <img src="img/home/nexus.png" alt="img" class="nexus" />
+      
+      </div>
+      <!--// 5th row  -->
+      
+      <!-- 5th row -- market leadership  -->
+      <div class="home-row6">
+        <h2>Market leadership recognized by</h2>
+        
+        <div class="row logos-row">
+          <div class="col-sm-12 col-lg-6">
+            <img src="img/home/icon/logos-1.png" alt="img">
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <img src="img/home/icon/logos-2.png" alt="img">
+          </div>
+        </div>
+      
+      </div>
+      <!--// 6th row  -->
+
+    </div>
+
+
+
+		<%= javascript_include_tag 'vendor/cycle.js' %>
+    <script>
+    	$(document).ready( function() {
+				$('.home-slides').cycle({ pager: '#home-slides-pager', prev: '#home-slides-left', next: '#home-slides-right', speed:   1000, pause: 1, timeout: 8000  });
+				
+				$('.home-slides-pager-wrapper .next-prev').mouseover( function() {  $(this).addClass('hover'); });
+				$('.home-slides-pager-wrapper .next-prev').mouseout( function() {  $(this).removeClass('hover'); });
+				$('#home-slides-pager, .home-slides-pager-wrapper .next-prev').click( function() { $('.home-slides').cycle('pause'); });
+			});
+    </script>
+
+
+
+
+
+
+
+
+
+<!--
 <div id="banner-home-holder" class="banner-holder">
 	<div class="content featured-content-light banner banner-next" id="banner-home-next"></div>
 	<div class="content featured-content-light banner banner-cur" id="banner-home-cur"></div>
@@ -55,3 +293,4 @@
 
 <img class="preload" data-pathtoimg="img/banners/solutions-marketing.jpg" src="" />
 <img class="preload" data-pathtoimg="img/privacy_privacy.png" src="" />
+-->

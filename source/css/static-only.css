@@ -67,7 +67,7 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 	box-shadow: 0 0 10px #888888;
 }
 #pricing-table td {
-	font-size: 0.9em;
+	font-size: 1.1em;
 	padding: 0.6em 20px;
 	text-align: left;
 	vertical-align: top;
@@ -79,12 +79,12 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 }
 #plan-name h3 {
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 16px;
 	text-transform: uppercase;
 	line-height: 20px;
 }
 .pricing-table-learnmore {
-	font-size: 10px;
+	font-size: 12px;
 }
 #pricing-table-featurelist td {
 	padding-top: 20px;
@@ -117,7 +117,7 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 #priing-table #plan-descr {
 	border-bottom: 1px solid #C2C2C2;
 }
-
+#pricing-table-price td { padding: 10px;text-align: center; font-size: 16px; }
 
 
 .insights-img { width: 210px; margin-bottom: 15px; }

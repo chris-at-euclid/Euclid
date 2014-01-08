@@ -486,7 +486,7 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 .col7.merge-right, .col8.merge-right, .col9.merge-right, .col10.merge-right, .col11.merge-right, .col12.merge-right { margin-right: -30px; }
 .subcontainer1, .subcontainer2, .subcontainer3, .subcontainer4, .subcontainer5, .subcontainer6,
 .subcontainer7, .subcontainer8, .subcontainer9, .subcontainer10, .subcontainer11, .subcontainer12, .subcontainerhalf-of-9	{ margin-left: 0; margin-right: 0; float: left; padding-left: 0 !important; padding-right: 0 !important; }
-.col12	{ width: 930px; }	/* Subcontainer 12 would just be a regular container... */
+.col12	{ width: 930px; }	.subcontainer12 { width: 960px; }
 .col11	{ width: 850px; } 	.col11.merge-right, .subcontainer11 { width: 880px; }
 .col10	{ width: 770px; } 	.col10.merge-right, .subcontainer10 { width: 800px; }
 .col9	{ width: 690px; } 	.col9.merge-right, .subcontainer9 { width: 720px; }
@@ -516,7 +516,7 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 .pull-right { float: right !important; }
 .fill-container { width: 100%; }
 .under-right { margin-right: -100%; } /* for floated elements, make them basically take up no space and allow content on their right to be placed ontop of them. */
-
+.pull-center { float: none !important; margin: auto; }
 
 
 @media all and (max-width: 699px) {
