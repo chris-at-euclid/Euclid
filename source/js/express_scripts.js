@@ -57,7 +57,6 @@ var expressInit = function(){
     barOriginalHeights[i] = barHeight;
   }
   if (!browserRunsAnimation()){
-    console.log("resetting divs for parts that will not animate");
     for (var i=0; i<bars.length; i++){
       $(bars[i]).css('height', barOriginalHeights[i]+"px");
       $("#insights-diagram *").css("visibility", "visible");
@@ -106,7 +105,6 @@ var expressInit = function(){
 }
 
 var fireDiagramAnimation = function(){
-  console.log("firing diagram animation");
   //fade in diagram
   var rate = 170;
   $( "#router" ).css('visibility','visible').hide().fadeIn( rate, function() {
@@ -143,53 +141,18 @@ var checkChartVisibility = function(){
   var screenTop = $(this).scrollTop() + parseInt($(".navbar").height());
   var fireAnimations = false;
 
-  //check rings
-  // updateRingChartDivMetrics();
-  // for (var i=0; i<ringChartBottoms.length; i++){
-  //   var animationVisible = ringAnimationVisible[i];
-  //   if (screenBottom > ringChartBottoms[i]){
-  //     animationVisible = true;
-  //   }
-  //   if ((screenTop > ringChartBottoms[i])||(screenBottom < ringChartTops[i])){
-  //     animationVisible = false;
-  //   }
-  //   //just became visible
-  //   if (animationVisible && !ringAnimationVisible[i] && browserRunsAnimation()){
-  //     fireRingAnimation(i);
-  //   }
-  //   just became invisible
-  //   if (!animationVisible && ringAnimationVisible[i] && browserRunsAnimation()){
-  //     resetRingAnimation(i);
-  //   }
-  //   ringAnimationVisible[i] = animationVisible;
-  // }
-
   //check bars
   updateBarChartDivMetrics();
   var animationVisible = barAnimationVisible;
   if (screenBottom > barChartBottom){
     animationVisible = true;
   }
-  // if ((screenTop > barChartBottom)||(screenBottom < barChartTop)){
-  //   animationVisible = false;
-  // }
   //just became visible
   if (animationVisible && !barAnimationVisible){
-    //fireBarAnimation();
     fireAnimations = true;
   }
   // //just became invisible
-  // if (!animationVisible && barAnimationVisible) resetBarAnimation();
   barAnimationVisible = animationVisible;
-
-  // var anyAnimationVisible = false;
-  // for (var i=0; i<ringChartBottoms.length; i++){
-  //   if (ringAnimationVisible[i]){
-  //     anyAnimationVisible=true;
-  //     break;
-  //   }
-  // }
-  // if (barAnimationVisible) anyAnimationVisible=true;
 
   //if scrolling has reached the bottom of the bar chart, fire all the animations
   if(fireAnimations){
@@ -221,7 +184,6 @@ var checkDiagramVisibility = function(){
 
 var fireRingAnimation = function(ringIndex){
   startAnimation();
-  console.log("fire");
   randomizeRingTargets(ringIndex);
 }
 
@@ -263,14 +225,11 @@ var updateDiagramDivMetrics = function(){
 
 var startAnimation = function(){
   if (masterInterval == null){
-    console.log("starting animation");
     masterInterval = setInterval(animationLoop,MASTER_INTERVAL_PERIOD);
   }else{
-    console.log("not starting animation because its already running");
   }
 }
 var stopAnimation = function(){
-  console.log("stoping animation");
   clearInterval(masterInterval);
   masterInterval = null;
 }
@@ -287,9 +246,7 @@ var browserIsIE8 = function(){
             rv = parseFloat(RegExp.$1);
     }
     if (rv==8){
-      console.log("browser is ie8");
     }else{
-      console.log("browser is not ie8");
     }
     return rv==8;
 }
@@ -327,7 +284,6 @@ var animationLoop = function(){
   //update rings
   var animationComplete = true;
   for (var i=0; i<ringTargetAngles.length; i++){
-    //console.log(ringTargetAngles[i][1] + "  " +RING_SLIDE_RATE + "  " +ringAngles[i][1]);
     var diffs = [(parseFloat(ringTargetAngles[i][0])-parseFloat(ringAngles[i][0])), (parseFloat(ringTargetAngles[i][1])-parseFloat(ringAngles[i][1]))]
     ringAngles[i][0] += diffs[0]/RING_SLIDE_RATE;
     ringAngles[i][1] += diffs[1]/RING_SLIDE_RATE;
