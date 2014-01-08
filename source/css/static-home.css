@@ -2,7 +2,7 @@
 
 .home-wrapper {
 	min-height: 500px; 
-	padding-top: 136px;
+	padding-top: 132px;
 }
 
 .home-wrapper .home-slides {
@@ -34,7 +34,7 @@
 }
 
 .home-wrapper .home-slides .headline2 {
-	padding-top: 45px !important; 
+	padding-top: 16px !important; 
 }
 
 .home-wrapper .home-slides .sub-text1 {
@@ -138,6 +138,7 @@
 
 .home-wrapper .home-slides .home-slide-single.slide-2 {
 	background-image:url('../img/home/banner2.jpg');
+	background-position: top center;
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-3 {
