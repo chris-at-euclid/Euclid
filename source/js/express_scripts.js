@@ -373,19 +373,3 @@ function setRotationDegrees(obj,value) {
 var browserIsMobile = function(){
   return ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
 }
-
-if (browserIsMobile()){
-  //$('head').append('<link rel="stylesheet" href="css/express-mobile-user-agent-styles.css" type="text/css" />');
-}
-//initialize
-
-//expressInit();
-
-
-
-/*
-              <div class="col-xs-6 col-md-3"><div id="ring-chart-1" class="ring-chart-container"><div id="ring-chart-1" class="ring-chart"><div class="ring-0 white-mask"> </div><div class="ring-0 graph-light-color"></div><div class="ring-1 white-mask"> </div><div class="ring-1 graph-light-color"></div><div class="ring-2 white-mask"> </div><div class="ring-2 graph-medium-color"></div><div class="ring-3 white-mask"> </div><div class="ring-3 graph-dark-color"></div><div class="ring-center"></div><div class="ring-label"><div class="ring-label-text">Visit Trends</div></div></div></div></div>
-              <div class="col-xs-6 col-md-3"><div id="ring-chart-2" class="ring-chart-container"><div id="ring-chart-1" class="ring-chart"><div class="ring-0 white-mask"> </div><div class="ring-0 graph-light-color"></div><div class="ring-1 white-mask"> </div><div class="ring-1 graph-light-color"></div><div class="ring-2 white-mask"> </div><div class="ring-2 graph-medium-color"></div><div class="ring-3 white-mask"> </div><div class="ring-3 graph-dark-color"></div><div class="ring-center"></div><div class="ring-label"><div class="ring-label-text">Storefront Converstion</div></div></div></div></div>
-              <div class="col-xs-6 col-md-3"><div id="ring-chart-3" class="ring-chart-container"><div id="ring-chart-1" class="ring-chart"><div class="ring-0 white-mask"> </div><div class="ring-0 graph-light-color"></div><div class="ring-1 white-mask"> </div><div class="ring-1 graph-light-color"></div><div class="ring-2 white-mask"> </div><div class="ring-2 graph-medium-color"></div><div class="ring-3 white-mask"> </div><div class="ring-3 graph-dark-color"></div><div class="ring-center"></div><div class="ring-label"><div class="ring-label-text">Shop Duration</div></div></div></div></div>
-              <div class="col-xs-6 col-md-3"><div id="ring-chart-4" class="ring-chart-container"><div id="ring-chart-1" class="ring-chart"><div class="ring-0 white-mask"> </div><div class="ring-0 graph-light-color"></div><div class="ring-1 white-mask"> </div><div class="ring-1 graph-light-color"></div><div class="ring-2 white-mask"> </div><div class="ring-2 graph-medium-color"></div><div class="ring-3 white-mask"> </div><div class="ring-3 graph-dark-color"></div><div class="ring-center"></div><div class="ring-label"><div class="ring-label-text">Repead Visits</div></div></div></div></div>
-*/
