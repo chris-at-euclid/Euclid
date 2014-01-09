@@ -187,6 +187,7 @@ a:hover, .main-content a:hover, .main-content a:active {
 }
 
 .navbar {
+  height: auto !important;
   margin-bottom: 0;
   position: fixed;
   width: 100%;
