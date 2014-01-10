@@ -68,14 +68,13 @@
         <script>
 
         // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
-        $('.dropdown').hover( function(e){
-          $(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);},
-          function(e){
-          $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
-        });
-
-        $('.dropdown').click( function(e){
-          document.location = $(this)[0].firstElementChild.href;
+        $('.dropdown').hover(function(e) {
+          if ($(e.target).hasClass('dropdown-toggle')) {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(100);
+          }
+        },
+        function(e) {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp(100);
         });
         </script>
     </body>
