@@ -189,8 +189,8 @@ var fireRingAnimation = function(ringIndex){
 
 var resetRingAnimation = function(ringIndex){
   startAnimation();
-  ringTargetAngles[ringIndex][0] = -181;
-  ringAngles[ringIndex][0] = -180;
+  ringTargetAngles[ringIndex][0] = -141 + (ringIndex * 10);
+  ringAngles[ringIndex][0] = -122 + (ringIndex * 20);
 }
 var fireBarAnimation = function(){
   startAnimation();
