@@ -285,3 +285,21 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 
 
 
+.footnotes {
+	padding-top: 1.5em;
+	font-size: 0.8em;
+	ul {
+		padding-left: 1.2em;
+	}
+}
+#trust-table {
+	width: 100%;
+	text-align: center;
+	td {
+		padding: 0.2em 0.5em;
+		border: 1px solid #aaa;
+	}
+	tr td:first-of-type {
+		text-align: left;
+	}
+}
