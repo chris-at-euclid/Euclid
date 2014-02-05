@@ -455,6 +455,7 @@ a.resumator-job-link { color: #0099E0 !important; }
 .resumator-job-view-details { float: right; padding: 0 20px; margin-top: -30px; clear: none !important; }
 #euclid-resumator-wrapper { background-color: #F3F3F3;  }
 .resumator-job-info {  padding: 0 10px 10px 20px; }
+.resumator-job-info-details{padding-left: 1.6em;}
 #resumator-logo { display: none; }
 .resumator-job-description-text { clear: both; }
 .resumator-job-description-text p { padding-left: 20px !important; padding-right: 20px !important; }
