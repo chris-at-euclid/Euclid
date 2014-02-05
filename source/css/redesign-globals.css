@@ -187,6 +187,7 @@ a:hover, .main-content a:hover, .main-content a:active {
 }
 .hero-unit a.btn {
   margin-top: 30px;
+  float: none;
 }
 
 .navbar {
@@ -522,3 +523,20 @@ button.navbar-toggle { outline: none; }
 #social-btn-twitter { background: url("../img/global-ui/twitterbtn.png"); }
 #footer .social-btn img { width: 30px; height: 30px; }
 
+
+
+
+/*
+==============================================================================
+
+  BANNER HERO STYLES
+
+==============================================================================
+*/
+
+
+.hero-unit--privacy {
+  background-image: url("../img/banners/privacy2.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
