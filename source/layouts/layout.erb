@@ -69,11 +69,25 @@
         // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
         $('.dropdown').hover(function(e) {
           if ($(e.target).hasClass('dropdown-toggle')) {
-            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(100);
+            window.droppingNav = true;
+
+            var dropdowns = $('.dropdown-menu');
+
+            for (var i = 0, l = dropdowns.length; i < l; i++) {
+                $(dropdowns[i]).stop(true, true).slideUp(200);
+
+            }
+
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);
+            setTimeout(function() {
+                window.droppingNav = false;
+            }, 220);
           }
         },
         function(e) {
-            $(this).find('.dropdown-menu').first().stop(true, true).slideUp(100);
+            if (!window.droppingNav) {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
+            }
         });
         </script>
     </body>
