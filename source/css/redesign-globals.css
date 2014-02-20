@@ -527,6 +527,7 @@ button.navbar-toggle { outline: none; }
 #social-btn-linkedin { background: url("../img/global-ui/libtn.png"); }
 #social-btn-fb { background: url("../img/global-ui/fbbtn.png"); }
 #social-btn-twitter { background: url("../img/global-ui/twitterbtn.png"); }
+#social-btn-gplus { background: url("../img/global-ui/gobtn.png"); }
 #footer .social-btn img { width: 30px; height: 30px; }
 
 
