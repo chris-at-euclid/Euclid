@@ -1,10 +1,27 @@
 <% content_for :pagetitle do %>Euclid analytics technology for retail<% end %>
+<% content_for :pagehead do %>
+<section class="content featured-content-grad no-pad">
+<div class="hero-container">
+    <div class="hero-unit hero-unit-technology">
+        <div class="main-wrap main-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Start fast, grow quickly.</h1>
+                    <p>Our technology works securely with existing Wi-Fi infrastructure through our trusted partners, or our plug-and-play sensors. There's no faster, easier way to start measuring in-store visits, engagement, and loyalty.</p>
+                    <a href="http://info.euclidanalytics.com/WBN14-01recording_Reg.html" class="btn btn-marg">Product Tour</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<% end %>
+
 <section class="content">
   <div class="container">
   	<div class="subcontainer9 pull-center">
 
-
-  		<div  class="col9 separated">
+<!--   		<div  class="col9 separated">
 	  		<h1>
 	  			Easy to implement and scale
 	  		</h1>
@@ -13,68 +30,75 @@
 				<p>If you have existing in-store Wi-Fi from Aruba, Aerohive, CISCO, Fortinet, Meraki, Ruckus, Xirrus, or other leading providers, you can <%= link_to 'turn your existing access points into Euclid sensors', '/solutions/partners/' %> with the push of a button.</p>
 				<p>Once your sensors are up and running, you can view reports for all your locations in our easy-to-use web Dashboard.</p>
 				<p class="large-text">Take a closer look at how our technology works:</p>
-	  	</div>
-  		<div class="col3 hide-on-mobile">
-  			<%= image_tag 'howitworks_flow.png' %>
+	  	</div> -->
+  		<div class="col3 hide-on-mobile workFlowImage">
+  			<%= image_tag 'how-work-flow.png'%>
   		</div>
   		<ul class="col6 pull-right how-section-list">
-
+ 			<p class="large-text">How it works</p> 			
   			<li>
-	  			<div class="sectionlabel">Euclid gives you key insights for your physical stores</div>
-					<p>Euclid senses smartphones and lets you see how shoppers flow through your store, their visit duration, and return shopping patterns.</p><br/>
+	  			<div class="sectionlabel">Euclid shows you how your customers shop.</div>
+					<p>Euclid senses how smartphones flow through the space, how long they stay, and how often they return.</p><br/>
 				</li>
 				<li>
-					<div class="sectionlabel">Smartphones broadcast anonymous Wi-Fi pings</div>
-					<p>Smartphones send out short "pings" as they search for Wi-Fi networks nearby. These pings include the phone's MAC address (a unique string of letters and numbers), signal strength and other non-personally identifiable information.</p><br/>
+					<div class="sectionlabel">Euclid senses smartphones' anonymous Wi-Fi signals</div>
+					<p>Smartphones send out short "pings" as they search for Wi-Fi networks nearby. These pings include the phone's MAC address (a unique string of letters and numbers), signal strength, and other non-personally identifiable information.</p><br/>
 				</li>
 				<li>
-					<div class="sectionlabel">Euclid records Wi-Fi pings and sends them to the cloud</div>
-					<p>Using your existing Wi-Fi infrastructure or our compact plug-and-play sensor, we record pings and send them to the cloud. For privacy, we scramble each MAC address using a one-way hashing algorithm.</p><br/>
+					<div class="sectionlabel">Euclid captures and records Wi-Fi these signals for analysis.</div>
+					<p>Using your existing Wi-Fi infrastructure or our compact plug-and-play sensor, we record pings and send them to our cloud-based systems. To protect shoppers' privacy, we scramble each MAC address using a one-way hashing algorithm.</p><br/>
 				</li>
 				<li>
-					<div class="sectionlabel how-section">Euclid processes and stores data</div>
-					<p>Our advanced heuristics extract actionable insights from the data and store them in Amazon's highly secure datacenters.<br><%= link_to 'Learn about our security practices', '/privacy/trust/' %></p><br/>
+					<div class="sectionlabel how-section">Euclid processes and stores data. </div>
+					<p>Our advanced heuristics extract actionable insights from the data and store the results in Amazon's highly secure datacenters.<br><%= link_to 'Learn about our data security practices ', '/privacy/trust/' %></p><br/>
 				</li>
 				<li> 
-					<div class="sectionlabel how-section">Retailer receives analytics via web and email</div>
-					<p>Use our web-based Dashboard and scheduled email reports to measure and optimize your business.</p><br/>
+					<div class="sectionlabel how-section">Euclid delivers reports to you via web and email. </div>
+					<p>Our web-based Dashboard and scheduled email reports make it easy and convenient to measure and optimize your business.</p><br/>
 				</li>
   		</ul>
-  		<div class="col9 separated"> 
-        <h1 class="">Superior Wi-Fi technology</h1>
-  		  <p class="large-text">Wi-Fi is the most affordable, scalable solution for retail analytics.<br /><%= link_to 'Learn more', 'http://blog.euclidelements.com/2013/07/why-wi-fi-is-right-approach-for-retail.html' %></p>
-  		  <a href="http://blog.euclidelements.com/2013/07/why-wi-fi-is-right-approach-for-retail.html" target="_blank"><%= image_tag 'product/tech-comparison.png', :style=>"width: 700px;" %></a>
-      </div>
-  		<div class="col9 separated"> 
-        <h1 class="">Works securely within your<br>existing network infrastructure</h1>
-  		  <p class="large-text">Euclid Analytics is built securely from the ground up, protecting both your business and your shoppers.</p>
-      </div>
-	  	<ul class="cluster-list light-underlined underlined separated how-section-list">
-	  		<li>
-	  			<div class="sectionlabel">MAC address hashing</div>
-  				<p>Each phone’s MAC address is scrambled with a one-way hash to create a separate unique ID.</p>
-  			</li>
-	  		<li>
-	  			<div class="sectionlabel">Encrypted data transmission</div>
-  				<p> Data is sent to Amazon Web Services (AWS) using  Secure Sockets Layer (SSL) encryption.</p>
-  			</li>
-	  		<li>
-	  			<div class="sectionlabel">Secure data storage</div>
-  				<p> Information is stored in Amazon’s highly secure datacenters</p>
-  			</li>
-	  		<li class="newrow">
-	  			<div class="sectionlabel">Limited employee access</div>
-  				<p> We use technical and policy controls to prohibit unauthorized access.</p>
-  			</li>
-	  		<li>
-	  			<div class="sectionlabel">Maintains PCI compliance</div>
-  				<p>Our sensors do not collect cardholder data or impact the topology of your secure network.</p>
-  			</li>
-	  	</ul>
-		<div class="large-text col9">
-			Euclid is committed to protecting the individual privacy of shoppers. For more information, visit our <%= link_to 'Privacy Overview', '/privacy/' %>.
-		</div>
-
-		</div>  	
   </div>
+		</div>
+<section class="content featured-content-grad no-pad router-section">
+<div class="hero-container">
+    <div class="hero-unit hero-unit-router-wifi">
+        <div class="main-wrap main-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Superior Wi-Fi technology.</h1>
+                    <p>Wi-Fi is everywhere — and that makes it the most affordable scalable technology for location analytics. Euclid makes capturing customer-centric insight, including duration and repeat data, easy across all locations.</p>
+                    <a href="http://info.euclidanalytics.com/WBN14-01recording_Reg.html" class="btn btn-marg">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+  <div class="container">
+  	<div class="subcontainer9 pull-center">
+
+  		<div class="col9 separated euclid-sensor"> 
+	  		<div class="hero-unit">
+	        <h1>Our technology makes it simple.</h1>
+	  		  <p>We're partners with the major Wi-Fi hardware vendors — making activation easy on existing hardware. If your vendor's not listed, we've got you covered with our plug-and-play sensors. With Euclid, you can get started in any location with power and connectivity. </p>
+	  		  <a href="http://blog.euclidelements.com/2013/07/why-wi-fi-is-right-approach-for-retail.html" target="_blank"><%= image_tag 'euclid-sensor.png', :style=>"width: 700px;" %></a>
+	      </div>
+      </div>
+  	</div>
+  	</div>
+      <section class="content featured-content-grad no-pad privacy-section">
+<div class="hero-container">
+    <div class="hero-unit">
+        <div class="main-wrap main-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Privacy and data security.</h1>
+                    <p>Euclid is committed to protecting the individual privacy of shoppers. It works securely within your existing network infrastructure.</p>
+                    <a href="/privacy/" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 </section> 

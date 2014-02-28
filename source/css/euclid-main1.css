@@ -243,10 +243,10 @@ h4 {
 }
 .sectionlabel, .icon-button-list li a, .input-title	{
 	color: #3e3e3e;
-	font-size: 13px;
+	font-size: 11px;
 	/*line-height: 11px;*/
 	font-weight: 900;
-/*	text-transform: uppercase;*/
+	text-transform: uppercase;
 }
 .emphasize { color: #0099E0; }
 .deemphasize { color: #3e3e3e; }
@@ -608,51 +608,6 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 
 /* MISC - NOT IN SIGNUP SITE YET */
 .press-release-date { font-style: italic; }
-/**Privacy Page Styles**/
-.hero-unit-privacy{
-  background-image: url("../img/privacy-hero.gif");
-}
-.hero-unit-technology{
-  background-image: url("../img/solutions/technology-hero.png");
-}
-.hero-unit-router-wifi{
-  background-image: url("../img/router-wifi.png");
-}
-.workFlowImage img{
-	width:290px;
-	margin-top:40px;
-}
-.how-section-list .large-text{
-	margin-bottom:20px;
-}
-.content.featured-content-grad.router-section, .content.featured-content-grad.privacy-section {
-	background-image:none;
-	border-bottom:none;
-}
-.content.featured-content-grad.router-section{
-	background-color: #e7ebee;
-}
-.router-section .hero-unit h1, .privacy-section .hero-unit h1 {
-	color:#002e43 !important;
-}
-.router-section .hero-unit p, .euclid-sensor .hero-unit p, .privacy-section .hero-unit p{
-	color:#575757;
-}
-.euclid-sensor .hero-unit img{
-	margin-top:45px;
-	margin-left:45px;
-}
-.content.featured-content-grad.privacy-section{
-	border-top:solid 1px #ccc;
-	background-color: none!important; 
-}
-.content-list-item img{
-	width: 60px;
-}
-.content-list.privacy-list .content-list-item{
-	border-bottom:none;
-}
-.privacy-list .btn{
-	margin-top:15px;
-}
+
+
 
