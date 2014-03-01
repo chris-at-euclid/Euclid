@@ -730,7 +730,7 @@ ul.trust-ul-margin{
  	color:#FFFFFF;
  }
 .advanced-feature-section img{
-	width:50px;
+	width:45px;
 }
 .advanced-last-section h1{
 	margin-bottom:25px;
@@ -747,3 +747,13 @@ ul.trust-ul-margin{
 .advanced-feature-section .row{
 	margin-top: 20px;
 }
+.main-content a:after{
+	content:none!important;
+}
+.content.advanced-feature-section{
+	padding-bottom:50px;
+}
+.advanced-feature-section .col-sm-3{
+	padding: 0 30px;
+}
+
