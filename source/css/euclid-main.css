@@ -677,14 +677,18 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 .trust-container.content{
 	background-color:  #e7ebee;
 	padding-bottom:0;
+	padding-top:20px;
+
 }
 
 .content-list.trust-list{
 	padding-bottom: 0;
+	margin-bottom:50px;
 }
 .trust-hero-center .col-xs-9{
 	margin-left:100px;
 }
 ul.trust-ul-margin{
-	margin-bottom:70px;
+	margin-bottom:65px;
 }
+
