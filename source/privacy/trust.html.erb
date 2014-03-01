@@ -1,14 +1,34 @@
 <% content_for :pagetitle do %>Security<% end %>
+<% content_for :pagehead do %>
+<section class="content featured-content-grad no-pad  privacy-section trust-section">
+<div class="hero-container">
+    <div class="hero-unit">
+        <div class="main-wrap main-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Trust and Transparency</h1>
+                    <p>Euclid understands the importance of operational transparency. In this section you will find information about Euclid service uptime, data security practices and Electronic Reporting Services agreement. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<% end %>
 <section class="content">
   <div class="container">
-  	<div class="subcontainer12 pull-center">
-  		<div class="col12 separated"> 
-        <h1 class="">Trust and transparency</h1>
-  		  <p class="large-text">Euclid understands the importance of operational transparency. In this section you will find information about Euclid service uptime, data security practices and Electronic Reporting Services agreement.</p>
-      </div>
-      <div class="col12 separated">
-        <h2>Euclid Service Uptime</h2>
-        <table id="trust-table">
+  	<div class="subcontainer9 pull-center">
+      <ul class="content-list privacy-list trust-ul-margin">
+        <li class="content-list-item heading">
+          <img class="col3">
+          <div class="col7">
+            <h1>Euclid Service Uptime</h1>
+          </div>
+          </li>
+        <li class="content-list-item">
+          <%= image_tag 'privacy/uptime-icon.png', :class=> 'col3' %>
+          <div class="col7">
+       <table id="trust-table">
           <thead>
             <tr>
               <td></td>
@@ -64,37 +84,81 @@
             <li><b>Dashboard Uptime</b> represents customer dashboard availability (based on relevant Amazon Web Services used)</li>
           </ul>
         </div>
-      </div>  
-      <div class="col12 separated">
-        <h2>Data Security</h2>
-        <p class="large-text">Euclid Analytics is built from the ground up with security in mind. Euclid works securely within your existing network infrastructure. We believe in protecting both your business and your shoppers.</p>
-      </div>  
-	  	<ul class="cluster-list light-underlined underlined separated how-section-list">
-	  		<li>
-	  			<div class="sectionlabel">MAC address hashing</div>
-  				<p>Each phone’s MAC address is scrambled with a one-way hash.</p>
-  			</li>
-	  		<li>
-	  			<div class="sectionlabel">Encrypted data transmission</div>
-  				<p>Data is sent to Amazon Web Services (AWS) using Secure Sockets Layer (SSL) encryption.</p>
-  			</li>
-	  		<li>
-	  			<div class="sectionlabel">Secure data storage</div>
-  				<p>Information is stored in Amazon’s highly secure data centers.</p>
-  			</li>
-	  		<li>
-	  			<div class="sectionlabel">Limited employee access</div>
-  				<p>We use technical and policy controls to prohibit unauthorized access.</p>
-  			</li>
-	  		<li class="newrow">
-	  			<div class="sectionlabel">Maintains PCI compliance</div>
-  				<p>Our sensors do not collect cardholder data or impact the topology of your secure network.</p>
-  			</li>
-	  	</ul>
-		<div class="col12">
-      <h2>Euclid's Electronic Services Reporting Terms &amp; Conditions</h2>
-			<p class="large-text ">Learn more about <%= link_to 'Euclid\'s Electronic Services Reporting Terms &amp; Conditions', '/terms/standard/legal/' %>.</p>
-		</div>
-  	</div>
+          </div>
+        </li>
+    </ul>
   </div>
+</div>
+<section class="content trust-container">
+  <div class="container">
+      <div class="subcontainer9 pull-center">
+      <ul class="content-list privacy-list trust-list">
+        <li class="content-list-item heading">
+          <img class="col3">
+          <div class="col7">
+            <h1>Data Security</h1>
+          </div>
+          </li>
+        <li class="content-list-item">
+          <%= image_tag 'privacy/dataSecurity-icon.png', :class=> 'col3' %>
+          <div class="col7">
+            <p>Euclid Analytics is built from the ground up with security in mind. Euclid works securely within your existing network infrastructure. We believe in protecting both your business and your shoppers.
+            </p>
+          </div>
+        </li>
+        <li class="content-list-item">
+          <img class="col3">
+          <div class="col7">
+            <div class="content-list-item-title sectionlabel">MAC address hashing</div>
+            <p>Each phone’s MAC address is scrambled with a one-way hash.</p>
+          </div>
+        </li>
+        <li class="content-list-item">
+          <img class="col3">
+          <div class="col7">
+            <div class="content-list-item-title sectionlabel">Encrypted data transmission</div>
+            <p>Data is sent to Amazon Web Services (AWS) using Secure Sockets Layer (SSL) encryption.</p>
+          </div>
+        </li>
+        <li class="content-list-item">
+          <img class="col3">
+          <div class="col7">
+            <div class="content-list-item-title sectionlabel">Secure data storage </div>
+            <p>Information is stored in Amazon’s highly secure data centers.</p>
+          </div>
+        </li>
+        <li class="content-list-item">
+          <img class="col3">
+          <div class="col7">
+            <div class="content-list-item-title sectionlabel">Limited employee access</div>
+            <p>We use technical and policy controls to prohibit unauthorized access.</p>
+          </div>
+        </li>
+        <li class="content-list-item">
+          <img class="col3">
+          <div class="col7">
+            <div class="content-list-item-title sectionlabel">Maintains PCI Compliance</div>
+            <p>Our sensors do not collect cardholder data or impact the topology of your secure network.</p>
+          </div>
+        </li>
+
+    </ul>
+  </div>
+  </div>
+</section>
+
+<section class="content featured-content-grad no-pad privacy-section trust-hero-center">
+<div class="hero-container">
+    <div class="hero-unit">
+        <div class="main-wrap main-content">
+            <div class="row">
+                <div class="col-xs-9">
+                    <h1>Euclid’s Electronic Services Reporting Terms & Conditions</h1>
+                    <a href="/privacy/" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 </section>
