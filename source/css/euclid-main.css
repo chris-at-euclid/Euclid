@@ -180,7 +180,7 @@ subnav
 .primary-content {
 	background-image: url(../img/content-bg.png);
 }
-.content.featured-content-grad, .featured-content-dark, .content.featured-content-light { border-bottom: 1px solid #b2e0f6; padding: 0; }
+.content.featured-content-grad, .featured-content-dark, .content.featured-content-light { /*border-bottom: 1px solid #b2e0f6;*/ padding: 0; }
 .featured-content-grad {
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#ECECEC));
 	background-image: -webkit-linear-gradient(top, #FFFFFF, #ECECEC);
@@ -618,14 +618,14 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
   background-image: url("../img/privacy-hero.gif");
 }
 .hero-unit-technology{
-  background-image: url("../img/solutions/technology-hero.png");
+  background-image: url("../img/solutions/technology-heroBanner.png");
 }
 .hero-unit-router-wifi{
   background-image: url("../img/router-wifi.png");
 }
 .workFlowImage img{
 	width:290px;
-	margin-top:40px;
+	margin-top:80px;
 }
 .how-section-list .large-text{
 	margin-bottom:20px;
@@ -656,9 +656,6 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 }
 .content-list.privacy-list .content-list-item{
 	border-bottom:none;
-}
-.privacy-list .btn{
-	margin-top:15px;
 }
 .content.featured-content-grad.trust-section{
 	border-bottom: solid 1px #ccc;
@@ -763,5 +760,20 @@ ul.trust-ul-margin{
 	float:none;
 }
 #social-btns{
-	width: 250px;
+	width: 240px;
+}
+.contact-section.content{
+	padding-bottom:50px;
+}
+.contact-section p{
+	margin: 20px 0;
+}
+.hero-unit-technology.hero-unit, .hero-unit-privacy.hero-unit, .hero-unit-advanced.hero-unit{
+	height:365px;
+}
+.solutions .main-heading{
+	margin-bottom:20px;
+}
+.solutions .tour-btn{
+	margin-top:100px !important;
 }
