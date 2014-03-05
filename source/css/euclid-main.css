@@ -612,13 +612,13 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 /***********New UI Styles*************/
 
 .hero-unit-advanced{
-  background-image: url("../img/product/advanced-hero.png");
+  background-image: url("../img/product/EuclidAdvanced-hero.png");
 }
 .hero-unit-privacy{
   background-image: url("../img/privacy-hero.gif");
 }
 .hero-unit-technology{
-  background-image: url("../img/solutions/technology-heroBanner.png");
+  background-image: url("../img/solutions/EuclidTechnology-hero.png");
 }
 .hero-unit-router-wifi{
   background-image: url("../img/router-wifi.png");
@@ -776,5 +776,8 @@ ul.trust-ul-margin{
 	margin-bottom:20px;
 }
 .solutions .tour-btn{
-	margin-top:100px !important;
+	margin-top:80px !important;
+}
+.hero-unit .col-xs-12 p{
+	font-size: 16px;
 }
