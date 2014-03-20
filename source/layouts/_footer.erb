@@ -25,19 +25,22 @@
             <div class="row">
               <div class="col-xs-6">
                 <ul class="footer-links">
-                  <li class="<%= nav_active('solutions/index') %>"><%= link_to 'Solutions', '/solutions/index.html' %></li>
-                  <li class="<%= nav_active('solutions/qsr/') %>"><%= link_to 'QSR & Coffee', '/solutions/qsr.html' %></li>
-                  <li class="<%= nav_active('solutions/specialty/') %>"><%= link_to 'Specialty Retail', '/solutions/specialty.html' %></li>
-                  <li class="<%= nav_active('solutions/department/') %>"><%= link_to 'Large Format Stores', '/solutions/department.html' %></li>
-                  <li class="<%= nav_active('solutions/partners/') %>"><%= link_to 'Partners', '/solutions/partners.html' %></li>
-                  <li class="<%= nav_active('product/technology/') %>"><%= link_to 'Our Technology', '/solutions/technology.html' %></li>
+                  <li class="<%= nav_active('products/index.html') %>"><%= link_to 'Products', '/products/index.html' %></li>
+                  <li class="<%= nav_active('products/express') %>"><%= link_to 'Euclid Express', '/products/express.html' %></li>
+                  <li class="<%= nav_active('products/advanced') %>"><%= link_to 'Euclid Advanced', '/products/advanced.html' %></li>
+                  <li class="<%= nav_active('products/index.html') %>"><%= link_to 'Plans & Pricing', '/products/plans' %></li>
                 </ul>
               </div>
               <div class="col-xs-6">
                 <ul class="footer-links">
-                  <li class="<%= nav_active('products/index.html') %>"><%= link_to 'Products', '/products/index.html' %></li>
-                  <li class="<%= nav_active('products/express') %>"><%= link_to 'Euclid Express', '/products/express.html' %></li>
-                  <li class="<%= nav_active('products/advanced') %>"><%= link_to 'Euclid Advanced', '/products/advanced.html' %></li>
+                  <li class="<%= nav_active('solutions/index') %>"><%= link_to 'Solutions', '/solutions/index.html' %></li>
+                  <li class="<%= nav_active('solutions/qsr/') %>"><%= link_to 'QSR & Coffee', '/solutions/qsr.html' %></li>
+                  <li class="<%= nav_active('solutions/specialty/') %>"><%= link_to 'Specialty Retail', '/solutions/specialty.html' %></li>
+                  <li class="<%= nav_active('solutions/department/') %>"><%= link_to 'Large Format Stores', '/solutions/department.html' %></li>
+                  <li class="<%= nav_active('solutions/specialty/') %>"><%= link_to 'Executive', '/solutions/executives/' %></li>
+                  <li class="<%= nav_active('solutions/department/') %>"><%= link_to 'Marketing', '/solutions/marketing/' %></li>
+                  <li class="<%= nav_active('solutions/partners/') %>"><%= link_to 'Operations', '/solutions/operations/' %></li>
+                  <li class="<%= nav_active('solutions/technology/') %>"><%= link_to 'IT', '/solutions/it/' %></li>
                 </ul>
               </div>
             </div>
@@ -47,20 +50,20 @@
             <div class="row">
               <div class="col-xs-6">
                 <ul class="footer-links">
-                  <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Privacy', '/privacy/index.html' %></li>
-                  <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Trust', '/privacy/trust.html' %></li>
-                  <li class="<%= nav_active('privacy/advisors/') %>"><%= link_to_signupsite('optout', 'Opt Out', '') %></li>
-                  <li class="<%= nav_active('privacy/statement') %>"><%= link_to 'Privacy Statement', '/privacy/statement.html' %></li>
+                  <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Resources', '/resources/' %></li>
+                  <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Benchmarks', '/resources/benchmarks' %></li>
+                  <li class="<%= nav_active('privacy/statement') %>"><a href="http://blog.euclidelements.com">Blog</a></li>
                 </ul>
               </div>
               <div class="col-xs-6">
                 <ul class="footer-links">
-                  <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Team', '/about/index.html' %></li>
-                  <li class="<%= nav_active('about/blog/') %>"><a href="http://blog.euclidelements.com">Blog</a></li>
-                  <li class="<%= nav_active('about/investors/') %>"><%= link_to 'Investors', '/about/investors.html' %></li>
-                  <li class="<%= nav_active('about/news/') %>"><%= link_to 'News', '/about/news.html' %></li>
-                  <li class="<%= nav_active('about/careers/') %>"><%= link_to 'Careers', '/about/careers.html' %></li>
-                  <li class="<%= nav_active('about/contact/') %>"><%= link_to 'Contact', '/about/contact.html' %></li>
+                   <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Partners', '/partners/' %></li>
+                  <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Reseller Partners', '/partners/resellers' %></li>
+                  <li class="<%= nav_active('privacy/advisors/') %>"><%= link_to_signupsite('optout', 'Become a Partner', '') %></li>
+                </ul>
+                <ul class="footer-links">
+                    <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Support', '/support/' %></li>
+                    <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Knowledge Base', '/support/knowledge/' %></li>
                 </ul>
               </div>
             </div>
@@ -70,7 +73,13 @@
             <div class="row">
               <div class="col-xs-12">
                 <ul class="footer-links">
-                  <li><a href="http://info.euclidanalytics.com/ContactUs.html" target="_blank">Contact Us</a></li>
+                    <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Company', '/about/index.html' %></li>
+                    <li class="<%= nav_active('about/news/') %>"><%= link_to 'News & Events', '/about/news.html' %></li>
+                    <li class="<%= nav_active('about/privacy/') %>"><%= link_to 'Privacy', '/about/privacy.html' %></li>
+                    <li class="<%= nav_active('about/trust/') %>"><%= link_to 'Trust', '/about/trust.html' %></li>
+                    <li class="<%= nav_active('about/careers/') %>"><%= link_to 'Careers', '/about/careers.html' %></li>   
+                    <li class="<%= nav_active('about/contact/') %>"><%= link_to 'Contact', '/about/contact.html' %></li>
+  
                 </ul>
               </div>
             </div>

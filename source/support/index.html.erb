@@ -1,0 +1,302 @@
+<% content_for :pagetitle do %>Products<% end %>
+
+<div class="content">
+    <div class="container">
+      <div class="subcontainer12 pull-center">
+        <div class="col12 separated"> 
+          <h1>Choose the best plan for your business</h1>
+          <p class="large-text separated">We understand that different businesses have different needs. Euclid offers two product tiers: <%= link_to 'Euclid Express', "../products/express.html"%> and <%= link_to 'Euclid Advanced', "../products/advanced.html"%>. <br/></p>
+          <table id="pricing-table" class="">
+            <thead>
+              <tr id="plan-name">
+                <td></td>
+                <td width="100px">Euclid Express</td>
+                <td width="100px">Euclid Advanced</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Real-time visibility</p>
+                  <p class="pricing-table-feature-desc">Start seeing real-time data and trends upon activation</p>
+                </td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+              </tr>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Essential customer analytics</p>
+                  <p class="pricing-table-feature-desc">Outside opportunity, storefront conversion, visits, visit duration, engagement, bounce, new vs. repeats and more</p>
+                </td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+              </tr>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Trend analysis</p>
+                  <p class="pricing-table-feature-desc">Compare metrics across all time and location</p>
+                </td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+              </tr>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Share and download</p>
+                  <p class="pricing-table-feature-desc">Unlimited dashboard logins and download data to csv</p>
+                </td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+              </tr>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Packaged business solutions</p>
+                  <p class="pricing-table-feature-desc">Measure marketing ROI, optimize store performance, and improve experience for specialty retail, QSR &amp; coffee, large format and more</p>
+                </td>
+                <td class="pricing-table-feature-mark"></td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+              </tr>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Advanced analytics capabilities</p>
+                  <p class="pricing-table-feature-desc">Integration of sales and event data, cross-location analytics, predictive analysis, zone-level data*, benchmarking and more</p>
+                </td>
+                <td class="pricing-table-feature-mark"></td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+              </tr>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Deep Excel integration and report broadcasting</p>
+                  <p class="pricing-table-feature-desc"></p>
+                </td>
+                <td class="pricing-table-feature-mark"></td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+              </tr>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Automated export to data warehouse and BI tools</p>
+                  <p class="pricing-table-feature-desc"></p>
+                </td>
+                <td class="pricing-table-feature-mark"></td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+              </tr>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">API access*</p>
+                  <p class="pricing-table-feature-desc"></p>
+                </td>
+                <td class="pricing-table-feature-mark"></td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+              </tr>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Onboarding, training, and services </p>
+                  <p class="pricing-table-feature-desc">Advanced analytics training, 5 sessions with Euclid Professional Services, and Client Success Manager</p>
+                </td>
+                <td class="pricing-table-feature-mark"></td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+              </tr>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Online support</p>
+                  <p class="pricing-table-feature-desc"></p>
+                </td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+              </tr>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Phone support and account management</p>
+                  <p class="pricing-table-feature-desc"></p>
+                </td>
+                <td class="pricing-table-feature-mark"></td>
+                <td class="pricing-table-feature-mark">&#x2713;</td>
+              </tr>
+              <tr class="pricing-table-pricing">
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Pricing</p>
+                  <p class="pricing-table-feature-desc"></p>
+                </td>
+                <td class="pricing-table-feature-mark">FREE</td>
+                <td class="pricing-table-feature-mark">$100 per store per month*</td>
+              </tr>
+            </tbody>
+
+
+
+
+            <!--
+              <td>Free offline customer analytics for all retail locations</td>
+              <td>Tailored answers for <%= link_to 'Specialty Retail', "../solutions/specialty.html" %>, <%= link_to 'QSR & Coffee', "../solutions/qsr.html" %>, <%= link_to 'Large Format Stores', "../solutions/department.html" %>, and More. </td>
+            </tr>
+            <tr id="pricing-table-featurelist">
+              <td>
+                <b>Full access to all essential analytics: </b><br><br>
+
+                Quick activation<br>
+                <ul>
+                  <li>Sign up today</li>
+                  <li>Easy self-service onboarding</li>
+                </ul>
+
+                Real-time visibility<br>
+                <ul>
+                  <li>Device detection and counts</li>
+                  <li>Duration and repeat data</li>
+                  <li>Hourly and daily summaries</li>
+                </ul>
+
+                Essential customer analytics<br>
+                <ul>
+                  <li>Outside opportunity</li>
+                  <li>Visits</li>
+                  <li>Storefront conversion</li>
+                  <li>Visit duration</li>
+                  <li>Engagement</li>
+                  <li> Bounce</li>
+                  <li>Repeat visits</li>
+                  <li>Recency</li>
+                  <li>Select any location </li>
+                  <li>Now, This Week and Last Week data</li>
+                </ul>
+
+                Trend Analysis<br>
+                <ul>
+                  <li>Compare metrics across timeframes and locations</li>
+                </ul>
+
+                Share &amp; Download<br>
+                <ul>
+                  <li>Unlimited dashboard logins</li>
+                  <li>Export to csv</li>
+                </ul>
+
+                Online Support &amp; Resources<br>
+                <ul>
+                  <li>Euclid Knowledge Base</li>
+                  <li>Product guides &amp; FAQs</li>
+                  <li>Email support</li>
+                </ul>
+              </td>
+
+
+
+
+
+
+
+
+              <td>
+                <b>All Express features, plus: </b><br><br>
+
+                Packaged business solutions<br>
+                <ul>
+                  <li>Marketing ROI: Measure offline impact of marketing</li>
+                  <li>Store Performance: Optimize and benchmark store performance </li>
+                  <li>Customer Segmentation: Improve customer experience and drive loyalty</li>
+                </ul>
+
+                Advanced analytics capabilities<br>
+                <ul>
+                  <li>Hierarchy roll-up reporting</li>
+                  <li>Integration of sales data </li>
+                  <li>Event, promotion, and floor </li>
+                  <li>Cross-location analysis</li>
+                  <li>Customer value attribution</li>
+                  <li>Predictive analysis</li>
+                  <li>Zone-level data*</li>
+                  <li>Benchmarking vs. industry, set impact assessment segment and geographic averages*</li>
+                </ul>
+
+                Additional features<br>
+                <ul>
+                  <li>Deep Excel integration</li>
+                  <li>Report broadcasting</li>
+                  <li>Automated export</li>
+                  <li>Integration into data warehouse and business intelligence tools</li>
+                  <li>API access*</li>
+                </ul>
+
+                Additional services and support<br>
+                <ul>
+                  <li>Advanced analytics training</li>
+                  <li>Five sessions with Euclid Professional Services</li>
+                  <li>Email and phone support</li>
+                  <li>Client success manager</li>
+                </ul>
+
+              </td>
+            </tr>
+
+            <tr id="pricing-table-price">
+              <td><b>Free</b></td>
+              <td><b>Pricing starts at $100 per store per month*</b></td>
+            </tr>
+
+            <tr id="pricing-table-btns">
+              <td><a href="http://info.euclidanalytics.com/ExpressSignUp.html" class="btn dark-btn clearfix">Sign Up</a></td>
+              <td><a href="http://info.euclidanalytics.com/ContactUs.html" class="btn dark-btn clearfix">Get Advanced</a></td>
+            </tr>-->
+
+            <!--<tr>
+              <td>&bull; Traffic - counts and duration</td>
+              <td><b>All standard Euclid metrics, plus:</b></td>
+              <td><b>All standard Euclid metrics, plus:</b></td>
+              <td><b>All standard Euclid metrics, plus:</b></td>
+            </tr>
+            <tr>
+              <td>&bull; Engagement - capture and bounce</td>
+              <td>&bull; Walk-by traffic and conversion</td>
+              <td>&bull; Window conversion</td>
+              <td>&bull; Detailed path analysis</td>
+            </tr>
+            <tr>
+              <td>&bull; Repeat - recency and frequency</td>
+              <td>&bull; Chain loyalty, cross shopping</td>
+              <td>&bull; Bounce, engagement by cohort</td>
+              <td>&bull; Unlimited zones per store</td>
+            </tr>
+            <tr>
+              <td>&bull; Up and running in minutes</td>
+              <td>&bull; All by daypart</td>
+              <td>&bull; Tied to your marketing calendar</td>
+              <td>&bull; KPIs by zone</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Runs on in-store Wi-Fi or dedicated sensors</td>
+              <td>Runs on in-store Wi-Fi or dedicated sensors</td>
+              <td>Runs on in-store Wi-Fi or dedicated sensors</td>
+            </tr>
+            <tr>
+			  <td></td>
+              <td>Full data history &amp; export</td>
+              <td>Full data history &amp; export</td>
+              <td>Full data history &amp; export</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Premium support</td>
+              <td>Premium support</td>
+              <td>Premium support</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Custom analysis</td>
+              <td>Custom analysis</td>
+            </tr>-->
+          </table>
+          <br><i>*Additional pricing may apply for added features. Volume discounts available. Contact Euclid for a custom proposal built around your needs.</i>
+          <!--<span class="sectionlabel">Ready to Order? </span> -->
+          <!--<h2 class="pad-top">Sign up and activate Euclid Express today for free across all locations.</h2>
+          <p class="clearfix"><a href="http://info.euclidanalytics.com/ExpressSignUp.html" class="btn dark-btn clearfix">Sign Up</a></p>
+          <h2 class="pad-top">Contact us to learn more about Euclid Advanced</h2>
+          <p class="clearfix"><a href="http://info.euclidanalytics.com/ContactUs.html" class="btn dark-btn clearfix">Contact Us</a></p>-->
+		  <br/>
+		  <br/>
+      <p class="large-text"><a href="http://info.euclidanalytics.com/ExpressSignUp.html">Sign up</a> today for Euclid Express or <a href="http://info.euclidanalytics.com/ContactUs.html">contact us</a> for a custom proposal built around your needs.</p>
+          <!--<p class="large-text"><%= link_to 'Or, view SMB plans (for chains with fewer than 10 stores)', 'smb.html' %></p>-->
+   		</div>
+    </div>
+	</div>
+</div>
