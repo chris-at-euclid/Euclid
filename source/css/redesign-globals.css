@@ -160,6 +160,8 @@ a:hover, .main-content a:hover, .main-content a:active {
 .hero-container {
   position:relative;
   width: 100%;
+  height:365px;
+  margin-top: 70px;
 }
 .hero-unit {
   padding: 0;
@@ -614,3 +616,15 @@ button.navbar-toggle { outline: none; }
   padding-left:10px;
   padding-right:10px;
 }
+.benchMark-icon img{
+  width:90px;
+  float:right;
+}
+.benchMark-main .container{
+  margin-top:60px;
+}
+.benchMark-main ul.how-section-list li{
+  margin-bottom:20px;
+}
+
+

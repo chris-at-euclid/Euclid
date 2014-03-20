@@ -620,6 +620,9 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 .hero-unit-technology{
   background-image: url("../img/solutions/EuclidTechnology-hero.png");
 }
+.hero-unit-resources{
+  background-image: url("../img/resources/benchMark-hero.png");
+}
 .hero-unit-router-wifi{
   background-image: url("../img/router-wifi.png");
 }
