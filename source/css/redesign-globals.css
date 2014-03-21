@@ -626,5 +626,23 @@ button.navbar-toggle { outline: none; }
 .benchMark-main ul.how-section-list li{
   margin-bottom:20px;
 }
+.hero-container.ecosystems{
+  height:auto;
+  margin-top:0px;
+}
+.hero-container.ecosystems img{
+  margin-top:20px;
+}
+.ecosystems img{
+  height:450px;
+}
+.PartnerReseller-main .content{
+  padding-bottom:0;
 
-
+}
+.partner-logo img{
+  width:110px;
+}
+.PartnerReseller-main .hero-container{
+  height:auto;
+}
