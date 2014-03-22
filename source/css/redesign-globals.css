@@ -527,7 +527,7 @@ button.navbar-toggle { outline: none; }
 
 ==============================================================================
 */
-#update-button {height: 40px;}
+#update-button {height: 40px; margin-top:30px;}
 #social{ padding-top: 20px;}
 .sublinks ul li{ float: left; margin-right: 15px; color: #FFF;}
 .sublinks ul li a.last{ border-right:none;}
