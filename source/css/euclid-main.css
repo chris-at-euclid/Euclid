@@ -786,4 +786,13 @@ ul.trust-ul-margin{
 .hero-unit .col-xs-12 p{
 	font-size: 16px;
 }
-
+.excutives-row4 .content-list-item img{
+  width:150px;
+}
+.excutives-row4 h1{
+	text-align:center;
+	margin:40px 0;
+}
+.executives-row5{
+	border-top: solid 1px #ddd;
+}
