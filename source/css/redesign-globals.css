@@ -491,6 +491,8 @@ button.navbar-toggle { outline: none; }
 @media(max-width:480px){
   #site-actions {
     float: none;
+    clear:both;
+    padding-top:15px;
   }
 }
 
