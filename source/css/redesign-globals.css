@@ -584,7 +584,10 @@ button.navbar-toggle { outline: none; }
   background-image: url("../img/solutions/operations-hero.png");
   background-size: cover;
 }
-
+.hero-unit-IT{
+  background-image: url("../img/solutions/it-hero.png");
+  background-size: cover;
+}
  .solutions-menu ul.dropdown-menu{
     min-width:360px;
   }
