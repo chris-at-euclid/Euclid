@@ -579,6 +579,11 @@ button.navbar-toggle { outline: none; }
   background-size: cover;
   background-position: bottom;
 }
+.hero-unit-marketing{
+  background-image: url("../img/solutions/marketing-hero.png");
+  background-size: cover;
+  background-position: bottom;
+}
  .solutions-menu ul.dropdown-menu{
     min-width:360px;
   }
@@ -733,8 +738,8 @@ button.navbar-toggle { outline: none; }
     
 }
 .solutions-row3.executives .items .image img{
-  width:110px;
-  height:110px;
+  width:95px;
+  height:95px;
 }
 .executives img.connector{
   width:700px;
