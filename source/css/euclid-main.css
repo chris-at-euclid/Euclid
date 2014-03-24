@@ -620,6 +620,12 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 .hero-unit-technology{
   background-image: url("../img/solutions/EuclidTechnology-hero.png");
 }
+.hero-unit-resources{
+  background-image: url("../img/resources/benchMark-hero.png");
+}
+.hero-unit-PartnerReseller{
+  background-image: url("../img/partners/PartnerReseller-hero.png");
+}
 .hero-unit-router-wifi{
   background-image: url("../img/router-wifi.png");
 }
@@ -648,7 +654,6 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 	margin-left:45px;
 }
 .content.featured-content-grad.privacy-section{
-	border-top:solid 1px #ccc;
 	background-color: none!important; 
 }
 .content-list-item img{
@@ -780,4 +785,14 @@ ul.trust-ul-margin{
 }
 .hero-unit .col-xs-12 p{
 	font-size: 16px;
+}
+.excutives-row4 .content-list-item img{
+  width:150px;
+}
+.excutives-row4 h1{
+	text-align:center;
+	margin:40px 0;
+}
+.executives-row5{
+	border-top: solid 1px #ddd;
 }

@@ -1,176 +1,126 @@
-<% content_for :pagetitle do %>Our Product<% end %>
-<% content_for :pagehead do %>
-<div class="content no-pad">
-  <div class="container">
-    <div class="col9 pull-center">
-      <div class="featured-content-textarea-inner">
-        <h1>Answers for retail</h1>
-        <p class="large-text">Measure and optimize foot-traffic, visit duration, and repeat shopping. Get answers by daypart (for QSR), window and walkbys (specialty retail) and multi-zones (department stores).</p>
+<% content_for :pagetitle do %>Products<% end %>
+<% content_for :pagehead do %><% end %>
+<% content_for :headextra do %><%= stylesheet_link_tag 'express-styles' %><%= javascript_include_tag 'express_scripts' %><% end %>
 
-      </div>
-
+<div class="hero-container">
+    <div class="hero-unit hero-unit-solutions">
+        <div class="main-wrap main-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Measure. Analyze. Improve offline experience.</h1>
+                    <p>Improve in-store experiences by putting customers first. Measure performance by how well you attract, engage, and retain customers. Make smarter decisions around marketing, operations, and chainwide
+                    strategy. Get customized solutions for specialty retail, QSR & coffee, large format and more.</p>
+                    <a href="http://www.youtube.com/watch?v=LNckTJZaY_g&list=PLnaQmtUJyjOW-Qn-jnkxLa4bAGqNeIazf" class="btn btn-marg">Tour Features</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col9 pull-center">
-		<a href="http://www.youtube.com/watch?v=LNckTJZaY_g&list=PLnaQmtUJyjOW-Qn-jnkxLa4bAGqNeIazf" target="_blank" class="btn dark-btn clearfix">Tour Features</a>
-	</div>
-  </div>
 </div>
 
-<div class="content no-pad no-top-marg">
-  <div class="container">
-    <div class="subcontainer9 pull-center subsection">
-        <a href="http://www.youtube.com/watch?v=LNckTJZaY_g" title="Dashboard Overview" data-height="400" class="lightbox lightbox-video col3 no-hover separated">
-          <%= image_tag 'product/overview-short.png', :class=> 'shadowed fill-container' %>
-        </a>
-        <!--<a href="../../img/product/overview-short.png" title="Track KPIs" class="lightbox col3 no-hover separated"><%= image_tag 'product/overview-short.png', :class=> 'shadowed fill-container' %>
-          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>-->
-      <div class="col6 separated">
-        <div class="sectionlabel">Track performance</div>
-        <p>When you log into your dashboard, you get a high-level overview of your KPI performance. You can customize this view to show you the stores and metrics that are most important to you.</p>
+<div id="feedback-area">
+    <div class="main-wrap main-content">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <h1>Turn data into powerful insights.</h1>
+                <p>Euclid translates anonymous device data into customer intelligence. Euclid helps you understand visitor behavior, shopping patterns, and store performance metrics.</p>
+                <div class="solutions-insight hide-on-mobile"><img src="../../img/solutions/solutions-insight.png"/></div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /.main-wrap -->
+</div>
+<!-- /.feedback-area -->
+
+
+<div class="solutions-row3">
+        <h1>Targeted solutions for specific results.</h1>
+        
+                <p><a href="../products/advanced/">Euclid Advanced</a> offers customized solutions tailored to the needs of<br>
+                 specialty retail, QSR and coffee, and large format locations. Get started for<br>
+                free with <a href="../products/express/">Euclid Express</a>, and upgrade for vertical-specific offerings.</p>
+        
+        <div class="items">
+        <div class="row"> 
+         
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image">
+              <img src="../../img/solutions/solutions-retail.png" alt="img">
+            </div>            
+            <h2>Specialty Retail</h2>            
+          </div>
+          
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image">
+              <img src="../../img/solutions/solutions-QSRCoffee.png" alt="img">
+            </div>            
+            <h2>QSR and Coffee</h2>            
+          </div>
+          
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image">
+              <img src="../../img/solutions/solutions-largeFormat.png" alt="img">
+            </div>            
+            <h2>Large Format Retail</h2>            
+          </div>
+          
+        </div>
+        </div>
+
+<!--row4-->
+
+<div>
+         <h1>Solutions tailored for your business role.</h1>
+        
+                <p>Euclid has custom solutions to fit your role, with analytics applications to<br>
+                 address fundamental executive, marketing, operations, and IT needs.<br>
+                 Measure offline impact of marketing, improve store operations, inform brand<br>
+                strategy, and deploy location analytics chainwide with ease.</p>
+        
+        <div class="items">
+        <div class="row"> 
+         
+          <div class="item col-sm-3 col-xs-12 col-md-3 col-lg-3">
+            <div class="image">
+              <img src="../../img/solutions/solutions-executive.png" alt="img">
+            </div>            
+            <h2>Executive</h2>            
+          </div>
+          
+          <div class="item col-sm-3 col-xs-12 col-md-3 col-lg-3">
+            <div class="image">
+              <img src="../../img/solutions/solutions-marketing.png" alt="img">
+            </div>            
+            <h2>Marketing</h2>            
+          </div>
+          
+          <div class="item col-sm-3 col-xs-12 col-md-3 col-lg-3">
+            <div class="image">
+              <img src="../../img/solutions/solutions-operations.png" alt="img">
+            </div>            
+            <h2>Operations</h2>            
+          </div>
+                    
+          <div class="item col-sm-3 col-xs-12 col-md-3 col-lg-3">
+            <div class="image">
+              <img src="../../img/solutions/solutions-IT.png" alt="img">
+            </div>            
+            <h2>IT</h2>            
+          </div>
+        </div>
+        </div>
       </div>
     </div>
-    <div class="subcontainer9 subsection pull-center">
-    	<a href="http://www.youtube.com/watch?v=M3I-_t6JQjw" title="Shopper Funnel" data-height="400" class="lightbox lightbox-video col3 no-hover separated"><%= image_tag 'product/new-funnel.png', :class=> 'shadowed fill-container' %></a>
-        <!--<a href="../../img/product/new-funnel.png" title="Measure and compare" class="lightbox col3 no-hover separated"><%= image_tag 'product/new-funnel.png', :class=> 'shadowed fill-container' %>
-          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>-->
-      <div class="col6 separated">
-        <div class="sectionlabel">Measure and compare</div>
-        <p>View detailed reports for every metric. For example, the Shopper Funnel report shows you how well you convert Outside Traffic into Engaged Visitors. Use it to identify weak points in your shopping experience.</p>
-      </div>
+<div id="get-started-area">
+    <div class="main-wrap main-content">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Get in touch today.</h1>
+                <a href="http://info.euclidanalytics.com/ContactUs.html" class="btn">Contact us</a>
+            </div>
+        </div>
     </div>
-    <div class="subcontainer9 subsection pull-center">
-        <a href="http://www.youtube.com/watch?v=UhUZN9ZNis4" title="Test a Marketing Campaign" data-height="400" class="lightbox lightbox-video col3 no-hover separated"><%= image_tag 'product/campaign.png', :class=> 'shadowed fill-container' %></a>
-        <!--<a href="../../img/product/campaign.png" title="Make smarter decisions" class="lightbox col3 no-hover separated"><%= image_tag 'product/campaign.png', :class=> 'shadowed fill-container' %>
-          <%= image_tag 'easybox/magnify.png', :class=> 'magnify' %></a>-->
-      <div class="col6 separated">
-        <div class="sectionlabel">Make smarter decisions</div>
-        <p>Built-in analysis tools reveal important insights without heavy lifting. Use the Test a Campaign tool to find out whether a lift in key metrics came from your activities or from everyday fluctuations.</p>
-      </div>
-    </div>
-    <div class="subcontainer9 subsection pull-center">
-        <%= image_tag 'product/export.png', :class=> 'separated mini-bump-up col3' %>
-      <div class="col6">
-        <div class="sectionlabel">Export and share</div>
-        <p>Export Euclid metrics to your data warehouse for further analysis. Get reports sent to you automatically and share PDFs with your colleagues.</p>
-      </div>
-    </div>
-  </div>
+    <!-- /.main-wrap -->
 </div>
 
-    
-<div class="content ">
-  <div class="container">
-    <div class="subcontainer9 pull-center">
-      <h1 class="col9 no-bottom-marg">
-        Euclid metrics
-      </h1>
-      <div class="col9 large-text separated">
-        We go beyond traffic counting to provide a more complete picture of what’s happening inside your stores. 
-        Here are just a few of the real-world metrics we provide:
-      </div>
-
-
-      <ul class="cluster-list how-section-list">
-
-
-        <li>
-          <div class="sectionlabel">Capture Rate</div>
-          <p>How well do your window displays pull shoppers into the store? Find out your Capture Rate and actively improve it. </p>
-        </li>
-        <li>
-          <div class="sectionlabel">Repeat Visitor Ratio</div>
-          <p>Are most of your shoppers regular customers or first-timers? Optimize for the segment that drives the most sales.</p>
-        </li>
-        <li>
-          <div class="sectionlabel">Walkbys</div>
-          <p>How much business is walking right by the door? Launch your sales on the days with the highest Walkby traffic.</p>
-        </li>
-        <li class="newrow">
-          <div class="sectionlabel">Visit Duration</div>
-          <p>How long do your shoppers spend in the store? Are they engaging with staff or waiting in line?</p>
-        </li>
-        <li>
-          <div class="sectionlabel">Visit Frequency & Recency</div>
-          <p>How often do shoppers come in the door each month? Are your daily deals generating loyal customers?</p>
-        </li>
-        <li>
-          <div class="sectionlabel">Engagement & Bounce Rates</div>
-          <p>Are shoppers staying long enough to make a purchase? Or do they “bounce” in just a few minutes? Measure the percentage that stay for a period of time you specify.</p>
-        </li>
-      </ul>
-       
-    <div class="col9 bump-up ">
-      <a href="#comparison-chart" class="lightbox">Compare Euclid vs. traffic counters</a>
-      <div id="comparison-chart" style="display:none;width:470px;height:500px">
-        <table>
-          <thead><tr><th></th><th>Euclid <br>Analytics</th><th>Traffic <br>Counters</th></thead>
-          <tbody>
-            <tr class="table-section-head"><td colspan="100">Metrics</td></tr>
-            <tr><td>Visit Count</td><td><%= image_tag 'product/comparison-check.png' %></td><td><%= image_tag 'product/comparison-check.png' %></td></tr>
-            <tr><td>Visit Duration</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-            <tr><td>Visit Frequency</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-            <tr><td>Visit Recency</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-            <tr><td>Repeat Visitor Ratio</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-            <tr><td>Capture Rate</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-            <tr><td>Bounce Rate</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-            <tr><td>Engagement Rate</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-            <tr><td>Outside Traffic</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-            <tr><td>Walkbys</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-            <tr><td>Cross-Shopping Analysis</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-          </tbody>
-          <tbody>
-            <tr class="table-section-head"><td colspan="100">Reporting</td></tr>
-            <tr><td>Web-based dashboard</td><td><%= image_tag 'product/comparison-check.png' %></td> <td>Varies</td></tr>
-            <tr><td>Email reports</td><td><%= image_tag 'product/comparison-check.png' %></td> <td>Varies</td></tr>
-            <tr><td>Data export</td><td><%= image_tag 'product/comparison-check.png' %></td> <td>Varies</td></tr>
-            <tr><td>Test a Campaign feature</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-          </tbody>
-          <tbody>
-            <tr class="table-section-head"><td colspan="100">Deployment</td></tr>
-            <tr><td>Install anywhere in store</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-            <tr><td>Single sensor covers 24,000 sq. ft.</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-            <tr><td>Use in-store Wi-Fi as sensor</td><td><%= image_tag 'product/comparison-check.png' %></td><td></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-  </div>
-
-
-   
-  </div>
-</div>
-
-
-<% end %>
-
-
-<!-- Google Code for People Counter Conversion Page -->
-<script type="text/javascript">
-  /* <![CDATA[ */
-  var google_conversion_id = 974901834;
-  var google_conversion_language = "en";
-  var google_conversion_format = "2";
-  var google_conversion_color = "ffffff";
-  var google_conversion_label = "Ns8nCNaftAcQyqTv0AM";
-  var google_conversion_value = 0;
-  var google_remarketing_only = false;
-  /* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-  <div style="display:inline;">
-  <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/974901834/?value=0&amp;label=Ns8nCNaftAcQyqTv0AM&amp;guid=ON&amp;script=0"/>
-  </div>
-</noscript>
-<script type="text/javascript">
-  $('.tab-link').click(function(){
-    $('.tab-link').removeClass('selected');
-    $(this).addClass('selected');
-    $("#tabs > li").addClass('hide');
-    $("#" + $(this).attr('data-target')).removeClass('hide');
-  })
-</script>
-
+<script>expressInit();</script>

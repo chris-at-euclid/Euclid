@@ -319,11 +319,8 @@ html.ie8 #bar-chart-area {
 }
 #diagram-area {
   text-align: center;
-  background-color: #e7ebee;
   padding-bottom: 80px;
-  padding-top: 60px;
 }
-
 #diagram-area p {
   text-align: center;
   max-width: 470px;
@@ -413,7 +410,7 @@ div.dot.center-dot {
 #activation-area {
   text-align: center;
   background-color: #fff;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   padding-top: 60px;
   border-bottom: 1px solid #dddddd;
 }
@@ -469,4 +466,13 @@ div.dot.center-dot {
 #get-started-area .btn{
   margin-right: 15px;
   margin-top: 30px;
+}
+.express-metrics img{ width:50px;}
+.express-metrics .row{ margin-top:30px;}
+.express-metrics .col-xs-8{ margin-left:145px;}
+.express-metrics {
+  text-align: center;
+  background-color: #e7ebee;
+  padding-bottom: 40px;
+  padding-top: 20px;
 }

@@ -9,8 +9,9 @@
           </div>
           <div class="col-sm-7">
               <ul id="site-actions">
-                  <li><a href="http://dashboard.euclidelements.com" class="btn">Log In</a></li>
-                  <li><a id="dark-btn--express" href="http://info.euclidanalytics.com/ExpressSignUp.html" class="btn dark-btn">Express<br>Sign Up</a></li>
+                  <li><a href="http://info.euclidanalytics.com/ContactUs.html">Contact Us</a></li>
+                  <li><a href="http://dashboard.euclidelements.com">Log In</a></li>
+                  <li><a id="dark-btn--express" href="http://info.euclidanalytics.com/ExpressSignUp.html">Express Sign Up</a></li>
               </ul>
           </div>
         </div>
@@ -35,46 +36,73 @@
               <div class="col-xs-12">
                 <div class="collapse navbar-collapse">
                   <ul class="nav navbar-nav">
-                    <li class="dropdown <%= nav_active('solutions') %>">
-                      <a href="/solutions" class="dropdown-toggle">Solutions <b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li class="<%= nav_active('solutions/index') %>"><%= link_to 'Overview', '/solutions/index.html' %></li>
-                        <li class="<%= nav_active('solutions/qsr/') %>"><%= link_to 'QSR & Coffee', '/solutions/qsr.html' %></li>
-                        <li class="<%= nav_active('solutions/specialty/') %>"><%= link_to 'Specialty Retail', '/solutions/specialty.html' %></li>
-                        <li class="<%= nav_active('solutions/department/') %>"><%= link_to 'Large Format Stores', '/solutions/department.html' %></li>
-                        <li class="<%= nav_active('solutions/partners/') %>"><%= link_to 'Partners', '/solutions/partners.html' %></li>
-                        <li class="<%= nav_active('solutions/technology/') %>"><%= link_to 'Our Technology', '/solutions/technology.html' %></li>
-                      </ul>
-                    </li>
                     <li class="dropdown <%= nav_active('products') %>">
-                      <a href="/products" class="dropdown-toggle">Products <b class="caret"></b></a>
+                      <a href="/products" class="dropdown-toggle">Products</a>
                       <ul class="dropdown-menu">
-                        <li class="<%= nav_active('products/index.html') %>"><%= link_to 'Plans', '/products/index.html' %></li>
+                        <li class="<%= nav_active('products/index.html') %>"><%= link_to 'Our Technology', '/products/technology/' %></li>
                         <li class="<%= nav_active('products/express') %>"><%= link_to 'Euclid Express', '/products/express.html' %></li>
                         <li class="<%= nav_active('products/advanced') %>"><%= link_to 'Euclid Advanced', '/products/advanced.html' %></li>
+                        <li class="<%= nav_active('products/index.html') %>"><%= link_to 'Plans & Pricing', '/products/plans' %></li>
                       </ul>
                     </li>
-                    <li class="dropdown <%= nav_active('privacy') %>">
-                      <a href="/privacy" class="dropdown-toggle">Privacy <b class="caret"></b></a>
+
+                    <li class="dropdown solutions-menu <%= nav_active('solutions') %>">
+                      <a href="/solutions" class="dropdown-toggle">Solutions</a>
                       <ul class="dropdown-menu">
-                        <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Overview', '/privacy/index.html' %></li>
-                        <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Trust', '/privacy/trust.html' %></li>
-                        <li class="<%= nav_active('privacy/advisors/') %>"><%= link_to_signupsite('optout', 'Opt Out', '') %></li>
-                        <li class="<%= nav_active('privacy/statement') %>"><%= link_to 'Privacy Statement', '/privacy/statement.html' %></li>
+                        <li class="section1">
+                          <ul>
+                            <li class="<%= nav_active('solutions/index') %>"><%= link_to 'Overview', '/solutions/index.html' %></li>
+                            <li class="heading <%= nav_active('solutions/qsr/') %>">By Industry</li>
+                            <li class="<%= nav_active('solutions/specialty/') %>"><%= link_to 'Specialty Retail', '/solutions/specialty.html' %></li>
+                           <li class="<%= nav_active('solutions/qsr/') %>"><%= link_to 'QSR & Coffee', '/solutions/qsr.html' %></li>
+                            <li class="<%= nav_active('solutions/department/') %>"><%= link_to 'Large Format Stores', '/solutions/department.html' %></li>
+                          </ul>
+                        </li>
+                        <li class="section2">
+                          <ul>
+                            <li class="heading <%= nav_active('solutions/qsr/') %>">By Role</li>
+                            <li class="<%= nav_active('solutions/specialty/') %>"><%= link_to 'Executive', '/solutions/executives/' %></li>
+                            <li class="<%= nav_active('solutions/department/') %>"><%= link_to 'Marketing', '/solutions/marketing/' %></li>
+                            <li class="<%= nav_active('solutions/partners/') %>"><%= link_to 'Operations', '/solutions/operations/' %></li>
+                            <li class="<%= nav_active('solutions/technology/') %>"><%= link_to 'IT', '/solutions/it/' %></li>
+                          </ul>
+                        </li>
                       </ul>
                     </li>
-                    <li class="dropdown <%= nav_active('about') %>">
-                      <a href="/about" class="dropdown-toggle">About <b class="caret"></b></a>
+                    <li class="dropdown <%= nav_active('resources') %>">
+                      <a href="/resources" class="dropdown-toggle">Resources</a>
                       <ul class="dropdown-menu">
-                        <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Team', '/about/index.html' %></li>
-                        <li class="<%= nav_active('about/blog/') %>"><a href="http://blog.euclidelements.com">Blog</a></li>
-                        <li class="<%= nav_active('about/investors/') %>"><%= link_to 'Investors', '/about/investors.html' %></li>
-                        <li class="<%= nav_active('about/news/') %>"><%= link_to 'News', '/about/news.html' %></li>
-                        <li class="<%= nav_active('about/careers/') %>"><%= link_to 'Careers', '/about/careers.html' %></li>
+                        <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Library', '/resources/library' %></li>
+                        <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Benchmarks', '/resources/benchmarks' %></li>
+                        <li class="<%= nav_active('privacy/statement') %>"><a href="http://blog.euclidelements.com">Blog</a></li>
+                      </ul>
+                    </li>
+                   <li class="dropdown <%= nav_active('partners') %>">
+                      <a href="/partners" class="dropdown-toggle">Partners</a>
+                      <ul class="dropdown-menu">
+                        <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Technology Partners', '/partners/technology' %></li>
+                        <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Reseller Partners', '/partners/resellers' %></li>
+                        <li class="<%= nav_active('privacy/advisors/') %>"><%= link_to_signupsite('optout', 'Become a Partner', '') %></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown <%= nav_active('support') %>">
+                      <a href="/support" class="dropdown-toggle">Support</a>
+                      <ul class="dropdown-menu">
+                        <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Support & Service', '/support/' %></li>
+                        <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Knowledge Base', '/support/knowledge/' %></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown about-menu <%= nav_active('about') %>">
+                      <a href="/about" class="dropdown-toggle">About</a>
+                      <ul class="dropdown-menu">
+                        <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Company', '/about/index.html' %></li>
+                        <li class="<%= nav_active('about/news/') %>"><%= link_to 'News & Events', '/about/news.html' %></li>
+                        <li class="<%= nav_active('about/privacy/') %>"><%= link_to 'Privacy', '/about/privacy.html' %></li>
+                        <li class="<%= nav_active('about/trust/') %>"><%= link_to 'Trust', '/about/trust.html' %></li>
+                        <li class="<%= nav_active('about/careers/') %>"><%= link_to 'Careers', '/about/careers.html' %></li>   
                         <li class="<%= nav_active('about/contact/') %>"><%= link_to 'Contact', '/about/contact.html' %></li>
                       </ul>
                     </li>
-                    <li><a href="http://info.euclidanalytics.com/ContactUs.html" target="_blank">Contact Us</a></li>
                   </ul>
                 </div><!--/.nav-collapse -->
               </div>

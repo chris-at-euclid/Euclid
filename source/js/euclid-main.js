@@ -108,7 +108,9 @@ $(document).ready(function(){
 	//$('#subnav').stickyWithinReason({});
 	$('#top-divider').stickyWithinReason({topPad: 0, bottomPad: 0});
 	$('#subnav').stickyWithinReason({topPad: 0, bottomPad: 0, remainFixed: true});
-
+	$(".dropdown").mouseleave(function(){
+    $(".dropdown-menu").hide();
+	});
 	$('#comments').blur(function(){                   
 	    if(!$(this).val())
 	        $(this).addClass('empty');
