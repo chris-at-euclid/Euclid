@@ -567,27 +567,22 @@ button.navbar-toggle { outline: none; }
 .hero-unit--privacy {
   background-image: url("../img/banners/privacy2.jpg");
   background-size: cover;
-  background-position: bottom;
 }
 .hero-unit-solutions{
   background-image: url("../img/solutions/solutions-hero.png");
   background-size: cover;
-  background-position: bottom;
 }
 .hero-unit-executive{
   background-image: url("../img/solutions/executive-hero.png");
   background-size: cover;
-  background-position: bottom;
 }
 .hero-unit-marketing{
   background-image: url("../img/solutions/marketing-hero.png");
   background-size: cover;
-  background-position: bottom;
 }
 .hero-unit-operations{
   background-image: url("../img/solutions/operations-hero.png");
   background-size: cover;
-  background-position: bottom;
 }
 
  .solutions-menu ul.dropdown-menu{
