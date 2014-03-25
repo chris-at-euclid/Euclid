@@ -655,7 +655,8 @@ button.navbar-toggle { outline: none; }
   margin-top:20px;
 }
 .ecosystems img{
-  height:450px;
+  width:50%;
+  height:50%;
 }
 .PartnerReseller-main .content{
   padding-bottom:0;
