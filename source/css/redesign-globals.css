@@ -563,21 +563,33 @@ button.navbar-toggle { outline: none; }
 ==============================================================================
 */
 
-
 .hero-unit--privacy {
   background-image: url("../img/banners/privacy2.jpg");
   background-size: cover;
-  background-position: bottom;
 }
 .hero-unit-solutions{
   background-image: url("../img/solutions/solutions-hero.png");
   background-size: cover;
-  background-position: bottom;
 }
 .hero-unit-executive{
   background-image: url("../img/solutions/executive-hero.png");
   background-size: cover;
-  background-position: bottom;
+}
+.hero-unit-marketing{
+  background-image: url("../img/solutions/marketing-hero.png");
+  background-size: cover;
+}
+.hero-unit-operations{
+  background-image: url("../img/solutions/operations-hero.png");
+  background-size: cover;
+}
+.hero-unit-IT{
+  background-image: url("../img/solutions/it-hero.png");
+  background-size: cover;
+}
+.hero-unit-support{
+  background-image: url("../img/support/support-hero.png");
+  background-size: cover;
 }
  .solutions-menu ul.dropdown-menu{
     min-width:360px;
@@ -646,7 +658,8 @@ button.navbar-toggle { outline: none; }
   margin-top:20px;
 }
 .ecosystems img{
-  height:450px;
+  width:50%;
+  height:50%;
 }
 .PartnerReseller-main .content{
   padding-bottom:0;
@@ -733,11 +746,79 @@ button.navbar-toggle { outline: none; }
     
 }
 .solutions-row3.executives .items .image img{
-  width:110px;
-  height:110px;
+  width:95px;
+  height:95px;
 }
 .executives img.connector{
   width:700px;
   margin-bottom:-20px;
 } 
-
+.support-row1 .items{
+  max-width:750px;
+}
+.support-row1 .items .image img{
+  width: 50px;
+  height: 50px;
+}
+.support-row2 .items .image img{
+  width:50px;
+  height:50px;
+}
+.support-row1 .items .item{
+  padding:0;
+}
+.support-row1 p{
+  margin:0;
+}
+.support-row1 .subhead, .support-row1 h5{
+  color:#147cae;
+}
+.support-row1 .row{
+  margin-top:40px;
+}
+.support-row1 .customer-section{
+  border-right:solid 1px #c4e3f5;
+}
+.support-row1 h4{
+  text-transform: none;
+  font-weight: 400;
+  margin:0 0 25px 0;
+}
+.support-row1{
+  background-color: #FFF;
+}
+.support-row2{
+  margin-top:60px;
+  padding-bottom:50px;
+  background-image: url("../img/support/support-graph.png");
+}
+.support-row2 h1, .support-row2 h6, .support-row2 p{
+  color:#FFF;
+}
+.support-row3{
+  background-color:#FFF;
+  margin-bottom:10px;
+}
+.support-row3 .items .image{
+  width: 35px;
+  float:left;
+}
+.support-row3 .items .image img{
+  width:30px;
+  height:30px;
+  float:left;
+}
+.support-row3 .items .image span{
+  float:left;
+  display:block;
+}
+.support-row3 .items{
+  max-width:650px;
+}
+.support-row3 .items .item{
+  text-align:left;
+  padding:10px;
+}
+.support-row3 .clear{
+  clear:both;
+}

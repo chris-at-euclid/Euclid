@@ -1,0 +1,25 @@
+
+<% content_for :pagetitlestartoverride do %>Euclid<% end %>
+
+
+<% wrap_layout :layout do %>
+<div class="header-wrap subnav-wrap">
+
+  <div class="mobile-subnav" id="subnav">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul>
+          <li class="<%= nav_active('products/index.html') %>"><%= link_to 'Plans', '/products/index.html' %></li>
+          <li class="<%= nav_active('products/express') %>"><%= link_to 'Euclid Express', '/products/express.html' %></li>
+          <li class="<%= nav_active('products/advanced') %>"><%= link_to 'Euclid Advanced', '/products/advanced.html' %></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    <% if content_for?(:pagehead) %>
+          <%= yield_content :pagehead %>
+    <% end %>
+    <%= yield %>
+<% end %>

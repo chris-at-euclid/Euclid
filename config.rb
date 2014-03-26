@@ -51,6 +51,7 @@ page "/terms/standard/*", :layout => false
  end
  with_layout :solutions do
    page "/solutions/*"
+   page "/support/*"
  end
  with_layout :pricing do
    page "/pricing/*"
