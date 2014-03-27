@@ -591,6 +591,10 @@ button.navbar-toggle { outline: none; }
   background-image: url("../img/support/support-hero.png");
   background-size: cover;
 }
+.hero-unit-library{
+  background-image: url("../img/resources/library-hero.png");
+  background-size: cover;
+}
  .solutions-menu ul.dropdown-menu{
     min-width:360px;
   }
@@ -821,4 +825,21 @@ button.navbar-toggle { outline: none; }
 }
 .support-row3 .clear{
   clear:both;
+}
+.resources h1{
+  text-align:center;
+  margin-bottom:30px;
+}
+.resources img{
+  width:50px;
+}
+.resources .container{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.resources section{
+  border-bottom:solid 1px #e7ebee;
+}
+.resources .last-section{
+  border-bottom:none;
 }
