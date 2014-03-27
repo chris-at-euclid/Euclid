@@ -645,7 +645,7 @@ button.navbar-toggle { outline: none; }
   padding-right:10px;
 }
 .benchMark-icon img{
-  width:90px;
+  width:90px !important;
   float:right;
 }
 .benchMark-main .container{
@@ -777,6 +777,9 @@ button.navbar-toggle { outline: none; }
 .support-row1 .subhead, .support-row1 h5{
   color:#147cae;
 }
+.support-row1 .subhead a{
+  font-weight:normal;
+}
 .support-row1 .row{
   margin-top:40px;
 }
@@ -842,4 +845,10 @@ button.navbar-toggle { outline: none; }
 }
 .resources .last-section{
   border-bottom:none;
+}
+.benchMark-main .container{
+  margin-top:70px;
+}
+.featured-content-light.banner.banner-content{
+  margin-bottom:50px;
 }
