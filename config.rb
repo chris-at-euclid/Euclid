@@ -49,11 +49,17 @@ page "/terms/standard/*", :layout => false
  with_layout :privacy do
    page "/privacy/*"
  end
+  with_layout :partners do
+   page "/partners/*"
+ end
+   with_layout :resources do
+   page "/resources/*"
+ end
+   with_layout :support do
+   page "/support/*"
+ end
  with_layout :solutions do
    page "/solutions/*"
-   page "/partners/*"
-   page "/resources/*"
-   page "/support/*"
  end
  with_layout :pricing do
    page "/pricing/*"

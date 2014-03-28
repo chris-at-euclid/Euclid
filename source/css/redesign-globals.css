@@ -595,6 +595,10 @@ button.navbar-toggle { outline: none; }
   background-image: url("../img/resources/library-hero.png");
   background-size: cover;
 }
+.hero-unit-reseller{
+  background-image: url("../img/resources/reseller-hero.png");
+  background-size: cover;
+}
  .solutions-menu ul.dropdown-menu{
     min-width:360px;
   }
@@ -822,6 +826,12 @@ button.navbar-toggle { outline: none; }
 .support-row3 .items{
   max-width:650px;
 }
+.support-row3.reseller-row1 .items{
+  max-width:980px;
+}
+.support-row3.reseller-row1 .row{
+  clear:both;
+}
 .support-row3 .items .item{
   text-align:left;
   padding:10px;
@@ -850,5 +860,53 @@ button.navbar-toggle { outline: none; }
   margin-top:70px;
 }
 .featured-content-light.banner.banner-content{
+  margin-bottom:50px;
+}
+.reseller-table{
+  margin-bottom:50px;
+}
+.reseller-table img{
+  width:15px;
+  height:15px;
+}
+.reseller-table .table > tbody > tr > td{
+  border-top:solid 1px #FFF;
+}
+.reseller-table .table > tbody > tr{
+  background-color:#f1f5f7;
+}
+.reseller-table .table-striped > tbody > tr:nth-child(odd) > td, .reseller-table .table-striped > tbody > tr:nth-child(odd) > th{
+  background-color:solid 1px #e7ebee;
+}
+.register-head h5{
+  color:#77b4d1;
+}
+.certified-head h5{
+  color:#1980af;
+}
+.two-columns{
+  text-align:left;
+}
+.two-columns li{
+  list-style:none;
+  margin-bottom:15px;
+}
+.two-columns label{
+  display: block;
+}
+.two-columns  ul{
+  padding-left:0;
+}
+.two-columns .first-col4{
+  margin-right:50px;
+}
+.euclid-rep{
+  padding:30px;
+}
+.two-columns h3{
+  font-weight:400;
+  margin-bottom:20px;
+}
+.PartnerReseller-main .privacy-section{
   margin-bottom:50px;
 }
