@@ -687,7 +687,7 @@ button.navbar-toggle { outline: none; }
 .solutions-row3 {
   text-align: center;
   background: #eff3f6;
-  padding-top: 50px;
+  padding: 50px 0;
 }
 .row-center {
   text-align: center;
@@ -753,13 +753,24 @@ button.navbar-toggle { outline: none; }
   }
     
 }
-.solutions-row3.executives .items .image img{
-  width:95px;
-  height:95px;
+.solutions-row3.executives .items .image{
+  height:90px;
+}
+.solutions-row3.executives .items .image.third img{
+  width:148px;
+  height:87px;
+}
+.solutions-row3.executives .items .image.second img{
+  width:92px;
+  height:85px;
+}
+.solutions-row3.executives .items .image.first img{
+  width:65px;
+  height:85px;
 }
 .executives img.connector{
   width:700px;
-  margin-bottom:-20px;
+  margin-bottom:-65px;
 } 
 .support-row1 .items{
   max-width:750px;
@@ -919,3 +930,16 @@ button.navbar-toggle { outline: none; }
 .euclid-sensor .hero-unit .partner-logos img{
   margin-left:0;
 }
+.solutions-row3.img-95 .items .image img{
+  width:95px;
+  height:95px;
+}
+.trust .content-list-item.heading h1{
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.trust-section .hero-container{
+  height:auto;
+}
+

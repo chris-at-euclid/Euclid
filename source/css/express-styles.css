@@ -467,7 +467,7 @@ div.dot.center-dot {
   margin-right: 15px;
   margin-top: 30px;
 }
-.express-metrics img{ width:50px;}
+.express-metrics img{ width:65px;}
 .express-metrics .row{ margin-top:30px;}
 .express-metrics .col-xs-8{ margin-left:145px;}
 .express-metrics {
@@ -476,3 +476,16 @@ div.dot.center-dot {
   padding-bottom: 40px;
   padding-top: 20px;
 }
+.block{
+  height:68px;
+}
+.block.second img{
+  width:68px;
+}
+.block.fifth img{
+  width:80px;
+}
+.block.fourth img{
+  width:50px;
+}
+
