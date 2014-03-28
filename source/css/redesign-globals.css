@@ -910,3 +910,12 @@ button.navbar-toggle { outline: none; }
 .PartnerReseller-main .privacy-section{
   margin-bottom:50px;
 }
+.partner-logos img{
+  width:100px;
+}
+.partner-logos{
+  width:480px;
+}
+.euclid-sensor .hero-unit .partner-logos img{
+  margin-left:0;
+}
