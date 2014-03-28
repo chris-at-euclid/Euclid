@@ -945,3 +945,11 @@ button.navbar-toggle { outline: none; }
 .technology-section.content{
   padding-top:50px;
 }
+.advanced-last-section{
+  padding:50px 0;
+}
+.advanced-section .container, .advanced-feature-section .container, .advanced-second-section .container{
+  padding:50px 0;
+}
+
+
