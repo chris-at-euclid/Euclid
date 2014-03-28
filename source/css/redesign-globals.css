@@ -942,4 +942,6 @@ button.navbar-toggle { outline: none; }
 .trust-section .hero-container{
   height:auto;
 }
-
+.technology-section.content{
+  padding-top:50px;
+}
