@@ -800,3 +800,11 @@ ul.trust-ul-margin{
 .executives-row5{
 	border-top: solid 1px #ddd;
 }
+.pricing-table-feature-desc{
+	padding: 7px 0 0 7px;
+}
+.star{
+	font-weight: bold;
+	font-size: 18px;
+	padding-top:7px;
+}
