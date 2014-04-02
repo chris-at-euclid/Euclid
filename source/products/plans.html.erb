@@ -1,11 +1,11 @@
 <% content_for :pagetitle do %>Products<% end %>
 
-<div class="content">
+<div class="content pad-50">
     <div class="container">
       <div class="subcontainer12 pull-center">
         <div class="col12 separated"> 
           <h1>Choose the best plan for your business</h1>
-          <p class="large-text separated">We understand that different businesses have different needs. Euclid offers two product tiers: <%= link_to 'Euclid Express', "../products/express.html"%> and <%= link_to 'Euclid Advanced', "../products/advanced.html"%>. <br/></p>
+          <p>We understand that different businesses have different needs.<br> Euclid offers two product tiers: <%= link_to 'Euclid Express', "../products/express.html"%> and <%= link_to 'Euclid Advanced', "../products/advanced.html"%>. <br/></p>
           <table id="pricing-table" class="">
             <thead>
               <tr id="plan-name">
@@ -18,7 +18,6 @@
               <tr>
                 <td class="pricing-table-feature">
                   <p class="pricing-table-feature-name">Real-time visibility</p>
-                  <p class="pricing-table-feature-desc">Start seeing real-time data and trends upon activation</p>
                 </td>
                 <td class="pricing-table-feature-mark">&#x2713;</td>
                 <td class="pricing-table-feature-mark">&#x2713;</td>
@@ -26,47 +25,33 @@
               <tr>
                 <td class="pricing-table-feature">
                   <p class="pricing-table-feature-name">Essential customer analytics</p>
-                  <p class="pricing-table-feature-desc">Outside opportunity, storefront conversion, visits, visit duration, engagement, bounce, new vs. repeats and more</p>
+                  <p class="pricing-table-feature-desc">
+                    <strong>Visit Trends:</strong> Outside Opportunity, Visits, Storefront Conversion<br>
+                    <strong>Visit Duration:</strong> Visit Duration, Bounce Rate, Engagement Rate<br>
+                    <strong>Repeat Visits:</strong> New Visitors vs. Repeat Visitors, Visit Recency
+
+                  </p>
+                </td>
+                <td class="pricing-table-feature-mark"><br>&#x2713;<br>&#x2713;<br>&#x2713;</td>
+                <td class="pricing-table-feature-mark"><br>&#x2713;<br>&#x2713;<br>&#x2713;</td>
+              </tr>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Quick trend analysis</p>
                 </td>
                 <td class="pricing-table-feature-mark">&#x2713;</td>
                 <td class="pricing-table-feature-mark">&#x2713;</td>
               </tr>
               <tr>
                 <td class="pricing-table-feature">
-                  <p class="pricing-table-feature-name">Trend analysis</p>
-                  <p class="pricing-table-feature-desc">Compare metrics across all time and location</p>
+                  <p class="pricing-table-feature-name">Basic visit data export</p>
                 </td>
                 <td class="pricing-table-feature-mark">&#x2713;</td>
                 <td class="pricing-table-feature-mark">&#x2713;</td>
               </tr>
               <tr>
                 <td class="pricing-table-feature">
-                  <p class="pricing-table-feature-name">Share and download</p>
-                  <p class="pricing-table-feature-desc">Unlimited dashboard logins and download data to csv</p>
-                </td>
-                <td class="pricing-table-feature-mark">&#x2713;</td>
-                <td class="pricing-table-feature-mark">&#x2713;</td>
-              </tr>
-              <tr>
-                <td class="pricing-table-feature">
-                  <p class="pricing-table-feature-name">Packaged business solutions</p>
-                  <p class="pricing-table-feature-desc">Measure marketing ROI, optimize store performance, and improve experience for specialty retail, QSR &amp; coffee, large format and more</p>
-                </td>
-                <td class="pricing-table-feature-mark"></td>
-                <td class="pricing-table-feature-mark">&#x2713;</td>
-              </tr>
-              <tr>
-                <td class="pricing-table-feature">
-                  <p class="pricing-table-feature-name">Advanced analytics capabilities</p>
-                  <p class="pricing-table-feature-desc">Integration of sales and event data, cross-location analytics, predictive analysis, zone-level data*, benchmarking and more</p>
-                </td>
-                <td class="pricing-table-feature-mark"></td>
-                <td class="pricing-table-feature-mark">&#x2713;</td>
-              </tr>
-              <tr>
-                <td class="pricing-table-feature">
-                  <p class="pricing-table-feature-name">Deep Excel integration and report broadcasting</p>
-                  <p class="pricing-table-feature-desc"></p>
+                  <p class="pricing-table-feature-name">Full Excel export</p>
                 </td>
                 <td class="pricing-table-feature-mark"></td>
                 <td class="pricing-table-feature-mark">&#x2713;</td>
@@ -74,7 +59,6 @@
               <tr>
                 <td class="pricing-table-feature">
                   <p class="pricing-table-feature-name">Automated export to data warehouse and BI tools</p>
-                  <p class="pricing-table-feature-desc"></p>
                 </td>
                 <td class="pricing-table-feature-mark"></td>
                 <td class="pricing-table-feature-mark">&#x2713;</td>
@@ -82,20 +66,41 @@
               <tr>
                 <td class="pricing-table-feature">
                   <p class="pricing-table-feature-name">API access*</p>
-                  <p class="pricing-table-feature-desc"></p>
+
                 </td>
                 <td class="pricing-table-feature-mark"></td>
                 <td class="pricing-table-feature-mark">&#x2713;</td>
               </tr>
               <tr>
                 <td class="pricing-table-feature">
-                  <p class="pricing-table-feature-name">Onboarding, training, and services </p>
-                  <p class="pricing-table-feature-desc">Advanced analytics training, 5 sessions with Euclid Professional Services, and Client Success Manager</p>
+                  <p class="pricing-table-feature-name">Packaged business solutions</p>
+                  <p class="pricing-table-feature-desc">
+                    Marketing performance<br>
+                    Store operations<br>
+                    Report broadcasting
+
+                  </p>
                 </td>
                 <td class="pricing-table-feature-mark"></td>
-                <td class="pricing-table-feature-mark">&#x2713;</td>
+                <td class="pricing-table-feature-mark"><br>&#x2713;<br>&#x2713;<br>&#x2713;</td>
               </tr>
               <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Advanced analytics</p>
+                  <p class="pricing-table-feature-desc">
+                    Integration of sales & event tracking data<br>
+                    Customer segmentation<br>
+                    Cross-location analytics<br>
+                    Automated insights and predictive analytics<span class="star">*</span><br>
+                    Benchmarking vs. industry, segment, and geographic averages<span class="star">*</span><br>
+                    Other advanced capabilities<span class="star">*</span><br>                    
+
+                  </p>
+                </td>
+                <td class="pricing-table-feature-mark"></td>
+                <td class="pricing-table-feature-mark"><br>&#x2713;<br>&#x2713;<br>&#x2713;<br>&#x2713;<br>&#x2713;<br>&#x2713;</td>
+              </tr>
+               <tr>
                 <td class="pricing-table-feature">
                   <p class="pricing-table-feature-name">Online support</p>
                   <p class="pricing-table-feature-desc"></p>
@@ -105,11 +110,22 @@
               </tr>
               <tr>
                 <td class="pricing-table-feature">
-                  <p class="pricing-table-feature-name">Phone support and account management</p>
+                  <p class="pricing-table-feature-name">Phone support and dedicated account support</p>
                   <p class="pricing-table-feature-desc"></p>
                 </td>
                 <td class="pricing-table-feature-mark"></td>
                 <td class="pricing-table-feature-mark">&#x2713;</td>
+              </tr>
+              <tr>
+                <td class="pricing-table-feature">
+                  <p class="pricing-table-feature-name">Onboarding, training and services</p>
+                  <p class="pricing-table-feature-desc">
+                    Onboarding and data integration, analytics training, 5 sessions with Euclid<br>
+                    Professional Services<br>
+                  </p>
+                </td>
+                <td class="pricing-table-feature-mark"></td>
+                <td class="pricing-table-feature-mark"><br>&#x2713;</td>
               </tr>
               <tr class="pricing-table-pricing">
                 <td class="pricing-table-feature">
@@ -117,7 +133,7 @@
                   <p class="pricing-table-feature-desc"></p>
                 </td>
                 <td class="pricing-table-feature-mark">FREE</td>
-                <td class="pricing-table-feature-mark">$100 per store per month*</td>
+                <td class="pricing-table-feature-mark">$100 per store per month<span class="star">*</span></td>
               </tr>
             </tbody>
 
@@ -286,7 +302,7 @@
               <td>Custom analysis</td>
             </tr>-->
           </table>
-          <br><i>*Additional pricing may apply for added features. Volume discounts available. Contact Euclid for a custom proposal built around your needs.</i>
+          <br><i><span class="star">*</span> Additional pricing may apply for added features. Volume discounts available.</i>
           <!--<span class="sectionlabel">Ready to Order? </span> -->
           <!--<h2 class="pad-top">Sign up and activate Euclid Express today for free across all locations.</h2>
           <p class="clearfix"><a href="http://info.euclidanalytics.com/ExpressSignUp.html" class="btn dark-btn clearfix">Sign Up</a></p>
@@ -294,7 +310,7 @@
           <p class="clearfix"><a href="http://info.euclidanalytics.com/ContactUs.html" class="btn dark-btn clearfix">Contact Us</a></p>-->
 		  <br/>
 		  <br/>
-      <p class="large-text"><a href="http://info.euclidanalytics.com/ExpressSignUp.html">Sign up</a> today for Euclid Express or <a href="http://info.euclidanalytics.com/ContactUs.html">contact us</a> for a custom proposal built around your needs.</p>
+      <p><a href="http://info.euclidanalytics.com/ExpressSignUp.html">Sign up</a> today for Euclid Express or <a href="http://info.euclidanalytics.com/ContactUs.html">contact us</a> for a custom proposal built around your needs.</p>
           <!--<p class="large-text"><%= link_to 'Or, view SMB plans (for chains with fewer than 10 stores)', 'smb.html' %></p>-->
    		</div>
     </div>
