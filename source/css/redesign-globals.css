@@ -362,6 +362,13 @@ button.navbar-toggle { outline: none; }
   .mobile-subnav ul li a{
     color: #333;
   }
+  .wifi-section .router{
+    display: none;
+  }
+  .wifi-section .nexus{
+    display:none;
+  }
+
 }
 
 .navbar-nav > li > a {

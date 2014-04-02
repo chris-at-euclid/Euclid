@@ -52,6 +52,9 @@ page "/terms/standard/*", :layout => false
   with_layout :partners do
    page "/partners/*"
  end
+   with_layout :partners do
+   page "/plans/*"
+ end
    with_layout :resources do
    page "/resources/*"
  end
