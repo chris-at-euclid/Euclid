@@ -737,6 +737,9 @@ ul.trust-ul-margin{
 .advanced-feature-section img{
 	width:45px;
 }
+.specialty-section.advanced-feature-section img{
+	width:65px;
+}
 .advanced-last-section h1{
 	margin-bottom:25px;
 }
@@ -745,6 +748,9 @@ ul.trust-ul-margin{
 } 
 .advanced-feature-section .block{
 	height:65px;
+}
+.specialty-section.advanced-feature-section .block{
+	height:90px;
 }
 .advanced-feature-section .col-sm-3{
 	margin:20px 0;
