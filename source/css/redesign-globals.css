@@ -593,6 +593,10 @@ button.navbar-toggle { outline: none; }
   background-image: url("../img/solutions/specialty-hero.png");
   background-size: cover;
 }
+.hero-unit-QSR{
+  background-image: url("../img/solutions/QSR-hero2.png");
+  background-size: cover;
+}
 .hero-unit-marketing{
   background-image: url("../img/solutions/marketing-hero.png");
   background-size: cover;
@@ -1000,5 +1004,7 @@ button.navbar-toggle { outline: none; }
 .solutions-row3.specialty .items .item{
   padding: 30px 20px 20px;
 }
-
+.specialty-section.content{
+  padding-bottom:0;
+}
 
