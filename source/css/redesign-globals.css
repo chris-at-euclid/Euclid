@@ -597,6 +597,10 @@ button.navbar-toggle { outline: none; }
   background-image: url("../img/solutions/QSR-hero2.png");
   background-size: cover;
 }
+.hero-unit-format{
+  background-image: url("../img/solutions/format-hero.png");
+  background-size: cover;
+}
 .hero-unit-marketing{
   background-image: url("../img/solutions/marketing-hero.png");
   background-size: cover;

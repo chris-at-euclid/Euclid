@@ -1,55 +1,167 @@
-<% content_for :pagetitle do %>Euclid for Large Format Stores, Department Stores, Big Box Stores, Event Venues<% end %>
-<% content_for :pagehead do %>
+<% content_for :pagetitle do %>Euclid Executive<% end %>
+<% content_for :pagehead do %><% end %>
+<% content_for :headextra do %><%= stylesheet_link_tag 'express-styles' %><%= javascript_include_tag 'express_scripts' %><% end %>
 
-<div id="banner-dept-holder" class="banner-holder">
-	<div class="content featured-content-light banner banner-next" id="banner-dept-next"></div>
-	<div class="content featured-content-light banner banner-cur" id="banner-dept-cur"></div>
+<div class="hero-container">
+    <div class="hero-unit hero-unit-format">
+        <div class="main-wrap main-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Large Format<br>
+                        Think inside the box.</h1>
+                    <p>Your large format location is an ecosystem of smaller zones with visitors flowing through and between them. Analyze foot traffic to pinpoint underperforming areas for greater operational efficiency in your department or big box store, mall, event venue, REIT, and more.</p>
+                    <a href="http://info.euclidanalytics.com/ContactUs.html" class="btn btn-marg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="content featured-content-light banner banner-content" id="banner-dept">
-	<div class="container">
-		<div class="subcontainer6 featured-content-textarea pull-right">
-			<div class="featured-content-textarea-inner">
-				<h1 class="light-text">For Large Formats</h1>
-				<p class="large-text">Zone-level analytics deliver a comprehensive view of your department store, big box, or event venue.</p>
-	    	  	<p class="clearfix"><a href="http://info.euclidanalytics.com/ContactUs.html" target="_blank" class="btn dark-btn clearfix">Contact Us</a></p>
-	    	  </div>
-			</div>
-		</div>
-	</div>
+
+<div class="solutions-row3 specialty-row1">
+        <h1>Actionable insights tailored to large format locations.</h1>
+        <div class="items">
+        <div class="row"> 
+         
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image first">
+              <img src="../../img/solutions/operations-identifyPerformace.png" alt="img">
+            </div>            
+            <h2>Business Context</h2>            
+            <p>Identify relevant zones like departments, <br>anchor tenants, and key areas for event-based <br>and regular assessment
+            </p>           
+          </div>
+          
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image second">
+              <img src="../../img/solutions/executive-manage.png" alt="img">
+            </div>            
+            <h2>Location Analytics</h2>            
+            <p>
+               Analyze visitor flow, duration, and <br>repeats throughout all zones in each <br>location
+            </p>           
+          </div>
+          
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image third">
+              <img src="../../img/solutions/euclid-platform.png" alt="img">
+            </div>            
+            <h2>Euclid Platform</h2>            
+            <p>
+              View reports tailored to your business <br>issues with customized insights by zone <br>and location type
+            </p>           
+          </div>
+          
+        </div>
+        </div>
+
+        <img class="connector hide_on_mobile" src="../../img/solutions/specialty-connector.png">
 </div>
 
-<% end %>
+<div class="specialty-center">
+        <h1>Euclid serves the core needs of large format locations.</h1>
+        <p>Zone-level visitor behavior<br>Detailed path analysis<br>Event and rent assessment</p>
+</div>
 
-<section class="content">
+<section class="content advanced-feature-section format-section">
   <div class="container">
-  	<div class="subcontainer9 pull-center">
-	  	<div class="col9 separated">
-		  	<div class="underlined sectionlabel">Benefits</div> 
-				<ul class="no-bullet">
-					<li>&bull; All standard metrics, including traffic, visit duration, and bounce</li>
-					<li>&bull; Unlimited zones by department or floor</li>
-					<li>&bull; Runs on in-store Wi-Fi or dedicated sensors</li>
-					<li>&bull; Full data export, premium support, and custom analysis</li>
-				</ul>
-			</div>
-  		<div  class="col9 separated">
-  			<div class="underlined sectionlabel">Overview</div> 
-				<p>Large format stores are ecosystems. Euclid’s foot-stream data and zone-level analytics provide a comprehensive view of department stores, big box stores, and event venues. Identify underperforming spaces and improve operational efficiency. Easily integrate Euclid performance metrics with your existing dashboards and BI tools.</p>
-			</div>
-			<div class="col9 underlined sectionlabel">INSIGHTS</div>
-				  	  		<ul class="cluster-list no-bottom-marg">
-				  	  					<li><a href="../case-studies/high-value_customers.pdf"><%= image_tag 'solutions/merch-1.png', :class=> 'insights-img shadowed' %></a><b>Euclid helps national retailer target high-value customers.</b><br/><br/><%= link_to "Read the case study", "../case-studies/high-value_customers.pdf" %>
-			</li>
-	  		<li><a href="../case-studies/geographic_reach.pdf"><%= image_tag 'solutions/geo-reach.png', :class=> 'insights-img shadowed' %></a><b>Euclid identifies highest value zip codes for
-ad targeting.</b><br/><br/><%= link_to "Read the case study", "../case-studies/geographic_reach.pdf" %>
-	  		</li>
-	  	</ul>
-			  		<ul class="cluster-list no-bottom-marg">
-	  		<li><a href="../case-studies/Marketing_ROI_Whitepaper_061213.pdf"><%= image_tag 'solutions/marketing-2.png', :class=> 'insights-img shadowed' %></a><b>Leading national retailer uses Euclid to increase direct mail ROI and comp-store sales.</b><br/><br/><%= link_to "Read the case study", "../case-studies/Marketing_ROI_Whitepaper_061213.pdf" %>
-	  		</li>
-	  		<li><%= image_tag 'solutions/ops-1.png', :class=> 'insights-img shadowed' %><b>Are my outlets cannibalizing from my mainline stores?</b><br/><br/>Euclid’s exclusive cross-shopping analysis tells you how many customers shop at both kinds of stores in the same month.
-	  		</li>
-	  	</ul>
-  	</div>
+    <div class="subcontainer12 pull-center">
+      <h1>Key features and benefits.</h1>
+      <div class="row">
+        <div class="col-xs-6 col-sm-3">
+          <div class="block"><img class="image1" src="../../img/solutions/format-visitor.png"></div>
+          <div>
+          <strong>Full Shopper Funnel</strong>
+            Understand how outside opportunity converts to visits, to engaged shoppers, to repeat customers</div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="block"><img  class="image2" src="../../img/solutions/format-zone.png"></div>
+          <div>
+          <strong>Campaign Effectiveness</strong>
+          Measure ROI for each marketing campaign, capturing new vs. repeat storefront conversions and retention </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="block"><img  class="image3" src="../../img/solutions/format-events.png"></div>
+          <div>
+          <strong>Operations Assessment</strong>
+          Quantify how merchandise, staffing, and layout affect shopper engagement. Identify issues with shopper bounce</div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="block"><img  class="image4" src="../../img/solutions/format-rents.png"></div>
+          <div>
+          <strong>Chainwide Planning</strong>
+          Define chain-wide strategy with a view of cross-location visits as well as attribution and predictive analysis</div>
+        </div>
+    </div>
+    </div>
   </div>
-</section> 
+</section>
+
+<div class="solutions-row3 specialty">
+        <h1>Euclid in action.</h1>
+        <p>Euclid’s large format solution is optimized for:</p>
+        <div class="items">
+        <div class="row"> 
+         
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image first">
+              <img src="../../img/solutions/format-pic1.png" alt="img">
+            </div>            
+            <h2>Big Box Stores</h2>      
+          </div>
+          
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image second">
+              <img src="../../img/solutions/format-pic2.png" alt="img">
+            </div>            
+            <h2>Shopping Centers</h2>                   
+          </div>
+          
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image third">
+              <img src="../../img/solutions/format-pic3.png" alt="img">
+            </div>            
+            <h2>Real Estate<br> 
+                Investment Trust</h2>            
+          </div>
+          
+        </div>
+        <div class="row"> 
+         
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image first">
+              <img src="../../img/solutions/format-pic4.png" alt="img">
+            </div>            
+            <h2>Event Venues</h2>      
+          </div>
+          
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image second">
+              <img src="../../img/solutions/format-pic5.png" alt="img">
+            </div>            
+            <h2>Entertainment</h2>                   
+          </div>
+          
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image third">
+              <img src="../../img/solutions/format-pic6.png" alt="img">
+            </div>            
+            <h2>Casinos</h2>            
+          </div>
+          
+        </div>
+        </div>
+</div>
+
+<div id="get-started-area" class="executives-row5">
+    <div class="main-wrap main-content">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Contact us today to learn how Euclid improves large format locations.</h1>
+                <a href="http://info.euclidanalytics.com/ContactUs.html" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <!-- /.main-wrap -->
+</div>
+
+<script>expressInit();</script>
