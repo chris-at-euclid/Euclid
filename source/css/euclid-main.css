@@ -875,7 +875,9 @@ ul.trust-ul-margin{
 	height:100px;
 }
 .format-section strong, .QSR-section strong{
+	font-size:16px;
 	display: block;
 	margin-bottom:10px;
+
 }
 

@@ -182,7 +182,7 @@ a:hover, .main-content a:hover, .main-content a:active {
 
 .hero-unit p {
   padding-top: 20px;
-  max-width: 470px;
+  max-width: 490px;
   margin: 0 auto;
   color: #fff;
 }
@@ -1014,4 +1014,8 @@ button.navbar-toggle { outline: none; }
 .specialty-section.content{
   padding-bottom:0;
 }
-
+.specialty-center p.subhead{
+  font-size: 18px;
+  line-height: 24px;
+  padding-top:5px;
+}
