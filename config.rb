@@ -43,6 +43,7 @@ page "/terms/standard/*", :layout => false
  end
  with_layout :products do
    page "/products/*"
+   page "/department"
    page "/xirrus/*"
    page "/aerohive/*"
  end
@@ -60,6 +61,12 @@ page "/terms/standard/*", :layout => false
  end
    with_layout :support do
    page "/support/*"
+ end
+    with_layout :solutions do
+   page "/specialty"
+ end
+     with_layout :solutions do
+   page "/department"
  end
  with_layout :solutions do
    page "/solutions/*"
