@@ -612,15 +612,15 @@ button.navbar-toggle { outline: none; }
   background-size: cover;
 }
 .hero-unit-support{
-  background-image: url("../img/support/support-hero.png");
+  background-image: url("../img/support/support-hero.jpg");
   background-size: cover;
 }
 .hero-unit-library{
-  background-image: url("../img/resources/library-hero.png");
+  background-image: url("../img/resources/library-hero.jpg");
   background-size: cover;
 }
 .hero-unit-reseller{
-  background-image: url("../img/resources/reseller-hero.png");
+  background-image: url("../img/resources/resellerPartner-hero.jpg");
   background-size: cover;
 }
 .hero-unit-news{
