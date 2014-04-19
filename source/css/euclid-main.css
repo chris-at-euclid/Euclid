@@ -407,7 +407,11 @@ form.defForm.contactForm {  }
 ul.how-section-list { margin-top: 0; }
 ul.no-bullet li, ul.cluster-list li { margin-bottom: 15px; }
 ul.how-section-list li { margin-bottom: 25px; }
-.content-list-item { padding-bottom: 15px; }
+.content-list-item{
+	margin: 40px 0;
+	padding-bottom: 40px;
+}
+.news .content-list-item { padding-bottom: 15px; }
 .content-list .content-list-item:last-of-type { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 .icon-button-list, ul.cluster-list.how-section-list li, ul.how-section-list li { margin-bottom: 50px; }
 .icon-button-list { margin-top: 50px; }
@@ -615,7 +619,7 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
   background-image: url("../img/product/advanced-hero.jpg");
 }
 .hero-unit-privacy{
-  background-image: url("../img/privacy-hero.gif");
+  background-image: url("../img/about/privacy-hero.jpg");
 }
 .hero-unit-technology{
   background-image: url("../img/product/technology-hero.jpg");
@@ -661,14 +665,18 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 }
 .content-list-item a:first-child{
 	display: inline-block;
-	float:left;
+/*	float:left;*/
 	width:200px;
 
 }
+
 .content-list-item img{
+	width:60px;
+}
+.news .content-list-item img{
 	width: 170px;
 }
-.content-list-item img.squareImg{
+.news .content-list-item img.squareImg{
 	width: 120px;
 }
 .content-list-item img.smallImg{
