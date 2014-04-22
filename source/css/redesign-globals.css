@@ -3,8 +3,6 @@
 @media(min-width:992px){}
 @media(min-width:1200px){}
 
-
-
 /*
 ==============================================================================
 
@@ -582,47 +580,51 @@ button.navbar-toggle { outline: none; }
   background-size: cover;
 }
 .hero-unit-solutions{
-  background-image: url("../img/solutions/solutions-hero.png");
+  background-image: url("../img/solutions/solutions-hero.jpg");
   background-size: cover;
 }
 .hero-unit-executive{
-  background-image: url("../img/solutions/executive-hero.png");
+  background-image: url("../img/solutions/executive-hero.jpg");
   background-size: cover;
 }
 .hero-unit-specialty{
-  background-image: url("../img/solutions/specialty-hero.png");
+  background-image: url("../img/solutions/specialty-hero.jpg");
   background-size: cover;
 }
 .hero-unit-QSR{
-  background-image: url("../img/solutions/QSR-hero2.png");
+  background-image: url("../img/solutions/QRS-hero.jpg");
   background-size: cover;
 }
 .hero-unit-format{
-  background-image: url("../img/solutions/format-hero.png");
+  background-image: url("../img/solutions/large-format-hero.jpg");
   background-size: cover;
 }
 .hero-unit-marketing{
-  background-image: url("../img/solutions/marketing-hero.png");
+  background-image: url("../img/solutions/marketing-hero.jpg");
   background-size: cover;
 }
 .hero-unit-operations{
-  background-image: url("../img/solutions/operations-hero.png");
+  background-image: url("../img/solutions/operations-hero.jpg");
   background-size: cover;
 }
 .hero-unit-IT{
-  background-image: url("../img/solutions/it-hero.png");
+  background-image: url("../img/solutions/IT-hero.jpg");
   background-size: cover;
 }
 .hero-unit-support{
-  background-image: url("../img/support/support-hero.png");
+  background-image: url("../img/support/support-hero.jpg");
   background-size: cover;
 }
 .hero-unit-library{
-  background-image: url("../img/resources/library-hero.png");
+  background-image: url("../img/resources/library-hero.jpg");
   background-size: cover;
 }
 .hero-unit-reseller{
-  background-image: url("../img/resources/reseller-hero.png");
+  background-image: url("../img/resources/resellerPartner-hero.jpg");
+  background-size: cover;
+}
+.hero-unit-news{
+  background-image: url("../img/about/news-hero.jpg");
   background-size: cover;
 }
  .solutions-menu ul.dropdown-menu{
@@ -1018,4 +1020,21 @@ button.navbar-toggle { outline: none; }
   font-size: 18px;
   line-height: 24px;
   padding-top:5px;
+}
+.hide{
+  display:block;
+}
+.border-bottom{
+  border-bottom:solid 1px #ccc;
+}
+.news h1{
+  text-align: center;
+  margin-top:0;
+  margin-bottom:20px;
+}
+.viewAllReleases, .viewAllNews, .viewAllEvents, .viewAllAwards{
+  text-align: center;
+}
+.mediaSection .hero-container{
+  height: 250px;
 }
