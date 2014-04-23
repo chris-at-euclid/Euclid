@@ -37,7 +37,7 @@
 }
 
 .home-wrapper .home-slides .sub-text1 {
-	font-size: 14px;
+	font-size: 16px;
 	padding: 15px 0px 25px;
 	color: #fff;
 }
@@ -126,11 +126,11 @@
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-1 {
-	background-image:url('../img/home/banner1-new.jpg');
+	background-image:url('../img/home/banner1-mini.jpg');
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-2 {
-	background-image:url('../img/home/banner2.jpg');
+	background-image:url('../img/home/banner2-mini.jpg');
 	background-position: top center;
 }
 
