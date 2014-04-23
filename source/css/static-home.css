@@ -187,7 +187,7 @@
 }
 
 .home-wrapper .home-row3 .items .item a {
-	background: url('../img/home/link-arrow.png') no-repeat right;
+/*	background: url('../img/home/link-arrow.png') no-repeat right;*/
 	display: inline-block;
 	padding-right: 15px;
 	margin-top: 15px;

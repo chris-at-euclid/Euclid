@@ -115,25 +115,40 @@ $(document).ready(function(){
 	$(".dropdown").mouseleave(function(){
     $(".dropdown-menu").hide();
 	});
+
 	$('.viewAllReleases').click(function(e){
 		e.preventDefault();
-		$(this).hide();
-		$('.toggleReleases').toggle();
+		$('.toggleReleases').slideToggle('slow');
+		if($(this).text()=="View all")
+			$('.viewAllReleases a').text("View less")
+		else
+			$('.viewAllReleases a').text("View all");
 	});
 	$('.viewAllNews').click(function(e){
 		e.preventDefault();
-		$(this).hide();
-		$('.toggleNews').toggle();
+		$('.toggleNews').slideToggle('slow');
+		
+		if($(this).text()=="View all")
+			$('.viewAllNews a').text("View less")
+		else
+			$('.viewAllNews a').text("View all");
+
 	});
 	$('.viewAllEvents').click(function(e){
 		e.preventDefault();
-		$(this).hide();
-		$('.toggleEvents').toggle();
+		$('.toggleEvents').slideToggle('slow');
+		if($(this).text()=="View all")
+			$('.viewAllEvents a').text("View less")
+		else
+			$('.viewAllEvents a').text("View all");
 	});
 	$('.viewAllAwards').click(function(e){
 		e.preventDefault();
-		$(this).hide();
-		$('.toggleAwards').toggle();
+		$('.toggleAwards').slideToggle('slow');
+		if($(this).text()=="View all")
+			$('.viewAllAwards a').text("View less")
+		else
+			$('.viewAllAwards a').text("View all");
 	});
 	$('#comments').blur(function(){                   
 	    if(!$(this).val())
