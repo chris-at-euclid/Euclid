@@ -1049,6 +1049,8 @@ button.navbar-toggle { outline: none; }
   padding:30px;
 }
 .side-box p{
+  font-size:15px;
+  font-weight: bold;
   color:#FFF;
   margin-top:25px;
 }
