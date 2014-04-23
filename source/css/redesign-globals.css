@@ -1038,3 +1038,26 @@ button.navbar-toggle { outline: none; }
 .mediaSection .hero-container{
   height: 250px;
 }
+.side-box{
+  position: absolute;
+  width: 300px;
+  height: 470px;
+  right: 0;
+  opacity:0.7;
+  top: 0;
+  background: url("../img/home/side-bg.png");
+  padding:30px;
+}
+.side-box p{
+  color:#FFF;
+  margin-top:25px;
+}
+.side-box a{
+  font-weight:normal;
+  color: #90addb;
+
+}
+.banner-content{
+  margin-top:65px;
+  margin-left:170px;
+}
