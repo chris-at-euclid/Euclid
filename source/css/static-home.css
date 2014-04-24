@@ -29,12 +29,7 @@
 .home-wrapper .home-slides .headline1, 
 .home-wrapper .home-slides .headline2 {
 	font-size: 38px;
-	padding-top: 150px;
-	text-align: center;
 	color: #fff;
-}
-.home-wrapper .home-slides .headline1 {
-	padding-top: 100px !important;
 }
 
 .home-wrapper .home-slides .headline2 {
@@ -42,16 +37,10 @@
 }
 
 .home-wrapper .home-slides .sub-text1 {
-	font-size: 14px;
+	font-size: 16px;
 	padding: 15px 0px 25px;
-	text-align: center;
 	color: #fff;
 }
-
-.home-wrapper .home-slides .slide-btns {
-	text-align: center;
-}
-
 .home-wrapper .home-slides .slide-btns a {
 	text-align: center;
 	display: inline-block;
@@ -115,7 +104,7 @@
 }
 
 .home-slides-pager-wrapper .next-prev.next {
-	right: 15px;
+	right: 315px;
 }
 
 .home-slides-pager-wrapper #home-slides-pager a {
@@ -137,16 +126,16 @@
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-1 {
-	background-image:url('../img/home/banner1-new.jpg');
+	background-image:url('../img/home/banner1-mini.jpg');
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-2 {
-	background-image:url('../img/home/banner2.jpg');
+	background-image:url('../img/home/banner2-mini.jpg');
 	background-position: top center;
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-3 {
-	background-image:url('../img/home/banner3.jpg');
+	background-image:url('../img/home/home-hero.jpg');
 }
 
 .home-wrapper .home-row2 {
@@ -154,7 +143,7 @@
 }
 
 .home-wrapper .home-row2 .building img { 
-	width: 260px; height: 125px;
+	width: 260px;
 	margin-top: 40px; 
 }
 
@@ -189,7 +178,6 @@
 	-moz-border-radius: 158px;
 	border-radius: 158px;
 	overflow: hidden;
-	border:  #f8b724 5px solid;
 	display:inline-block;
 }
 
@@ -199,7 +187,7 @@
 }
 
 .home-wrapper .home-row3 .items .item a {
-	background: url('../img/home/link-arrow.png') no-repeat right;
+/*	background: url('../img/home/link-arrow.png') no-repeat right;*/
 	display: inline-block;
 	padding-right: 15px;
 	margin-top: 15px;
@@ -242,7 +230,7 @@
 
 .home-wrapper .home-row5 {
 	text-align: center;
-	background: #eff3f6;
+	background: #FFF;
 	padding: 75px 0px 95px;
 	position: relative;
 }

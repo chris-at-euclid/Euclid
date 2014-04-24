@@ -1,17 +1,13 @@
 <% content_for :pagetitle do %>Answers and insights for QSR, coffee, specialty retail, and large format stores<% end %>
 <% content_for :headextra do %><%= stylesheet_link_tag 'static-home' %><% end %>
 
-
-
-
-
-
     <div class="home-wrapper">
     
       <!-- begin slide show code -->
       <div class="home-slides">
         <!-- slide3 -->
         <div class="home-slide-single slide-3">
+        <div class="banner-content">
           <div class="headline2">Announcing Euclid Express. <br />Actionable customer insights. Now free.</div>
           <div class="sub-text1">
 
@@ -22,7 +18,16 @@
           <div class="slide-btns">
             <%= link_to 'Learn More', '/products/express.html' %>
             <a href="http://info.euclidanalytics.com/ExpressSignUp.html" target="_blank" class="btn-blue">Sign up</a>
-          </div>      
+          </div> 
+          </div>  
+          <div class="side-box">
+              <div class="headline2">Features</div>
+              <p>Benchmark<br>
+              <a href="http://info.euclidanalytics.com/WC1403USRB_Reg_RLP.html">Retail Failed to Emerge From the <br>Snow in March</a> </p>
+              <p>News<br>
+              <a href="http://www.bloomberg.com/video/retail-tech-better-shopping-through-big-data-_VIjP5Z_S8CeH60zLGIyrA.html">Better Shopping Through Big Data</a> </p>
+              <p>White Paper<br><a href="http://info.euclidanalytics.com/WC1402TechnicalWhitepaper_RLP.html">Understand Shopper Engagement <br>in Retail Establishments</a></p>
+          </div>   
         </div> 
         <!--//end slide3 -->
         
@@ -40,6 +45,7 @@
         <!--//end slide1 --> 
         <!-- slide2 -->
         <div class="home-slide-single slide-2">
+        <div class="banner-content">
           <div class="headline1">Customers are more than transactions.</div>
           <div class="sub-text1">
             "I've always dreamed of analytics for brick and mortar that go beyond transaction data. The information <br>available through Euclid is helping us improve the customer experience and our bottom line."<br />
@@ -47,9 +53,40 @@
           </div>
           <div class="slide-btns">
             <a href="http://www.youtube.com/watch?v=6eBeWqdYZBM" class="btn dark-btn lightbox">Watch Video</a>
+          </div>  
+          </div>  
+          <div class="side-box">
+              <div class="headline2">Features</div>
+              <p>Benchmark<br>
+              <a href="http://info.euclidanalytics.com/WC1403USRB_Reg_RLP.html">Retail Failed to Emerge From the <br>Snow in March</a> </p>
+              <p>News<br>
+              <a href="http://www.bloomberg.com/video/retail-tech-better-shopping-through-big-data-_VIjP5Z_S8CeH60zLGIyrA.html">Better Shopping Through Big Data</a> </p>
+              <p>White Paper<br><a href="http://info.euclidanalytics.com/WC1402TechnicalWhitepaper_RLP.html">Understand Shopper Engagement <br>in Retail Establishments</a></p>
+          </div>       
+        </div>
+        <!--//end slide2 -->
+        <!-- slide1 -->
+        <div class="home-slide-single slide-1">
+        <div class="banner-content">
+          <div class="headline1">U.S. Retail Benchmarks. Retail failed to <br>emerge from the snow in March.</div>
+          <div class="sub-text1">
+            Euclid captures millions of shopping sessions and billions of measurements to 
+            <br>create a comprehensive monthly analysis of shopper behavior
+          </div>
+          <div class="slide-btns">
+            <a href="http://info.euclidanalytics.com/WC1403USRB_Reg_RLP.html" class="btn-blue">Download</a>
+          </div> 
+        </div>  
+          <div class="side-box">
+              <div class="headline2">Features</div>
+              <p>Benchmark<br>
+              <a href="http://info.euclidanalytics.com/WC1403USRB_Reg_RLP.html">Retail Failed to Emerge From the <br>Snow in March</a> </p>
+              <p>News<br>
+              <a href="http://www.bloomberg.com/video/retail-tech-better-shopping-through-big-data-_VIjP5Z_S8CeH60zLGIyrA.html">Better Shopping Through Big Data</a> </p>
+              <p>White Paper<br><a href="http://info.euclidanalytics.com/WC1402TechnicalWhitepaper_RLP.html">Understand Shopper Engagement <br>in Retail Establishments</a></p>
           </div>         
         </div>
-        <!--//end slide2 -->    
+        <!--//end slide1 -->     
       </div>
       
       <div class="home-slides-pager-wrapper">
@@ -62,7 +99,7 @@
       <!-- 2nd row -- Answers and insights -->
       <div class="home-row2">
         <div class="building">
-          <img src="img/home/building.jpg" alt="img" />
+          <img src="img/home/location-home.jpg" alt="img" />
         </div>
         <h1>Answers and insights for physical locations.</h1>
         
@@ -90,40 +127,56 @@
         
         <div class="items">
         <div class="row"> 
-         
+
           <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
             <div class="image">
-              <img src="img/home/circle1.jpg" alt="img" />
+              <img src="../../img/solutions/solutions-retail.png" alt="img" />
             </div>            
-            <h2>QSR and Coffee</h2>            
-            <p>
-              Maximize your customer throughput 
-              at peak and by daypart. Measure loyalty 
-              by customer segment.
-            </p>           
-            <%= link_to 'View Product', '/solutions/qsr.html' %>
+            <h2><a href="/solutions/specialty/">Specialty Retail</a></h2>            
+          </div>
+
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+            <div class="image">
+              <img src="../../img/solutions/solutions-QSRCoffee.png" alt="img" />
+            </div>            
+            <h2><a href="/solutions/qsr">QSR and Coffee</a></h2>         
           </div>
           
           <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
             <div class="image">
-              <img src="img/home/circle2.jpg" alt="img" />
+              <img src="../../img/solutions/solutions-largeFormat.png" alt="img" />
             </div>            
-            <h2>Specialty Retail</h2>            
-            <p>
-               Drive higher same store sales by measuring offline marketing impact and improving shopper experiences.
-            </p>           
-            <%= link_to 'View Product', '/solutions/specialty.html' %>
+            <h2><a href="/solutions/department/">Large Format</a></h2>            
           </div>
           
-          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-4">
+        </div>
+        <div class="row"> 
+
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-3">
             <div class="image">
-              <img src="img/home/circle3.jpg" alt="img" />
+              <img src="../../img/solutions/solutions-executive.png" alt="img" />
             </div>            
-            <h2>Large Format Retail</h2>            
-            <p>
-              Zone-level analytics deliver a comprehensive view across your department store, big box, or event venue.
-            </p>           
-            <%= link_to 'View Product', '/solutions/department.html' %>
+            <h2><a href="/solutions/executives/">Executive</a></h2>          
+          </div>
+
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-3">
+            <div class="image">
+              <img src="../../img/solutions/solutions-marketing.png" alt="img" />
+            </div>            
+            <h2><a href="/solutions/marketing/">Marketing</a></h2>         
+          </div>
+          
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-3">
+            <div class="image">
+              <img src="../../img/solutions/solutions-operations.png" alt="img" />
+            </div>            
+            <h2><a href="/solutions/operations/">Operations</a></h2>          
+          </div>
+          <div class="item col-sm-4 col-xs-12 col-md-4 col-lg-3">
+            <div class="image">
+              <img src="../../img/solutions/solutions-IT.png" alt="img" />
+            </div>            
+            <h2><a href="/solutions/it/">IT</a></h2> 
           </div>
           
         </div>
@@ -133,7 +186,7 @@
       <!--//end 3nd row -->
             
       <!-- 4th row -- Powerful features.  -->
-      <div class="home-row4">
+<!--       <div class="home-row4">
         <h1>Powerful features. Essential answers.</h1>
         
         <div class="features row">
@@ -178,7 +231,7 @@
           </div>        
         </div>
         
-      </div>
+      </div> -->
       <!--/end 4th row -->
      
       <!-- 5th row -- add wifi.  -->
@@ -186,7 +239,7 @@
         <h1>Just add Wi-Fi.</h1>
         <p>
         Euclid works securely within your network infrastructure. If you have in-store Wi-Fi<br /> 
-        from one of our many vendor partners, you can turn your existing access points into<br />
+        from one of our many vendor <a href="partners/technology">partners</a>, you can turn your existing access points into<br />
         Euclid sensors with the push of a button.
         </p>
         
@@ -197,7 +250,7 @@
       <!--// 5th row  -->
       
       <!-- 5th row -- market leadership  -->
-      <div class="home-row6">
+<!--       <div class="home-row6">
         <h2>Market leadership recognized by</h2>
         
         <div class="row logos-row">
@@ -209,7 +262,7 @@
           </div>
         </div>
       
-      </div>
+      </div> -->
       <!--// 6th row  -->
 
     </div>
