@@ -669,9 +669,15 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 	width:200px;
 
 }
-
+.company .content-list-item a:first-child{
+	display: inline-block;
+	width:auto;
+}
 .content-list-item img{
 	width:60px;
+}
+.company .content-list-item img{
+	width:100px;
 }
 .news .content-list-item img{
 	width: 170px;
