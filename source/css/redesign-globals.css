@@ -579,6 +579,11 @@ button.navbar-toggle { outline: none; }
   background-size: cover;
   height:365px;
 }
+.hero-unit-careers{
+  background-image: url("../img/about/careers-hero.jpg");
+  background-size: cover;
+  height:365px;
+}
 
 .hero-unit--privacy {
   background-image: url("../img/banners/privacy2.jpg");
@@ -1117,4 +1122,32 @@ button.navbar-toggle { outline: none; }
 }
 .investor-section .row{
   margin-top:30px;
+}
+.router-section.company-section h1{
+  text-align:center;
+}
+.router-section.company-section .two-columns .first-col4{
+  border-color:#FFF;
+}
+.subcontainer9.two-columns{
+  width:900px;
+}
+.router-section.company-section{
+  padding:50px 0;
+}
+.employee-section p{
+  text-align: left;
+}
+.employee-section p.textRight{
+  text-align: right;
+}
+.employee-section span{
+  display: block;
+  text-align: right;
+}
+.employee-section .content-list-item img{
+  width:75px;
+}
+.marg-50{
+  margin-top:50px;
 }
