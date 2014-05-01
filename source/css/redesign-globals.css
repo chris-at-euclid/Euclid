@@ -574,6 +574,16 @@ button.navbar-toggle { outline: none; }
 
 ==============================================================================
 */
+.hero-unit-company {
+  background-image: url("../img/about/company-hero.jpg");
+  background-size: cover;
+  height:365px;
+}
+.hero-unit-careers{
+  background-image: url("../img/about/careers-hero.jpg");
+  background-size: cover;
+  height:365px;
+}
 
 .hero-unit--privacy {
   background-image: url("../img/banners/privacy2.jpg");
@@ -639,7 +649,9 @@ button.navbar-toggle { outline: none; }
 .pad-50{
   padding-top:50px;
 }
-
+.pad-70{
+  padding-top:100px;
+}
 #dark-btn--express {
   border-right:none !important;
 }
@@ -781,10 +793,7 @@ button.navbar-toggle { outline: none; }
   .solutions .hide_on_mobile {
     display: none;
   }
-  .hero-container{
-    height:auto;
-  }
- 
+
 .solutions-row3 {
     padding-bottom: 25px;
   }
@@ -1062,4 +1071,83 @@ button.navbar-toggle { outline: none; }
 .banner-content{
   margin-top:65px;
   margin-left:170px;
+}
+.company-section{
+  border-bottom: solid 1px #ccc;
+}
+.company-section .col4{
+  width:auto;
+}
+.company-section ul{
+  text-align: center;
+  margin-top:30px;
+}
+.company-section h1{
+  margin-top:0;
+}
+.company-section .two-columns .first-col4{
+  margin-right:0;
+  padding-right:30px;
+  border-right: solid 1px #b9dced;
+}
+.company-section .two-columns .second-col4{
+  padding-left:30px;
+}
+.company h1{
+  text-align:center;
+}
+.investor-section h1{
+  text-align:center;
+}
+.investor-section .block{
+  text-align:center;
+  height:80px;
+  margin: 20px 0;
+}
+.investor-section .benchmark-logo{
+  width:190px;
+}
+.investor-section .harrison-logo{
+  width:75px;
+  margin-top:-20px;
+}
+.investor-section .NEA-logo{
+  width:100px;
+}
+.investor-section li{
+  list-style-type: none;
+  font-weight: bold;
+  text-align:center;
+  padding-bottom:10px;
+}
+.investor-section .row{
+  margin-top:30px;
+}
+.router-section.company-section h1{
+  text-align:center;
+}
+.router-section.company-section .two-columns .first-col4{
+  border-color:#FFF;
+}
+.subcontainer9.two-columns{
+  width:900px;
+}
+.router-section.company-section{
+  padding:50px 0;
+}
+.employee-section p{
+  text-align: left;
+}
+.employee-section p.textRight{
+  text-align: right;
+}
+.employee-section span{
+  display: block;
+  text-align: right;
+}
+.employee-section .content-list-item img{
+  width:75px;
+}
+.marg-50{
+  margin-top:50px;
 }
