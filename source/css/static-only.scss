@@ -69,8 +69,8 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 	padding: 0.6em 20px;
 }
 
-#pricing-table tbody td:nth-of-type(odd) { background-color: #EDEDED; }
-#pricing-table tbody td:nth-of-type(even) { background-color: #E0E0E0; }
+#pricing-table tbody td:nth-of-type(odd) { background-color: #EDEDED; color:green; }
+#pricing-table tbody td:nth-of-type(even) { background-color: #E0E0E0; color:green;}
 #pricing-table tbody tr:nth-of-type(even) { 
 	td:nth-of-type(odd) { background-color: rgba(237, 237, 237, 0.6); }
 	td:nth-of-type(even) { background-color: rgba(224, 224, 224, 0.6); }
@@ -92,7 +92,7 @@ ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
 }
 .pricing-table-pricing td, .pricing-table-pricing p {
 	font-weight: bold;
-	color: #0099E0;
+	color: #0099E0 !important;
 }
 /*
 #plan-name td { 
