@@ -1083,6 +1083,9 @@ button.navbar-toggle { outline: none; }
 .investor-section h1{
   text-align:center;
 }
+.investor-section ul{
+  padding-left:0;
+}
 .investor-section .block{
   text-align:center;
   height:80px;
