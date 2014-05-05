@@ -1113,9 +1113,9 @@ button.navbar-toggle { outline: none; }
 .router-section.company-section .two-columns .first-col4{
   border-color:#FFF;
 }
-.subcontainer9.two-columns{
+/*.subcontainer9.two-columns{
   width:900px;
-}
+}*/
 .router-section.company-section{
   padding:50px 0;
 }
@@ -1192,6 +1192,22 @@ button.navbar-toggle { outline: none; }
   }
   .side-box{
     display: none;
+  }
+  .subcontainer12{
+    width:auto;
+  }
+  .advanced-second-section img{
+    width:300px;
+  }
+  .main-content h1{
+    font-size:20px;
+    font-weight: bold;
+  }
+  .hero-unit .main-content h1{
+    line-height:normal;
+  }
+  .hero-unit p{
+    padding-top:5px;
   }
   .phone-side-box{
   display:block;
