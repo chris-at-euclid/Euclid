@@ -284,9 +284,6 @@
 		display: none;
 	}
 	
-	.home-wrapper {
-		padding-top: 0px;
-	}
 	
 	.home-wrapper br { 
 		display: none;
@@ -370,7 +367,7 @@
 	}
 	
 	.home-wrapper .home-slides .home-slide-single.slide-3 {
-		background-image:url('../img/home/banner3-mobile.jpg');
+		background-image:url('../img/home/home-hero.jpg');
 	}
 	
 	.home-wrapper .home-slides .home-slide-single.slide-3 .slide-btns a {
