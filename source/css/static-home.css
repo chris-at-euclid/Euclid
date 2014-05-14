@@ -284,6 +284,9 @@
 		display: none;
 	}
 	
+	.home-wrapper{ 
+		padding-top: 0;
+	}
 	
 	.home-wrapper br { 
 		display: none;
