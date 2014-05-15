@@ -1047,7 +1047,7 @@ button.navbar-toggle { outline: none; }
   margin:0px;
 }
 .side-box a{
-  font-weight:normal;
+  font-weight:bold;
   color: #90addb;
 
 }
@@ -1142,6 +1142,7 @@ button.navbar-toggle { outline: none; }
   display:none;
 }
 .side-head{
+  font-size: 16px !important;
   margin-top:25px !important;
 }
 @media(max-width:767px) {
