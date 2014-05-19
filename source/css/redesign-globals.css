@@ -976,6 +976,18 @@ button.navbar-toggle { outline: none; }
 .partner-logos{
   width:480px;
 }
+.reseller-logos{
+  width:550px;
+}
+.reseller-logos img{
+  width:110px;
+}
+.reseller-logos img.zenLogo{
+  width:125px;
+}
+.reseller-logos img.squareImg{
+  width:55px;
+}
 .euclid-sensor .hero-unit .partner-logos img{
   margin-left:0;
 }
