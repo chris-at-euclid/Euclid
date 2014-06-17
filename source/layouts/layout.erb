@@ -32,7 +32,9 @@
         <%= javascript_include_tag 'easybox' %>
 
         <!-- LFL Redesign JS -->
-        <%= javascript_include_tag 'vendor/bootstrap.min.js' %>
+         <%= javascript_include_tag 'vendor/bootstrap.min.js' %>
+        <%= javascript_include_tag 'vendor/tooltip.js' %>
+        <%= javascript_include_tag 'vendor/popover.js' %>
 
         <% if content_for?(:headextra) %><%= yield_content :headextra %><% end %>
 
