@@ -138,6 +138,9 @@
 	background-image:url('../img/home/home-hero.jpg');
 }
 
+.home-wrapper .home-slides .home-slide-single.slide-4 {
+	background-image:url('../img/home/slide4.jpg');
+}
 .home-wrapper .home-row2 {
 	text-align: center;
 }

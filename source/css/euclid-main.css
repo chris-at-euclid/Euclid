@@ -917,4 +917,90 @@ ul.trust-ul-margin{
 .border-bottom .col3{
 	margin-left:0;
 }
-
+.popover-title{
+	background-color: #117dae !important;
+	border-bottom: none !important;
+	color:#FFF !important;
+	font-weight:bold !important;
+	text-align: center;
+	padding-bottom:0 !important;
+}
+.popover{
+	background-color: #117dae !important;
+}
+.popover-content p{
+	color:#FFF !important;
+	text-align: center;
+	padding-top:0 !important;
+}
+.popover.bottom>.arrow:after{
+	border-bottom-color:#117dae !important;
+}
+.blueBorder{
+	border-right:solid 2px #b9dced;
+}
+.strip{
+	height: 70px;
+	padding-top:15px;
+	background-color: #ebf4f7;
+}
+.whitestrip{
+	height: 70px;
+	padding-top:15px;
+}
+.main-content .strip a, .main-content .whitestrip a{
+	font-weight:normal;
+}
+.plans .col-sm-3, .plans .col-xs-12, .plans .col-md-3, .plans .col-lg-3{
+	padding:0;
+}
+.plans .items{
+	text-align: center;
+}
+.vsection{
+	height: 300px;
+}
+.vsection h3{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.plansPage h1, .plansPage p{
+	text-align: center;
+}
+.plansPage h1{
+	margin-top:50px;
+}
+.plans{
+	padding-top:70px;
+}
+.plansPage h2{
+	margin:0;
+	margin-bottom:5px;
+	font-size:24px !important;
+}
+.labelSection .whitestrip{
+	font-weight: bold;
+}
+.vsection h2, .vsection h3{
+	color:#117dae !important;
+}
+.vsection h3{
+	font-weight:300!important;
+}
+.footSection{
+	margin-top: 50px;
+	margin-bottom:160px;
+}
+.pad-40{
+	padding-top:32px;
+}
+.planPage a{
+	color:#117dae;
+}
+.arrowMargin{
+	margin-top: 10px;
+}
+.leftSection .whitestrip{
+	text-align: left;
+	margin-left:30px;
+}
