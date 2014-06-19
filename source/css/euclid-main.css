@@ -997,3 +997,10 @@ ul.trust-ul-margin{
 .planPage a{
 	color:#117dae;
 }
+.arrowMargin{
+	margin-top: 10px;
+}
+.leftSection .whitestrip{
+	text-align: left;
+	margin-left:30px;
+}
