@@ -18,12 +18,12 @@ var masterInterval = null;
 var ringChangeInterval;
 var barChangeInterval;
 
-var ringAngles = new Array(4);
-var ringTargetAngles = new Array(4);
-var ringChartDivs = new Array(4);
-var ringChartBottoms = new Array(4);
-var ringChartTops = new Array(4);
-var ringAnimationVisible = new Array(4);
+var ringAngles = new Array(3);
+var ringTargetAngles = new Array(3);
+var ringChartDivs = new Array(3);
+var ringChartBottoms = new Array(3);
+var ringChartTops = new Array(3);
+var ringAnimationVisible = new Array(3);
 
 var bars;
 var barHeights = new Array();
