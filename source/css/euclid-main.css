@@ -1004,3 +1004,32 @@ ul.trust-ul-margin{
 	text-align: left;
 	margin-left:30px;
 }
+.ent-text{
+	font-family: entypo;
+}
+
+.call-us {
+    position: relative;
+
+}
+ 
+.call-us:before {
+    content: "\f095";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #117dae;
+    font-size: 18px;
+    padding-right: 0.5em;
+    top: 0px;
+    left: 0;
+}
+.call-us-txt{
+	color: #333;
+    font-size: 11px;
+    font-weight: bold;
+	display: none;
+	margin-right: 3px;
+}

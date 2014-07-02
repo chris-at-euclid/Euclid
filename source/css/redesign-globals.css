@@ -14,31 +14,31 @@
 
 body {
   padding-top: 0px;
-  font-family: 'Asap', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 
 
 h1, .main-content h1{
-  font-family: 'Asap', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 38px;
   color: #002e43;
   font-weight: normal;
 }
 h2, .main-content h2{
-  font-family: 'Asap', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   color: #002e43;
   font-weight: bold;
 }
 
 p, .main-content p{
-  font-family: 'Asap', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #575757;
 }
 a , .main-content a{
-  font-family: 'Asap', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #117dae;
   font-weight: bold;
 }
@@ -495,7 +495,7 @@ button.navbar-toggle { outline: none; }
 #site-actions li{
   list-style: none;
   display: inline-block;
-  font-size: 13px;
+  font-size: 12px;
   margin-right:10px;
   background-color: #FFF;
 }
@@ -640,7 +640,7 @@ button.navbar-toggle { outline: none; }
   border-right:none !important;
 }
 #site-actions li a#dark-btn--express{
-  padding-right:0 !important;
+  padding-right:20 !important;
 }
 .about-menu .dropdown-menu{
   right:0;

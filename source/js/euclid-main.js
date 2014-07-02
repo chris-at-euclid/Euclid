@@ -100,9 +100,6 @@
 })(jQuery);
 
 
-
-
-
 $(document).ready(function(){
 
 	//$('#subnav').stickyWithinReason({});
@@ -116,6 +113,11 @@ $(document).ready(function(){
     $(".dropdown-menu").hide();
 	});
 
+	$('.call-us').hover(function(){
+		 $(".call-us-txt").animate({"margin-right": "3px"}, 1500).show()
+		// $('.call-us-txt').css('display','inline-block').animate({width:"100px"});
+
+	});
 	$('.viewAllReleases').click(function(e){
 		e.preventDefault();
 		$('.toggleReleases').slideToggle('slow');
