@@ -40,17 +40,18 @@
                 <div class="collapse navbar-collapse">
                   <ul class="nav navbar-nav">
                     <li class="dropdown <%= nav_active('products') %>">
-                      <a href="/products/technology/" class="dropdown-toggle">Products</a>
+                      <a href="/products/technology/" class="dropdown-toggle">Products<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li class="<%= nav_active('products/index.html') %>"><%= link_to 'Our Technology', '/products/technology/' %></li>
                         <li class="<%= nav_active('products/express') %>"><%= link_to 'Euclid Express', '/products/express.html' %></li>
+                        <li class="<%= nav_active('products/express') %>"><%= link_to 'Euclid Plus', '/products/plus.html' %></li>
                         <li class="<%= nav_active('products/advanced') %>"><%= link_to 'Euclid Advanced', '/products/advanced.html' %></li>
                         <li class="<%= nav_active('products/index.html') %>"><%= link_to 'Plans & Pricing', '/products/plans' %></li>
                       </ul>
                     </li>
 
                     <li class="dropdown solutions-menu <%= nav_active('solutions') %>">
-                      <a href="/solutions" class="dropdown-toggle">Solutions</a>
+                      <a href="/solutions" class="dropdown-toggle">Solutions<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li class="section1">
                           <ul><li class="<%= nav_active('solutions/index') %>"><%= link_to 'Overview', '/solutions/index.html' %></li></ul>
@@ -73,7 +74,7 @@
                       </ul>
                     </li>
                     <li class="dropdown <%= nav_active('resources') %>">
-                      <a href="/resources/library" class="dropdown-toggle">Resources</a>
+                      <a href="/resources/library" class="dropdown-toggle">Resources<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Library', '/resources/library' %></li>
                         <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Benchmarks', '/resources/benchmarks' %></li>
@@ -81,7 +82,7 @@
                       </ul>
                     </li>
                    <li class="dropdown <%= nav_active('partners') %>">
-                      <a href="/partners/technology" class="dropdown-toggle">Partners</a>
+                      <a href="/partners/technology" class="dropdown-toggle">Partners<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Technology Partners', '/partners/technology' %></li>
                         <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Reseller Partners', '/partners/resellers' %></li>
@@ -90,7 +91,7 @@
                       </ul>
                     </li>
                     <li class="dropdown <%= nav_active('support') %>">
-                      <a href="/support" class="dropdown-toggle">Support</a>
+                      <a href="/support" class="dropdown-toggle">Support<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Support & Services', '/support/' %></li>
                         <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Knowledge Base', 'https://support.euclidanalytics.com/hc/en-us' %></li>
