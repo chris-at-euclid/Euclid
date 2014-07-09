@@ -618,6 +618,9 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 .hero-unit-advanced{
   background-image: url("../img/product/advanced-hero.jpg");
 }
+.hero-unit-plus{
+  background-image: url("../img/product/plus-hero.jpg");
+}
 .hero-unit-privacy{
   background-image: url("../img/about/privacy-hero.jpg");
 }
@@ -1003,4 +1006,50 @@ ul.trust-ul-margin{
 .leftSection .whitestrip{
 	text-align: left;
 	margin-left:30px;
+}
+.ent-text{
+	font-family: entypo;
+}
+
+.call-us {
+    position: relative;
+
+}
+ 
+.call-us:before {
+    content: "\f095";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #117dae;
+    font-size: 18px;
+    padding-right: 0.5em;
+    top: 0px;
+    left: 0;
+}
+.call-us-txt{
+	color: #333;
+    font-size: 11px;
+    font-weight: bold;
+	display: none;
+	margin-right: 3px;
+}
+.hero-unit.hero-unit-plus .main-content h1, .hero-unit.hero-unit-plus p{
+	color:#002e43;
+}
+.plusp p{
+	padding-top: 20px; 
+	max-width: 490px;
+	margin: 0 auto;
+}
+.advanced-second-section .plusp img{
+	width: 625px;
+}
+.advanced-feature-section.plusPage img{
+	width: 55px;
+}
+.plus-frame2{
+	margin-top:30px!important;
 }
