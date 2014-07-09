@@ -1076,6 +1076,7 @@ button.navbar-toggle { outline: none; }
 }
 .company-section .col4{
   width:auto;
+  margin-left:0;
 }
 .company-section ul{
   text-align: center;
