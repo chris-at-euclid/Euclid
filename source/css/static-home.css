@@ -104,7 +104,7 @@
 }
 
 .home-slides-pager-wrapper .next-prev.next {
-	right: 315px;
+	right: 345px;
 }
 
 .home-slides-pager-wrapper #home-slides-pager a {
@@ -126,7 +126,7 @@
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-1 {
-	background-image:url('../img/home/banner1-mini.jpg');
+	background-image:url('../img/product/benchMark-hero.jpg');
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-2 {
@@ -380,4 +380,7 @@
 		width: 120px;
 	}
 		
+}
+.slide-1 .grey{
+	color:#000 !important;
 }
