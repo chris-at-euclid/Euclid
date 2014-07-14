@@ -628,7 +628,7 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
   background-image: url("../img/product/technology-hero.jpg");
 }
 .hero-unit-resources{
-  background-image: url("../img/resources/benchmark-hero.jpg");
+  background-image: url("../img/product/benchMark-hero.jpg");
 }
 .hero-unit-PartnerReseller{
   background-image: url("../img/partners/techPartner-hero.jpg");
@@ -1052,4 +1052,7 @@ ul.trust-ul-margin{
 }
 .plus-frame2{
 	margin-top:30px!important;
+}
+.hero-unit-resources h1, .hero-unit-resources p{
+	color:#000 !important;
 }
