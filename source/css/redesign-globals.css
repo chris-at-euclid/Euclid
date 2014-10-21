@@ -81,8 +81,8 @@ a:hover, .main-content a:hover, .main-content a:active {
   color: #117dae;
   margin-top: 0px;
 }
-.btn-marg {
-  margin: 0 10px;
+.btn-marg:hover {
+  margin: 30px 10px;
 }
 
 .btn:hover {
