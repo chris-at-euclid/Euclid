@@ -593,6 +593,14 @@ button.navbar-toggle { outline: none; }
   background-image: url("../img/solutions/large-format-hero.jpg");
   background-size: cover;
 }
+.hero-unit-transportation{
+  background-image: url("../img/solutions/transportation-banner.jpg");
+  background-size: cover;
+}
+.hero-unit-venues{
+  background-image: url("../img/solutions/venues-hero.jpg");
+  background-size: cover;
+}
 .hero-unit-marketing{
   background-image: url("../img/solutions/marketing-hero.jpg");
   background-size: cover;
@@ -756,6 +764,9 @@ button.navbar-toggle { outline: none; }
 }
 .solutions-row3.specialty-row1 .items .image img{
   width: 90px; height: auto;
+}
+.solutions-row3.specialty-row1 .items .image.second img{
+  width: 100px; height: auto;
 }
 .solutions-row3.specialty-row1 .items .image.first img{
   width: 100px; height: auto;

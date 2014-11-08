@@ -783,8 +783,18 @@ ul.trust-ul-margin{
 .advanced-feature-section.format-section img.image1{
 	width:110px;
 }
+
+.advanced-feature-section.format-section img.shopperEngagement-icon{
+	width:120px;
+}
+.advanced-feature-section.format-section img.planning-icon{
+	width:90px;
+}
 .advanced-feature-section.format-section img.image2{
 	width:70px;
+}
+.advanced-feature-section.format-section img.image2-zone{
+	width:95px;
 }
 .advanced-feature-section.format-section img.image3{
 	width:70px;
