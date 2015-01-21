@@ -789,9 +789,6 @@ button.navbar-toggle { outline: none; }
   .solutions .hide_on_mobile {
     display: none;
   }
-  .vsection{
-    height: auto;
-  }
 
 .solutions-row3 {
     padding-bottom: 25px;
