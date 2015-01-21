@@ -179,6 +179,7 @@ a:hover, .main-content a:hover, .main-content a:active {
 }
 
 .hero-unit p {
+  font-size:16px;
   padding-top: 20px;
   max-width: 490px;
   margin: 0 auto;
@@ -787,9 +788,6 @@ button.navbar-toggle { outline: none; }
 
   .solutions .hide_on_mobile {
     display: none;
-  }
-  .vsection{
-    height: auto;
   }
 
 .solutions-row3 {

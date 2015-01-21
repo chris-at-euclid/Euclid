@@ -959,12 +959,12 @@ ul.trust-ul-margin{
 	border-right:solid 2px #b9dced;
 }
 .strip{
-	height: 70px;
+	height: 50px;
 	padding-top:15px;
 	background-color: #ebf4f7;
 }
 .whitestrip{
-	height: 70px;
+	height: 50px;
 	padding-top:15px;
 }
 .main-content .strip a, .main-content .whitestrip a{
@@ -977,7 +977,7 @@ ul.trust-ul-margin{
 	text-align: center;
 }
 .vsection{
-	height: 300px;
+	height: 275px;
 }
 .vsection h3{
 	margin-top:20px;
@@ -1009,6 +1009,7 @@ ul.trust-ul-margin{
 .footSection{
 	margin-top: 50px;
 	margin-bottom:160px;
+	margin-left:200px;
 }
 .pad-40{
 	padding-top:32px;
@@ -1016,12 +1017,9 @@ ul.trust-ul-margin{
 .planPage a{
 	color:#117dae;
 }
-.arrowMargin{
-	margin-top: 10px;
-}
 .leftSection .whitestrip{
 	text-align: left;
-	margin-left:30px;
+	padding-left:40px;
 }
 .ent-text{
 	font-family: entypo;
@@ -1071,4 +1069,9 @@ ul.trust-ul-margin{
 }
 .hero-unit-resources h1, .hero-unit-resources p{
 	color:#000 !important;
+}
+@media screen and (max-width: 764px) {
+    .leftSection .whitestrip{
+        text-align:center;
+    }
 }
