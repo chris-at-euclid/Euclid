@@ -1286,3 +1286,11 @@ button.navbar-toggle { outline: none; }
   display: none;
   margin-right: 3px;
 }
+.round_logo{
+  width: 60px;
+}
+.round_logo img{
+  width: 60px;
+  margin-top: 25px !important;
+  margin-left:40px !important; 
+}
