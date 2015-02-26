@@ -1,0 +1,310 @@
+#social-btns > span, #social-btns > a, #social-btns > iframe { float: left; margin: 10px 10px 10px 0; }
+.linkedin-btn img { 
+	width: 50px;
+	height: 50px;
+} 
+#social-btns > span { margin-top: 9px; }
+.linkedin-btn {
+	padding-top: 3px;
+	line-height: 0;
+}
+.center-in-grid { text-align: center; }
+
+#easyCenter { -webkit-backface-visibility: hidden; }
+#comparison-chart { overflow: auto; }
+#comparison-chart table { width: 100%; }
+#comparison-chart .table-section-head td { background-color: #0099e0; color: #FFF; padding-top: 0.5em; padding-bottom: 0.5em; }
+#comparison-chart tr { border-bottom: 1px solid #CCC; }
+#comparison-chart tbody tr:last-of-type { border: none; }
+#comparison-chart .table-section-head { border: none; }
+#comparison-chart tr td:first-of-type { text-align: left; }
+#comparison-chart td { text-align: center; padding-left: 0.5em; padding-right: 0.5em; }
+#comparison-chart .table-section-head + tr td { padding-top: 0.5em; }
+#comparison-chart tbody tr:last-of-type td { padding-bottom: 1em; }
+#comparison-chart th { padding-bottom: 1em; }
+
+
+.no-border { border: none !important; } 
+
+ul.circle { list-style-type: circle; margin: 0.5em 0; padding: 0 0 0 1em; }
+
+
+#banner-home .featured-content-textarea-inner { padding-top: 25px; }
+
+
+/* Styles for homepage bg img rotation */
+.banner-content { background: none !important; position: relative; }
+
+.banner-holder { overflow: hidden; }
+.banner-cur, .banner-next, .banner-holder {
+	width: 100%;
+	height: 350px;
+	position: absolute;
+}
+
+#banner-home-cur, #banner-home-next, #banner-home-holder { height: 433px; }
+#banner-home-next { background-image: url(../img/banners/dept-rotation/4.jpg) }
+#banner-home-cur { background-color: #FFF; background-image: url(../img/banners/specialty-rotation/1.jpg); }
+
+#banner-qsr-next { background-image: url(../img/banners/qsr-rotation/2.jpg) }
+#banner-qsr-cur { background-color: #FFF; background-image: url(../img/banners/qsr-rotation/1.jpg); }
+
+#banner-specialty-next { background-image: url(../img/banners/specialty-rotation/2.jpg) }
+#banner-specialty-cur { background-color: #FFF; background-image: url(../img/banners/specialty-rotation/1.jpg); }
+
+#banner-dept-next { background-image: url(../img/banners/dept-rotation/2.jpg) }
+#banner-dept-cur { background-color: #FFF; background-image: url(../img/banners/dept-rotation/1.jpg); }
+
+#banner-home-next { background-image: url(../img/banners/dept-rotation/4.jpg) }
+#banner-home-cur { background-color: #FFF; background-image: url(../img/banners/specialty-rotation/1.jpg); }
+
+
+
+
+#pricing-table { 
+	border-collapse: collapse; 
+}
+#pricing-table td {
+	font-size: 1.1em;
+	padding: 0.6em 20px;
+}
+
+#pricing-table tbody td:nth-of-type(odd) { background-color: #EDEDED; color:green; }
+#pricing-table tbody td:nth-of-type(even) { background-color: #E0E0E0; color:green;}
+#pricing-table tbody tr:nth-of-type(even) { 
+	td:nth-of-type(odd) { background-color: rgba(237, 237, 237, 0.6); }
+	td:nth-of-type(even) { background-color: rgba(224, 224, 224, 0.6); }
+}
+#plan-name {
+	text-align: center;
+	font-weight: bold;
+}
+.pricing-table-feature {
+	text-align: left;
+}
+.pricing-table-feature-name {
+	font-weight: bold;
+	margin-bottom: 0;
+	font-size:16px;
+}
+.pricing-table-feature-mark {
+	text-align: center;
+}
+.pricing-table-pricing td, .pricing-table-pricing p {
+	font-weight: bold;
+	color: #0099E0 !important;
+}
+/*
+#plan-name td { 
+	padding-left: 0.2em; padding-right: 0.2em;
+}
+#plan-name h3 {
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 20px;
+}
+.pricing-table-learnmore {
+	font-size: 12px;
+}
+#pricing-table-featurelist td {
+	padding-top: 20px;
+}
+#pricing-table ul {
+	padding: 0 0 0 20px;
+}
+#pricing-table li {
+	margin-bottom: 8px;
+	line-height: 18px;
+}
+#pricing-table #plan-name td, #pricing-table #plan-price td { text-align: center; }
+#plan-price td {
+  font-size: 2.15em;
+  font-weight: 100;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+.plan-permonth {
+  font-size: 12px;
+}
+.plan-type {
+  display: block;
+  margin-top: -5px;
+  font-size: 12px;
+}
+#pricing-table td:nth-of-type(odd) { background-color: #EDEDED; }
+#pricing-table td:nth-of-type(even) { background-color: #E0E0E0; }
+#pricing-table tr:first-of-type td { padding-top: 2em; }
+#priing-table #plan-descr {
+	border-bottom: 1px solid #C2C2C2;
+}
+#pricing-table-price td { padding: 10px;text-align: center; font-size: 16px; }
+#pricing-table-btns td { text-align: center; }
+#pricing-table-btns a { margin: auto; float: none; }
+*/
+.insights-img { width: 210px; margin-bottom: 15px; }
+
+/*
+#banner-homeprivacy { 
+	background: url(../img/privacy_home.jpg) no-repeat top right;
+}*/
+
+
+
+
+
+
+
+
+
+
+/*
+	
+	TEAM PHOTO STYLES
+
+*/
+
+.teamphoto {
+	position: relative;
+	display: inline-block;
+	width: 100px; /* CHANGE WIDTH AND HEIGHT HERE TO MAKE IMGS BIGGER OR SMALLER */
+	/* height: 196px; UN COMMENT THIS TO SET A HEIGHT, WILL NOT SQUISH, JUST CUT IMG OFF */
+	overflow: hidden;
+	margin: 0; 
+	margin-right: 10px; /* 10px IS THE SPACING BETWEEN PHOTOS, CHANGE THIS TO ADD MORE SPACING, MAY NEED TO ADJUST WIDTH TOO */
+	margin-bottom: 12px; /* 10px IS THE SPACING BETWEEN ROWS OF PHOTOS, CHANGE THIS TO ADD MORE SPACING */
+}
+/* .teamphoto:nth-of-type(3) {
+	margin-right: 0;
+} */
+.teamphoto-img {
+	width: 100%;
+}
+.teamphoto-caption {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #0099e0; /*#CCC; TO MAKE BG GRAY RATHER THAN BLUE, USE CCC*/
+	color: #FFF; /* TEXT COLOR, CHANGE TO WHATEVER. 000 = BLACK */
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.teamphoto:hover .teamphoto-caption {
+	top: 0;
+	cursor: default;
+	opacity: 0.95; /* TO MAKE CAPTION MORE OR LESS OPAQUE, CHANGE THIS NUMBER. SOMETHING BETWEEN 0 AND 1 */
+}
+.teamphoto:hover .teamphoto-caption-inner { padding-top: 10px; opacity: 1; }
+.teamphoto-caption-inner { padding: 10px; padding-top: 50px; opacity: 0; transition: all 0.5s; }
+
+#euclidcount { text-align: center; }
+.bignum { 
+	font-size: 100px;
+	line-height: 85px;
+	font-weight: 100; 
+}
+
+.tilelist { margin-top: 0; padding: 0; }
+.tilelist-item {
+	display: inline-block;
+	float: left;
+}
+#tilelist-colors .tilelist-item { 
+	width: 8%;
+	margin-right: 0.5%;
+	margin-bottom: 0.5%; 
+}
+#tilelist-drinks .tilelist-item {
+	line-height: 146px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+#tilelist-drinks .tilelist-item img {
+	vertical-align: bottom;
+}
+#tilelist-colors .tilelist-item:after {
+	display: block;
+	content: '';
+	padding-top: 100%;
+}
+.tilelist-color-purple { background-color: #8F00FF; }
+.tilelist-color-green { background-color: #00A532; }
+.tilelist-color-blue { background-color: #0099e0; }
+.tilelist-color-red { background-color: #E52600; }
+.tilelist-color-orange { background-color: #FF8B00; }
+.tilelist-color-teal { background-color: #CFC; }
+.tilelist-color-rainbow {
+	background: rgb(255,50,50);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMzIzMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEyJSIgc3RvcC1jb2xvcj0iI2ZjYWIzMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIzJSIgc3RvcC1jb2xvcj0iI2Y2ZjkzMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM0JSIgc3RvcC1jb2xvcj0iIzRhZmMzMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iIzMyZmNmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYyJSIgc3RvcC1jb2xvcj0iIzQzMzJmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc2JSIgc3RvcC1jb2xvcj0iIzhhMzJmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg4JSIgc3RvcC1jb2xvcj0iI2ZmMzJmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjA2MDIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  rgba(255,50,50,1) 0%, rgba(252,171,50,1) 12%, rgba(246,249,49,1) 23%, rgba(74,252,50,1) 34%, rgba(50,252,252,1) 47%, rgba(67,50,255,1) 62%, rgba(138,50,252,1) 76%, rgba(255,50,248,1) 88%, rgba(255,6,2,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,50,50,1)), color-stop(12%,rgba(252,171,50,1)), color-stop(23%,rgba(246,249,49,1)), color-stop(34%,rgba(74,252,50,1)), color-stop(47%,rgba(50,252,252,1)), color-stop(62%,rgba(67,50,255,1)), color-stop(76%,rgba(138,50,252,1)), color-stop(88%,rgba(255,50,248,1)), color-stop(100%,rgba(255,6,2,1)));
+	background: -webkit-linear-gradient(left,  rgba(255,50,50,1) 0%,rgba(252,171,50,1) 12%,rgba(246,249,49,1) 23%,rgba(74,252,50,1) 34%,rgba(50,252,252,1) 47%,rgba(67,50,255,1) 62%,rgba(138,50,252,1) 76%,rgba(255,50,248,1) 88%,rgba(255,6,2,1) 100%);
+	background: -o-linear-gradient(left,  rgba(255,50,50,1) 0%,rgba(252,171,50,1) 12%,rgba(246,249,49,1) 23%,rgba(74,252,50,1) 34%,rgba(50,252,252,1) 47%,rgba(67,50,255,1) 62%,rgba(138,50,252,1) 76%,rgba(255,50,248,1) 88%,rgba(255,6,2,1) 100%);
+	background: -ms-linear-gradient(left,  rgba(255,50,50,1) 0%,rgba(252,171,50,1) 12%,rgba(246,249,49,1) 23%,rgba(74,252,50,1) 34%,rgba(50,252,252,1) 47%,rgba(67,50,255,1) 62%,rgba(138,50,252,1) 76%,rgba(255,50,248,1) 88%,rgba(255,6,2,1) 100%);
+	background: linear-gradient(to right,  rgba(255,50,50,1) 0%,rgba(252,171,50,1) 12%,rgba(246,249,49,1) 23%,rgba(74,252,50,1) 34%,rgba(50,252,252,1) 47%,rgba(67,50,255,1) 62%,rgba(138,50,252,1) 76%,rgba(255,50,248,1) 88%,rgba(255,6,2,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#ff0602',GradientType=1 );
+
+}
+
+#pcvmac {
+	margin-bottom: 60px;
+}
+#pcvmac-pcbar, #pcvmac-macbar {
+	line-height: 50px;
+	text-align: center;
+	color: #FFF;
+}
+#pcvmac-pcbar { 
+	float: left;
+	background-color: #80CCEE;
+	width: 30%;
+}
+#pcvmac-macbar {
+	background-color: #0099E0;
+}
+
+
+
+
+
+.lightbox-video:after {
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 7px solid rgba(0, 0, 0, 0);
+	position: absolute;
+	z-index: 10;
+	margin-top: -20px;
+	margin-left: 5px;
+	border-left: 16px solid #0099e0;
+}
+
+
+
+
+
+.footnotes {
+	padding-top: 1.5em;
+	font-size: 1.0em;
+	ul {
+		padding-left: 1.2em;
+		margin-top:10px;
+	}
+	li{
+		line-height: 27px;
+	}
+}
+#trust-table {
+	width: 100%;
+	text-align: center;
+	td {
+		padding: 0.2em 0.5em;
+		border: 1px solid #aaa;
+	}
+	tr td:first-of-type {
+		text-align: left;
+	}
+}

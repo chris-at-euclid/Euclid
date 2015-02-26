@@ -1,0 +1,386 @@
+/* HOME CSS */
+
+.home-wrapper {
+	min-height: 500px; 
+	padding-top: 121px;
+}
+
+.home-wrapper .home-slides {
+	height: 470px !important;
+	width: 100% !important;
+	position:relative;
+}
+
+.home-wrapper .home-slides .home-slide-single {
+	height: 470px !important;
+	width: 100% !important;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: center;
+	z-index: 5;
+}
+
+.home-slides-pager-wrapper {
+	position:relative;
+	width: 100%;
+	margin: auto;
+}
+
+.home-wrapper .home-slides .headline1, 
+.home-wrapper .home-slides .headline2 {
+	font-size: 38px;
+	color: #fff;
+}
+
+.home-wrapper .home-slides .headline2 {
+	padding-top: 16px !important; 
+}
+
+.home-wrapper .home-slides .sub-text1 {
+	font-size: 16px;
+	padding: 15px 0px 25px;
+	color: #fff;
+}
+.home-wrapper .home-slides .slide-btns a {
+	text-align: center;
+	display: inline-block;
+	color: #117dae;
+	font-weight: bold;
+	font-size: 14px;
+	width: 150px;
+	height: 40px;
+	background: #dee8ec;
+	margin: 0px 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding-top: 10px;
+}
+
+.home-wrapper .home-slides .slide-btns a.btn-blue {
+	color: #fff;
+	background: #117dae;
+}
+
+.home-slides-pager-wrapper #home-slides-pager {
+	position:absolute; 
+	bottom: 24px; 
+	left: 50%; 
+	width: 200px; 
+	margin-left: -100px;
+	text-align:center;
+	z-index: 10;
+}
+
+.home-slides-pager-wrapper .next-prev { 
+	position: absolute;
+	width: 25px;
+	height: 52px;
+	overflow: hidden;
+	cursor: pointer;
+	bottom: 210px;
+	z-index: 10;
+}
+
+.home-slides-pager-wrapper .next-prev img {
+	width: 25px; 
+	height: 52px;
+}
+
+.home-slides-pager-wrapper .next-prev.prev {
+	left: 15px;
+}
+
+.home-slides-pager-wrapper .next-prev img.hover-img {
+	display: none;
+}
+
+.home-slides-pager-wrapper .next-prev.hover img{
+	display: none;
+}
+
+.home-slides-pager-wrapper .next-prev.hover img.hover-img{
+	display: block !important;
+}
+
+.home-slides-pager-wrapper .next-prev.next {
+	right: 385px;
+}
+
+.home-slides-pager-wrapper #home-slides-pager a {
+	background-color: #dee8ec;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin: 0px 5px;
+	font-size: 0px;
+	overflow:hidden;
+	text-indent: -100px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.home-slides-pager-wrapper #home-slides-pager a.activeSlide {
+	background-color: #138ec6;	
+}
+
+.home-wrapper .home-slides .home-slide-single.slide-1 {
+	background-image:url('../img/product/benchMark-hero.jpg');
+}
+
+.home-wrapper .home-slides .home-slide-single.slide-2 {
+	background-image:url('../img/home/banner2-mini.jpg');
+	background-position: top center;
+}
+
+.home-wrapper .home-slides .home-slide-single.slide-3 {
+	background-image:url('../img/home/home-hero.jpg');
+}
+
+.home-wrapper .home-slides .home-slide-single.slide-4 {
+	background-image:url('../img/home/slide4.jpg');
+}
+.home-wrapper .home-row2 {
+	text-align: center;
+}
+
+.home-wrapper .home-row2 .building img { 
+	width: 260px;
+	margin-top: 40px; 
+}
+
+.home-wrapper .home-row2 .video-button {
+	padding: 30px 0px 65px;
+}
+
+.home-wrapper .home-row2 .video-button a {
+	float: none !important;
+}
+
+.home-wrapper .home-row3 {
+	text-align: center;
+	background: #eff3f6;
+	padding-top: 50px;
+}
+
+.home-wrapper .home-row3 .items {
+	width: 100%;
+	max-width: 960px;
+	margin: auto;
+}
+
+.home-wrapper .home-row3 .items .item { 
+	text-align: center;
+	padding: 30px 35px 65px;
+}
+
+.home-wrapper .home-row3 .items .image {
+	height: 158px; width: 158px;
+	-webkit-border-radius: 158px;
+	-moz-border-radius: 158px;
+	border-radius: 158px;
+	overflow: hidden;
+	display:inline-block;
+}
+
+.home-wrapper .home-row3 .items .image img
+{
+	width: 158px; height: 158px;
+}
+
+.home-wrapper .home-row3 .items .item a {
+/*	background: url('../img/home/link-arrow.png') no-repeat right;*/
+	display: inline-block;
+	padding-right: 15px;
+	margin-top: 15px;
+}
+
+.home-wrapper .home-row4 {
+	text-align: center;
+	background: #285a71;
+	background: url('../img/home/bluebg.jpg') no-repeat right;
+	background-size:cover; 	
+	padding-top: 40px;
+	padding-bottom:40px;
+}
+
+.home-wrapper .home-row4 h1 { color: #fff; }
+
+.home-wrapper .home-row4 .features {
+	width: 100%;
+	max-width: 960px;
+	margin: auto;
+	padding-top: 35px;
+}
+
+.home-wrapper .home-row4 .features .feature {
+	text-align: center;
+	color: #fff;
+	height: 160px;
+}
+
+.home-wrapper .home-row4 .features .feature img { 
+	width: 63px;
+	height: 63px;
+}
+
+.home-wrapper .home-row4 .features .feature span {
+	display: block;
+	margin-top: 20px; 
+	padding: 0px 9px;
+}
+
+.home-wrapper .home-row5 {
+	text-align: center;
+	background: #FFF;
+	padding: 75px 0px 95px;
+	position: relative;
+}
+
+.home-wrapper .home-row5 .router {
+	position:absolute;
+	left: 0px; top: 45px;
+	width: 268px;
+	height: 215px;
+}
+
+.home-wrapper .home-row5 .nexus {
+	position:absolute;
+	right: 50px; top: 45px;
+	width: 110px;
+	height: 215px;
+}
+
+.home-wrapper .home-row6 {
+	text-align:center;
+	padding: 50px 0px;
+}
+
+.home-wrapper .home-row6 .logos-row {
+	width: 100%;
+	max-width: 960px;
+	margin: auto;
+	padding-top: 20px;
+}
+
+.home-wrapper .home-row6 img {
+	width: 470px;
+	height: 100px;
+}
+
+.home-wrapper .home-row6 h2 {
+	color: #666666;
+}
+
+.home-wrapper .show_on_mobile {
+	display: none;
+}
+	
+@media screen and (max-width: 768px) {
+	
+	.home-wrapper .show_on_mobile {
+		display: inline-block;
+	}
+	
+	.home-wrapper .hide_on_mobile {
+		display: none;
+	}
+	
+	.home-wrapper{ 
+		padding-top: 0;
+	}
+	
+	.home-wrapper br { 
+		display: none;
+	}
+	
+	.home-slides-pager-wrapper .next-prev {
+		display: none;
+	}
+	
+	.home-wrapper .home-slide-single .headline1, 
+	.home-wrapper .home-slide-single .headline2, 
+	.home-wrapper p,
+	.home-wrapper h1,
+	.home-wrapper h2,
+	.home-wrapper .home-slide-single .sub-text1 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	.home-wrapper h1 {
+		font-size: 28px;
+	}
+	
+	.home-wrapper .home-slide-single .headline1, 
+	.home-wrapper .home-slide-single .headline2
+	{
+		font-size: 28px;
+	}
+	
+	.home-slide-single br { 
+		display: none; 
+	}
+	
+	.home-slides-pager-wrapper #home-slides-pager a {
+		width: 20px;
+		height: 20px;
+		margin: 0px 20px;
+	}
+	
+	.home-wrapper .home-slides .slide-btns a {
+		margin-bottom: 5px;
+	}
+	
+	.home-wrapper .home-row3 {
+		padding-bottom: 25px;
+	}
+	
+	.home-wrapper .home-row3 .row {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.home-wrapper .home-row3 .items .item {
+		padding-bottom: 10px;
+	}
+	
+	.home-wrapper .home-row4 .features .feature {
+		min-height: 185px;
+	}
+	
+	.home-wrapper .home-row5 {
+		padding-bottom: 200px;
+	}
+	
+	.home-wrapper .home-row5 .router {
+		top: 260px; 
+		width: 134px;
+		height: 108px;
+	}
+	
+	.home-wrapper .home-row5 .nexus {
+		top: 265px;
+		right: 55px;
+		width: 55px;
+		height: 108px; 
+	}
+	
+	.home-wrapper .home-row6 img {
+		width: 290px;
+		height: 62px;
+	}
+	
+	.home-wrapper .home-slides .home-slide-single.slide-3 {
+		background-image:url('../img/home/home-hero.jpg');
+	}
+	
+	.home-wrapper .home-slides .home-slide-single.slide-3 .slide-btns a {
+		width: 120px;
+	}
+		
+}
+.slide-1 .grey{
+	color:#000 !important;
+}

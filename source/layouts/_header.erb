@@ -1,0 +1,143 @@
+<!-- LFL Redesign -->
+    <div class="navbar" role="navigation">
+      <div class="header-wrap">
+        <div class="row">
+          <div class="col-xs-5">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="http://www.euclidanalytics.com"> </a>
+            </div>
+          </div>
+          <div class="col-sm-7">
+              <ul id="site-actions">
+                  <li><a href="http://info.euclidanalytics.com/ContactUs.html">Contact Us</a></li>
+                  <li><a href="http://express.euclidelements.com">Log In</a></li>
+                  <li><a id="dark-btn--express" href="http://info.euclidanalytics.com/ExpressSignUp.html">Express Sign Up</a></li>
+                  <li>
+                  <span class="call-us-txt">1-800-681-2156</span>
+                  <span class="ent-text fa-phone call-us"></span></li>
+              </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button-rule navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          </div>
+        </div>
+        <div class="row">
+          <div id="nav-button-col">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div id="mobile-nav-col">
+            <div class="row">
+              <div class="col-xs-12 mobile-nav-header">Euclid Express</div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown <%= nav_active('products') %>">
+                      <a href="/products/technology/" class="dropdown-toggle">Products<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li class="<%= nav_active('products/index.html') %>"><%= link_to 'Our Technology', '/products/technology/' %></li>
+                        <li class="<%= nav_active('products/express') %>"><%= link_to 'Euclid Express', '/products/express.html' %></li>
+                        <li class="<%= nav_active('products/express') %>"><%= link_to 'Euclid Plus', '/products/plus.html' %></li>
+                        <li class="<%= nav_active('products/advanced') %>"><%= link_to 'Euclid Advanced', '/products/advanced.html' %></li>
+                        <li class="<%= nav_active('products/index.html') %>"><%= link_to 'Plans & Pricing', '/products/plans' %></li>
+                      </ul>
+                    </li>
+
+                    <li class="dropdown solutions-menu <%= nav_active('solutions') %>">
+                      <a href="/solutions" class="dropdown-toggle">Solutions<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li class="section1">
+                          <ul><li class="<%= nav_active('solutions/index') %>"><%= link_to 'Overview', '/solutions/index.html' %></li></ul>
+                          <ul class="sideBorder">
+                            <li class="heading <%= nav_active('solutions/qsr/') %>">By Industry</li>
+                            <li class="<%= nav_active('solutions/retail/') %>"><%= link_to 'Retail', '/solutions/retail.html' %></li>
+                           <li class="<%= nav_active('solutions/qsr/') %>"><%= link_to 'QSR & Coffee', '/solutions/qsr.html' %></li>
+                    <!-- <li class="<%= nav_active('solutions/department/') %>"><%= link_to 'Large Format', '/solutions/department.html' %></li> -->
+                    <li class="<%= nav_active('solutions/malls/') %>"><%= link_to 'Shopping Malls', '/solutions/malls.html' %></li>
+              <li class="<%= nav_active('solutions/transportation/') %>"><%= link_to 'Transportation', '/solutions/transportation.html' %></li><li class="<%= nav_active('solutions/venues/') %>"><%= link_to 'Event Venues', '/solutions/venues.html' %></li>
+                          </ul>
+                        </li>
+                        <li class="section2">
+                          <ul>
+                            <li class="heading <%= nav_active('solutions/qsr/') %>">By Role</li>
+                            <li class="<%= nav_active('solutions/specialty/') %>"><%= link_to 'Executive', '/solutions/executives/' %></li>
+                            <li class="<%= nav_active('solutions/department/') %>"><%= link_to 'Marketing', '/solutions/marketing/' %></li>
+                            <li class="<%= nav_active('solutions/partners/') %>"><%= link_to 'Operations', '/solutions/operations/' %></li>
+                            <li class="<%= nav_active('solutions/technology/') %>"><%= link_to 'IT', '/solutions/it/' %></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown <%= nav_active('resources') %>">
+                      <a href="/resources/library" class="dropdown-toggle">Resources<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Library', '/resources/library' %></li>
+                        <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Benchmarks', '/resources/benchmarks' %></li>
+                        <li class="<%= nav_active('privacy/statement') %>"><a href="http://blog.euclidelements.com">Blog</a></li>
+                      </ul>
+                    </li>
+                   <li class="dropdown <%= nav_active('partners') %>">
+                      <a href="/partners/technology" class="dropdown-toggle">Partners<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Technology Partners', '/partners/technology' %></li>
+                        <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Reseller Partners', '/partners/resellers' %></li>
+                        <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Become a Partner', 'http://info.euclidanalytics.com/Partner_SignUpLP.html' %></li>
+                        <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Partner Portal', 'http://partnerportal.euclidanalytics.com' %></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown <%= nav_active('support') %>">
+                      <a href="/support" class="dropdown-toggle">Support<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Support & Services', '/support/' %></li>
+                        <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Knowledge Base', 'https://support.euclidanalytics.com/hc/en-us' %></li>
+
+                      </ul>
+                    </li>
+                    <li class="dropdown about-menu <%= nav_active('about') %>">
+                      <a href="/about" class="dropdown-toggle">About</a>
+                      <ul class="dropdown-menu">
+                        <li class="<%= nav_active('about/index.html') %>"><%= link_to 'Company', '/about/index.html' %></li>
+                        <li class="<%= nav_active('about/news/') %>"><%= link_to 'News & Events', '/about/news.html' %></li>
+                        <li class="<%= nav_active('about/privacy/') %>"><%= link_to 'Privacy', '/about/privacy.html' %></li>
+                        <li class="<%= nav_active('about/trust/') %>"><%= link_to 'Trust', '/about/trust.html' %></li>
+                        <li class="<%= nav_active('about/careers/') %>"><%= link_to 'Careers', '/about/careers.html' %></li>   
+                        <li class="<%= nav_active('about/contact/') %>"><%= link_to 'Contact', '/about/contact.html' %></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Old header
+<div class="container">
+    <div class="col2">
+        <% link_to '/index.html' do %>
+            <div class="logo"></div>
+        <% end %>
+    </div>
+    <nav class="col10" id="primary-nav">
+        <ul id="site-actions">
+            <li><a href="http://dashboard.euclidelements.com" id="loginbtn" class="btn">Login</a></li>
+        </ul>
+        <ul id="site-pages">
+            <li class="<%= nav_active('product') %>"><%= link_to 'Products', '/product/index.html' %></li>
+            <li class="<%= nav_active('pricing') %>"><%= link_to 'Plans', '/pricing/index.html' %></li>
+            <li class="<%= nav_active('privacy') %>"><%= link_to 'Privacy', '/privacy/index.html' %></li>
+            <li class="<%= nav_active('about') %>"><%= link_to 'About', '/about/index.html' %></li>
+        </ul>
+    </nav>
+</div>
+<div id="top-divider" class="divider"></div>
+-->

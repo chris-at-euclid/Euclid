@@ -1,0 +1,322 @@
+<% content_for :pagetitle do %>Products<% end %>
+<% content_for :pagehead do %><% end %>
+<% content_for :headextra do %><%= stylesheet_link_tag 'express-styles' %><%= javascript_include_tag 'express_scripts' %><% end %>
+
+<div class="hero-container">
+    <div class="hero-unit hero-unit--express">
+        <div class="main-wrap main-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Euclid Express<br>
+                    Free analytics for brick and mortar locations.</h1>
+                    <p>Euclid Express helps you understand your customers beyond transactions, maximizing your business intelligence. With dynamic reporting tools and access to the metrics essential to brick and mortar operations, Express translates data on visitor activity into highly actionable insights.</p>
+                    <a href="http://info.euclidanalytics.com/WBN14-01recording_Reg.html" class="btn btn-marg">Learn More</a>
+                    <a href="http://info.euclidanalytics.com/ExpressSignUp.html" class="btn dark-btn btn-marg">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="feedback-area">
+    <div class="main-wrap main-content">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Online dashboard. Offline answers.</h1>
+                <p>Measure how well you attract, engage, and retain visitors by connecting the dots between visit activity and sales performance. With customizable dashboards and custom reports, spend time understanding your customers and invest smarter in marketing and operations.</p>
+                <div id="charts-static"><img src="/img/express/charts-static.png"/></div>
+                <div id="ring-chart-area" class="row">
+
+                    <div class="col-xs-6 col-md-4">
+                        <div class="ring-chart-container">
+                            <div id="ring-chart-2" class="ring-chart">
+                                <div class="ring-0 graph-light-color"></div>
+                                <div class="ring-1 graph-light-color"></div>
+                                <div class="ring-2 graph-medium-color"></div>
+                                <div class="ring-3 graph-dark-color"></div>
+                                <div class="white-mask"></div>
+                                <div class="ring-center"></div>
+                                <div class="ring-label">
+                                    <div class="ring-label-text">Visits</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <div class="ring-chart-container">
+                            <div id="ring-chart-1" class="ring-chart">
+                                <div class="ring-0 graph-light-color"></div>
+                                <div class="ring-1 graph-light-color"></div>
+                                <div class="ring-2 graph-medium-color"></div>
+                                <div class="ring-3 graph-dark-color"></div>
+                                <div class="white-mask"></div>
+                                <div class="ring-center"></div>
+                                <div class="ring-label">
+                                    <div class="ring-label-text">Duration</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             <div class="col-xs-6 col-md-4">
+                        <div class="ring-chart-container">
+                            <div id="ring-chart-3" class="ring-chart">
+                                <div class="ring-0 graph-light-color"></div>
+                                <div class="ring-1 graph-light-color"></div>
+                                <div class="ring-2 graph-medium-color"></div>
+                                <div class="ring-3 graph-dark-color"></div>
+                                <div class="white-mask"></div>
+                                <div class="ring-center"></div>
+                                <div class="ring-label">
+                                    <div class="ring-label-text">Repeats</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+<!--                      <div class="col-xs-6 col-md-4">
+                        <div class="ring-chart-container">
+                            <div id="ring-chart-4" class="ring-chart">
+                                <div class="ring-0 graph-light-color"></div>
+                                <div class="ring-1 graph-light-color"></div>
+                                <div class="ring-2 graph-medium-color"></div>
+                                <div class="ring-3 graph-dark-color"></div>
+                                <div class="white-mask"></div>
+                                <div class="ring-center"></div>
+                                <div class="ring-label">
+                                  <div class="ring-label-text">Recency</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div id="bar-chart-area" class="row">
+                    <div class="col-xs-12">
+                        <div id="bar-chart-container">
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-light-color"></div>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar graph-dark-color"></div>
+                            </div>
+                        </div>
+                        <div class="bar-chart-label">Real-time data collection</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.main-wrap -->
+</div>
+<!-- /.feedback-area -->
+
+<div class="express-metrics">
+       <div class="main-wrap main-content">
+        <div class="row">
+            <div class="col-xs-8">
+            <h1>Essential Visitor Metrics.</h1>
+                <p>Know your customers, not just your transactions. Euclid gives you a more complete view of visitor behavior with a broad array of actionable metrics. Get insights on what converts your customers and keeps them engaged.</p>
+<div class="row">
+  <div class="col-xs-6 col-sm-4"> 
+    <div class="block first"><img src="../../img/product/outsideOpportunity.png"></div>
+        <div>
+            <h5>Storefront Potential</h5>
+            <!-- Number of people walking by your stores -->
+        </div>
+  </div>
+  <div class="col-xs-6 col-sm-4"> 
+    <div class="block ninth"><img src="../../img/product/walk-bys.png"></div>
+        <div>
+            <h5>Walk-Bys</h5>
+           <!--  Number of days visitors wait before returning -->
+        </div>
+  </div>
+  <!-- Optional: clear the XS cols if their content doesn't match in height -->
+  <div class="clearfix visible-xs"></div>
+  <div class="col-xs-6 col-sm-4"> 
+    <div class="block second"><img src="../../img/product/visits.png"></div>
+        <div>
+            <h5>Visitors</h5>
+            <!-- Number of visitors detected inside the store -->
+        </div>
+  </div>
+
+</div>
+<div class="row">
+
+  <div class="col-xs-6 col-sm-4"> 
+    <div class="block third"><img src="../../img/product/storefrontConversion.png"></div>
+        <div>
+            <h5>Storefront Conversion</h5>
+            <!-- Percentage of people that come inside -->
+        </div>
+  </div>
+  <div class="col-xs-6 col-sm-4"> 
+    <div class="block fourth"><img src="../../img/product/visitDuration.png"></div>
+        <div>
+            <h5>Duration</h5>
+            <!-- Amount of time visitors spend inside the store -->
+        </div>
+  </div>
+
+  <!-- Optional: clear the XS cols if their content doesn't match in height -->
+  <div class="clearfix visible-xs"></div>
+  <div class="col-xs-6 col-sm-4"> 
+    <div class="block sixth"><img src="../../img/product/engagementRate.png"></div>
+        <div>
+            <h5>Engagement Rate</h5>
+            <!-- Percentage of visitors engaged in <”x” minutes -->
+        </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-sm-4"> 
+    <div class="block fifth"><img src="../../img/product/bounceRate-icon.png"></div>
+        <div>
+            <h5>Bounce Rate</h5>
+            <!-- Percentage of visitors leaving in <”x” minutes -->
+        </div>
+  </div>
+  <div class="col-xs-6 col-sm-4"> 
+    <div class="block seventh"><img src="../../img/product/newVisitors.png"></div>
+        <div>
+            <h5>New Visitors</h5>
+            <!-- Percentage of visitors that are new -->
+        </div>
+  </div>
+  <div class="col-xs-6 col-sm-4"> 
+    <div class="block eigth"><img src="../../img/product/repeatVisitors.png"></div>
+        <div>
+            <h5>Repeat Visitors</h5>
+        </div>
+  </div>
+  <!-- Optional: clear the XS cols if their content doesn't match in height -->
+  <div class="clearfix visible-xs"></div>
+
+</div>
+
+            </div>
+        </div>
+        </div>
+    <!-- /.main-wrap -->
+</div>
+
+<div id="activation-area">
+<div id="diagram-area">
+    <div class="main-wrap main-content">
+        <div class="row">
+            <div class="col-xs-12">
+            <h1>Simple activation at no cost.</h1>
+                <p>Sign-up and activate in minutes through existing hardware from our Wi-Fi partners. With no cost to sign-up, Express is an instant solution that helps you make smarter operational decisions based on customer behavior.</p>            
+            <div id="insights-diagram-static"><img src="/img/express/diagram-static.png"/></div>
+                <div id="insights-diagram">
+                    <div class="diagram-image" id="mobile-devices"></div>
+                    <div class="dots-container">
+                        <div class="dots">
+                            <div class="dot" id="dot-1"></div>
+                            <div class="dot center-dot" id="dot-2"></div>
+                            <div class="dot" id="dot-3"></div>
+                        </div>
+                    </div>
+                    <div class="diagram-image" id="router"></div>
+                    <div class="dots-container">
+                        <div class="dots">
+                            <div class="dot" id="dot-4"></div>
+                            <div class="dot center-dot" id="dot-5"></div>
+                            <div class="dot" id="dot-6"></div>
+                        </div>
+                    </div>
+                    <div class="diagram-image" id="laptop">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.main-wrap -->
+</div>
+
+            </div>
+
+
+<div id="get-started-area">
+    <div class="main-wrap main-content">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Get started today.</h1>
+                <p>The path to smarter business is easy: sign-up, access our Knowledge Base for activation, and see essential customer metrics from day one. Euclid Express is powerful, easy to use, and completely free. Why not start today?</p>
+                <a href="http://info.euclidanalytics.com/ExpressSignUp.html" class="btn dark-btn">Sign Up</a>
+                <a href="http://info.euclidanalytics.com/ContactUs.html" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <!-- /.main-wrap -->
+</div>
+
+<script>expressInit();</script>

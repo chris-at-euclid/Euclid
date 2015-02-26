@@ -1,0 +1,7 @@
+<% if withlayout == true %>
+	<% wrap_layout :terms do %>
+		<%= partial "terms/#{path}" %>
+	<% end %>
+<% else %>
+	<%= partial "terms/#{path}" %>
+<% end %>

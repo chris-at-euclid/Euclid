@@ -1,0 +1,23 @@
+<% content_for :pagetitlestartoverride do %>Euclid<% end %>
+
+
+<% wrap_layout :layout do %>
+<div class="header-wrap subnav-wrap">
+
+  <div class="mobile-subnav" id="subnav">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul>
+          <li class="<%= nav_active('privacy/index.html') %>"><%= link_to 'Library', '/resources/library' %></li>
+          <li class="<%= nav_active('privacy/trust.html') %>"><%= link_to 'Benchmarks', '/resources/benchmarks' %></li>
+          <li class="<%= nav_active('privacy/statement') %>"><a href="http://blog.euclidelements.com">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    <% if content_for?(:pagehead) %>
+          <%= yield_content :pagehead %>
+    <% end %>
+    <%= yield %>
+<% end %>

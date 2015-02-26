@@ -1,0 +1,17 @@
+var replaceUrls = function() {
+	var href=$(this).attr("href"); 
+	if(href)
+		$(this).attr("href", "http://euclidanalytics.com"+href);
+	else {
+		var src=$(this).attr("src"); 
+		$(this).attr("src", "http://euclidanalytics.com"+src);
+	}
+}
+var replaceSearchStr = "a:not([href*='http://']), img:not([src*='http://'])";
+var html = {"header":"<%=escape_javascript partial 'layouts/header' %>","footer":"<%=escape_javascript partial 'layouts/footer' %>"};
+
+$(document).ready(function() {
+	$("header").html(html.header).find(replaceSearchStr).each(replaceUrls);
+	$("footer").html(html.footer).find(replaceSearchStr).each(replaceUrls);
+});
+$(document).append("<script src='http://euclidanalytics.com/js/vendor/bootstrap.min.js'/>");
