@@ -104,7 +104,7 @@
 }
 
 .home-slides-pager-wrapper .next-prev.next {
-	right: 385px;
+	right: 15px;
 }
 
 .home-slides-pager-wrapper #home-slides-pager a {
@@ -135,7 +135,7 @@
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-3 {
-	background-image:url('../img/home/home-hero.jpg');
+	background-image:url('../img/home/slide4.jpg');
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-4 {
@@ -373,7 +373,7 @@
 	}
 	
 	.home-wrapper .home-slides .home-slide-single.slide-3 {
-		background-image:url('../img/home/home-hero.jpg');
+		background-image:url('../img/home/slide4.jpg');
 	}
 	
 	.home-wrapper .home-slides .home-slide-single.slide-3 .slide-btns a {
