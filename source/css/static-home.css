@@ -28,6 +28,7 @@
 
 .home-wrapper .home-slides .headline1, 
 .home-wrapper .home-slides .headline2 {
+	text-align: center;
 	font-size: 38px;
 	color: #fff;
 }
@@ -40,6 +41,10 @@
 	font-size: 16px;
 	padding: 15px 0px 25px;
 	color: #fff;
+	text-align: center;
+}
+.home-wrapper .home-slides .slide-btns{
+	text-align: center;
 }
 .home-wrapper .home-slides .slide-btns a {
 	text-align: center;
