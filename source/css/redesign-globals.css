@@ -630,9 +630,6 @@ button.navbar-toggle { outline: none; }
   background-image: url("../img/about/news-hero.jpg");
   background-size: cover;
 }
- .solutions-menu ul.dropdown-menu{
-    min-width: 250px;
-  }
 .heading{ 
   float:left;
   font-size:13px;
