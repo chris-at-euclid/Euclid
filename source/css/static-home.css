@@ -30,17 +30,15 @@
 .home-wrapper .home-slides .headline2 {
 	text-align: center;
 	font-size: 38px;
-	color: #fff;
 }
 
-.home-wrapper .home-slides .headline2 {
+/*.home-wrapper .home-slides .headline2 {
 	padding-top: 16px !important; 
 }
-
+*/
 .home-wrapper .home-slides .sub-text1 {
 	font-size: 16px;
 	padding: 15px 0px 25px;
-	color: #fff;
 	text-align: center;
 }
 .home-wrapper .home-slides .slide-btns{
@@ -140,11 +138,11 @@
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-3 {
-	background-image:url('../img/home/slide4.jpg');
+	background-image:url('../img/home/home_page_hero.jpg');
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-4 {
-	background-image:url('../img/home/slide4.jpg');
+	background-image:url('../img/home/home_page_hero.jpg');
 }
 .home-wrapper .home-row2 {
 	text-align: center;
@@ -378,7 +376,7 @@
 	}
 	
 	.home-wrapper .home-slides .home-slide-single.slide-3 {
-		background-image:url('../img/home/slide4.jpg');
+		background-image:url('../img/home/home_page_hero.jpg');
 	}
 	
 	.home-wrapper .home-slides .home-slide-single.slide-3 .slide-btns a {

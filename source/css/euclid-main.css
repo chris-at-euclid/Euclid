@@ -404,7 +404,9 @@ form.defForm.contactForm {  }
 .content-list { margin-bottom: 100px; }
 .news .content-list{ margin-bottom:30px;}
 .content-list, .content-list-item, ul.no-bullet, ul.no-bullet li, ul.cluster-list, ul.how-section-list, ul.how-section-list li, ul.icon-button-list, ul.icon-button-list li { list-style: none; padding-left: 0; padding-top: 0;}
-ul.how-section-list { margin-top: 0; }
+ul.how-section-list { 
+	margin-top: 30px;
+	padding-left: 35px; }
 ul.no-bullet li, ul.cluster-list li { margin-bottom: 15px; }
 ul.how-section-list li { margin-bottom: 25px; }
 .content-list-item{
