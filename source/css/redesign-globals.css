@@ -1287,3 +1287,9 @@ button.navbar-toggle { outline: none; }
   margin-top: 25px !important;
   margin-left:40px !important; 
 }
+.media-grid li{
+  padding:0 5px !important;
+}
+.banner-content{
+  color:#000;
+}
