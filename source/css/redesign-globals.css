@@ -81,9 +81,9 @@ a:hover, .main-content a:hover, .main-content a:active {
   color: #117dae;
   margin-top: 0px;
 }
-.btn-marg:hover {
+/*.btn-marg:hover {
   margin: 30px 10px;
-}
+}*/
 
 .btn:hover {
   background-color: #e7f2f6;
@@ -1286,4 +1286,10 @@ button.navbar-toggle { outline: none; }
   width: 60px;
   margin-top: 25px !important;
   margin-left:40px !important; 
+}
+.media-grid li{
+  padding:0 5px !important;
+}
+.banner-content{
+  color:#FFF;
 }

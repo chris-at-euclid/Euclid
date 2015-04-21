@@ -138,11 +138,11 @@
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-3 {
-	background-image:url('../img/home/home_page_hero.jpg');
+	background-image:url('../img/home/home_hero_banner.jpg');
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-4 {
-	background-image:url('../img/home/home_page_hero.jpg');
+	background-image:url('../img/home/home_hero_banner.jpg');
 }
 .home-wrapper .home-row2 {
 	text-align: center;
@@ -376,7 +376,7 @@
 	}
 	
 	.home-wrapper .home-slides .home-slide-single.slide-3 {
-		background-image:url('../img/home/home_page_hero.jpg');
+		background-image:url('../img/home/home_hero_banner.jpg');
 	}
 	
 	.home-wrapper .home-slides .home-slide-single.slide-3 .slide-btns a {
