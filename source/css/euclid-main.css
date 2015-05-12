@@ -276,7 +276,7 @@ p:last-of-type { margin-bottom: 0; }
 }
 .underlined, .content-list-item { margin-bottom: 15px; }
 .underlined.light-underlined, .content-list-item { border-color: #b2e0f6; }
-.separated, p.separated { margin-bottom: 60px; }
+.separated, p.separated { margin-bottom: 30px; }
 h1.separated { margin-bottom: 50px; }
 .indent { padding-left: 20px;}
 
@@ -410,7 +410,7 @@ ul.how-section-list {
 ul.no-bullet li, ul.cluster-list li { margin-bottom: 15px; }
 ul.how-section-list li { margin-bottom: 25px; }
 .content-list-item{
-	margin: 40px 0;
+	margin: 10px 0;
 	padding-bottom: 40px;
 }
 .news .content-list-item { padding-bottom: 15px; }
