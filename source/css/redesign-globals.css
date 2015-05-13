@@ -81,9 +81,9 @@ a:hover, .main-content a:hover, .main-content a:active {
   color: #117dae;
   margin-top: 0px;
 }
-.btn-marg:hover {
+/*.btn-marg:hover {
   margin: 30px 10px;
-}
+}*/
 
 .btn:hover {
   background-color: #e7f2f6;
@@ -207,11 +207,11 @@ a:hover, .main-content a:hover, .main-content a:active {
 
 
 .navbar .navbar-brand {
-  margin-top: 50px;
+  margin-top: 32px;
   margin-left: 7px;
   width: 150px;
-  height: 35px;
-  background: url("../img/global-ui/logo.png");
+  height: 53px;
+  background: url("../img/global-ui/euclid-analytics-logo-1x.png");
 }
 @media(max-width:767px){
   .navbar .navbar-brand {
@@ -630,9 +630,6 @@ button.navbar-toggle { outline: none; }
   background-image: url("../img/about/news-hero.jpg");
   background-size: cover;
 }
- .solutions-menu ul.dropdown-menu{
-    min-width: 250px;
-  }
 .heading{ 
   float:left;
   font-size:13px;
@@ -1076,9 +1073,9 @@ button.navbar-toggle { outline: none; }
 
 }
 .banner-content{
-  width:55%;
-  margin-top:40px;
-  margin-left:150px;
+  width:60%;
+  margin: 0 auto;
+  margin-top: 110px;
 }
 .company-section{
   border-bottom: solid 1px #ccc;
@@ -1180,7 +1177,6 @@ button.navbar-toggle { outline: none; }
   }
   .banner-content{
     margin-top:20px !important;
-    margin-left:20px !important;
   }
   .side-box{
     width:30%;
@@ -1190,7 +1186,6 @@ button.navbar-toggle { outline: none; }
 @media(max-width:768px){
     .banner-content{
     margin-top:20px !important;
-    margin-left:25px !important;
   }
   .side-head{
   margin-top:10px !important;
@@ -1210,7 +1205,6 @@ button.navbar-toggle { outline: none; }
 @media(max-width:1050px){
   .banner-content{
     margin-top:25px !important;
-    margin-left:65px !important;
 }
 }
 @media(max-width:480px){
@@ -1248,7 +1242,6 @@ button.navbar-toggle { outline: none; }
   .banner-content{
     width:90%;
     margin-top:20px !important;
-    margin-left:20px !important;
   }
   .home-wrapper .home-slide-single .headline1, .home-wrapper .home-slide-single .headline2{
     font-size:20px;
@@ -1293,4 +1286,10 @@ button.navbar-toggle { outline: none; }
   width: 60px;
   margin-top: 25px !important;
   margin-left:40px !important; 
+}
+.media-grid li{
+  padding:0 5px !important;
+}
+.banner-content{
+  color:#FFF;
 }
