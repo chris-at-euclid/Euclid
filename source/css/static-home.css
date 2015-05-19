@@ -28,18 +28,21 @@
 
 .home-wrapper .home-slides .headline1, 
 .home-wrapper .home-slides .headline2 {
+	text-align: center;
 	font-size: 38px;
-	color: #fff;
 }
 
-.home-wrapper .home-slides .headline2 {
+/*.home-wrapper .home-slides .headline2 {
 	padding-top: 16px !important; 
 }
-
+*/
 .home-wrapper .home-slides .sub-text1 {
 	font-size: 16px;
 	padding: 15px 0px 25px;
-	color: #fff;
+	text-align: center;
+}
+.home-wrapper .home-slides .slide-btns{
+	text-align: center;
 }
 .home-wrapper .home-slides .slide-btns a {
 	text-align: center;
@@ -104,7 +107,7 @@
 }
 
 .home-slides-pager-wrapper .next-prev.next {
-	right: 385px;
+	right: 15px;
 }
 
 .home-slides-pager-wrapper #home-slides-pager a {
@@ -135,11 +138,11 @@
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-3 {
-	background-image:url('../img/home/home-hero.jpg');
+	background-image:url('../img/home/home_hero_banner.jpg');
 }
 
 .home-wrapper .home-slides .home-slide-single.slide-4 {
-	background-image:url('../img/home/slide4.jpg');
+	background-image:url('../img/home/home_hero_banner.jpg');
 }
 .home-wrapper .home-row2 {
 	text-align: center;
@@ -373,7 +376,7 @@
 	}
 	
 	.home-wrapper .home-slides .home-slide-single.slide-3 {
-		background-image:url('../img/home/home-hero.jpg');
+		background-image:url('../img/home/home_hero_banner.jpg');
 	}
 	
 	.home-wrapper .home-slides .home-slide-single.slide-3 .slide-btns a {

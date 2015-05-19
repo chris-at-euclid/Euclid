@@ -130,7 +130,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		$('.toggleNews').slideToggle('slow');
 		
-		if($(this).text()=="View all")
+		if($(this).text()=="View All")
 			$('.viewAllNews a').text("View less")
 		else
 			$('.viewAllNews a').text("View all");
