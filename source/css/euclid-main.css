@@ -617,6 +617,9 @@ a.resumator-hide-details:hover { margin-bottom: 0px !important; }
 
 /***********New UI Styles*************/
 
+.hero-eventIQ{
+  background-image: url("../img/eventIQ/eventIQ_hero.png");
+}
 .hero-unit-advanced{
   background-image: url("../img/product/advanced-hero.jpg");
 }
@@ -782,6 +785,13 @@ ul.trust-ul-margin{
 .advanced-feature-section img{
 	width:45px;
 }
+.eventIQ-section img{
+	width:100px;
+}
+.eventIQ-section img.autoImg{
+	width: 250px;
+	margin-top: 20px;
+}
 .advanced-feature-section.format-section img.image1{
 	width:110px;
 }
@@ -827,6 +837,9 @@ ul.trust-ul-margin{
 } 
 .advanced-feature-section .block{
 	height:65px;
+}
+.eventIQ-section .block{
+	height: 100px;
 }
 .specialty-section.advanced-feature-section .block{
 	height:110px;

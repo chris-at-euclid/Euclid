@@ -43,6 +43,7 @@ page "/terms/standard/*", :layout => false
  end
  with_layout :products do
    page "/products/*"
+   page "/eventsIQ/*"
    page "/department"
    page "/xirrus/*"
    page "/aerohive/*"
@@ -76,7 +77,12 @@ page "/terms/standard/*", :layout => false
  end
 
 ["standard"].each do |level|
-  ["privacy", "legal"].each do |page|
+  ["privacy", "legal_Advanced"].each do |page|
+    proxy "/terms/#{level}/#{page}.html", "/terms/template.html", :locals => { :path => "#{level}/#{page}", :withlayout => true }, :ignore => true
+  end
+end
+["standard"].each do |level|
+  ["privacy", "legal2"].each do |page|
     proxy "/terms/#{level}/#{page}.html", "/terms/template.html", :locals => { :path => "#{level}/#{page}", :withlayout => true }, :ignore => true
   end
 end
