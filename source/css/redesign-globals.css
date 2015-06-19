@@ -1293,3 +1293,11 @@ button.navbar-toggle { outline: none; }
 .banner-content{
   color:#FFF;
 }
+.eventIQ-list{
+  text-align: left;
+  margin-left: -40px;
+  margin-top: 150px
+}
+.eventIQ-list li{
+  padding-top: 15px;
+}
