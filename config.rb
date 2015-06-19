@@ -43,6 +43,7 @@ page "/terms/standard/*", :layout => false
  end
  with_layout :products do
    page "/products/*"
+   page "/eventsiq/*"
    page "/eventsIQ/*"
    page "/department"
    page "/xirrus/*"

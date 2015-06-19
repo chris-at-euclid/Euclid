@@ -1295,8 +1295,8 @@ button.navbar-toggle { outline: none; }
 }
 .eventIQ-list{
   text-align: left;
-  margin-left: -40px;
-  margin-top: 150px
+  margin-top: 150px;
+  font-weight: bold;
 }
 .eventIQ-list li{
   padding-top: 15px;
