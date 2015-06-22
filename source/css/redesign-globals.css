@@ -40,14 +40,13 @@ p, .main-content p{
 a , .main-content a{
   font-family: "Asap", Helvetica, Arial, sans-serif;
   color: #117dae;
-  font-weight: bold;
 }
 
-.main-content a:after {
+/*.main-content a:after {
   content: '\203A';
   margin-left: 10px;
   font-size: 18px;
-}
+}*/
 
 .main-content a.btn:after { /* so that button links do not get styles with arrow like inline ones */
   content: '';
@@ -1301,3 +1300,9 @@ button.navbar-toggle { outline: none; }
 .eventIQ-list li{
   padding-top: 15px;
 }
+.advanced-section{ padding-top:0px !important;}
+.advanced-section p{ text-align:left !important; padding-top:0 !important;}
+.advanced-section h1{ margin-bottom:40px;}
+.advanced-section .margin-top{ margin-top:70px;}
+.advanced-section img{ float:left;}
+.advanced-section a{ text-align:left;padding-top:10px;}
