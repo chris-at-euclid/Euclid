@@ -1306,3 +1306,6 @@ button.navbar-toggle { outline: none; }
 .advanced-section .margin-top{ margin-top:70px;}
 .advanced-section img{ float:left;}
 .advanced-section a{ text-align:left;padding-top:10px;}
+.plus_1{ width:95%; height: 95%;}
+.marginTop, .marginTop a{ margin-top:40px; font-weight: bold;}
+.advanced-section a.learn-more{ float: left; padding-top:10px;}
