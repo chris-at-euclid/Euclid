@@ -1303,9 +1303,9 @@ button.navbar-toggle { outline: none; }
 .advanced-section{ padding-top:0px !important;}
 .advanced-section p{ text-align:left !important; padding-top:0 !important;}
 .advanced-section h1{ margin-bottom:40px;}
-.advanced-section .margin-top{ margin-top:70px;}
+/*.advanced-section .margin-top{ margin-top:70px;}*/
 .advanced-section img{ float:left;}
 .advanced-section a{ text-align:left;padding-top:10px;}
 .plus_1{ width:95%; height: 95%;}
-.marginTop, .marginTop a{ margin-top:40px; font-weight: bold;}
+.marginTop, .marginTop a{ margin-top:40px;}
 .advanced-section a.learn-more{ float: left; padding-top:10px;}
