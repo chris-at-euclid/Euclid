@@ -1309,3 +1309,17 @@ button.navbar-toggle { outline: none; }
 .plus_1{ width:95%; height: 95%;}
 .marginTop, .marginTop a{ margin-top:40px;}
 .advanced-section a.learn-more{ float: left; padding-top:10px;}
+#board_title{ display: none;}
+#get-started-area a.btn{
+  width: 162px;
+}
+
+#get-started-area p {
+  text-align: center;
+  max-width: 470px;
+  margin: 0 auto;
+}
+#get-started-area .btn{
+  margin-right: 15px;
+  margin-top: 30px;
+}
