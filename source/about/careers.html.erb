@@ -96,8 +96,10 @@
   $("#board_title").css("display", "none");
 
 $(".open-jobs").click(function() {
+    var value = $(".jobs-section").offset().top
+    var finalVal = value - 100; 
     $('html,body').animate({
-        scrollTop: $(".jobs-section").offset().top},
+        scrollTop: finalVal},
         'slow');
 });
 
