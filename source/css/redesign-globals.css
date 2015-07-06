@@ -564,7 +564,7 @@ button.navbar-toggle { outline: none; }
   height:365px;
 }
 .hero-unit-careers{
-  background-image: url("../img/about/careers-hero.jpg");
+  background-image: url("../img/about/careers_header.png");
   background-size: cover;
   height:365px;
 }
@@ -1326,4 +1326,35 @@ button.navbar-toggle { outline: none; }
   margin-right: 15px;
   margin-top: 30px;
 }
+<<<<<<< HEAD
 >>>>>>> da3e24984ece72fdec44b5ea77d18ab66c7a4aff
+=======
+.careers-page .hero-unit p{
+  max-width:690px;
+}
+.section-101 p{
+  margin: 20px auto 50px auto;
+  max-width: 690px;
+}
+.perks-section{
+  background-color:#3b6070;
+  padding: 50px;  
+  color: #FFF;
+}
+.perks-section .row{
+  margin:20px auto;
+}
+.perks-section h1{
+  color:#FFF;
+}
+.perks-section img{
+  width: 65px;
+}
+.perks-section img.small-img{
+  width:50px;
+}
+.marg-30 h1{
+  text-align: center;
+  padding:30px 0;
+}
+>>>>>>> bf54224f87d1e3f2f7098752422c77d5d3b5a4bd
