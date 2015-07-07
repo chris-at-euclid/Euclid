@@ -217,6 +217,10 @@ a:hover, .main-content a:hover, .main-content a:active {
     margin-top: 40px;
   }
 }
+@media (min-width: 992px){
+.perks-section .col-md-3{
+  width: 23%!important;}
+}
 .button-rule{
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -1322,6 +1326,9 @@ button.navbar-toggle { outline: none; }
   max-width: 470px;
   margin: 0 auto;
 }
+.hero-unit-careers .main-content h1{
+  padding-top: 25px;
+}
 #get-started-area .btn{
   margin-right: 15px;
   margin-top: 30px;
@@ -1331,24 +1338,30 @@ button.navbar-toggle { outline: none; }
 =======
 .careers-page .hero-unit p{
   max-width:690px;
+  line-height: 1.6;
+  font-size: 18px;
 }
 .section-101 p{
   margin: 20px auto 50px auto;
   max-width: 690px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 .perks-section{
   background-color:#3b6070;
   padding: 50px;  
   color: #FFF;
 }
+
 .perks-section .row{
-  margin:20px auto;
+  margin:30px auto;
 }
 .perks-section h1{
   color:#FFF;
 }
 .perks-section img{
   width: 65px;
+  padding-right:10px;
 }
 .perks-section img.small-img{
   width:50px;
