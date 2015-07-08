@@ -1343,7 +1343,7 @@ button.navbar-toggle { outline: none; }
 }
 .perks-section{
   background-color:#3b6070;
-  padding: 50px;  
+  padding: 10px 50px 50px 50px;  
   color: #FFF;
 }
 
