@@ -158,6 +158,7 @@ a:hover, .main-content a:hover, .main-content a:active {
   position:relative;
   width: 100%;
   height:365px;
+  margin-top:-20px;
 }
 .hero-unit {
   padding: 0;
@@ -206,7 +207,7 @@ a:hover, .main-content a:hover, .main-content a:active {
 
 
 .navbar .navbar-brand {
-  margin-top: 32px;
+  margin-top: 12px;
   margin-left: 7px;
   width: 150px;
   height: 53px;
@@ -491,7 +492,7 @@ button.navbar-toggle { outline: none; }
   float: right;
   font-size: 11px;
   margin-bottom: 15px;
-  margin-top: 28px;
+  margin-top: 10px;
   margin-right: 0px;
   padding-left: 10px;
 }
@@ -1349,7 +1350,7 @@ button.navbar-toggle { outline: none; }
 }
 .perks-section{
   background-color:#3b6070;
-  padding: 50px;  
+  padding: 10px 50px 50px 50px;  
   color: #FFF;
 }
 
